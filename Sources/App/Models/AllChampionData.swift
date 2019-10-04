@@ -317,25 +317,5 @@ class Champions {
         
     }
     
-    private func setChampionRatings() {
-        let sRating = [ashe, aurelionSol, draven, gnar,
-                       jinx, karthus, kennen, kindred,
-                       sejuani, swain, yasuo]
-        let aRating = [aatrox, akali, anivia, blitzcrank,
-                       brand, chogath, evelynn, kaisa,
-                       katarina, kayle, leona, lissandra,
-                        mordekaiser, pantheon, poppy, rengar,
-                        shyvana, twistedFate, varus, vi]
-        let bRating = [ahri, braum, darius, fiora,
-                        gangplank, garen, kassadin, lucian,
-                        lulu, missFortune, morgana, nidalee,
-                        pyke, reksai, shen, tristana,
-                        vayne, veigar, volibear, zed]
-        
-        sRating.forEach { $0.rating = .S }
-        aRating.forEach { $0.rating = .A }
-        bRating.forEach { $0.rating = .B }
-    }
-    
 }
 

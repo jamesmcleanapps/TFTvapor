@@ -23,7 +23,8 @@ class TeamComps {
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
             dragonSorcerers,
-            iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers
+            iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
+            hyperShifters, dragonsAndYordles
         ]
     }()
     
@@ -66,6 +67,10 @@ class TeamComps {
     let hyperKnights: TeamComp
     
     let elementalRangers: TeamComp
+    
+    let wildAndFreeAssassins: TeamComp
+    let hyperShifters: TeamComp
+    let dragonsAndYordles: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -325,14 +330,25 @@ class TeamComps {
         
         // MARK: JINX AND THE MEATWALL
         jinxAndTheMeatwall = TeamComp(name: "Jinx and the Meat Wall",
-                                      tier: .B,
-                                      patch: .nineOneSixB,
-                                      earlyUnits: [champions.reksai, champions.warwick, champions.nidalee],
-                                      midUnits: [champions.blitzcrank, champions.warwick, champions.nidalee, champions.reksai, champions.vi],
-                                      units: [champions.volibear, champions.reksai, champions.chogath, champions.blitzcrank, champions.vi, champions.warwick, champions.jinx],
-                                      carries: [champions.jinx],
+                                      tier: .A,
+                                      patch: .nineOneNine,
+                                      earlyUnits: [champions.blitzcrank, champions.lucian, champions.warwick, champions.reksai],
+                                      midUnits: [champions.blitzcrank, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.warwick],
+                                      units: [champions.blitzcrank, champions.chogath, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.volibear],
+                                      carries: [champions.blitzcrank, champions.jinx],
                                       carryItems: [champions.jinx : [items.rapidFirecannon, items.hextechGunblade, items.infinityEdge],
-            ], webLink: "https://tft.mobalytics.gg/team-comp/Brawlers-Hextech")
+                                                   champions.blitzcrank : [items.ionicSpark, items.ionicSpark] ],
+                                      teamCompPositions: TeamCompPositions(champsPositions: [
+                                        9 : champions.vi,
+                                        10 : champions.chogath,
+                                        11 : champions.blitzcrank,
+                                        15 : champions.volibear,
+                                        17 : champions.lucian,
+                                        18 : champions.jinx,
+                                        19 : champions.reksai,
+                                        21 : champions.warwick
+                                      ]),
+                                      webLink: "https://tft.mobalytics.gg/team-comp/Jinx_and_the_Meat_Wall")
         
         // MARK: PROTECT THE EVE
         protectTheEve = TeamComp(name: "Protect the Eve",
@@ -522,6 +538,67 @@ class TeamComps {
                                  ]) ,
                                  webLink: "https://tft.mobalytics.gg/team-comp/elemental_rangers")
         
+        // MARK: WILD AND FREE ASSASSINS
+        wildAndFreeAssassins = TeamComp(name: "Wild And Free Assassins",
+                              tier: .S,
+                              patch: .nineOneNine,
+                              earlyUnits: [champions.jayce, champions.nidalee, champions.warwick, champions.elise],
+                              midUnits: [champions.elise, champions.jayce, champions.nidalee, champions.vi, champions.warwick, champions.akali],
+                              units: [champions.akali, champions.gnar, champions.jayce, champions.nidalee, champions.pyke, champions.rengar, champions.vi, champions.warwick],
+                              carries: [champions.akali],
+                              carryItems: [champions.akali : [items.guardianAngel, items.infinityEdge, items.seraphsEmbrace], ],
+                              teamCompPositions: TeamCompPositions(champsPositions: [
+                              8 : champions.rengar,
+                              15 : champions.nidalee,
+                              16 : champions.gnar,
+                              17 : champions.jayce,
+                              18 : champions.warwick,
+                              19 : champions.jinx,
+                              20 : champions.pyke,
+                              21 : champions.akali
+                              ]) ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Wild_and_Free_Assassins")
+        
+        // MARK: HYPER SHIFTERS
+               hyperShifters = TeamComp(name: "Hyper Shifters",
+                                     tier: .B,
+                                     patch: .nineOneNine,
+                                     earlyUnits: [champions.camille, champions.jayce, champions.nidalee, champions.warwick],
+                                     midUnits: [champions.camille, champions.elise, champions.jayce, champions.nidalee, champions.warwick],
+                                     units: [champions.camille, champions.elise, champions.jayce, champions.nidalee, champions.warwick],
+                                     carries: [champions.jayce],
+                                     carryItems: [champions.jayce : [items.runaansHurricane, items.titanicHydra, items.titanicHydra], ],
+                                     teamCompPositions: TeamCompPositions(champsPositions: [
+                                     15 : champions.nidalee,
+                                     16 : champions.elise,
+                                     17 : champions.jayce,
+                                     18 : champions.warwick,
+                                     19 : champions.camille,
+                                     ]) ,
+                                     webLink: "https://tft.mobalytics.gg/team-comp/Hyper_Shifters")
+        
+        // MARK: DRAGONS AND YORDLES
+        dragonsAndYordles = TeamComp(name: "Dragons and Yordles",
+                              tier: .A,
+                              patch: .nineOneNine,
+                              earlyUnits: [champions.elise, champions.warwick, champions.nidalee, champions.jayce],
+                              midUnits: [champions.nidalee, champions.gnar, champions.elise, champions.warwick, champions.kennen, champions.lulu],
+                              units: [champions.gnar, champions.nidalee, champions.shyvana, champions.twistedFate, champions.kennen, champions.lulu, champions.aurelionSol],
+                              carries: [champions.kennen, champions.shyvana, champions.aurelionSol],
+                              carryItems: [champions.kennen : [items.guardianAngel, items.morellonomicon, items.redemption],
+                                           champions.shyvana : [items.guardianAngel, items.warmogsArmor],
+                                           champions.aurelionSol : [items.morellonomicon]],
+                              teamCompPositions: TeamCompPositions(champsPositions: [
+                              1 : champions.nidalee,
+                              2 : champions.kennen,
+                              3 : champions.shyvana,
+                              8 : champions.lulu,
+                              9 : champions.twistedFate,
+                              10 : champions.gnar,
+                              15 : champions.aurelionSol,
+                              ]) ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Dragons_and_Yordles")
+        
         
         
         
@@ -658,16 +735,26 @@ class TeamComps {
         
         // MARK: NINJA ELEMENTALISTS
         ninjaElementalists = TeamComp(name: "Ninja Elementalists",
-                                      tier: .A,
-                                      patch: .nineOneSeven,
-                                      earlyUnits: [champions.pyke, champions.zed, champions.khazix, champions.reksai],
-                                      midUnits: [champions.brand, champions.lissandra, champions.kennen, champions.pyke, champions.zed, champions.khazix],
-                                      units: [champions.brand, champions.lissandra, champions.kennen, champions.shen, champions.zed, champions.pyke, champions.akali],
-                                      carries: [champions.akali, champions.kennen, champions.zed],
+                                      tier: .B,
+                                      patch: .nineOneNine,
+                                      earlyUnits: [champions.pyke, champions.zed, champions.khazix, champions.kassadin],
+                                      midUnits: [champions.akali, champions.brand, champions.evelynn, champions.kennen, champions.lissandra, champions.pyke],
+                                      units: [champions.akali, champions.brand, champions.zed, champions.kennen, champions.lissandra, champions.pyke, champions.shen],
+                                      carries: [champions.akali, champions.kennen, champions.pyke],
                                       carryItems: [
-                                        champions.akali : [items.dragonsClaw, items.phantomDancer, items.hextechGunblade],
-                                        champions.kennen : [items.morellonomicon, items.guardianAngel],
-                                        champions.zed : [items.zekesHerald] ], webLink: "https://tft.mobalytics.gg/team-comp/ninja-elementalist")
+                                        champions.akali : [items.guardianAngel, items.infinityEdge, items.seraphsEmbrace],
+                                        champions.kennen : [items.guardianAngel],
+                                        champions.pyke : [items.frozenHeart] ],
+                                      teamCompPositions: TeamCompPositions(champsPositions: [
+                                      15 : champions.kennen,
+                                      16 : champions.brand,
+                                      17 : champions.lissandra,
+                                      18 : champions.zed,
+                                      19 : champions.akali,
+                                      20 : champions.pyke,
+                                      21 : champions.shen
+                                      ]) ,
+                                      webLink: "https://tft.mobalytics.gg/team-comp/Ninja_Elementalists")
         
         // MARK: SHAPESHIFTERS
         shapeShifters = TeamComp(name: "Shapeshifters",
