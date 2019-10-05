@@ -11,38 +11,104 @@ import Vapor
 enum ChampionOrigin: String, CaseIterable, Codable, ReflectionDecodable {
     case demon, dragon, exile, glacial, hextech, imperial, noble, ninja, pirate, phantom, robot, wild, void, yordle
     
-    static func getOriginInfo(origin: String) -> String {
+    static func getOriginInfo(origin: String) -> OriginDetails {
         switch origin {
         case "demon":
-            return "Demon basic attacks have a 40% chance to burn 20 mana from their target and return mana to the attacker"
+            return OriginDetails(
+                main: "Demon basic attacks have a 40% chance to burn 20 mana from their target and gain mana in return.",
+                benefit1: "2  -  15 Mana Returned",
+                benefit2: "4  -  30 Mana Returned",
+                benefit3: "6  -  45 Mana Returned")
         case "dragon":
-            return "Deploying both Dragons makes them 75% resistant to magic damage."
+            return OriginDetails(
+                main: "Dragons gain increased resistance to Magic Damage",
+                benefit1: "2  -  All Dragons gain 75% resistance to Magic Damage",
+                benefit2: nil,
+                benefit3: nil)
         case "exile":
-            return "Exiles start combat with a shield if no other champions are adjacent to them at the start of combat."
+            return OriginDetails(
+                main: "If an Exile has no adjacent allies at the start of combat, they gain a shield equal to 100% of their maximum health.",
+                benefit1: "1  -  Gain a shield equal to 100% of maximum health.",
+                benefit2: nil,
+                benefit3: nil)
         case "glacial":
-            return "Deploying multiple Glacials grants their attacks a chance to stun their target, increasing with more Glacials."
-        case "robot":
-            return "Robots start combat with full mana."
-        case "imperial":
-            return "Deploying multiple Imperials grants one random Imperial double damage. Deploying every Imperial grants all of them double damage."
-        case "noble":
-            return "Deploying multiple Nobles grants one random champion armor, magic resistance and on-attack healing. Deploying every Noble grants your whole team armor, magic resistance and on-attack healing."
-        case "ninja":
-            return "Deploying exactly one Ninja grants it AD and AP. Deploying every Ninja grants all of them even more."
-        case "pirate":
-            return "Deploying enough Pirates grants you extra gold at the end of each round."
-        case "phantom":
-            return "Deploying enough Phantoms curses a random enemy at the start of combat, dropping their starting health."
-        case "wild":
-            return "Deploying multiple Wilds grants them attack speed as they attack. Deploying enough Wilds grants your whole team attack speed as they attack."
-        case "void":
-            return "2: A random Void champ deals true dameage.    4: All Void champions deal true damage"
-        case "yordle":
-            return "Deploying multiple Yordles causes attacks against them to sometimes miss, increasing with more Yordles."
+            return OriginDetails(
+                main: "Attacks from Glacials have a chance to stun for 1.5s.",
+                benefit1: "2  -  20% Chance to Stun",
+                benefit2: "4  -  33% Chance to Stun",
+                benefit3: "6  -  50% Chance to Stun")
+            
         case "hextech":
-            return "When combat begins, launch a pulse bomb that disables items for some time."
+            return OriginDetails(
+                main: "At the start of combat, launch a pulse bomb that temporarily disables nearby enemy items for 7 seconds.",
+                benefit1: "2  -  Within 1 Hex",
+                benefit2: "4  -  Within 2 Hexes",
+                benefit3: nil)
+        
+        case "imperial":
+            return OriginDetails(
+                main: "Imperials deal double damage.",
+                benefit1: "2  -  One Random Imperial",
+                benefit2: "4  -  All Imperials",
+                benefit3: nil)
+            
+        case "ninja":
+            return OriginDetails(
+                main: "Ninjas gain bonus Attack Damage and Ability Power. Ninja trait only activates when you have exactly 1 or all 4 Ninjas.",
+                benefit1: "1  -  Ninja gains +50 Attack Damage and Ability Power",
+                benefit2: "4  -  Ninjas gain +80 Attack Damage and Ability Power",
+                benefit3: nil)
+            
+        case "noble":
+            return OriginDetails(
+                main: "Noble buff grants 50 armor and 50 magic resistance and basic attacks restore 30 health on-hit.",
+                benefit1: "3  -  1 Random Ally",
+                benefit2: "6  -  All Allies",
+                benefit3: nil)
+            
+        case "phantom":
+            return OriginDetails(
+                main: "Phantoms curse a random enemy at the start of combat, setting their HP to 100.",
+                benefit1: "2  -  Curse a random enemy at the start of combat, setting their HP to 100",
+                benefit2: nil,
+                benefit3: nil)
+            
+        case "pirate":
+            return OriginDetails(
+                main: "Pirates earn up to 4 additional gold after combat against another player.",
+                benefit1: "3  -  Earn up to 4 additional gold after combat against another player",
+                benefit2: nil,
+                benefit3: nil)
+        
+        case "robot":
+            return OriginDetails(
+                main: "Robots start combat at full mana.",
+                benefit1: "1  -  Robots start combat at full mana",
+                benefit2: nil,
+                benefit3: nil)
+            
+        case "void":
+            return OriginDetails(
+                main: "Void units deal true damage.",
+                benefit1: "2  -  One random void champion deals true damage this combat",
+                benefit2: "4  -  All your void champions deal true damage this combat",
+                benefit3: nil)
+            
+        case "wild":
+            return OriginDetails(
+                main: "Wild attacks generate stacks of Fury (up to 5). Each stack gives 12% attack speed.",
+                benefit1: "2  -  Wild allies only",
+                benefit2: "4  -  All allies and their basic attacks can't miss",
+                benefit3: nil)
+        
+        case "yordle":
+            return OriginDetails(
+                main: "Yordles have a chance to dodge enemy attacks.",
+                benefit1: "3  -  30% Chance to Dodge",
+                benefit2: "6  -  60% Chance to Dodge",
+                benefit3: "9  -  90% Chance to Dodge")
         default:
-            return ""
+            return OriginDetails(main: " ", benefit1: nil, benefit2: nil, benefit3: nil)
         }
     }
     
@@ -109,3 +175,12 @@ enum ChampionOrigin: String, CaseIterable, Codable, ReflectionDecodable {
         return (.demon, .dragon)
     }
 }
+
+struct OriginDetails: Codable {
+    var main: String
+    var benefit1: String?
+    var benefit2: String?
+    var benefit3: String?
+}
+
+extension OriginDetails: Content {}

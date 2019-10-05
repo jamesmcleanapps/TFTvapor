@@ -43,14 +43,14 @@ struct ChampionsController: RouteCollection {
         }
     }
     
-    func getChampionClassDetails(_ req: Request) throws -> [String] {
+    func getChampionClassDetails(_ req: Request) throws -> ClassDetails {
         let classStr = try req.parameters.next(String.self)
-        return [ChampionClass.getClassInfo(classStr: classStr)]
+        return ChampionClass.getClassInfo(classStr: classStr)
     }
     
-    func getChampionOriginDetails(_ req: Request) throws -> [String] {
+    func getChampionOriginDetails(_ req: Request) throws -> OriginDetails {
         let originStr = try req.parameters.next(String.self)
-        return [ChampionOrigin.getOriginInfo(origin: originStr)]
+        return ChampionOrigin.getOriginInfo(origin: originStr)
     }
     
     func getChampDropRates(_ req: Request) throws -> DropRates {
