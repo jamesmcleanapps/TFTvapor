@@ -229,7 +229,7 @@ class TeamComps {
         pirateSwashbucklers = TeamComp(name: "Pirate Swashbucklers",
                                        tier: .A,
                                        patch: .nineOneNine,
-                                       earlyUnits: [champions.tristana, champions.graves, champions.twistedFate, champions.twistedFate],
+                                       earlyUnits: [champions.tristana, champions.graves, champions.twistedFate],
                                        midUnits: [champions.tristana, champions.graves, champions.pyke, champions.gangplank, champions.lucian, champions.shen],
                                        units: [champions.tristana, champions.graves, champions.gangplank, champions.lucian, champions.shen, champions.pyke],
                                        carries: [champions.tristana, champions.lucian],
@@ -283,6 +283,7 @@ class TeamComps {
                             10 : champions.kayle,
                             15 : champions.fiora,
                             17 : champions.lucian,
+                            18 : champions.draven,
                             19 : champions.jinx,
                             21 : champions.vayne
                             ]) ,
@@ -334,7 +335,7 @@ class TeamComps {
                                       patch: .nineOneNine,
                                       earlyUnits: [champions.blitzcrank, champions.lucian, champions.warwick, champions.reksai],
                                       midUnits: [champions.blitzcrank, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.warwick],
-                                      units: [champions.blitzcrank, champions.chogath, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.volibear],
+                                      units: [champions.blitzcrank, champions.chogath, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.volibear, champions.warwick],
                                       carries: [champions.blitzcrank, champions.jinx],
                                       carryItems: [champions.jinx : [items.rapidFirecannon, items.hextechGunblade, items.infinityEdge],
                                                    champions.blitzcrank : [items.ionicSpark, items.ionicSpark] ],
@@ -370,8 +371,8 @@ class TeamComps {
                                  earlyUnits: [champions.kassadin, champions.reksai, champions.khazix, champions.zed],
                                  midUnits: [champions.zed, champions.pyke, champions.khazix, champions.reksai, champions.chogath, champions.evelynn],
                                  units: [champions.kassadin, champions.reksai, champions.khazix, champions.akali, champions.pyke, champions.rengar, champions.evelynn],
-                                 carries: [champions.chogath, champions.akali, champions.reksai],
-                                 carryItems: [champions.kassadin : [items.youmuusGhostblade, items.dragonsClaw, items.rapidFirecannon],
+                                 carries: [champions.akali, champions.reksai],
+                                 carryItems: [champions.akali : [items.infinityEdge, items.dragonsClaw, items.seraphsEmbrace],
                                               champions.reksai : [items.youmuusGhostblade, items.dragonsClaw, items.rapidFirecannon],
             ], webLink: "https://tft.mobalytics.gg/team-comp/Void-sins")
         
@@ -522,7 +523,7 @@ class TeamComps {
                                  patch: .nineOneNine,
                                  earlyUnits: [champions.garen, champions.darius, champions.vayne, champions.varus],
                                  midUnits: [champions.vayne, champions.ashe, champions.lissandra, champions.kennen, champions.brand, champions.varus],
-                                 units: [champions.vayne, champions.ashe, champions.brand, champions.sejuani, champions.lissandra, champions.anivia, champions.varus, champions.kindred],
+                                 units: [champions.vayne, champions.ashe, champions.brand, champions.sejuani, champions.lissandra, champions.varus, champions.kindred, champions.kennen],
                                  carries: [champions.kennen, champions.ashe],
                                  carryItems: [champions.kennen : [items.guardianAngel],
                                               champions.ashe : [items.guinsoosRageblade, items.runaansHurricane, items.giantSlayer],
@@ -534,6 +535,7 @@ class TeamComps {
                                  15 : champions.ashe,
                                  16 : champions.kindred,
                                  17 : champions.brand,
+                                 18 : champions.sejuani,
                                  21 : champions.varus
                                  ]) ,
                                  webLink: "https://tft.mobalytics.gg/team-comp/elemental_rangers")
@@ -553,7 +555,7 @@ class TeamComps {
                               16 : champions.gnar,
                               17 : champions.jayce,
                               18 : champions.warwick,
-                              19 : champions.jinx,
+                              19 : champions.vi,
                               20 : champions.pyke,
                               21 : champions.akali
                               ]) ,
@@ -693,8 +695,8 @@ class TeamComps {
                                  earlyUnits: [champions.mordekaiser, champions.darius, champions.garen],
                                  midUnits: [champions.garen, champions.darius, champions.braum, champions.leona, champions.draven],
                                  units: [champions.mordekaiser, champions.darius, champions.braum, champions.draven, champions.leona, champions.sejuani, champions.karthus, champions.kayle],
-                                 carries: [champions.draven, champions.karthus],
-                                 carryItems: [champions.draven : [items.rapidFirecannon, items.guardianAngel, items.bloodthirster]  ], webLink: nil)
+                                 carries: [champions.draven],
+                                 carryItems: [champions.draven : [items.runaansHurricane, items.guardianAngel, items.bloodthirster]  ], webLink: nil)
         
         
         // MARK: MAGICAL YORDLES
