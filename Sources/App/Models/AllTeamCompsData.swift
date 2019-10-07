@@ -192,7 +192,7 @@ class TeamComps {
                                  units: [champions.draven, champions.darius, champions.swain, champions.katarina, champions.garen, champions.poppy, champions.sejuani],
                                  carries: [champions.draven, champions.swain],
                                  carryItems: [
-                                    champions.draven : [items.runaansHurricane, items.guinsoosRageblade, items.bloodthirster],
+                                    champions.draven : [items.guardianAngel, items.rapidFirecannon, items.bloodthirster],
                                     champions.swain : [items.dragonsClaw, items.morellonomicon, items.guardianAngel] ],
                                  teamCompPositions: TeamCompPositions(champsPositions: [1 : champions.swain,
                                                                                         2 : champions.darius,
