@@ -132,7 +132,7 @@ class Items {
         hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 25% of all damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
         
         // MARK: DEATH BLADE
-        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 15 Attack Damage until end of combat (Stacks infinitely).", rating: .A, recipe: [bfSword, bfSword])
+        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 15 Attack Damage until end of combat (Stacks infinitely, starts with 1 stack).", rating: .A, recipe: [bfSword, bfSword])
         
         // MARK: SPEAR OF SHOJIN
         spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 15% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
@@ -150,7 +150,7 @@ class Items {
         // CHAIN VEST
         
         // MARK: FROZEN HEART
-        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 35% attack speed for 4 seconds", rating: .S, recipe: [chainVest, tearOfTheGoddess])
+        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 35% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
         
         // MARK: LOCKET OF THE IRON SOLARI
         locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 7 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
@@ -251,7 +251,7 @@ class Items {
         
         
         // MARK: INFINITY EDGE
-        infinityEdge = CombinedItem(name: "infinity edge", bonus: "20% Critical Strike chance, +150% Critical Strike damage", rating: .A, recipe: [sparringGloves, bfSword])
+        infinityEdge = CombinedItem(name: "infinity edge", bonus: "20% Critical Strike chance, +125% Critical Strike damage", rating: .A, recipe: [sparringGloves, bfSword])
         
         // MARK: REPEATING CROSSBOW
         repeatingCrossbow = CombinedItem(name: "repeating crossbow", bonus: "On death, this jumps to an allied champion and grants an additional 20% Attack Speed & Critical Strike chance", rating: .B, recipe: [sparringGloves, recurveBow])
@@ -266,7 +266,7 @@ class Items {
         icebornGauntlet = CombinedItem(name: "iceborn gauntlet", bonus: "On dodge, create an expandable zone that lowers Attack Speed by 35%.", rating: .A, recipe: [sparringGloves, chainVest])
         
         // MARK: QUICKSILVER
-        quicksilver = CombinedItem(name: "quicksilver", bonus: "When CC’d, cleanse the CC. 5 second cooldown.", rating: .B, recipe: [sparringGloves, negatronCloak])
+        quicksilver = CombinedItem(name: "quicksilver", bonus: "When CC’d, cleanse the CC. 3 second cooldown.", rating: .A, recipe: [sparringGloves, negatronCloak])
         
         // MARK: TRAP CLAW
         trapClaw = CombinedItem(name: "trap claw", bonus: "On combat begin, gain a spell shield. When it breaks, stun the champion who broke the shield.", rating: .B, recipe: [sparringGloves, giantsBelt])

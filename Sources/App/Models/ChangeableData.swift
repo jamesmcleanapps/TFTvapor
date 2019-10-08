@@ -55,9 +55,9 @@ class DropRateData {
     static let shared = DropRateData()
     
     let dropRates = DropRates(name: "Drop Rates",
-        tier1: [100, 70, 50, 35, 25, 20, 15, 10],
-        tier2: [nil, 25, 35 ,35, 35, 30, 25, 15],
-        tier3: [nil, 5, 15, 25, 30, 33, 35, 33],
-        tier4: [nil, nil, nil, 5, 10, 15, 20, 30],
-        tier5: [nil, nil, nil, nil, nil, 2, 5, 12])
+        tier1: [100,    70,    50,     35,     25,     20,     15,     10],
+        tier2: [nil,    25,    35 ,    35,     35,     30,     20,     15],
+        tier3: [nil,    5,     15,     25,     30,     33,     35,     30],
+        tier4: [nil,    nil,   nil,    5,      10,     15,     22,     30],
+        tier5: [nil,    nil,   nil,    nil,    nil,    2,      8,      15])
 }

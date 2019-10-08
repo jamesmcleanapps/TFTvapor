@@ -96,7 +96,7 @@ enum ChampionOrigin: String, CaseIterable, Codable, ReflectionDecodable {
             
         case "wild":
             return OriginDetails(
-                main: "Wild attacks generate stacks of Fury (up to 5). Each stack gives 12% attack speed.",
+                main: "Wild attacks generate stacks of Fury (up to 5). Each stack gives 10% attack speed.",
                 benefit1: "2  -  Wild allies only",
                 benefit2: "4  -  All allies and their basic attacks can't miss",
                 benefit3: nil)

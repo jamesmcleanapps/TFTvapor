@@ -16,7 +16,7 @@ enum ChampionClass: String, CaseIterable, Codable, ReflectionDecodable {
         case "assassin":
             return ClassDetails(
                 main: "Assassins leap to the farthest enemy at the start of combat and have increased Crit Chance and Crit Damage.",
-                benefit1: "3  -  +75% Crit Damage & +10% Crit Chance",
+                benefit1: "3  -  +75% Crit Damage & +5% Crit Chance",
                 benefit2: "6  -  +150% Crit Damage & +20% Crit Chance",
                 benefit3: "9  -  +225% Crit Damage & +30% Crit Chance"
             )
@@ -40,7 +40,7 @@ enum ChampionClass: String, CaseIterable, Codable, ReflectionDecodable {
         case "guardian":
             return ClassDetails(
                 main: "At the start of combat, Guardians grant adjacent allies bonus armor. This effect stacks but Guardians do not benefit from the bonus.",
-                benefit1: "2  -  At the start of combat, all Guardians grant adjacent allies +35 armor.",
+                benefit1: "2  -  At the start of combat, all Guardians grant adjacent allies +45 armor.",
                 benefit2: nil,
                 benefit3: nil)
         case "gunslinger":
@@ -48,13 +48,13 @@ enum ChampionClass: String, CaseIterable, Codable, ReflectionDecodable {
                 main: "After attacking, Gunslingers have a 50% chance to fire additional attacks.",
                 benefit1: "2  -  Attack 1 other random enemy",
                 benefit2: "4  -  Attack 2 other random enemies",
-                benefit3: "6  -  Attack 3 other random enemies")
+                benefit3: "6  -  Attack 4 other random enemies")
         case "knight":
             return ClassDetails(
                 main: "Knights block damage from all sources.",
                 benefit1: "2  -  15 Damage Blocked",
-                benefit2: "4  -  30 Damage Blocked",
-                benefit3: "6  -  55 Damage Blocked")
+                benefit2: "4  -  35 Damage Blocked",
+                benefit3: "6  -  60 Damage Blocked")
         case "ranger":
             return ClassDetails(
                 main: "Rangers have a chance to double their attack speed for the next 3s.",
