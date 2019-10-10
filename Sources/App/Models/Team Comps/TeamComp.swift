@@ -16,7 +16,7 @@ struct TeamComp: Equatable, Codable {
     var id: Int?
     var name: String
     var tier: TeamCompTier
-    var patch: TeamCompPatch?
+    var patch: String
     var earlyUnits: [Champion]
     var midUnits: [Champion]
     var units: [Champion]

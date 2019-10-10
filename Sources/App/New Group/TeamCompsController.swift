@@ -28,8 +28,8 @@ struct TeamCompsController: RouteCollection {
     func getAllTeamCompsNames(_ req: Request) throws -> [String] {
         // sort by newest patch first, then by tier S -> C
         let teamComps = TeamComps.shared.allTeamComps.sorted { (team1, team2) -> Bool in
-            if team1.patch! == team2.patch { return team1.tier < team2.tier } else {
-                return team1.patch! > team2.patch!
+            if team1.patch == team2.patch { return team1.tier < team2.tier } else {
+                return team1.patch > team2.patch
             }
         }
         return teamComps.map { $0.name }

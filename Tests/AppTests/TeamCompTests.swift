@@ -94,5 +94,22 @@ final class TeamCompTests: XCTestCase {
         XCTAssert(true)
     }
     
+    func testTwoTeamCompsDontHaveSameChamps() {
+        TeamComps.shared.allTeamComps.forEach { (team1) in
+            var duplicates = [String : [Champion]]()
+            TeamComps.shared.allTeamComps.forEach { (team2) in
+                if (team1.units.map { $0.name }.sorted()) == (team2.units.map { $0.name }.sorted()) {
+                    duplicates[team1.name] = team1.units
+                    duplicates[team2.name] = team2.units
+                }
+            }
+            if duplicates.count > 1 {
+                print("vapor: duplicates \(duplicates)")
+                XCTAssert(false)
+            }
+        }
+        XCTAssert(true)
+    }
+    
 }
 

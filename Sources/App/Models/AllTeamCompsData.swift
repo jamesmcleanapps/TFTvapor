@@ -15,16 +15,15 @@ class TeamComps {
     lazy var allTeamComps: [TeamComp] = {
         return [
             elementalSorcerers, ultimateRangerFormation, pickABlueCard, ahriAndTheBrawlers, theHunterAndThePredator,
-            ninjaElementalists, burstRangers, dragonDefenders, imperialGuard, littleSparks,
+            ninjaElementalists, burstRangers, dragonDefenders, imperialGuard,
             polarBearFrenzy, pirateSwashbucklers, rangerKnights, voidSorcerers, voidBrawlers,
             jungleVoid, fullSorcerers, protectDraven, magicalYordles,
             lordDraven, ladyJinx, jinxsPirateBrigade, theKnightsVow, knightlyRangers, jinxAndTheMeatwall,
             nobles, botrkGunslingers, demonSorcerer, shapeShifters,
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
-            dragonSorcerers,
             iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
-            hyperShifters, dragonsAndYordles
+            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus
         ]
     }()
     
@@ -39,7 +38,6 @@ class TeamComps {
     let burstRangers: TeamComp
     let dragonDefenders: TeamComp
     let imperialGuard: TeamComp
-    let littleSparks: TeamComp
     
     let polarBearFrenzy: TeamComp
     let pirateSwashbucklers: TeamComp
@@ -59,7 +57,6 @@ class TeamComps {
     let teenageMutantNinjaAssassins: TeamComp
     
     let yordellini: TeamComp
-    let dragonSorcerers: TeamComp
     
     let iceQueenLissandra: TeamComp
     
@@ -71,6 +68,9 @@ class TeamComps {
     let wildAndFreeAssassins: TeamComp
     let hyperShifters: TeamComp
     let dragonsAndYordles: TeamComp
+    
+    let theWall: TeamComp
+    let varusGrandMagus: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -95,7 +95,7 @@ class TeamComps {
         // MARK: ELEMENTAL SORCERERS
         elementalSorcerers = TeamComp(name: "Elemental Sorcerers",
                                       tier: .B,
-                                      patch: .nineOneFiveB,
+                                      patch: TeamCompPatch.nineOneFiveB.rawValue,
                                       earlyUnits: [champions.garen, champions.darius, champions.kennen],
                                       midUnits: [champions.lissandra, champions.kennen, champions.brand, champions.lulu, champions.veigar],
                                       units: [champions.kennen, champions.veigar, champions.lulu, champions.morgana, champions.brand, champions.lissandra],
@@ -107,7 +107,7 @@ class TeamComps {
         // MARK: ULTIMATE RANGER FORMATION
         ultimateRangerFormation = TeamComp(name: "Ultimate Ranger Formation",
                                            tier: .B,
-                                           patch: .nineOneSeven,
+                                           patch: TeamCompPatch.nineOneSeven.rawValue,
                                            earlyUnits: [champions.garen, champions.vayne, champions.fiora, champions.varus],
                                            midUnits: [champions.vayne, champions.garen, champions.poppy, champions.varus, champions.mordekaiser, champions.darius],
                                            units: [champions.ashe, champions.varus, champions.kindred, champions.mordekaiser, champions.vayne, champions.braum, champions.pantheon],
@@ -119,7 +119,7 @@ class TeamComps {
         // MARK: PICK A BLUE CARD
         pickABlueCard = TeamComp(name: "Pick A Blue Card",
                                  tier: .B,
-                                 patch: .nineOneSeven,
+                                 patch: TeamCompPatch.nineOneSeven.rawValue,
                                  earlyUnits: [champions.garen, champions.darius, champions.kennen, champions.twistedFate],
                                  midUnits: [champions.lissandra, champions.kennen, champions.brand, champions.twistedFate, champions.morgana, champions.lulu],
                                  units: [champions.kennen, champions.lulu, champions.twistedFate, champions.morgana, champions.brand, champions.lissandra, champions.poppy],
@@ -133,7 +133,7 @@ class TeamComps {
         // MARK: AHRI AND THE BRAWLERS
         ahriAndTheBrawlers = TeamComp(name: "Ahri and the Brawlers",
                                       tier: .A,
-                                      patch: .nineOneSeven,
+                                      patch: TeamCompPatch.nineOneSeven.rawValue,
                                       earlyUnits: [champions.warwick, champions.reksai, champions.ahri, champions.nidalee],
                                       midUnits: [champions.chogath, champions.ahri, champions.reksai, champions.warwick, champions.vi, champions.kassadin],
                                       units: [champions.warwick, champions.vi, champions.chogath, champions.reksai, champions.kassadin, champions.ahri, champions.lulu],
@@ -146,7 +146,7 @@ class TeamComps {
         // MARK: THE HUNTER AND THE PREDATOR
         theHunterAndThePredator = TeamComp(name: "The Hunter and the Predator",
                                            tier: .S,
-                                           patch: .nineOneSeven,
+                                           patch: TeamCompPatch.nineOneSeven.rawValue,
                                            earlyUnits: [champions.kassadin, champions.reksai, champions.khazix, champions.warwick],
                                            midUnits: [champions.chogath, champions.khazix, champions.reksai, champions.zed, champions.rengar, champions.warwick],
                                            units: [champions.warwick, champions.vi, champions.chogath, champions.reksai, champions.khazix, champions.rengar, champions.akali],
@@ -161,7 +161,7 @@ class TeamComps {
         // MARK: BURST RANGERS
         burstRangers = TeamComp(name: "Burst Rangers",
                                 tier: .S,
-                                patch: .nineOneSeven,
+                                patch: TeamCompPatch.nineOneSeven.rawValue,
                                 earlyUnits: [champions.garen, champions.vayne, champions.fiora, champions.varus],
                                 midUnits: [champions.ashe, champions.aatrox, champions.varus, champions.mordekaiser, champions.garen, champions.vayne],
                                 units: [champions.ashe, champions.varus, champions.vayne, champions.kindred, champions.aatrox, champions.sejuani, champions.mordekaiser],
@@ -174,7 +174,7 @@ class TeamComps {
         // MARK: DRAGON DEFENDERS
         dragonDefenders = TeamComp(name: "Dragon Defenders",
                                    tier: .B,
-                                   patch: .nineOneFive,
+                                   patch: TeamCompPatch.nineOneFive.rawValue,
                                    earlyUnits: [champions.warwick, champions.blitzcrank, champions.nidalee],
                                    midUnits: [champions.nidalee, champions.shyvana, champions.elise, champions.garen, champions.darius],
                                    units: [champions.gnar, champions.nidalee, champions.shyvana, champions.braum, champions.karthus, champions.lulu, champions.aurelionSol, champions.leona],
@@ -186,7 +186,7 @@ class TeamComps {
         // MARK: THE IMPERIAL GUARD
         imperialGuard = TeamComp(name: "The Imperial Guard",
                                  tier: .S,
-                                 patch: .nineOneNine,
+                                 patch: TeamCompPatch.nineOneNine.rawValue,
                                  earlyUnits: [champions.darius, champions.garen, champions.fiora, champions.lucian],
                                  midUnits:  [champions.garen, champions.darius, champions.draven, champions.sejuani, champions.poppy, champions.shen],
                                  units: [champions.draven, champions.darius, champions.swain, champions.katarina, champions.garen, champions.poppy, champions.sejuani],
@@ -203,21 +203,10 @@ class TeamComps {
                                                                                         21 : champions.garen]) ,
                                  webLink: "https://tft.mobalytics.gg/team-comp/The_Imperial_Guard")
         
-        // MARK: LITTLE SPARKS
-        littleSparks = TeamComp(name: "Little Sparks",
-                                tier: .B,
-                                patch: .nineOneFive,
-                                earlyUnits: [champions.tristana, champions.lulu, champions.lucian],
-                                midUnits: [champions.poppy, champions.kennen, champions.garen, champions.darius, champions.mordekaiser],
-                                units: [champions.tristana, champions.ahri, champions.kennen, champions.poppy, champions.lulu, champions.veigar, champions.gnar],
-                                carries: [champions.gnar, champions.kennen],
-                                carryItems: [champions.gnar : [items.statikkShiv, items.statikkShiv],
-                                             champions.kennen : [items.morellonomicon, items.guardianAngel] ], webLink: "https://tft.mobalytics.gg/team-comp/yordle-sorcerer-wild")
-        
         // MARK: POLAR BEAR FRENZY
         polarBearFrenzy = TeamComp(name: "Polar Bear Frenzy",
                                    tier: .B,
-                                   patch: .nineOneFive,
+                                   patch: TeamCompPatch.nineOneFive.rawValue,
                                    earlyUnits: [champions.warwick, champions.blitzcrank, champions.nidalee],
                                    midUnits: [champions.volibear, champions.brand, champions.lissandra, champions.kennen, champions.chogath],
                                    units: [champions.volibear, champions.reksai, champions.chogath, champions.blitzcrank, champions.kennen, champions.lissandra, champions.brand],
@@ -227,8 +216,8 @@ class TeamComps {
         
         // MARK: PIRATE SWASHBUCKLERS
         pirateSwashbucklers = TeamComp(name: "Pirate Swashbucklers",
-                                       tier: .A,
-                                       patch: .nineOneNine,
+                                       tier: .B,
+                                       patch: TeamCompPatch.nineOneNine.rawValue,
                                        earlyUnits: [champions.tristana, champions.graves, champions.twistedFate],
                                        midUnits: [champions.tristana, champions.graves, champions.pyke, champions.gangplank, champions.lucian, champions.shen],
                                        units: [champions.tristana, champions.graves, champions.gangplank, champions.lucian, champions.shen, champions.pyke],
@@ -246,8 +235,8 @@ class TeamComps {
         
         // MARK: LORD DRAVEN
         lordDraven = TeamComp(name: "Lord Draven",
-                              tier: .A,
-                              patch: .nineOneNine,
+                              tier: .B,
+                              patch: TeamCompPatch.nineOneNine.rawValue,
                               earlyUnits: [champions.gangplank, champions.graves, champions.pyke, champions.lucian],
                               midUnits: [champions.graves, champions.pyke, champions.lucian, champions.gangplank, champions.tristana, champions.shen],
                               units: [champions.vayne, champions.fiora, champions.garen, champions.leona, champions.lucian, champions.kayle, champions.draven, champions.gangplank],
@@ -269,8 +258,8 @@ class TeamComps {
         
         // MARK: LADY JINX
         ladyJinx = TeamComp(name: "Lady Jinx",
-                            tier: .A,
-                            patch: .nineOneNine,
+                            tier: .B,
+                            patch: TeamCompPatch.nineOneNine.rawValue,
                             earlyUnits: [champions.garen, champions.fiora, champions.darius, champions.lucian],
                             midUnits: [champions.garen, champions.darius, champions.lucian, champions.gangplank, champions.fiora, champions.jinx],
                             units: [champions.vayne, champions.fiora, champions.garen, champions.leona, champions.lucian, champions.kayle, champions.jinx, champions.draven],
@@ -292,7 +281,7 @@ class TeamComps {
         // MARK: JINX'S PIRATE BRIGADE
         jinxsPirateBrigade = TeamComp(name: "Jinx's Pirate Brigade",
                                       tier: .B,
-                                      patch: .nineOneSixB,
+                                      patch: TeamCompPatch.nineOneSixB.rawValue,
                                       earlyUnits: [champions.tristana, champions.graves, champions.lucian],
                                       midUnits: [champions.tristana, champions.graves, champions.lucian, champions.gangplank, champions.pyke],
                                       units: [champions.tristana, champions.graves, champions.gangplank, champions.lucian, champions.missFortune, champions.jinx, champions.camille],
@@ -305,7 +294,7 @@ class TeamComps {
         // MARK: THE KNIGHTS VOW
         theKnightsVow = TeamComp(name: "The Knight's Vow",
                                  tier: .A,
-                                 patch: .nineOneSixB,
+                                 patch: TeamCompPatch.nineOneSixB.rawValue,
                                  earlyUnits: [champions.garen, champions.darius, champions.mordekaiser],
                                  midUnits: [champions.garen, champions.darius, champions.poppy, champions.mordekaiser, champions.sejuani],
                                  units: [champions.darius, champions.garen, champions.poppy, champions.sejuani, champions.kayle, champions.swain, champions.varus],
@@ -318,7 +307,7 @@ class TeamComps {
         // MARK: KNIGHTLY RANGERS
         knightlyRangers = TeamComp(name: "Knightly Rangers",
                                    tier: .B,
-                                   patch: .nineOneSeven,
+                                   patch: TeamCompPatch.nineOneSeven.rawValue,
                                    earlyUnits: [champions.garen, champions.vayne, champions.mordekaiser, champions.varus],
                                    midUnits: [champions.garen, champions.vayne, champions.darius, champions.varus, champions.mordekaiser, champions.poppy],
                                    units: [champions.ashe, champions.varus, champions.kindred, champions.mordekaiser, champions.vayne, champions.poppy, champions.sejuani],
@@ -332,7 +321,7 @@ class TeamComps {
         // MARK: JINX AND THE MEATWALL
         jinxAndTheMeatwall = TeamComp(name: "Jinx and the Meat Wall",
                                       tier: .A,
-                                      patch: .nineOneNine,
+                                      patch: TeamCompPatch.nineOneNine.rawValue,
                                       earlyUnits: [champions.blitzcrank, champions.lucian, champions.warwick, champions.reksai],
                                       midUnits: [champions.blitzcrank, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.warwick],
                                       units: [champions.blitzcrank, champions.chogath, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.volibear, champions.warwick],
@@ -354,7 +343,7 @@ class TeamComps {
         // MARK: PROTECT THE EVE
         protectTheEve = TeamComp(name: "Protect the Eve",
                                  tier: .A,
-                                 patch: .nineOneSeven,
+                                 patch: TeamCompPatch.nineOneSeven.rawValue,
                                  earlyUnits: [champions.garen, champions.darius, champions.evelynn],
                                  midUnits: [champions.garen, champions.poppy, champions.leona, champions.braum, champions.evelynn],
                                  units: [champions.evelynn, champions.brand, champions.leona, champions.braum, champions.poppy, champions.sejuani, champions.jinx],
@@ -367,7 +356,7 @@ class TeamComps {
         // MARK: ASSASSINS FROM THE VOID
         assassinsFromTheVoid = TeamComp(name: "Assassins from the Void",
                                  tier: .S,
-                                 patch: .nineOneSeven,
+                                 patch: TeamCompPatch.nineOneSeven.rawValue,
                                  earlyUnits: [champions.kassadin, champions.reksai, champions.khazix, champions.zed],
                                  midUnits: [champions.zed, champions.pyke, champions.khazix, champions.reksai, champions.chogath, champions.evelynn],
                                  units: [champions.kassadin, champions.reksai, champions.khazix, champions.akali, champions.pyke, champions.rengar, champions.evelynn],
@@ -379,7 +368,7 @@ class TeamComps {
         // MARK: DEMON OF THE VOID
         demonOfTheVoid = TeamComp(name: "Demon of the Void",
                                         tier: .A,
-                                        patch: .nineOneSeven,
+                                        patch: TeamCompPatch.nineOneSeven.rawValue,
                                         earlyUnits: [champions.kassadin, champions.reksai, champions.blitzcrank, champions.khazix],
                                         midUnits: [champions.morgana, champions.varus, champions.chogath, champions.kassadin, champions.twistedFate, champions.evelynn],
                                         units: [champions.reksai, champions.chogath, champions.kassadin, champions.morgana, champions.aurelionSol, champions.brand, champions.evelynn],
@@ -392,7 +381,7 @@ class TeamComps {
         // MARK: The MEATIEST WALL OF ALL
         theMeatiestWallOfAll = TeamComp(name: "The Meatiest Wall of All",
                                   tier: .A,
-                                  patch: .nineOneSeven,
+                                  patch: TeamCompPatch.nineOneSeven.rawValue,
                                   earlyUnits: [champions.nidalee, champions.jayce, champions.elise, champions.warwick],
                                   midUnits: [champions.nidalee, champions.jayce, champions.elise, champions.warwick, champions.vi, champions.varus],
                                   units: [champions.nidalee, champions.gnar, champions.swain, champions.elise, champions.jayce, champions.shyvana, champions.pantheon, champions.leona],
@@ -404,8 +393,8 @@ class TeamComps {
         
         // MARK: TEENAGE MUTANT NINJA ASSASSINS
         teenageMutantNinjaAssassins = TeamComp(name: "Teenage Mutant Ninja Assassins",
-                                        tier: .A,
-                                        patch: .nineOneNine,
+                                        tier: .B,
+                                        patch: TeamCompPatch.nineOneNine.rawValue,
                                         earlyUnits: [champions.pyke, champions.zed, champions.khazix, champions.warwick],
                                         midUnits: [champions.brand, champions.kennen, champions.lissandra, champions.pyke, champions.zed, champions.khazix],
                                         units: [champions.rengar, champions.evelynn, champions.kennen, champions.shen, champions.zed, champions.pyke, champions.akali],
@@ -427,7 +416,7 @@ class TeamComps {
         // MARK: YORDELLINI
         yordellini = TeamComp(name: "Yordellini",
         tier: .A,
-        patch: .nineOneSeven,
+        patch: TeamCompPatch.nineOneSeven.rawValue,
         earlyUnits: [champions.tristana, champions.lucian, champions.garen, champions.darius],
         midUnits: [champions.poppy, champions.kennen, champions.garen, champions.darius, champions.mordekaiser, champions.lulu],
         units: [champions.tristana, champions.ahri, champions.kennen, champions.poppy, champions.lulu, champions.veigar, champions.gnar],
@@ -437,32 +426,11 @@ class TeamComps {
         ,
         ], webLink: "https://tft.mobalytics.gg/team-comp/Yordellini")
         
-        // MARK: DRAGON SORCERERS
-        dragonSorcerers = TeamComp(name: "Dragon Sorcerers",
-                              tier: .S,
-                              patch: .nineOneNine,
-                              earlyUnits: [champions.elise, champions.warwick, champions.nidalee, champions.jayce],
-                              midUnits: [champions.nidalee, champions.gnar, champions.elise, champions.warwick, champions.kennen, champions.lulu],
-                              units: [champions.gnar, champions.nidalee,champions.lulu, champions.shyvana, champions.twistedFate, champions.kennen, champions.aurelionSol],
-                              carries: [champions.kennen, champions.shyvana, champions.aurelionSol],
-                              carryItems: [champions.kennen : [items.guardianAngel ,items.morellonomicon, items.redemption],
-                                           champions.aurelionSol : [items.morellonomicon],
-                                           champions.shyvana : [items.guardianAngel, items.warmogsArmor],
-                                            ],
-                              teamCompPositions: TeamCompPositions(champsPositions: [1 : champions.nidalee,
-                                                                                     2 : champions.kennen,
-                                                                                     3 : champions.shyvana,
-                                                                                     8 : champions.lulu,
-                                                                                     9 : champions.twistedFate,
-                                                                                     10 : champions.gnar,
-                                                                                     15 : champions.aurelionSol] ),
-                              webLink: "https://tft.mobalytics.gg/team-comp/Dragon_Sorcerers")
-        
         
         // MARK: ICE QUEEN LISSANDRA
         iceQueenLissandra = TeamComp(name: "Ice Queen Lissandra",
                               tier: .A,
-                              patch: .nineOneSeven,
+                              patch: TeamCompPatch.nineOneSeven.rawValue,
                               earlyUnits: [champions.lissandra, champions.garen, champions.darius, champions.braum],
                               midUnits: [champions.brand, champions.lissandra, champions.kennen, champions.lulu, champions.poppy],
                               units: [champions.brand, champions.lissandra, champions.kennen, champions.gnar, champions.poppy, champions.sejuani],
@@ -474,8 +442,8 @@ class TeamComps {
         
         // MARK: WILD SORCERERS
         wildSorcerers = TeamComp(name: "Wild Sorcerers",
-                              tier: .A,
-                              patch: .nineOneNine,
+                              tier: .B,
+                              patch: TeamCompPatch.nineOneNine.rawValue,
                               earlyUnits: [champions.warwick, champions.shyvana, champions.nidalee, champions.jayce],
                               midUnits: [champions.nidalee, champions.gnar, champions.shyvana, champions.warwick, champions.ahri, champions.twistedFate],
                               units: [champions.gnar, champions.nidalee, champions.shyvana, champions.twistedFate, champions.warwick, champions.ahri, champions.aurelionSol],
@@ -497,8 +465,8 @@ class TeamComps {
         
         // MARK: HYPER KNIGHTS
         hyperKnights = TeamComp(name: "Hyper Knights",
-                              tier: .A,
-                              patch: .nineOneNine,
+                              tier: .B,
+                              patch: TeamCompPatch.nineOneNine.rawValue,
                               earlyUnits: [champions.darius, champions.garen, champions.varus, champions.vayne],
                               midUnits: [champions.darius, champions.garen, champions.mordekaiser, champions.poppy, champions.varus, champions.vayne],
                               units: [champions.darius, champions.garen, champions.kindred, champions.mordekaiser, champions.poppy, champions.sejuani, champions.vayne],
@@ -520,7 +488,7 @@ class TeamComps {
         // MARK: ELEMENTAL RANGERS
            elementalRangers = TeamComp(name: "Elemental Rangers",
                                  tier: .B,
-                                 patch: .nineOneNine,
+                                 patch: TeamCompPatch.nineOneNine.rawValue,
                                  earlyUnits: [champions.garen, champions.darius, champions.vayne, champions.varus],
                                  midUnits: [champions.vayne, champions.ashe, champions.lissandra, champions.kennen, champions.brand, champions.varus],
                                  units: [champions.vayne, champions.ashe, champions.brand, champions.sejuani, champions.lissandra, champions.varus, champions.kindred, champions.kennen],
@@ -542,8 +510,8 @@ class TeamComps {
         
         // MARK: WILD AND FREE ASSASSINS
         wildAndFreeAssassins = TeamComp(name: "Wild And Free Assassins",
-                              tier: .S,
-                              patch: .nineOneNine,
+                              tier: .A,
+                              patch: TeamCompPatch.nineOneNine.rawValue,
                               earlyUnits: [champions.jayce, champions.nidalee, champions.warwick, champions.elise],
                               midUnits: [champions.elise, champions.jayce, champions.nidalee, champions.vi, champions.warwick, champions.akali],
                               units: [champions.akali, champions.gnar, champions.jayce, champions.nidalee, champions.pyke, champions.rengar, champions.vi, champions.warwick],
@@ -564,7 +532,7 @@ class TeamComps {
         // MARK: HYPER SHIFTERS
                hyperShifters = TeamComp(name: "Hyper Shifters",
                                      tier: .B,
-                                     patch: .nineOneNine,
+                                     patch: TeamCompPatch.nineOneNine.rawValue,
                                      earlyUnits: [champions.camille, champions.jayce, champions.nidalee, champions.warwick],
                                      midUnits: [champions.camille, champions.elise, champions.jayce, champions.nidalee, champions.warwick],
                                      units: [champions.camille, champions.elise, champions.jayce, champions.nidalee, champions.warwick],
@@ -581,8 +549,8 @@ class TeamComps {
         
         // MARK: DRAGONS AND YORDLES
         dragonsAndYordles = TeamComp(name: "Dragons and Yordles",
-                              tier: .A,
-                              patch: .nineOneNine,
+                              tier: .B,
+                              patch: TeamCompPatch.nineOneNine.rawValue,
                               earlyUnits: [champions.elise, champions.warwick, champions.nidalee, champions.jayce],
                               midUnits: [champions.nidalee, champions.gnar, champions.elise, champions.warwick, champions.kennen, champions.lulu],
                               units: [champions.gnar, champions.nidalee, champions.shyvana, champions.twistedFate, champions.kennen, champions.lulu, champions.aurelionSol],
@@ -600,6 +568,50 @@ class TeamComps {
                               15 : champions.aurelionSol,
                               ]) ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Dragons_and_Yordles")
+        
+        // MARK: THE WALL
+        theWall = TeamComp(name: "The Wall",
+                              tier: .A,
+                              patch: TeamCompPatch.nineTwoZero.rawValue,
+                              earlyUnits: [champions.darius, champions.garen, champions.lucian, champions.vayne],
+                              midUnits: [champions.aurelionSol, champions.braum, champions.darius, champions.garen, champions.leona, champions.shyvana],
+                              units: [champions.aurelionSol, champions.braum, champions.darius, champions.garen, champions.leona, champions.poppy, champions.sejuani, champions.shyvana],
+                              carries: [champions.shyvana, champions.aurelionSol],
+                              carryItems: [champions.shyvana : [items.guardianAngel, items.redemption, items.thornmail],
+                                           champions.aurelionSol : [items.ionicSpark, items.morellonomicon]],
+                              teamCompPositions: TeamCompPositions(champsPositions: [
+                              3 : champions.garen,
+                              4 : champions.shyvana,
+                              5 : champions.darius,
+                              11 : champions.leona,
+                              12 : champions.braum,
+                              15 : champions.poppy,
+                              18 : champions.aurelionSol,
+                              21 : champions.sejuani
+                              ]) ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/The_Wall")
+        
+        // MARK: VARUS GRAND MAGUS
+        varusGrandMagus = TeamComp(name: "Varus Grand Magus",
+                              tier: .A,
+                              patch: TeamCompPatch.nineTwoZero.rawValue,
+                              earlyUnits: [champions.darius, champions.garen, champions.varus, champions.vayne],
+                              midUnits: [champions.garen, champions.kindred, champions.mordekaiser, champions.poppy, champions.sejuani, champions.varus],
+                              units: [champions.aurelionSol, champions.kindred, champions.leona, champions.mordekaiser, champions.morgana, champions.pantheon, champions.sejuani, champions.varus],
+                              carries: [champions.varus, champions.sejuani],
+                              carryItems: [champions.varus : [items.rabadonsDeathcap, items.yuumi],
+                                           champions.sejuani : [items.guardianAngel, items.redemption]],
+                              teamCompPositions: TeamCompPositions(champsPositions: [
+                              1 : champions.leona,
+                              2 : champions.sejuani,
+                              8 : champions.varus,
+                              9 : champions.morgana,
+                              10 : champions.pantheon,
+                              15 : champions.kindred,
+                              16 : champions.aurelionSol,
+                              21 : champions.mordekaiser
+                              ]) ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Varus_Grand_Magus")
         
         
         
@@ -624,7 +636,7 @@ class TeamComps {
         // MARK: NOBLES
         nobles = TeamComp(name: "Nobles",
                           tier: .S,
-                          patch: .nineOneSixB,
+                          patch: TeamCompPatch.nineOneSixB.rawValue,
                           earlyUnits: [champions.garen, champions.vayne, champions.lucian],
                           midUnits: [champions.garen, champions.lucian, champions.vi, champions.jinx, champions.leona],
                           units: [champions.fiora, champions.garen, champions.vayne, champions.lucian, champions.vi, champions.jinx, champions.kayle, champions.leona],
@@ -633,7 +645,7 @@ class TeamComps {
         
         // MARK: RANGER KNIGHTS
         rangerKnights = TeamComp(name: "Ranger Knights",
-                                 tier: .S, patch: .nineOneFive,
+                                 tier: .S, patch: TeamCompPatch.nineOneFive.rawValue,
                                  earlyUnits: [champions.garen, champions.fiora, champions.vayne],
                                  midUnits: [champions.vayne, champions.varus, champions.braum, champions.ashe, champions.kindred, champions.leona],
                                  units: [champions.mordekaiser, champions.vayne, champions.varus, champions.braum, champions.ashe, champions.kindred, champions.leona, champions.kayle],
@@ -643,7 +655,7 @@ class TeamComps {
         // MARK: VOID SORCERERS
         voidSorcerers = TeamComp(name: "Void Sorcerers",
                                  tier: .S,
-                                 patch: .nineOneSixB,
+                                 patch: TeamCompPatch.nineOneSixB.rawValue,
                                  earlyUnits: [champions.kassadin, champions.khazix, champions.reksai],
                                  midUnits: [champions.kassadin, champions.khazix, champions.warwick, champions.ahri, champions.reksai],
                                  units: [champions.kassadin, champions.blitzcrank, champions.reksai, champions.vi, champions.aurelionSol, champions.chogath, champions.jinx, champions.karthus],
@@ -656,7 +668,7 @@ class TeamComps {
         // MARK: VOID BRAWLERS
         voidBrawlers = TeamComp(name: "Void Brawlers",
                                 tier: .S,
-                                patch: .nineOneSixB,
+                                patch: TeamCompPatch.nineOneSixB.rawValue,
                                 earlyUnits: [champions.kassadin, champions.khazix, champions.reksai],
                                 midUnits: [champions.kassadin, champions.blitzcrank, champions.reksai, champions.vi, champions.chogath],
                                 units: [champions.kassadin, champions.reksai, champions.blitzcrank, champions.vi, champions.chogath, champions.jinx, champions.missFortune],
@@ -669,7 +681,7 @@ class TeamComps {
         // MARK: JUNGLE VOID
         jungleVoid = TeamComp(name: "Jungle Void",
                               tier: .S,
-                              patch: .nineOneFiveB,
+                              patch: TeamCompPatch.nineOneFiveB.rawValue,
                               earlyUnits: [champions.kassadin, champions.khazix, champions.reksai],
                               midUnits: [champions.warwick, champions.khazix, champions.blitzcrank, champions.reksai, champions.chogath],
                               units: [champions.khazix, champions.warwick, champions.blitzcrank, champions.rengar, champions.reksai, champions.chogath, champions.akali],
@@ -680,7 +692,7 @@ class TeamComps {
         // MARK: FULL SORECERERS
         fullSorcerers = TeamComp(name: "Full Sorcerers",
                                  tier: .S,
-                                 patch: .nineOneFiveB,
+                                 patch: TeamCompPatch.nineOneFiveB.rawValue,
                                  earlyUnits: [champions.kassadin, champions.khazix, champions.reksai],
                                  midUnits: [champions.kassadin, champions.lulu, champions.veigar, champions.morgana, champions.poppy],
                                  units: [champions.mordekaiser, champions.lulu, champions.ahri, champions.veigar, champions.poppy, champions.morgana, champions.aurelionSol, champions.karthus],
@@ -691,7 +703,7 @@ class TeamComps {
         // MARK: PROTECT DRAVEN
         protectDraven = TeamComp(name: "Protect Draven",
                                  tier: .S,
-                                 patch: .nineOneFiveB,
+                                 patch: TeamCompPatch.nineOneFiveB.rawValue,
                                  earlyUnits: [champions.mordekaiser, champions.darius, champions.garen],
                                  midUnits: [champions.garen, champions.darius, champions.braum, champions.leona, champions.draven],
                                  units: [champions.mordekaiser, champions.darius, champions.braum, champions.draven, champions.leona, champions.sejuani, champions.karthus, champions.kayle],
@@ -702,7 +714,7 @@ class TeamComps {
         // MARK: MAGICAL YORDLES
         magicalYordles = TeamComp(name: "Magical Yordles",
                                   tier: .A,
-                                  patch: .nineOneSixB,
+                                  patch: TeamCompPatch.nineOneSixB.rawValue,
                                   earlyUnits: [champions.fiora, champions.garen, champions.lucian],
                                   midUnits: [champions.garen, champions.twistedFate, champions.kennen, champions.poppy, champions.morgana, champions.veigar],
                                   units: [champions.twistedFate, champions.kennen, champions.morgana, champions.poppy, champions.brand, champions.gnar, champions.karthus, champions.anivia],
@@ -714,7 +726,7 @@ class TeamComps {
         // MARK: botrkGunslingers
         botrkGunslingers = TeamComp(name: "BotRK Gunslingers",
                                     tier: .A,
-                                    patch: .nineOneSixB,
+                                    patch: TeamCompPatch.nineOneSixB.rawValue,
                                     earlyUnits: [champions.graves, champions.tristana, champions.lucian],
                                     midUnits: [champions.graves, champions.tristana, champions.lucian, champions.pyke, champions.gangplank],
                                     units: [champions.camille, champions.tristana, champions.shen, champions.gangplank, champions.draven, champions.jinx, champions.missFortune, champions.yasuo],
@@ -725,7 +737,7 @@ class TeamComps {
         // MARK: DEMON SORCERER
         demonSorcerer = TeamComp(name: "Demon Sorcerer",
                                  tier: .A,
-                                 patch: .nineOneSixB,
+                                 patch: TeamCompPatch.nineOneSixB.rawValue,
                                  earlyUnits: [champions.garen, champions.vayne, champions.lucian],
                                  midUnits: [champions.varus, champions.aatrox, champions.evelynn, champions.kennen, champions.morgana],
                                  units: [champions.twistedFate, champions.aatrox, champions.kennen, champions.morgana, champions.brand, champions.anivia, champions.karthus, champions.swain],
@@ -738,7 +750,7 @@ class TeamComps {
         // MARK: NINJA ELEMENTALISTS
         ninjaElementalists = TeamComp(name: "Ninja Elementalists",
                                       tier: .B,
-                                      patch: .nineOneNine,
+                                      patch: TeamCompPatch.nineOneNine.rawValue,
                                       earlyUnits: [champions.pyke, champions.zed, champions.khazix, champions.kassadin],
                                       midUnits: [champions.akali, champions.brand, champions.evelynn, champions.kennen, champions.lissandra, champions.pyke],
                                       units: [champions.akali, champions.brand, champions.zed, champions.kennen, champions.lissandra, champions.pyke, champions.shen],
@@ -761,7 +773,7 @@ class TeamComps {
         // MARK: SHAPESHIFTERS
         shapeShifters = TeamComp(name: "Shapeshifters",
                                  tier: .A,
-                                 patch: .nineOneSixB,
+                                 patch: TeamCompPatch.nineOneSixB.rawValue,
                                  earlyUnits: [champions.elise, champions.jayce, champions.nidalee],
                                  midUnits: [champions.ahri, champions.jayce, champions.nidalee, champions.vi, champions.gnar],
                                  units: [champions.elise, champions.jayce, champions.nidalee, champions.shyvana, champions.aurelionSol, champions.draven, champions.gnar, champions.swain],

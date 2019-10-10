@@ -14,7 +14,7 @@ struct TeamCompLowData: Equatable, Codable {
     var id: Int?
     var name: String
     var tier: TeamCompTier
-    var patch: TeamCompPatch?
+    var patch: String
     var unitNamesCost: [String : Int]
     var carryItems: [String : [String]]
     
