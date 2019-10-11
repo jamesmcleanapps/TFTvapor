@@ -23,7 +23,7 @@ class TeamComps {
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
             iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
-            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus
+            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia
         ]
     }()
     
@@ -71,6 +71,8 @@ class TeamComps {
     
     let theWall: TeamComp
     let varusGrandMagus: TeamComp
+    
+    let voidExodia: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -612,6 +614,28 @@ class TeamComps {
                               21 : champions.mordekaiser
                               ]) ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Varus_Grand_Magus")
+        
+        // MARK: VOID EXODIA
+        voidExodia = TeamComp(name: "Void Exodia",
+                              tier: .A,
+                              patch: TeamCompPatch.nineTwoZero.rawValue,
+                              earlyUnits: [champions.blitzcrank, champions.khazix, champions.reksai, champions.pyke],
+                              midUnits: [champions.akali, champions.blitzcrank, champions.khazix, champions.pyke, champions.reksai, champions.jinx],
+                              units: [champions.akali, champions.blitzcrank, champions.chogath, champions.jinx, champions.kaisa, champions.khazix, champions.reksai, champions.vi],
+                              carries: [champions.kaisa, champions.jinx],
+                              carryItems: [champions.kaisa : [items.guinsoosRageblade, items.giantSlayer, items.quicksilver],
+                                           champions.jinx : [items.guinsoosRageblade, items.giantSlayer, items.quicksilver]],
+                              teamCompPositions: TeamCompPositions(champsPositions: [
+                              13 : champions.chogath,
+                              15 : champions.vi,
+                              16 : champions.kaisa,
+                              17 : champions.akali,
+                              18 : champions.reksai,
+                              19 : champions.jinx,
+                              20 : champions.khazix,
+                              21 : champions.blitzcrank
+                              ]) ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Void_Exodia")
         
         
         
