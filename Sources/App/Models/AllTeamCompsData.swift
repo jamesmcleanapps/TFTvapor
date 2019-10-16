@@ -15,7 +15,7 @@ class TeamComps {
     lazy var allTeamComps: [TeamComp] = {
         return [
             elementalSorcerers, ultimateRangerFormation, pickABlueCard, ahriAndTheBrawlers, theHunterAndThePredator,
-            ninjaElementalists, burstRangers, dragonDefenders, imperialGuard,
+            ninjaElementalists, burstRangers, dragonGuardians, imperialGuard,
             polarBearFrenzy, pirateSwashbucklers, rangerKnights, voidSorcerers, voidBrawlers,
             jungleVoid, fullSorcerers, protectDraven, magicalYordles,
             lordDraven, ladyJinx, jinxsPirateBrigade, theKnightsVow, knightlyRangers, jinxAndTheMeatwall,
@@ -36,7 +36,7 @@ class TeamComps {
     
     let ninjaElementalists: TeamComp
     let burstRangers: TeamComp
-    let dragonDefenders: TeamComp
+    let dragonGuardians: TeamComp
     let imperialGuard: TeamComp
     
     let polarBearFrenzy: TeamComp
@@ -173,37 +173,39 @@ class TeamComps {
                                              champions.sejuani : [items.guardianAngel, items.morellonomicon]  ],
                                 webLink: "https://tft.mobalytics.gg/team-comp/demon-ranger-glacial")
         
-        // MARK: DRAGON DEFENDERS
-        dragonDefenders = TeamComp(name: "Dragon Defenders",
-                                   tier: .B,
-                                   patch: TeamCompPatch.nineOneFive.rawValue,
-                                   earlyUnits: [champions.warwick, champions.blitzcrank, champions.nidalee],
-                                   midUnits: [champions.nidalee, champions.shyvana, champions.elise, champions.garen, champions.darius],
-                                   units: [champions.gnar, champions.nidalee, champions.shyvana, champions.braum, champions.karthus, champions.lulu, champions.aurelionSol, champions.leona],
-                                   carries: [champions.shyvana, champions.gnar, champions.braum],
-                                   carryItems: [champions.shyvana : [items.warmogsArmor, items.thornmail, items.hextechGunblade],
-                                                champions.gnar : [items.statikkShiv, items.statikkShiv],
-                                                champions.braum : [items.thornmail] ], webLink: "https://tft.mobalytics.gg/team-comp/guardian-dragons")
+        // MARK: DRAGON GAURDIANS
+        dragonGuardians = TeamComp(name: "Dragon Guardians",
+                                   tier: .S,
+                                   patch: TeamCompPatch.nineTwoZero.rawValue,
+                                   earlyUnits: [champions.darius, champions.garen, champions.lucian, champions.mordekaiser],
+                                   midUnits: [champions.darius, champions.garen, champions.poppy, champions.mordekaiser, champions.sejuani, champions.leona],
+                                   units: [champions.darius, champions.poppy, champions.sejuani, champions.pantheon, champions.leona, champions.mordekaiser, champions.aurelionSol, champions.karthus],
+                                   carries: [champions.pantheon, champions.aurelionSol],
+                                   carryItems: [champions.pantheon : [items.yuumi, items.thornmail, items.thornmail],
+                                                champions.aurelionSol : [items.morellonomicon, items.rabadonsDeathcap] ], webLink: nil)
         
         // MARK: THE IMPERIAL GUARD
-        imperialGuard = TeamComp(name: "The Imperial Guard",
+        imperialGuard = TeamComp(name: "Imperial Knights",
                                  tier: .S,
-                                 patch: TeamCompPatch.nineOneNine.rawValue,
+                                 patch: TeamCompPatch.nineTwoZero.rawValue,
                                  earlyUnits: [champions.darius, champions.garen, champions.fiora, champions.lucian],
                                  midUnits:  [champions.garen, champions.darius, champions.draven, champions.sejuani, champions.poppy, champions.shen],
-                                 units: [champions.draven, champions.darius, champions.swain, champions.katarina, champions.garen, champions.poppy, champions.sejuani],
-                                 carries: [champions.draven, champions.swain],
+                                 units: [champions.draven, champions.darius, champions.swain, champions.katarina, champions.kayle, champions.poppy, champions.sejuani, champions.mordekaiser],
+                                 carries: [champions.draven, champions.swain, champions.katarina],
                                  carryItems: [
                                     champions.draven : [items.guardianAngel, items.rapidFirecannon, items.bloodthirster],
-                                    champions.swain : [items.dragonsClaw, items.morellonomicon, items.guardianAngel] ],
-                                 teamCompPositions: TeamCompPositions(champsPositions: [1 : champions.swain,
-                                                                                        2 : champions.darius,
-                                                                                        3 : champions.sejuani,
-                                                                                        4 : champions.poppy,
-                                                                                        15 : champions.draven,
-                                                                                        18 : champions.katarina,
-                                                                                        21 : champions.garen]) ,
-                                 webLink: "https://tft.mobalytics.gg/team-comp/The_Imperial_Guard")
+                                    champions.swain : [items.guardianAngel, items.morellonomicon],
+                                    champions.katarina : [items.knightsVow, items.frozenHeart, items.frozenHeart] ],
+                                 teamCompPositions: TeamCompPositions(champsPositions: [4 : champions.sejuani,
+                                                                                        15: champions.katarina,
+                                                                                        16 : champions.mordekaiser,
+                                                                                        17 : champions.kayle,
+                                                                                        18 : champions.draven,
+                                                                                        19 : champions.poppy,
+                                                                                        20 : champions.swain,
+                                                                                        21 : champions.darius
+                                                                                        ]) ,
+                                 webLink: nil)
         
         // MARK: POLAR BEAR FRENZY
         polarBearFrenzy = TeamComp(name: "Polar Bear Frenzy",
@@ -323,24 +325,24 @@ class TeamComps {
         // MARK: JINX AND THE MEATWALL
         jinxAndTheMeatwall = TeamComp(name: "Jinx and the Meat Wall",
                                       tier: .A,
-                                      patch: TeamCompPatch.nineOneNine.rawValue,
+                                      patch: TeamCompPatch.nineTwoZero.rawValue,
                                       earlyUnits: [champions.blitzcrank, champions.lucian, champions.warwick, champions.reksai],
                                       midUnits: [champions.blitzcrank, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.warwick],
                                       units: [champions.blitzcrank, champions.chogath, champions.jinx, champions.lucian, champions.reksai, champions.vi, champions.volibear, champions.warwick],
                                       carries: [champions.blitzcrank, champions.jinx],
-                                      carryItems: [champions.jinx : [items.rapidFirecannon, items.hextechGunblade, items.infinityEdge],
+                                      carryItems: [champions.jinx : [items.giantSlayer, items.runaansHurricane, items.trapClaw],
                                                    champions.blitzcrank : [items.ionicSpark, items.ionicSpark] ],
                                       teamCompPositions: TeamCompPositions(champsPositions: [
-                                        9 : champions.vi,
-                                        10 : champions.chogath,
-                                        11 : champions.blitzcrank,
-                                        15 : champions.volibear,
-                                        17 : champions.lucian,
-                                        18 : champions.jinx,
-                                        19 : champions.reksai,
-                                        21 : champions.warwick
+                                        15 : champions.vi,
+                                        6 : champions.reksai,
+                                        7 : champions.warwick,
+                                        13 : champions.chogath,
+                                        14 : champions.blitzcrank,
+                                        19 : champions.volibear,
+                                        20 : champions.lucian,
+                                        21 : champions.jinx
                                       ]),
-                                      webLink: "https://tft.mobalytics.gg/team-comp/Jinx_and_the_Meat_Wall")
+                                      webLink: nil)
         
         // MARK: PROTECT THE EVE
         protectTheEve = TeamComp(name: "Protect the Eve",
