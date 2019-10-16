@@ -182,7 +182,18 @@ class TeamComps {
                                    units: [champions.darius, champions.poppy, champions.sejuani, champions.pantheon, champions.leona, champions.mordekaiser, champions.aurelionSol, champions.karthus],
                                    carries: [champions.pantheon, champions.aurelionSol],
                                    carryItems: [champions.pantheon : [items.yuumi, items.thornmail, items.thornmail],
-                                                champions.aurelionSol : [items.morellonomicon, items.rabadonsDeathcap] ], webLink: nil)
+                                                champions.aurelionSol : [items.morellonomicon, items.rabadonsDeathcap] ],
+                                   teamCompPositions: TeamCompPositions(champsPositions: [
+                                    1 : champions.poppy,
+                                   4 : champions.pantheon,
+                                   5 : champions.sejuani,
+                                   8 : champions.darius,
+                                   12 : champions.leona,
+                                   14 : champions.mordekaiser,
+                                   18 : champions.karthus,
+                                   19 : champions.aurelionSol
+                                   ]) ,
+                                   webLink: nil)
         
         // MARK: THE IMPERIAL GUARD
         imperialGuard = TeamComp(name: "Imperial Knights",
