@@ -667,10 +667,10 @@ class TeamComps {
                               3 : champions.shyvana,
                               4 : champions.morgana,
                               5 : champions.swain,
-                              10 : champions.leona,
-                              11 : champions.pantheon,
-                              17 : champions.ahri,
-                              18 : champions.aurelionSol,
+                              11 : champions.leona,
+                              12 : champions.pantheon,
+                              18 : champions.ahri,
+                              19 : champions.aurelionSol,
                               13 : champions.gnar
                               ]) ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Iron_Dragons")
