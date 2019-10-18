@@ -23,7 +23,7 @@ class TeamComps {
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
             iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
-            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia
+            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons
         ]
     }()
     
@@ -73,6 +73,8 @@ class TeamComps {
     let varusGrandMagus: TeamComp
     
     let voidExodia: TeamComp
+    
+    let ironDragons: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -457,8 +459,8 @@ class TeamComps {
         
         // MARK: WILD SORCERERS
         wildSorcerers = TeamComp(name: "Wild Sorcerers",
-                              tier: .B,
-                              patch: TeamCompPatch.nineOneNine.rawValue,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoZero.rawValue,
                               earlyUnits: [champions.warwick, champions.shyvana, champions.nidalee, champions.jayce],
                               midUnits: [champions.nidalee, champions.gnar, champions.shyvana, champions.warwick, champions.ahri, champions.twistedFate],
                               units: [champions.gnar, champions.nidalee, champions.shyvana, champions.twistedFate, champions.warwick, champions.ahri, champions.aurelionSol],
@@ -649,6 +651,29 @@ class TeamComps {
                               21 : champions.blitzcrank
                               ]) ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Void_Exodia")
+        
+        // MARK: IRON DRAGONS
+        ironDragons = TeamComp(name: "Iron Dragons",
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoZero.rawValue,
+                              earlyUnits: [champions.elise, champions.jayce, champions.nidalee, champions.warwick],
+                              midUnits: [champions.aurelionSol, champions.blitzcrank, champions.elise, champions.nidalee, champions.shyvana, champions.warwick],
+                              units: [champions.ahri, champions.aurelionSol, champions.gnar, champions.leona, champions.morgana, champions.pantheon, champions.shyvana, champions.swain],
+                              carries: [champions.gnar, champions.aurelionSol, champions.swain],
+                              carryItems: [champions.gnar : [items.guardianAngel, items.redemption],
+                                           champions.aurelionSol : [items.morellonomicon],
+                                           champions.swain : [items.guardianAngel, items.morellonomicon] ],
+                              teamCompPositions: TeamCompPositions(champsPositions: [
+                              3 : champions.shyvana,
+                              4 : champions.morgana,
+                              5 : champions.swain,
+                              10 : champions.leona,
+                              11 : champions.pantheon,
+                              17 : champions.ahri,
+                              18 : champions.aurelionSol,
+                              13 : champions.gnar
+                              ]) ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Iron_Dragons")
         
         
         
