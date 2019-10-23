@@ -40,7 +40,7 @@ enum ChampionOrigin: String, CaseIterable, Codable, ReflectionDecodable {
             
         case "hextech":
             return OriginDetails(
-                main: "At the start of combat, launch a pulse bomb that temporarily disables nearby enemy items for 7 seconds.",
+                main: "At the start of combat, launch a pulse bomb that temporarily disables nearby enemy items for 5 seconds.",
                 benefit1: "2  -  Within 1 Hex",
                 benefit2: "4  -  Within 2 Hexes",
                 benefit3: nil)

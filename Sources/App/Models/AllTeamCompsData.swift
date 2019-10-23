@@ -23,7 +23,7 @@ class TeamComps {
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
             iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
-            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons
+            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons, imperialShifters
         ]
     }()
     
@@ -75,6 +75,8 @@ class TeamComps {
     let voidExodia: TeamComp
     
     let ironDragons: TeamComp
+    
+    let imperialShifters: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -674,6 +676,19 @@ class TeamComps {
                               13 : champions.gnar
                               ]) ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Iron_Dragons")
+        
+        // MARK: IMPERIAL SHIFTERS
+        imperialShifters = TeamComp(name: "Imperial Shifters",
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoZero.rawValue,
+                              earlyUnits: [champions.darius, champions.garen, champions.nidalee, champions.warwick],
+                              midUnits: [champions.blitzcrank, champions.darius, champions.garen, champions.katarina, champions.nidalee, champions.warwick],
+                              units: [champions.darius, champions.draven, champions.gnar, champions.katarina, champions.kindred, champions.mordekaiser, champions.shyvana, champions.swain],
+                              carries: [champions.draven, champions.swain],
+                              carryItems: [champions.draven : [items.guardianAngel, items.redemption],
+                                           champions.swain : [items.morellonomicon] ],
+                              teamCompPositions:  nil ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Imperial_Shifters")
         
         
         

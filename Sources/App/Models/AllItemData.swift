@@ -135,7 +135,7 @@ class Items {
         deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 15 Attack Damage until end of combat (Stacks infinitely, starts with 1 stack).", rating: .A, recipe: [bfSword, bfSword])
         
         // MARK: SPEAR OF SHOJIN
-        spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 15% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
+        spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 18% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
         
         // MARK: GIANT SLAYER
         giantSlayer = CombinedItem(name: "giant slayer", bonus: "Attacks deal an additional 5% enemy max Health as True Damage.", rating: .S, recipe: [bfSword, recurveBow])
@@ -153,7 +153,7 @@ class Items {
         frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 35% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
         
         // MARK: LOCKET OF THE IRON SOLARI
-        locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 7 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
+        locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 8 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
         
         // MARK: PHANTOM DANCER
         phantomDancer = CombinedItem(name: "phantom dancer", bonus: "Wearer dodges all Critical Strikes", rating: .A, recipe: [chainVest, recurveBow])
@@ -180,7 +180,7 @@ class Items {
         morellonomicon = CombinedItem(name: "morellonomicon", bonus: "Spells deal burn damage equal to 20% of the enemy's maximum health over 10 seconds. Burned units cannot heal.", rating: .A, recipe: [giantsBelt, needlesslyLargeRod])
         
         // MARK: REDEMPTION
-        redemption = CombinedItem(name: "redemption", bonus: "At 25% health, heal all nearby allies for 1200 health", rating: .B, recipe: [giantsBelt, tearOfTheGoddess])
+        redemption = CombinedItem(name: "redemption", bonus: "At 30% health, heal all nearby allies for 1200 health", rating: .B, recipe: [giantsBelt, tearOfTheGoddess])
         
         // MARK: WARMOGS ARMOR
         warmogsArmor = CombinedItem(name: "warmog's armor", bonus: "Wearer regenerates 6% max health per second", rating: .A, recipe: [giantsBelt, giantsBelt])
@@ -254,7 +254,7 @@ class Items {
         infinityEdge = CombinedItem(name: "infinity edge", bonus: "20% Critical Strike chance, +125% Critical Strike damage", rating: .A, recipe: [sparringGloves, bfSword])
         
         // MARK: REPEATING CROSSBOW
-        repeatingCrossbow = CombinedItem(name: "repeating crossbow", bonus: "On death, this jumps to an allied champion and grants an additional 20% Attack Speed & Critical Strike chance", rating: .B, recipe: [sparringGloves, recurveBow])
+        repeatingCrossbow = CombinedItem(name: "repeating crossbow", bonus: "On death, this jumps to an allied champion and grants an additional 30% Attack Speed & Critical Strike chance", rating: .B, recipe: [sparringGloves, recurveBow])
         
         // MARK: JEWELLED GAUNTLET
         jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Your spells can crit", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])
@@ -269,7 +269,7 @@ class Items {
         quicksilver = CombinedItem(name: "quicksilver", bonus: "When CC’d, cleanse the CC. 3 second cooldown.", rating: .A, recipe: [sparringGloves, negatronCloak])
         
         // MARK: TRAP CLAW
-        trapClaw = CombinedItem(name: "trap claw", bonus: "On combat begin, gain a spell shield. When it breaks, stun the champion who broke the shield.", rating: .B, recipe: [sparringGloves, giantsBelt])
+        trapClaw = CombinedItem(name: "trap claw", bonus: "On combat begin, gain a spell shield. When it breaks, stun the champion who broke the shield for 4 seconds.", rating: .B, recipe: [sparringGloves, giantsBelt])
         
         // MARK: THIEF'S GLOVES
         thiefsGloves = CombinedItem(name: "thief's gloves", bonus: "This item takes all three item slots. On round begin, copy two random items.", rating: .A, recipe: [sparringGloves, sparringGloves])
