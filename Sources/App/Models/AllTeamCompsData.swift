@@ -23,7 +23,7 @@ class TeamComps {
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
             iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
-            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons, imperialShifters
+            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons, imperialShifters, jinxKnights
         ]
     }()
     
@@ -77,6 +77,8 @@ class TeamComps {
     let ironDragons: TeamComp
     
     let imperialShifters: TeamComp
+    
+    let jinxKnights: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -689,6 +691,18 @@ class TeamComps {
                                            champions.swain : [items.morellonomicon] ],
                               teamCompPositions:  nil ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Imperial_Shifters")
+        
+        // MARK: JINX KNIGHTS
+        jinxKnights = TeamComp(name: "Jinx Knights",
+                              tier: .A,
+                              patch: TeamCompPatch.nineTwoOne.rawValue,
+                              earlyUnits: [champions.fiora, champions.garen, champions.lucian, champions.mordekaiser],
+                              midUnits: [champions.fiora, champions.garen, champions.kindred, champions.lucian, champions.mordekaiser, champions.tristana],
+                              units: [champions.jinx, champions.kayle, champions.kindred, champions.lucian, champions.mordekaiser, champions.poppy, champions.sejuani, champions.vi],
+                              carries: [champions.jinx],
+                              carryItems: [champions.jinx : [items.guinsoosRageblade, items.giantSlayer, items.dragonsClaw] ],
+                              teamCompPositions:  nil ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/Jinx_Knights")
         
         
         
