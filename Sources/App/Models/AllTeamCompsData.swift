@@ -23,7 +23,7 @@ class TeamComps {
             protectTheEve,  assassinsFromTheVoid,
             demonOfTheVoid, theMeatiestWallOfAll, teenageMutantNinjaAssassins, yordellini,
             iceQueenLissandra, wildSorcerers, hyperKnights, elementalRangers, wildAndFreeAssassins,
-            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons, imperialShifters, jinxKnights
+            hyperShifters, dragonsAndYordles, theWall, varusGrandMagus, voidExodia, ironDragons, imperialShifters, jinxKnights, theOccult
         ]
     }()
     
@@ -79,6 +79,8 @@ class TeamComps {
     let imperialShifters: TeamComp
     
     let jinxKnights: TeamComp
+    
+    let theOccult: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -703,6 +705,19 @@ class TeamComps {
                               carryItems: [champions.jinx : [items.guinsoosRageblade, items.giantSlayer, items.dragonsClaw] ],
                               teamCompPositions:  nil ,
                               webLink: "https://tft.mobalytics.gg/team-comp/Jinx_Knights")
+        
+        // MARK: THE OCCULT
+        theOccult = TeamComp(name: "The Occult",
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoOne.rawValue,
+                              earlyUnits: [champions.ahri, champions.darius, champions.garen, champions.nidalee],
+                              midUnits: [champions.ahri, champions.aurelionSol, champions.gnar, champions.lulu, champions.nidalee, champions.shyvana],
+                              units: [champions.ahri, champions.aurelionSol, champions.gnar, champions.lulu, champions.morgana, champions.shyvana, champions.swain, champions.veigar],
+                              carries: [champions.aurelionSol, champions.gnar],
+                              carryItems: [champions.aurelionSol : [items.morellonomicon, items.rabadonsDeathcap],
+                                           champions.gnar : [items.dragonsClaw, items.warmogsArmor, items.yuumi]],
+                              teamCompPositions:  nil ,
+                              webLink: "https://tft.mobalytics.gg/team-comp/The_Occult")
         
         
         

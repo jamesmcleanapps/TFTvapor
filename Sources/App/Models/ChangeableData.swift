@@ -3,16 +3,17 @@
 extension Champions {
     func setChampionRatings() {
         let sRating = [akali, aurelionSol, draven, gnar,
-                       jinx, kennen, kindred, pantheon,
-                       sejuani, swain]
-        let aRating = [aatrox, anivia, ashe,
-                       blitzcrank, brand, chogath, evelynn,
-                       kaisa, karthus, katarina, kayle, leona, lissandra,
-                        mordekaiser, poppy, rengar,
-                        shyvana, twistedFate, varus, vi, yasuo]
-        let bRating = [ahri, braum, darius, fiora,
+                       jinx, kaisa, kennen, kindred,
+                       pantheon, sejuani, swain]
+        let aRating = [aatrox, anivia, ashe, blitzcrank,
+                       brand, chogath, karthus, katarina,
+                       kayle, leona, lissandra, missFortune,
+                       mordekaiser,
+                       poppy, rengar, shyvana, twistedFate,
+                       varus, vi, yasuo]
+        let bRating = [ahri, braum, darius, evelynn, fiora,
                         gangplank, garen, kassadin, lucian,
-                        lulu, missFortune, morgana, nidalee,
+                        lulu, morgana, nidalee,
                         pyke, reksai, shen, tristana,
                         vayne, veigar, volibear, zed]
         
@@ -25,11 +26,25 @@ extension Champions {
 extension Items {
     
     func setItemRatings() {
-        let sRated = [bladeOfTheRuinedKing, guardianAngel, guinsoosRageblade,
-                      infinityEdge, morellonomicon, redemption, runaansHurricane, giantSlayer]
-        let aRated = [bloodthirster, darkin, dragonsClaw, forceOfNature, frozenHeart, hush, ionicSpark, phantomDancer, rabadonsDeathcap, rapidFirecannon, warmogsArmor, quicksilver, thiefsGloves, mittens]
-        let bRated = [cursedBlade, frozenMallet, hextechGunblade, knightsVow, locket, ludensEcho, redBuff, seraphsEmbrace, spearOfShojin, statikkShiv, swordBreaker, thornmail, titanicHydra, youmuusGhostblade, yuumi, zekesHerald, zephyr]
-        let cRated = [handOfJustice, icebornGauntlet, jeweledGauntlet, repeatingCrossbow, trapClaw]
+        let sRated = [
+            bladeOfTheRuinedKing, guardianAngel, guinsoosRageblade,
+            infinityEdge, knightsVow, morellonomicon, redemption, runaansHurricane,
+            giantSlayer]
+        let aRated = [
+            bloodthirster, darkin, dragonsClaw, forceOfNature,
+            frozenHeart, hush, ionicSpark, phantomDancer,
+            rabadonsDeathcap, rapidFirecannon, warmogsArmor, yuumi,
+            zephyr, trapClaw, thiefsGloves, mittens
+        ]
+        let bRated = [
+            cursedBlade, frozenMallet, hextechGunblade,
+            locket, ludensEcho, redBuff, seraphsEmbrace,
+            spearOfShojin, statikkShiv, swordBreaker, thornmail,
+            titanicHydra, youmuusGhostblade, zekesHerald
+        ]
+        let cRated = [
+            handOfJustice, icebornGauntlet, jeweledGauntlet, repeatingCrossbow, quicksilver
+        ]
         
         sRated.forEach { (item) in
             item.setRating(to: .S)
