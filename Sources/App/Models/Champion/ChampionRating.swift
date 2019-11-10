@@ -9,7 +9,7 @@ import Foundation
 import Vapor
 
 enum ChampionRating: String, CaseIterable, Codable, ReflectionDecodable {
-    case S,A,B,C
+    case S,A,B,C,D,E
     
 //    func getColorForLbl() -> UIColor {
 //        switch self {

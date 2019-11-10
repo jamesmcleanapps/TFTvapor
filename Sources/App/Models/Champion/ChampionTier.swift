@@ -3,7 +3,7 @@ import Vapor
 
 enum ChampionTier: String, Codable, ReflectionDecodable {
     
-    case one = "One", two = "Two", three = "Three", four = "Four", five = "Five"
+    case one = "One", two = "Two", three = "Three", four = "Four", five = "Five",  six = "Six", seven = "Seven"
     
     
     static func reflectDecoded() throws -> (ChampionTier, ChampionTier) {
@@ -22,6 +22,10 @@ enum ChampionTier: String, Codable, ReflectionDecodable {
             return 4
         case .five:
             return 5
+        case .six:
+            return 6
+        case .seven:
+            return 7
         }
     }
 }

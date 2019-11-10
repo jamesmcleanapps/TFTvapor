@@ -15,7 +15,7 @@ struct TeamCompPositions: Codable {
     var positions: [Champion?] = []
     
     init(champsPositions: [Int : Champion]) {
-        for i in 0..<21 {
+        for i in 0..<28 {
             positions.append(champsPositions[i + 1])
         }
     }

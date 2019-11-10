@@ -23,6 +23,28 @@ extension Champions {
     }
 }
 
+extension ChampionsSet2 {
+    func setChampionRatings() {
+        let sRating = [kindred, khazix, qiyana, masterYi,
+                       lux, sion, malzahar, diana]
+        let aRating = [azir, janna, nami, singed, vladimir, yorick, zed]
+        let bRating = [annie, brand, drMundo, ivern, maokai,jax, nocturne,
+                        olaf, syndra, zyra, soraka]
+        let cRating = [aatrox, ashe, ezreal, sivir, kogmaw, nautilus, renekton,
+                        neeko, leBlanc, nasus, vayne, yasuo, varus, twitch, veigar, taric,
+                        warwick, reksai, volibear]
+        let dRating = [ornn, skarner, thresh, braum]
+        let eRating = [taliyah]
+        
+        sRating.forEach { $0.rating = .S }
+        aRating.forEach { $0.rating = .A }
+        bRating.forEach { $0.rating = .B }
+        cRating.forEach { $0.rating = .C }
+        dRating.forEach { $0.rating = .D }
+        eRating.forEach { $0.rating = .E }
+    }
+}
+
 extension Items {
     
     func setItemRatings() {
@@ -44,6 +66,42 @@ extension Items {
         ]
         let cRated = [
             handOfJustice, icebornGauntlet, jeweledGauntlet, repeatingCrossbow, quicksilver
+        ]
+        
+        sRated.forEach { (item) in
+            item.setRating(to: .S)
+        }
+        
+        aRated.forEach { (item) in
+            item.setRating(to: .A)
+        }
+        
+        bRated.forEach { (item) in
+            item.setRating(to: .B)
+        }
+        
+        cRated.forEach { (item) in
+            item.setRating(to: .C)
+        }
+        
+    }
+    
+}
+
+extension ItemsSet2 {
+    
+    func setItemRatings() {
+        let sRated = [
+            bladeOfTheRuinedKing, icebornGauntlet, guinsoosRageblade, forceOfNature]
+        let aRated = [
+            handOfJustice, magesCap, infinityEdge, deathBlade, seraphsEmbrace, spearOfShojin,
+            zephyr,youmuusGhostblade, zekesHerald, thiefsGloves, phantomDancer, swordBreaker, morellonomicon, ludensEcho
+        ]
+        let bRated = [
+            bloodthirster, hush, frozenHeart, jeweledGauntlet, giantSlayer, ionicSpark, repeatingCrossbow, rabadonsDeathcap, runaansHurricane, rapidFirecannon, talismanOfLight, statikkShiv
+        ]
+        let cRated = [
+            redemption, trapClaw, infernosCinder, frozenMallet, guardianAngel, locket, hextechGunblade, redBuff, berserkersAxe, quicksilver, titanicHydra, thornmail, dragonsClaw, wardensMail
         ]
         
         sRated.forEach { (item) in

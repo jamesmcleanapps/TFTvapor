@@ -17,8 +17,10 @@ final class Champion: Codable, Hashable {
     var cost: Int
     var rating: ChampionRating
     var ultimate: Ultimate
-    var championOrigin: [ChampionOrigin]
-    var championClass: [ChampionClass]
+    var championOrigin: [ChampionOrigin] = []
+    var championClass: [ChampionClass] = []
+    var championElementSet2: [ChampionElementSet2] = []
+    var championClassSet2: [ChampionClassSet2] = []
     var bestItems: [CombinedItem]?
     var stats: Stats
     
@@ -33,6 +35,22 @@ final class Champion: Codable, Hashable {
         self.ultimate = ultimate
         self.championOrigin = championOrigin
         self.championClass = championClass
+        self.bestItems = bestItems
+        self.stats = stats
+        
+    }
+    
+    // initializer for set 2 Champ
+    init(name: String, nickname: String, tier: ChampionTier, cost: Int, rating: ChampionRating, ultimate: Ultimate, championElement: [ChampionElementSet2], championClass: [ChampionClassSet2], bestItems: [CombinedItem], stats: Stats) {
+        
+        self.name = name
+        self.nickname = nickname
+        self.tier = tier
+        self.cost = cost
+        self.rating = rating
+        self.ultimate = ultimate
+        self.championElementSet2 = championElement
+        self.championClassSet2 = championClass
         self.bestItems = bestItems
         self.stats = stats
         

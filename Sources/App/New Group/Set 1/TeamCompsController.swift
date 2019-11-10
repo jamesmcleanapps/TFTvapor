@@ -11,9 +11,9 @@ struct TeamCompsController: RouteCollection {
     func boot(router: Router) throws {
         let teamCompsRoute = router.grouped("api", "teamComps")
         teamCompsRoute.get(use: getAllTeamComps )
-        teamCompsRoute.get("lowData", use: getAllTeamCompsLowData)
+        teamCompsRoute.get("lowData", "set", String.parameter, use: getAllTeamCompsLowData)
         teamCompsRoute.get("names", use: getAllTeamCompsNames)
-        teamCompsRoute.get(String.parameter, use: getTeamCompWithName)
+        teamCompsRoute.get(String.parameter ,String.parameter, use: getTeamCompWithName)
         teamCompsRoute.get("lowData", String.parameter, use: getTeamCompWithNameLowData)
     }
     
@@ -22,7 +22,12 @@ struct TeamCompsController: RouteCollection {
     }
     
     func getAllTeamCompsLowData(_ req: Request) throws -> [TeamCompLowData] {
-        return TeamComps.shared.allTeamComps.map { $0.toLowData() }
+        let set = try req.parameters.next(String.self)
+        if set == "set1" {
+            return TeamComps.shared.allTeamComps.map { $0.toLowData() }
+        } else { // set2
+            return TeamCompsSet2.shared.allTeamComps.map { $0.toLowData() }
+        }
     }
     
     func getAllTeamCompsNames(_ req: Request) throws -> [String] {
@@ -36,13 +41,26 @@ struct TeamCompsController: RouteCollection {
     }
     
     func getTeamCompWithName(_ req: Request) throws -> TeamComp {
+        let set = try req.parameters.next(String.self)
         let teamCompName = try req.parameters.next(String.self)
-        let teamComp = TeamComps.shared.allTeamComps.filter { $0.name == teamCompName }.first
-        if teamComp == nil {
-            throw Abort(.badRequest)
-        } else {
-            return teamComp!
+        
+        if set == "set1" {
+            let teamComp = TeamComps.shared.allTeamComps.filter { $0.name == teamCompName }.first
+            if teamComp == nil {
+                throw Abort(.badRequest)
+            } else {
+                return teamComp!
+            }
+        } else { // set 2
+            let teamComp = TeamCompsSet2.shared.allTeamComps.filter { $0.name == teamCompName }.first
+            if teamComp == nil {
+                throw Abort(.badRequest)
+            } else {
+                return teamComp!
+            }
         }
+        
+        
     }
     
     func getTeamCompWithNameLowData(_ req: Request) throws -> TeamCompLowData {
