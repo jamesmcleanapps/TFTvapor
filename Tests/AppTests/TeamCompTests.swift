@@ -27,6 +27,21 @@ final class TeamCompTests: XCTestCase {
         XCTAssert(true)
     }
     
+    func testCarriesAndCarryItemsMatchSet2() throws {
+        TeamCompsSet2.shared.allTeamComps.forEach { (teamComp) in
+            let carries = teamComp.carries.map { $0.name }.sorted()
+            let carriesInCarryItems = teamComp.carryItems!.keys.map { $0.name }.sorted()
+            
+            if carries != carriesInCarryItems {
+                print("TCT: \(teamComp.name) has an error")
+                print("TCT: carries: \(carries)")
+                print("TCT: carriesInItems: \(carriesInCarryItems)")
+                XCTFail()
+            }
+        }
+        XCTAssert(true)
+    }
+    
     // tests that all champs in final comp are in the positions map
     func testAllChampsAreInPositions() throws {
         TeamComps.shared.allTeamComps.forEach { (teamComp) in
@@ -48,9 +63,52 @@ final class TeamCompTests: XCTestCase {
         XCTAssert(true)
     }
     
+    func testAllChampsAreInPositionsSet2() throws {
+        TeamCompsSet2.shared.allTeamComps.forEach { (teamComp) in
+            if let teamPositions = teamComp.teamCompPositions {
+                let units = teamComp.units.map { $0.name }.sorted()
+                let unitsWithPositions = teamPositions.positions.compactMap { $0 }.map { $0.name }.sorted()
+                
+                if units != unitsWithPositions {
+                    print("TCT: \(teamComp.name)  has a problem.")
+                    print("TCT: \(units)")
+                    print("TCT: does not equal")
+                    print("TCT: \(unitsWithPositions)")
+                    
+                    XCTAssert(false)
+                }
+                
+            }
+        }
+        XCTAssert(true)
+    }
+    
     // test for no duplicate champs in early units, mid units or late units
     func testForDuplicateChamps() throws {
         TeamComps.shared.allTeamComps.forEach { (teamComp) in
+            let earlyChamps = teamComp.earlyUnits.map { $0.name }.sorted()
+            let earlyWithoutDoubles = Array(Set(earlyChamps)).sorted()
+            if earlyChamps != earlyWithoutDoubles {
+                print("TCT: \(teamComp.name)  has a problem.")
+                print("TCT: \(earlyChamps)")
+                print("TCT: does not equal")
+                print("TCT: \(earlyWithoutDoubles)")
+                XCTAssert(false)
+            }
+            
+            let midChamps = teamComp.midUnits.map { $0.name }.sorted()
+            let midWithoutDoubles = Array(Set(midChamps)).sorted()
+            if midChamps != midWithoutDoubles { XCTAssert(false) }
+            
+            let lateChamps = teamComp.units.map { $0.name }.sorted()
+            let lateWithoutDoubles = Array(Set(lateChamps)).sorted()
+            if lateChamps != lateWithoutDoubles { XCTAssert(false) }
+        }
+        XCTAssert(true)
+    }
+    
+    func testForDuplicateChampsSet2() throws {
+        TeamCompsSet2.shared.allTeamComps.forEach { (teamComp) in
             let earlyChamps = teamComp.earlyUnits.map { $0.name }.sorted()
             let earlyWithoutDoubles = Array(Set(earlyChamps)).sorted()
             if earlyChamps != earlyWithoutDoubles {
@@ -98,6 +156,23 @@ final class TeamCompTests: XCTestCase {
         TeamComps.shared.allTeamComps.forEach { (team1) in
             var duplicates = [String : [Champion]]()
             TeamComps.shared.allTeamComps.forEach { (team2) in
+                if (team1.units.map { $0.name }.sorted()) == (team2.units.map { $0.name }.sorted()) {
+                    duplicates[team1.name] = team1.units
+                    duplicates[team2.name] = team2.units
+                }
+            }
+            if duplicates.count > 1 {
+                print("vapor: duplicates \(duplicates)")
+                XCTAssert(false)
+            }
+        }
+        XCTAssert(true)
+    }
+    
+    func testTwoTeamCompsDontHaveSameChampsSet2() {
+        TeamCompsSet2.shared.allTeamComps.forEach { (team1) in
+            var duplicates = [String : [Champion]]()
+            TeamCompsSet2.shared.allTeamComps.forEach { (team2) in
                 if (team1.units.map { $0.name }.sorted()) == (team2.units.map { $0.name }.sorted()) {
                     duplicates[team1.name] = team1.units
                     duplicates[team2.name] = team2.units
