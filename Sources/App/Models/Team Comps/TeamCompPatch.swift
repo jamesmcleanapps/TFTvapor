@@ -10,7 +10,7 @@ import Vapor
 
 enum TeamCompPatch: String, Comparable, Codable, ReflectionDecodable {
     
-    case nineOneFive = "9.15", nineOneFiveB = "9.15b", nineOneSix = "9.16", nineOneSixB = "9.16b", nineOneSeven = "9.17", nineOneNine = "9.19", nineTwoZero = "9.20", nineTwoOne = "9.21"
+    case nineOneFive = "9.15", nineOneFiveB = "9.15b", nineOneSix = "9.16", nineOneSixB = "9.16b", nineOneSeven = "9.17", nineOneNine = "9.19", nineTwoZero = "9.20", nineTwoOne = "9.21", nineTwoTwo = "9.22"
     
     static func ==(lhs: TeamCompPatch, rhs: TeamCompPatch) -> Bool {
         return lhs.sortOrder == rhs.sortOrder
@@ -38,6 +38,8 @@ enum TeamCompPatch: String, Comparable, Codable, ReflectionDecodable {
             return 7
         case .nineTwoOne:
             return 8
+        case .nineTwoTwo:
+            return 9
         }
     }
     
