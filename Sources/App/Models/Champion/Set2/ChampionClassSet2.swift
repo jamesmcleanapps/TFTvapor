@@ -69,8 +69,8 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
                            benefit3: nil)
         case "warden":
             return Details(main: "Wardens gain increased total Armor",
-                           benefit1: "2  -  +125% Armor",
-                           benefit2: "4  -  +275% Armor",
+                           benefit1: "2  -  +150% Armor",
+                           benefit2: "4  -  +300% Armor",
                            benefit3: "6  -  +450% Armor")
         default:
             return nil

@@ -166,7 +166,7 @@ class ChampionsSet2 {
         // MARK: ASHE
         ashe = Champion(name: "ashe", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "ranger's focus", description: "For 5 seconds, Ashe gains % Attack Speed, and her basic attacks fire a flurry of arrows dealing physical damage."), championElement: [.crystal], championClass: [.ranger],
                         bestItems: [items.guinsoosRageblade, items.giantSlayer, items.statikkShiv],
-                        stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 4)
+                        stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 65, attackSpeed: 0.8, attackRange: 4)
         )
         
         
@@ -180,7 +180,7 @@ class ChampionsSet2 {
         // MARK: TARIC
         taric = Champion(name: "taric", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "cosmic radiance", description: "After a delay, Taric and all nearby allies become invulnerable for a few seconds."), championElement: [.crystal], championClass: [.warden],
                          bestItems: [items.guardianAngel, items.redemption, items.warmogsArmor],
-                         stats: Stats(health: 850, armor: 60, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1)
+                         stats: Stats(health: 900, armor: 60, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1)
         )
 
         
@@ -417,7 +417,7 @@ class ChampionsSet2 {
         // MARK: MALPHITE
         malphite = Champion(name: "malphite", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "unstoppable force", description: "Malphite throws himself toward a random enemy, damaging and knocking up nearby enemies when he arrives."), championElement: [.mountain], championClass: [.warden],
                             bestItems: [items.guardianAngel, items.redemption, items.warmogsArmor],
-                            stats: Stats(health: 800, armor: 50, magicResist: 20, attackDamage: 60, attackSpeed: 0.55, attackRange: 1)
+                            stats: Stats(health: 850, armor: 50, magicResist: 20, attackDamage: 60, attackSpeed: 0.55, attackRange: 1)
         )
         
         
@@ -503,7 +503,7 @@ class ChampionsSet2 {
         // MARK: SINGED
         singed = Champion(name: "singed", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "poison trail", description: "Singed passively leaves a poison cloud behind himself that damages enemies who stand in it."), championElement: [.poison], championClass: [.alchemist],
                           bestItems: [items.frozenHeart, items.morellonomicon, items.warmogsArmor],
-                          stats: Stats(health: 1050, armor: 50, magicResist: 20, attackDamage: 0, attackSpeed: 0, attackRange: 1)
+                          stats: Stats(health: 950, armor: 50, magicResist: 20, attackDamage: 0, attackSpeed: 0, attackRange: 1)
         )
         
         

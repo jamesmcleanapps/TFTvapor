@@ -15,7 +15,8 @@ class TeamCompsSet2 {
     lazy var allTeamComps: [TeamComp] = {
         return [
             fourOfAKind, beholdTheLight, sivirsHurricane, hyperrollPredators, sandCloneArmy, shadowRangers,
-            sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees
+            sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees,
+            brandWaitingRoom, helicopterNocturne
         ]
     }()
     
@@ -33,6 +34,9 @@ class TeamCompsSet2 {
     let onePunchVeigar: TeamComp
     let saveTheTrees: TeamComp
     
+    let brandWaitingRoom: TeamComp
+    let helicopterNocturne: TeamComp
+    
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
     init() {
@@ -43,7 +47,7 @@ class TeamCompsSet2 {
         fourOfAKind = TeamComp(name: "4 of a Kind",
                                teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.varus, champions.vayne, champions.aatrox, champions.jax, champions.nasus],
                               midUnits: [champions.varus, champions.kindred, champions.ashe, champions.vayne, champions.malphite, champions.taliyah],
                               units: [champions.ezreal, champions.ashe, champions.twitch, champions.kindred, champions.janna, champions.masterYi, champions.taric, champions.malphite],
@@ -69,8 +73,8 @@ class TeamCompsSet2 {
         // MARK: BEHOLD THE LIGHT
         beholdTheLight = TeamComp(name: "Behold The Light",
                                   teamCompSet: .set2,
-                              tier: .S,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              tier: .B,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.nasus, champions.jax, champions.vayne, champions.yasuo],
                               midUnits: [champions.nasus, champions.aatrox, champions.vayne, champions.yasuo, champions.jax, champions.soraka],
                               units: [champions.aatrox, champions.jax, champions.nasus, champions.soraka, champions.vayne, champions.yorick, champions.kindred, champions.masterYi],
@@ -97,8 +101,8 @@ class TeamCompsSet2 {
         // MARK: SIVIRS HURRICANE
         sivirsHurricane = TeamComp(name: "Sivir's Hurricane",
                                   teamCompSet: .set2,
-                              tier: .A,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              tier: .B,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.nasus, champions.vayne, champions.renekton, champions.yasuo],
                               midUnits: [champions.sivir, champions.aatrox, champions.renekton, champions.jax, champions.drMundo, champions.soraka],
                               units: [champions.aatrox, champions.yasuo, champions.masterYi, champions.sivir, champions.janna, champions.yorick, champions.annie, champions.azir],
@@ -124,8 +128,8 @@ class TeamCompsSet2 {
         // MARK: HYPERROLL PREDATORS
         hyperrollPredators = TeamComp(name: "Hyper-roll Predators",
                                   teamCompSet: .set2,
-                              tier: .A,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              tier: .B,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.renekton, champions.warwick, champions.kogmaw, champions.reksai],
                               midUnits: [champions.renekton, champions.warwick, champions.kogmaw, champions.reksai, champions.khazix, champions.nocturne],
                               units: [champions.kogmaw, champions.reksai, champions.warwick, champions.renekton, champions.nocturne, champions.khazix, champions.zed],
@@ -143,7 +147,7 @@ class TeamCompsSet2 {
         sandCloneArmy = TeamComp(name: "Sand Clone Army",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.zyra, champions.malzahar, champions.azir, champions.renekton],
                               midUnits: [champions.zyra, champions.malzahar, champions.azir, champions.renekton, champions.sion, champions.nocturne],
                               units: [champions.yorick, champions.sion, champions.nocturne, champions.qiyana, champions.azir, champions.khazix, champions.malzahar, champions.zed],
@@ -169,8 +173,8 @@ class TeamCompsSet2 {
         // MARK: SHADOW RANGERS
         shadowRangers = TeamComp(name: "Shadow Rangers",
                                   teamCompSet: .set2,
-                              tier: .S,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              tier: .A,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.vayne, champions.varus, champions.diana, champions.zyra],
                               midUnits: [champions.kindred, champions.vayne, champions.aatrox, champions.nasus, champions.sion, champions.yasuo],
                               units: [champions.annie, champions.yorick, champions.kindred, champions.ashe, champions.sion, champions.masterYi, champions.taric, champions.malzahar],
@@ -198,17 +202,27 @@ class TeamCompsSet2 {
         sixMages2Tibbers = TeamComp(name: "6 Mages 2 Tibbers",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.ivern, champions.leBlanc, champions.maokai, champions.syndra, champions.vladimir],
                               midUnits: [champions.annie, champions.brand, champions.leBlanc, champions.nautilus, champions.syndra, champions.veigar, champions.vladimir],
-                              units: [champions.annie, champions.brand, champions.leBlanc, champions.nami, champions.nautilus, champions.syndra, champions.veigar, champions.vladimir],
+                              units: [champions.annie, champions.brand, champions.leBlanc, champions.zyra, champions.yorick, champions.syndra, champions.veigar, champions.vladimir],
                               carries: [champions.annie, champions.brand],
                               carryItems: [
                                 champions.annie :
                                     [items.magesCap, items.morellonomicon],
                                 champions.brand :
                                     [items.jeweledGauntlet, items.rabadonsDeathcap, items.spearOfShojin]],
-                              teamCompPositions:  nil ,
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    19 : champions.yorick,
+                                    20 : champions.annie,
+                                    22 : champions.leBlanc,
+                                    24 : champions.vladimir,
+                                    25 : champions.veigar,
+                                    26 : champions.brand,
+                                    27 : champions.syndra,
+                                    28 : champions.zyra,
+                              ]) ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/6-mages-2-tibbers")
         
         
@@ -216,7 +230,7 @@ class TeamCompsSet2 {
         glacialBerserkers = TeamComp(name: "Glacial Berserkers",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.nineTwoTwo.rawValue,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [champions.reksai, champions.warwick, champions.kogmaw, champions.renekton],
                               midUnits: [champions.renekton, champions.warwick, champions.braum, champions.reksai, champions.olaf, champions.volibear],
                               units: [champions.olaf, champions.drMundo, champions.volibear, champions.kogmaw, champions.singed, champions.warwick, champions.reksai, champions.braum],
@@ -278,6 +292,61 @@ class TeamCompsSet2 {
                                 [items.dragonsClaw, items.icebornGauntlet, items.warmogsArmor]],
                               teamCompPositions:  nil ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/save-the-trees")
+        
+        
+        // MARK: BRAND WAITING ROOM
+        brandWaitingRoom = TeamComp(name: "Brand Waiting Room",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
+                              earlyUnits: [champions.diana, champions.renekton, champions.vladimir, champions.zyra],
+                              midUnits: [champions.diana, champions.ivern, champions.maokai, champions.neeko, champions.vladimir, champions.zyra],
+                              units: [champions.annie, champions.brand, champions.nautilus, champions.syndra, champions.thresh, champions.vladimir, champions.zyra, champions.yorick],
+                              carries: [champions.brand, champions.yorick],
+                              carryItems: [
+                                champions.brand :
+                                    [items.jeweledGauntlet, items.rabadonsDeathcap, items.spearOfShojin],
+                                champions.yorick :
+                                    [items.guardianAngel, items.redemption] ],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    9 : champions.nautilus,
+                                    11 : champions.yorick,
+                                    13 : champions.thresh,
+                                    22 : champions.zyra,
+                                    24 : champions.annie,
+                                    25 : champions.brand,
+                                    26 : champions.syndra,
+                                    28 : champions.vladimir,
+                              ]) ,
+                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/brand-waiting-room")
+        
+        
+        // MARK: HELICOPTER NOCTURNE
+        helicopterNocturne = TeamComp(name: "Helicopter Nocturne",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
+                              earlyUnits: [champions.diana, champions.ivern, champions.leBlanc, champions.maokai],
+                              midUnits: [champions.diana, champions.ivern, champions.maokai, champions.leBlanc, champions.nocturne, champions.qiyana],
+                              units: [champions.janna, champions.khazix, champions.masterYi, champions.nocturne, champions.qiyana, champions.sivir, champions.yasuo],
+                              carries: [champions.khazix, champions.nocturne],
+                              carryItems: [
+                                champions.khazix :
+                                    [items.bladeOfTheRuinedKing, items.infinityEdge, items.seraphsEmbrace],
+                                champions.nocturne :
+                                    [items.bladeOfTheRuinedKing, items.guinsoosRageblade, items.infinityEdge] ],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    22 : champions.nocturne,
+                                    23 : champions.qiyana,
+                                    24 : champions.yasuo,
+                                    25 : champions.masterYi,
+                                    26 : champions.janna,
+                                    27 : champions.sivir,
+                                    28 : champions.khazix,
+                              ]) ,
+                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/helicopter-nocturne")
         
         
     }

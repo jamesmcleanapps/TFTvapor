@@ -158,7 +158,7 @@ class ItemsSet2 {
         // CHAIN VEST
         
         // MARK: FROZEN HEART
-        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 35% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
+        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 25% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
         
         // MARK: LOCKET OF THE IRON SOLARI
         locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 7 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
@@ -206,7 +206,7 @@ class ItemsSet2 {
         guinsoosRageblade = CombinedItem(name: "guinsoo's rageblade", bonus: "Attacks grant 5% attack speed (stacks infinitely)", rating: .S, recipe: [needlesslyLargeRod, recurveBow])
         
         // MARK: IONIC SPARK
-        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Whenever an enemy casts a spell, they take 125 true damage", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
+        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Whenever an enemy casts a spell, they take 90 true damage", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
         
         // MARK: RABADONS DEATHCAP
         rabadonsDeathcap = CombinedItem(name: "rabadon's deathcap", bonus: "+50% Ability Power", rating: .A, recipe: [needlesslyLargeRod, needlesslyLargeRod])
@@ -271,7 +271,7 @@ class ItemsSet2 {
         handOfJustice = CombinedItem(name: "hand of justice", bonus: "On round start, either gain 40% more damage or 40 life on hit.", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
         
         // MARK: ICEBORN GAUNTLET
-        icebornGauntlet = CombinedItem(name: "iceborn gauntlet", bonus: "On dodge, create an expandable zone that lowers Attack Speed by 35%.", rating: .A, recipe: [sparringGloves, chainVest])
+        icebornGauntlet = CombinedItem(name: "iceborn gauntlet", bonus: "On dodge, create an expandable zone that lowers Attack Speed by 25%.", rating: .A, recipe: [sparringGloves, chainVest])
         
         // MARK: QUICKSILVER
         quicksilver = CombinedItem(name: "quicksilver", bonus: "When CC’d, cleanse the CC. 3 second cooldown.", rating: .A, recipe: [sparringGloves, negatronCloak])

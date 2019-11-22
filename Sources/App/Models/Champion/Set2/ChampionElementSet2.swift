@@ -38,8 +38,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case "glacial":
             return Details(main: "Basic Attacks from Glacials have a chance to stun their target for 1.50 seconds.",
                                  benefit1: "2  -  20% Chance to Stun",
-                                 benefit2: "4  -  40% Chance to Stun",
-                                 benefit3: "6  -  60% Chance to Stun")
+                                 benefit2: "4  -  35% Chance to Stun",
+                                 benefit3: "6  -  50% Chance to Stun")
         case "inferno":
             return Details(main: "Inferno spell damage burns the ground beneath the target, dealing a percent of that spell's pre-mitigation damage as magic damage over 5 seconds.",
                                  benefit1: "3  -  80% Damage",
@@ -57,9 +57,9 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit3: nil)
         case "ocean":
             return Details(main: "All allies gain additional mana every 4 seconds.",
-                                 benefit1: "2  -  +10 Mana",
-                                 benefit2: "4  -  +20 Mana",
-                                 benefit3: "6  -  +40 Mana")
+                                 benefit1: "2  -  +15 Mana",
+                                 benefit2: "4  -  +35 Mana",
+                                 benefit3: "6  -  +60 Mana")
         case "poison":
             return Details(main: "Poison Champions apply Neurotoxin when they deal damage, increasing the target's mana cost by 50%.",
                                  benefit1: "3  -  All Poison Champs reduce targets mana cost",
@@ -67,8 +67,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit3: nil)
         case "shadow":
             return Details(main: "Shadow units deal increased damage for 5 seconds at combat start, refreshed on enemy kill.",
-                                 benefit1: "2  -  50% Increased Damage, refreshed on own kill ",
-                                 benefit2: "4  -  100% Increased Damage, refreshed on any shadow units kill",
+                                 benefit1: "2  -  45% Increased Damage, refreshed on own kill ",
+                                 benefit2: "4  -  85% Increased Damage, refreshed on any shadow units kill",
                                  benefit3: nil)
         case "steel":
             return Details(main: "Steel Champions gain damage immunity for a few seconds when they are reduced below 50% health.",
