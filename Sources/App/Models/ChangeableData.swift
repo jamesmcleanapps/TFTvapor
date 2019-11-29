@@ -27,11 +27,19 @@ extension ChampionsSet2 {
     func setChampionRatings() {
         let sRating = [lux, malphite, khazix, singed,
                        annie, brand, yorick, zed]
-        let aRating = [kindred, kogmaw, jax, janna, sivir, qiyana, nami]
-        let bRating = [olaf, masterYi, nocturne, yasuo, azir, drMundo]
-        let cRating = [malzahar, leBlanc, ezreal, sion, renekton, reksai, nautilus, nasus,
-                        veigar, vayne, soraka, twitch, taric, varus, taliyah, syndra,
-                        thresh, braum, aatrox, ashe, diana, vladimir]
+        let aRating = [janna, qiyana, nocturne, olaf,
+                        nami, masterYi, kindred, kogmaw,
+                        jax, sivir, yasuo, azir,
+                        drMundo]
+        let bRating = [
+            ezreal, sion, renekton, nasus,
+            nautilus, malzahar, leBlanc, soraka,
+            reksai, veigar, vladimir, twitch,
+            taliyah, taric, varus, syndra,
+            vayne, thresh, braum, ashe,
+            aatrox, diana
+        ]
+        let cRating: [Champion] = []
         let dRating: [Champion] = []
         let eRating: [Champion] = []
         
