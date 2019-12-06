@@ -541,7 +541,7 @@ class TeamCompsSet2 {
         // MARK: MALPHON BRANDO
         malphonBrando = TeamComp(name: "Malphon Brando",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.nineTwoThree.rawValue,
                               earlyUnits: [
                                 champions.diana,
