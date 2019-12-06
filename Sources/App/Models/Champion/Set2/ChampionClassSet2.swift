@@ -8,7 +8,7 @@
 import Foundation
 
 enum ChampionClassSet2: String, CaseIterable, Codable {
-    case alchemist, assassin, avatar, berserker, blademaster, druid, mage, mystic, predator, ranger, summoner, warden
+    case alchemist, assassin, avatar, berserker, blademaster, druid, mage, mystic, predator, ranger, soulbound, summoner, warden
 
     static func getClassInfo(classStr: String) -> Details? {
         switch classStr {
@@ -62,6 +62,8 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
                            benefit1: "2  -  30% Chance to Double Attack Speed",
                            benefit2: "4  -  60% Chance to Double Attack Speed",
                            benefit3: "6  -  100% Chance to Double Attack Speed")
+        case "soulbound":
+            return Details(main: "The first Soulbound unit to die in a round will instead enter the Spirit Realm, becoming untargetable and continuing to fight as long as another Soulbound unit is alive.", benefit1: "2  -  Soulbound", benefit2: nil, benefit3: nil)
         case "summoner":
             return Details(main: "Summoned units have increased health and duration.",
                            benefit1: "3  -  40% Increase",
@@ -98,6 +100,8 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
         case .predator:
             return 3
         case .ranger:
+            return 2
+        case soulbound:
             return 2
         case .summoner:
             return 3

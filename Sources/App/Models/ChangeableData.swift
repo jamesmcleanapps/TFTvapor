@@ -30,7 +30,7 @@ extension ChampionsSet2 {
         let aRating = [janna, qiyana, nocturne, olaf,
                         nami, masterYi, kindred, kogmaw,
                         jax, sivir, yasuo, azir,
-                        drMundo]
+                        drMundo, lucian, senna, amumu]
         let bRating = [
             ezreal, sion, renekton, nasus,
             nautilus, malzahar, leBlanc, soraka,

@@ -16,7 +16,8 @@ class TeamCompsSet2 {
         return [
             fourOfAKind, beholdTheLight, sivirsHurricane, hyperrollPredators, sandCloneArmy, shadowRangers,
             sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees,
-            brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando
+            brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando,
+            the8thAlchemist, the8thOcean
         ]
     }()
     
@@ -39,6 +40,9 @@ class TeamCompsSet2 {
     
     let goldenArmy: TeamComp
     let malphonBrando: TeamComp
+    
+    let the8thAlchemist: TeamComp
+    let the8thOcean: TeamComp
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -579,6 +583,103 @@ class TeamCompsSet2 {
                                     28 : champions.taliyah
                               ]) ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/malphon-brando")
+        
+        
+        // MARK: THE 8TH ALCHEMIST
+        the8thAlchemist = TeamComp(name: "The 8th Alchemist",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
+                              earlyUnits: [
+                                champions.ivern,
+                                champions.leBlanc,
+                                champions.maokai,
+                                champions.renekton],
+                              
+                              midUnits: [
+                                champions.diana,
+                                champions.ivern,
+                                champions.khazix,
+                                champions.leBlanc,
+                                champions.maokai,
+                                champions.renekton],
+                              
+                              units: [champions.annie,
+                                      champions.azir,
+                                      champions.janna,
+                                      champions.khazix,
+                                      champions.nami,
+                                      champions.qiyana,
+                                      champions.singed,
+                                      champions.zed],
+                              
+                              carries: [champions.singed, champions.zed],
+                              carryItems: [
+                                champions.singed :
+                                    [items.dragonsClaw, items.morellonomicon, items.phantomDancer],
+                                champions.zed :
+                                    [items.dragonsClaw, items.phantomDancer, items.redemption]],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    15 : champions.singed,
+                                    22 : champions.khazix,
+                                    23 : champions.qiyana,
+                                    24 : champions.annie,
+                                    25 : champions.janna,
+                                    26 : champions.nami,
+                                    27 : champions.azir,
+                                    28 : champions.zed,
+                              ]) ,
+                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/the-8th-alchemist")
+        
+        
+        // MARK: THE 8TH OCEAN
+        the8thOcean = TeamComp(name: "The 8th Ocean",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoThree.rawValue,
+                              
+                              earlyUnits: [
+                                champions.ivern,
+                                champions.leBlanc,
+                                champions.maokai,
+                                champions.renekton],
+                              
+                              midUnits: [
+                                champions.ivern,
+                                champions.leBlanc,
+                                champions.maokai,
+                                champions.nautilus,
+                                champions.thresh,
+                                champions.zyra],
+                              
+                              units: [champions.zyra,
+                                      champions.janna,
+                                      champions.nami,
+                                      champions.nautilus,
+                                      champions.yorick,
+                                      champions.thresh,
+                                      champions.vladimir,
+                                      champions.zed],
+                              
+                              carries: [champions.zed, champions.zyra],
+                              carryItems: [
+                                champions.zed :
+                                    [items.dragonsClaw, items.phantomDancer, items.redemption],
+                                champions.zyra :
+                                    [items.morellonomicon, items.spearOfShojin]],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    16 : champions.yorick,
+                                    17 : champions.thresh,
+                                    18 : champions.nautilus,
+                                    22 : champions.nami,
+                                    23 : champions.zyra,
+                                    24 : champions.vladimir,
+                                    25 : champions.janna,
+                                    26 : champions.zed,
+                              ]) ,
+                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/the-8th-ocean")
         
         
     }

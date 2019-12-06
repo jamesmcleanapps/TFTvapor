@@ -91,6 +91,11 @@ class ChampionsSet2 {
     var leBlanc: Champion
     var neeko: Champion
     
+    // soulbound
+    var lucian: Champion
+    var senna: Champion
+    var amumu: Champion
+    
     lazy var allChampions: [Champion] = {
         return [ashe, skarner, taric,
                 renekton, azir, sivir, khazix,
@@ -104,7 +109,8 @@ class ChampionsSet2 {
                 malzahar, sion, veigar, masterYi,
                 reksai, nocturne,
                 yasuo, janna,
-                ivern, maokai, leBlanc, neeko
+                ivern, maokai, leBlanc, neeko,
+                lucian, senna, amumu
         ]
     }()
     
@@ -627,6 +633,17 @@ class ChampionsSet2 {
                          bestItems: [items.seraphsEmbrace, items.morellonomicon, items.rabadonsDeathcap],
                          stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 41, attackSpeed: 0.7, attackRange: 2)
         )
+        
+        
+        // MARK: LUCIAN
+        lucian = Champion(name: "lucian", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "the culling", description: "Lucian fires at 4 times his normal Attacks Per Second in a direction for 4 seconds, each attacking for a percentage of his AD, applying on-hits, and dealing magic damage."), championElement: [.light], championClass: [.soulbound], bestItems: [], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        
+        // MARK: SENNA
+        senna = Champion(name: "senna", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "piercing darkness", description: "Senna fires a beam through her furthest ally, dealing magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal bonus magic damage from Senna."), championElement: [.shadow], championClass: [.soulbound], bestItems: [], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        
+        
+        // MARK: AMUMU
+        amumu = Champion(name: "amumu", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "curse of the sad mummy", description: "Amumu’s rage explodes, dealing magic damage to enemies in an area around him, and stunning them for 1.5 seconds."), championElement: [.inferno], championClass: [.warden], bestItems: [], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
         
         setChampionRatings()
         
