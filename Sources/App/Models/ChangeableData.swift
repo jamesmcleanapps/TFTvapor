@@ -25,23 +25,70 @@ extension Champions {
 
 extension ChampionsSet2 {
     func setChampionRatings() {
-        let sRating = [lux, malphite, khazix, singed,
-                       annie, brand, yorick, zed]
-        let aRating = [janna, qiyana, nocturne, olaf,
-                        nami, masterYi, kindred, kogmaw,
-                        jax, sivir, yasuo, azir,
-                        drMundo, lucian, senna, amumu]
-        let bRating = [
-            ezreal, sion, renekton, nasus,
-            nautilus, malzahar, leBlanc, soraka,
-            reksai, veigar, vladimir, twitch,
-            taliyah, taric, varus, syndra,
-            vayne, thresh, braum, ashe,
-            aatrox, diana
+        let sRating = [
+            annie,
+            brand,
+            khazix,
+            lux,
+            masterYi,
+            nami,
+            olaf,
+            singed
         ]
-        let cRating: [Champion] = []
-        let dRating: [Champion] = []
-        let eRating: [Champion] = []
+        
+        let aRating = [
+            ezreal,
+            janna,
+            malphite,
+            malzahar,
+            nocturne,
+            qiyana,
+            twitch,
+            volibear,
+            yorick,
+            zed
+        ]
+        let bRating = [
+            ashe,
+            drMundo,
+            kindred,
+            kogmaw,
+            nautilus,
+            ornn,
+            reksai,
+            renekton,
+            sivir,
+            skarner,
+            syndra,
+            taric,
+            thresh,
+            vladimir,
+            yasuo,
+            zyra
+        ]
+        let cRating: [Champion] = [
+            aatrox,
+            azir,
+            ivern,
+            leBlanc,
+            maokai,
+            sion,
+            varus
+        ]
+        let dRating: [Champion] = [
+            diana,
+            jax,
+            nasus,
+            neeko,
+            soraka,
+            vayne,
+            veigar,
+            warwick
+        ]
+        let eRating: [Champion] = [
+            braum,
+            taliyah
+        ]
         
         sRating.forEach { $0.rating = .S }
         aRating.forEach { $0.rating = .A }
@@ -99,16 +146,49 @@ extension ItemsSet2 {
     
     func setItemRatings() {
         let sRated = [
-            guinsoosRageblade, handOfJustice, morellonomicon, talismanOfLight,
-        runaansHurricane, seraphsEmbrace, forceOfNature]
+            forceOfNature,
+            guinsoosRageblade,
+            handOfJustice,
+            icebornGauntlet,
+            infinityEdge,
+            morellonomicon,
+            phantomDancer,
+            seraphsEmbrace,
+            spearOfShojin
+        ]
         let aRated = [
-            guardianAngel, rabadonsDeathcap, phantomDancer, magesCap, infinityEdge, jeweledGauntlet, youmuusGhostblade, warmogsArmor, zephyr, statikkShiv, thiefsGloves,
-            spearOfShojin, bladeOfTheRuinedKing, dragonsClaw, bloodthirster, deathBlade, frozenMallet
+            bloodthirster,
+            deathBlade,
+            hush,
+            ludensEcho,
+            rabadonsDeathcap,
+            runaansHurricane,
+            swordBreaker,
+            thiefsGloves,
+            zephyr
         ]
         let bRated = [
-            hush, hextechGunblade, giantSlayer, rapidFirecannon, repeatingCrossbow, redemption, redBuff, quicksilver, infernosCinder, ludensEcho, ionicSpark, locket, icebornGauntlet, zekesHerald, trapClaw, titanicHydra, thornmail, swordBreaker, berserkersAxe, frozenHeart
+            giantSlayer,
+            guardianAngel,
+            ionicSpark,
+            jeweledGauntlet,
+            redBuff,
+            statikkShiv,
+            warmogsArmor,
+            zekesHerald
         ]
         let cRated: [CombinedItem] = [
+            dragonsClaw,
+            frozenHeart,
+            hextechGunblade,
+            locket,
+            rapidFirecannon,
+            redemption,
+            trapClaw,
+            quicksilver,
+            repeatingCrossbow,
+            thornmail,
+            titanicHydra
         ]
         
         sRated.forEach { (item) in
