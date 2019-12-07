@@ -18,6 +18,9 @@ class TeamCompsSet2 {
             sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees,
             brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando,
             the8thAlchemist, the8thOcean
+        ] +
+        [
+            electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial
         ]
     }()
     
@@ -44,7 +47,15 @@ class TeamCompsSet2 {
     let the8thAlchemist: TeamComp
     let the8thOcean: TeamComp
     
+    
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
+    
+    
+    let electricWarden: TeamComp
+    let hyperRollWoodland: TeamComp
+    let blademasterAssassins: TeamComp
+    let oceanMages: TeamComp
+    let poisonGlacial: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -682,7 +693,313 @@ class TeamCompsSet2 {
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/the-8th-ocean")
         
         
+        
+        
+        // MARK: TFTACTICS TEAM COMPS
+        /////////////////https://tftactics.gg/tierlist/team-comps /////////
+        
+        
+        // MARK: ELECTRIC WARDEN
+        electricWarden = TeamComp(
+            name: "Electric Warden",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoThree.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.ornn,
+                champions.braum,
+                champions.thresh,
+                champions.volibear,
+                champions.nautilus,
+            ],
+            units: [
+                champions.ornn,
+                champions.thresh,
+                champions.volibear,
+                champions.nautilus,
+                champions.qiyana,
+                champions.khazix,
+                champions.malphite,
+                champions.zed
+            ],
+            carries: [
+                champions.volibear,
+                champions.zed
+            ],
+            carryItems: [
+                champions.volibear :
+                    [
+                        items.hextechGunblade,
+                        items.infinityEdge,
+                        items.jeweledGauntlet
+                ],
+                champions.zed :
+                    [
+                        items.infinityEdge,
+                        items.guardianAngel,
+                        items.ionicSpark
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    1 : champions.malphite,
+                    3 : champions.ornn,
+                    5 : champions.thresh,
+                    7 : champions.nautilus,
+                    8 : champions.volibear,
+                    22 : champions.zed,
+                    23 : champions.qiyana,
+                    28 : champions.khazix,
+            ]),
+            webLink: nil)
+        
+        
+        // MARK: HYPER ROLL WOODLAND
+        hyperRollWoodland = TeamComp(
+            name: "Hyper Roll Woodland",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoThree.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.maokai,
+                champions.diana,
+                champions.ivern,
+                champions.leBlanc,
+                champions.khazix,
+            ],
+            units: [
+                champions.diana,
+                champions.maokai,
+                champions.renekton,
+                champions.ivern,
+                champions.leBlanc,
+                champions.khazix
+            ],
+            carries: [
+                champions.diana,
+                champions.maokai,
+                champions.renekton
+            ],
+            carryItems: [
+                champions.diana :
+                    [
+                        items.jeweledGauntlet,
+                        items.infinityEdge,
+                ],
+                champions.maokai :
+                    [
+                        items.icebornGauntlet
+                ],
+                champions.renekton :
+                    [
+                        items.dragonsClaw,
+                        items.hextechGunblade,
+                        items.phantomDancer
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    11 : champions.maokai,
+                    19 : champions.ivern,
+                    22 : champions.diana,
+                    23 : champions.renekton,
+                    27 : champions.leBlanc,
+                    28 : champions.khazix
+            ]),
+            webLink: nil)
+        
+        
+        // MARK: BLADEMASTER ASSASSINS
+        blademasterAssassins = TeamComp(
+            name: "Blademaster Assassins",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoThree.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.yasuo,
+                champions.nocturne,
+                champions.qiyana,
+                champions.sivir,
+                champions.khazix,
+            ],
+            units: [
+                champions.yasuo,
+                champions.qiyana,
+                champions.sivir,
+                champions.janna,
+                champions.khazix,
+                champions.masterYi,
+                champions.zed
+            ],
+            carries: [
+                champions.sivir,
+                champions.khazix,
+            ],
+            carryItems: [
+                champions.sivir :
+                    [
+                        items.hush,
+                        items.runaansHurricane,
+                        items.swordBreaker
+                ],
+                champions.khazix :
+                    [
+                        items.bladeOfTheRuinedKing,
+                        items.bloodthirster,
+                        items.infinityEdge
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    3 : champions.yasuo,
+                    5 : champions.masterYi,
+                    18 : champions.sivir,
+                    19 : champions.janna,
+                    22 : champions.zed,
+                    23 : champions.khazix,
+                    28 : champions.qiyana
+            ]),
+            webLink: nil)
+        
+        
+        // MARK: OCEAN MAGES
+        oceanMages = TeamComp(
+            name: "Ocean Mages",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoThree.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.vladimir,
+                champions.nautilus,
+                champions.syndra,
+                champions.thresh,
+                champions.brand,
+            ],
+            units: [
+                champions.vladimir,
+                champions.zyra,
+                champions.syndra,
+                champions.thresh,
+                champions.nautilus,
+                champions.annie,
+                champions.brand,
+                champions.yorick
+            ],
+            carries: [
+                champions.vladimir,
+                champions.annie,
+                champions.brand
+            ],
+            carryItems: [
+                champions.vladimir :
+                    [
+                        items.phantomDancer,
+                        items.spearOfShojin,
+                ],
+                champions.annie :
+                    [
+                        items.magesCap,
+                        items.morellonomicon,
+                ],
+                champions.brand :
+                [
+                    items.morellonomicon,
+                    items.seraphsEmbrace
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    8 : champions.vladimir,
+                    10 : champions.nautilus,
+                    12 : champions.thresh,
+                    14 : champions.yorick,
+                    22 : champions.zyra,
+                    24 : champions.annie,
+                    26 : champions.brand,
+                    28 : champions.syndra
+            ]),
+            webLink: nil)
+        
+        
+        // MARK: POISON GLACIAL
+        poisonGlacial = TeamComp(
+            name: "Poison Glacial",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoThree.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.warwick,
+                champions.braum,
+                champions.volibear,
+                champions.ezreal,
+                champions.olaf,
+            ],
+            units: [
+                champions.warwick,
+                champions.braum,
+                champions.volibear,
+                champions.ezreal,
+                champions.drMundo,
+                champions.olaf,
+                champions.twitch,
+                champions.singed
+            ],
+            carries: [
+                champions.ezreal,
+                champions.olaf,
+                champions.twitch,
+                champions.singed
+            ],
+            carryItems: [
+                champions.ezreal :
+                    [
+                        items.ludensEcho
+                ],
+                champions.olaf :
+                    [
+                        items.bloodthirster,
+                        items.guinsoosRageblade,
+                        items.hush
+                ],
+                champions.twitch :
+                    [
+                        items.frozenMallet
+                ],
+                champions.singed :
+                    [
+                        items.morellonomicon
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    4 : champions.braum,
+                    11 : champions.singed,
+                    18 : champions.twitch,
+                    19 : champions.ezreal,
+                    23 : champions.volibear,
+                    24 : champions.olaf,
+                    26 : champions.drMundo,
+                    27 : champions.warwick
+            ]),
+            webLink: nil)
+        
+        
     }
+    
+    
+    
+    
+    
     
     
     

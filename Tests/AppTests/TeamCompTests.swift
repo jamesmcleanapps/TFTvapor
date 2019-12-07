@@ -162,7 +162,7 @@ final class TeamCompTests: XCTestCase {
                 }
             }
             if duplicates.count > 1 {
-                print("vapor: duplicates \(duplicates)")
+                print("TCT: duplicates \(duplicates)")
                 XCTAssert(false)
             }
         }
@@ -179,7 +179,9 @@ final class TeamCompTests: XCTestCase {
                 }
             }
             if duplicates.count > 1 {
-                print("vapor: duplicates \(duplicates)")
+                duplicates.forEach {
+                    print("TCT: duplicates \($0.key)")
+                }
                 XCTAssert(false)
             }
         }
