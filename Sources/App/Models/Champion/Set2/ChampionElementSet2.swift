@@ -16,9 +16,9 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         switch element {
         case "cloud":
             return Details(main: "All allies gain dodge chance.",
-                                 benefit1: "2  -  +25% Dodge Chance",
-                                 benefit2: "3  -  +40% Dodge Chance",
-                                 benefit3: "4  -  +60% Dodge Chance")
+                                 benefit1: "2  -  +20% Dodge Chance",
+                                 benefit2: "3  -  +25% Dodge Chance",
+                                 benefit3: "4  -  +35% Dodge Chance")
             
         case "crystal":
             return Details(main: "Crystal Champions have a maximum amount of damage they can take from a single hit.",
@@ -32,8 +32,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit3: nil)
         case "electric":
             return Details(main: "Electric champions shock nearby enemies whenever they deal or receive a critical strike.",
-                                 benefit1: "2  -  60 Damage",
-                                 benefit2: "3  -  200 Damage",
+                                 benefit1: "2  -  100 Damage",
+                                 benefit2: "3  -  300 Damage",
                                  benefit3: "4  -  500 Damage")
         case "glacial":
             return Details(main: "Basic Attacks from Glacials have a chance to stun their target for 1.50 seconds.",
@@ -41,15 +41,15 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit2: "4  -  35% Chance to Stun",
                                  benefit3: "6  -  50% Chance to Stun")
         case "inferno":
-            return Details(main: "Inferno spell damage burns the ground beneath the target, dealing a percent of that spell's pre-mitigation damage as magic damage over 5 seconds.",
-                                 benefit1: "3  -  80% Damage",
-                                 benefit2: "6  -  175% Damage",
-                                 benefit3: "9  -  275% Damage")
+            return Details(main: "Inferno spell damage or critical strikes burn the ground beneath the target, dealing a percent of that spell's pre-mitigation damage as magic damage over 4 seconds.",
+                                 benefit1: "3  -  70% Damage, 1 Hex on Fire",
+                                 benefit2: "6  -  120% Damage, 3 Hex on Fire",
+                                 benefit3: "9  -  180% Damage, 5 Hex on Fire")
         case "light":
             return Details(main: "Whenever a Light Champion dies, all other Light Champions gain Attack Speed and are healed for 25% of their Maximum Health.",
-                                 benefit1: "3  -  +10% Attack Speed",
-                                 benefit2: "6  -  +25% Attack Spee",
-                                 benefit3: "9  -  +50% Attack Spee")
+                                 benefit1: "3  -  +15% Attack Speed",
+                                 benefit2: "6  -  +25% Attack Speed",
+                                 benefit3: "9  -  +35% Attack Speed")
         case "mountain":
             return Details(main: "At the start of the combat, a random ally receives a 1500 health Stoneshield.",
                                  benefit1: "2  -  1 ally gains 1500 shield",
@@ -58,7 +58,7 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case "ocean":
             return Details(main: "All allies gain additional mana every 4 seconds.",
                                  benefit1: "2  -  +15 Mana",
-                                 benefit2: "4  -  +35 Mana",
+                                 benefit2: "4  -  +30 Mana",
                                  benefit3: "6  -  +60 Mana")
         case "poison":
             return Details(main: "Poison Champions apply Neurotoxin when they deal damage, increasing the target's mana cost by 50%.",
@@ -66,9 +66,9 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit2: nil,
                                  benefit3: nil)
         case "shadow":
-            return Details(main: "Shadow units deal increased damage for 5 seconds at combat start, refreshed on enemy kill.",
-                                 benefit1: "2  -  45% Increased Damage, refreshed on own kill ",
-                                 benefit2: "4  -  85% Increased Damage, refreshed on any shadow units kill",
+            return Details(main: "Shadow champions gain bonus damage for 4 seconds. Resets when they participate in a takedown.",
+                                 benefit1: "3  -  +70% damage",
+                                 benefit2: "6  -  +140% damage and resets when any shadow champion gets a takedown",
                                  benefit3: nil)
         case "steel":
             return Details(main: "Steel Champions gain damage immunity for a few seconds when they are reduced below 50% health.",
@@ -113,7 +113,7 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case .poison:
             return 3
         case .shadow:
-            return 2
+            return 3
         case .steel:
             return 2
         case .variable:

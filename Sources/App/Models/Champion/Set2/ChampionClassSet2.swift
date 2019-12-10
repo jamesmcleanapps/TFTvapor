@@ -30,7 +30,7 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
         case "berserker":
             return Details(main: "At the start of combat, Berserkers leap to the nearest enemy. They have a chance to hit all units in a cone in front of them with their attacks.",
                            benefit1: "3  -  45% Chance",
-                           benefit2: "6  -  100% Chance",
+                           benefit2: "6  -  100% Chance + 25 Attack Damage for all Berserkers",
                            benefit3: nil)
         case "blademaster":
             return Details(main: "Blademaster Basic Attacks have a 40% chance to trigger additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
@@ -59,15 +59,15 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
                            benefit3: nil)
         case "ranger":
             return Details(main: "Every 3 seconds, Rangers have a chance to double their Attack Speed for 3 seconds.",
-                           benefit1: "2  -  30% Chance to Double Attack Speed",
-                           benefit2: "4  -  60% Chance to Double Attack Speed",
-                           benefit3: "6  -  100% Chance to Double Attack Speed")
+                           benefit1: "2  -  35% Chance to Double Attack Speed",
+                           benefit2: "4  -  80% Chance to Double Attack Speed",
+                           benefit3: "6  -  100% Chance to activate a 2.5x Attack Speed Bonus")
         case "soulbound":
-            return Details(main: "The first Soulbound unit to die in a round will instead enter the Spirit Realm, becoming untargetable and continuing to fight as long as another Soulbound unit is alive.", benefit1: "2  -  Soulbound", benefit2: nil, benefit3: nil)
+            return Details(main: "The first Soulbound champion to die will instead continue fighting as an untargetable spirit until all other Soulbound champions are dead.", benefit1: "2  -  Soulbound Active", benefit2: nil, benefit3: nil)
         case "summoner":
             return Details(main: "Summoned units have increased health and duration.",
-                           benefit1: "3  -  40% Increase",
-                           benefit2: "6  -  100% Increase",
+                           benefit1: "3  -  30% Increase",
+                           benefit2: "6  -  120% Increase",
                            benefit3: nil)
         case "warden":
             return Details(main: "Wardens gain increased total Armor",

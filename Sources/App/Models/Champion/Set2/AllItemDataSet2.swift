@@ -146,7 +146,7 @@ class ItemsSet2 {
         spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 15% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
         
         // MARK: GIANT SLAYER
-        giantSlayer = CombinedItem(name: "giant slayer", bonus: "Attacks deal an additional 5% enemy max Health as True Damage.", rating: .S, recipe: [bfSword, recurveBow])
+        giantSlayer = CombinedItem(name: "giant slayer", bonus: "Attacks deal an additional 9% enemy max Health as True Damage.", rating: .S, recipe: [bfSword, recurveBow])
         
         // MARK: YOUMUUS GHOSTBLADE
         youmuusGhostblade = CombinedItem(name: "youmuu's ghostblade", bonus: "Wearer is also an assassin", rating: .B, recipe: [bfSword, spatula])
@@ -164,7 +164,7 @@ class ItemsSet2 {
         locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 7 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
         
         // MARK: PHANTOM DANCER
-        phantomDancer = CombinedItem(name: "phantom dancer", bonus: "Wearer dodges all Critical Strikes", rating: .A, recipe: [chainVest, recurveBow])
+        phantomDancer = CombinedItem(name: "phantom dancer", bonus: "Wearer dodges bonus damage from critical strikes", rating: .A, recipe: [chainVest, recurveBow])
         
         // MARK: RED BUFF
         redBuff = CombinedItem(name: "red buff", bonus: "Attacks deal 20% max health over 10 seconds as burn damage", rating: .A, recipe: [chainVest, giantsBelt])
