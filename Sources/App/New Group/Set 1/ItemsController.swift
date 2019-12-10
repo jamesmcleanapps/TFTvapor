@@ -29,9 +29,9 @@ struct ItemsController: RouteCollection {
     
     func getCombinedItemWithName(_ req: Request) throws -> CombinedItem {
         let str = try req.parameters.next(String.self)
-        var items = Items.shared.allCombinedItems.filter { $0.name == str }
+        var items = ItemsSet2.shared.allCombinedItems.filter { $0.name == str }
         if items.isEmpty {
-            items = ItemsSet2.shared.allCombinedItems.filter { $0.name == str }
+            items = Items.shared.allCombinedItems.filter { $0.name == str }
         }
         
         if items.count == 1 { return items[0]} else { throw Abort(.badRequest)}
