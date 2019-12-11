@@ -26,27 +26,31 @@ extension Champions {
 extension ChampionsSet2 {
     func setChampionRatings() {
         let sRating = [
-            annie,
-            brand,
             khazix,
+            lucian,
             lux,
-            masterYi,
+            malphite,
             nami,
-            olaf,
-            singed
+            nocturne,
+            senna,
+            singed,
+            sivir,
+            yorick,
+            zed
         ]
         
         let aRating = [
+            annie,
+            amumu,
+            brand,
             ezreal,
             janna,
-            malphite,
             malzahar,
-            nocturne,
+            masterYi,
+            olaf,
             qiyana,
             twitch,
-            volibear,
-            yorick,
-            zed
+            volibear
         ]
         let bRating = [
             ashe,
@@ -57,7 +61,6 @@ extension ChampionsSet2 {
             ornn,
             reksai,
             renekton,
-            sivir,
             skarner,
             syndra,
             taric,
@@ -147,43 +150,44 @@ extension ItemsSet2 {
     func setItemRatings() {
         let sRated = [
             forceOfNature,
-            guinsoosRageblade,
-            handOfJustice,
-            icebornGauntlet,
-            infinityEdge,
             morellonomicon,
             phantomDancer,
+            runaansHurricane,
             seraphsEmbrace,
-            spearOfShojin
+            talismanOfLight
         ]
         let aRated = [
             bloodthirster,
             deathBlade,
-            hush,
-            ludensEcho,
+            giantSlayer,
+            guardianAngel,
+            handOfJustice,
+            infinityEdge,
+            jeweledGauntlet,
             rabadonsDeathcap,
-            runaansHurricane,
-            swordBreaker,
+            redemption,
+            spearOfShojin,
+            statikkShiv,
             thiefsGloves,
+            warmogsArmor,
             zephyr
         ]
         let bRated = [
-            giantSlayer,
-            guardianAngel,
+            guinsoosRageblade,
+            frozenHeart,
+            hush,
+            icebornGauntlet,
             ionicSpark,
-            jeweledGauntlet,
+            ludensEcho,
+            locket,
+            rapidFirecannon,
             redBuff,
-            statikkShiv,
-            warmogsArmor,
+            swordBreaker,
             zekesHerald
         ]
         let cRated: [CombinedItem] = [
             dragonsClaw,
-            frozenHeart,
             hextechGunblade,
-            locket,
-            rapidFirecannon,
-            redemption,
             trapClaw,
             quicksilver,
             repeatingCrossbow,
