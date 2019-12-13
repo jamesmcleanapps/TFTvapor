@@ -913,7 +913,7 @@ class TeamCompsSet2 {
             name: "Electric Warden",
             teamCompSet: .set2,
             tier: .S,
-            patch: TeamCompPatch.nineTwoThree.rawValue,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ornn,
@@ -969,8 +969,8 @@ class TeamCompsSet2 {
         hyperRollWoodland = TeamComp(
             name: "Hyper Roll Woodland",
             teamCompSet: .set2,
-            tier: .S,
-            patch: TeamCompPatch.nineTwoThree.rawValue,
+            tier: .A,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.maokai,
@@ -1027,7 +1027,7 @@ class TeamCompsSet2 {
             name: "Blademaster Assassins",
             teamCompSet: .set2,
             tier: .S,
-            patch: TeamCompPatch.nineTwoThree.rawValue,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.yasuo,
@@ -1086,7 +1086,7 @@ class TeamCompsSet2 {
             name: "Ocean Mages",
             teamCompSet: .set2,
             tier: .S,
-            patch: TeamCompPatch.nineTwoThree.rawValue,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.vladimir,
@@ -1147,7 +1147,7 @@ class TeamCompsSet2 {
             name: "Poison Glacial",
             teamCompSet: .set2,
             tier: .S,
-            patch: TeamCompPatch.nineTwoThree.rawValue,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.warwick,
@@ -1212,7 +1212,7 @@ class TeamCompsSet2 {
             name: "Poison Electric",
             teamCompSet: .set2,
             tier: .S,
-            patch: TeamCompPatch.nineTwoThree.rawValue,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ornn,
