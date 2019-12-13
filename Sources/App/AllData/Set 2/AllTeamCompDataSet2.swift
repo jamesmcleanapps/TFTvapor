@@ -17,10 +17,12 @@ class TeamCompsSet2 {
             fourOfAKind, beholdTheLight, sivirsHurricane, hyperrollPredators, sandCloneArmy, shadowRangers,
             sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees,
             brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando,
-            the8thAlchemist, the8thOcean, shadowSummoners, soulboundLight, zombieSenna
+            the8thAlchemist, the8thOcean, shadowSummoners, soulboundLight, zombieSenna,
+            sennaRangers
         ] +
         [
-            electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial
+            electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial,
+            poisonElectric
         ]
     }()
     
@@ -51,6 +53,8 @@ class TeamCompsSet2 {
     let soulboundLight: TeamComp
     let zombieSenna: TeamComp
     
+    let sennaRangers: TeamComp
+    
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
     
@@ -60,6 +64,7 @@ class TeamCompsSet2 {
     let blademasterAssassins: TeamComp
     let oceanMages: TeamComp
     let poisonGlacial: TeamComp
+    let poisonElectric: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -513,7 +518,7 @@ class TeamCompsSet2 {
         // MARK: GOLDEN ARMY
         goldenArmy = TeamComp(name: "Golden Army",
                                   teamCompSet: .set2,
-                              tier: .A,
+                              tier: .B,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               earlyUnits: [
                                 champions.renekton,
@@ -802,7 +807,7 @@ class TeamCompsSet2 {
         // MARK: ZOMBIE SENNA
         zombieSenna = TeamComp(name: "Zombie Senna",
                                   teamCompSet: .set2,
-                              tier: .A,
+                              tier: .B,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               
                               earlyUnits: [
@@ -845,6 +850,56 @@ class TeamCompsSet2 {
                                     27 : champions.soraka
                               ]) ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/zombie-senna")
+        
+        
+        // MARK: SENNA RANGERS
+        sennaRangers = TeamComp(name: "Senna Rangers",
+                                  teamCompSet: .set2,
+                              tier: .A,
+                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              
+                              earlyUnits: [
+                                champions.vayne,
+                                champions.varus,
+                                champions.senna,
+                                champions.malzahar],
+                              
+                              midUnits: [
+                                champions.kindred,
+                                champions.sion,
+                                champions.varus,
+                                champions.senna,
+                                champions.nasus,
+                                champions.braum],
+                              
+                              units: [champions.senna,
+                                      champions.ashe,
+                                      champions.kindred,
+                                      champions.sion,
+                                      champions.varus,
+                                      champions.ezreal,
+                                      champions.taric,
+                                      champions.amumu
+                                      ],
+                              
+                              carries: [champions.senna, champions.kindred],
+                              carryItems: [
+                                champions.senna :
+                                    [items.morellonomicon, items.seraphsEmbrace],
+                                champions.kindred :
+                                    [items.infinityEdge, items.rapidFirecannon]],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    8 : champions.sion,
+                                    10 : champions.amumu,
+                                    12 : champions.taric,
+                                    22 : champions.senna,
+                                    23 : champions.ezreal,
+                                    24 : champions.kindred,
+                                    26 : champions.varus,
+                                    28 : champions.ashe
+                              ]) ,
+                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/senna-rangers")
         
         
         
@@ -993,12 +1048,12 @@ class TeamCompsSet2 {
             carries: [
                 champions.sivir,
                 champions.khazix,
+                champions.zed
             ],
             carryItems: [
                 champions.sivir :
                     [
                         items.hush,
-                        items.runaansHurricane,
                         items.swordBreaker
                 ],
                 champions.khazix :
@@ -1006,6 +1061,10 @@ class TeamCompsSet2 {
                         items.bladeOfTheRuinedKing,
                         items.bloodthirster,
                         items.infinityEdge
+                ],
+                champions.zed :
+                    [
+                        items.guardianAngel
                 ]
             ],
             teamCompPositions:  TeamCompPositions(
@@ -1144,6 +1203,70 @@ class TeamCompsSet2 {
                     24 : champions.olaf,
                     26 : champions.drMundo,
                     27 : champions.warwick
+            ]),
+            webLink: nil)
+        
+        
+        // MARK: POISON ELECTRIC
+        poisonElectric = TeamComp(
+            name: "Poison Electric",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoThree.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.ornn,
+                champions.braum,
+                champions.thresh,
+                champions.volibear,
+                champions.nautilus,
+            ],
+            units: [
+                champions.ornn,
+                champions.braum,
+                champions.volibear,
+                champions.drMundo,
+                champions.olaf,
+                champions.twitch,
+                champions.singed,
+                champions.zed
+            ],
+            carries: [
+                champions.olaf,
+                champions.twitch,
+                champions.singed,
+                champions.zed
+            ],
+            carryItems: [
+                champions.olaf :
+                    [
+                        items.bloodthirster,
+                        items.guinsoosRageblade
+                ],
+                champions.twitch :
+                    [
+                        items.frozenMallet
+                ],
+                champions.singed :
+                    [
+                        items.morellonomicon
+                ],
+                champions.zed :
+                    [
+                        items.guardianAngel
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    2 : champions.drMundo,
+                    4 : champions.ornn,
+                    6 : champions.braum,
+                    11 : champions.singed,
+                    18 : champions.twitch,
+                    22 : champions.olaf,
+                    23 : champions.zed,
+                    28 : champions.volibear
             ]),
             webLink: nil)
         

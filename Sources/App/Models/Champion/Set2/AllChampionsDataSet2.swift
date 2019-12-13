@@ -876,14 +876,14 @@ class ChampionsSet2 {
         
         
         // MARK: LUCIAN
-        lucian = Champion(name: "lucian", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "the culling", description: "Lucian fires 10 + (2X his attacks per second) bullets in a direction over 4 seconds, each dealing 25/30/50% of his Attack Damage, applying on-hits, and dealing 40/50/100 additional magic damage."), championElement: [.light], championClass: [.soulbound], bestItems: [items.giantSlayer, items.thiefsGloves], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        lucian = Champion(name: "lucian", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "the culling", description: "Lucian fires 10 + (2X his attacks per second) bullets in a direction over 4 seconds, each dealing 25/30/50% of his Attack Damage, applying on-hits, and dealing 40/50/100 additional magic damage."), championElement: [.light], championClass: [.soulbound], bestItems: [items.giantSlayer, items.guinsoosRageblade, items.statikkShiv], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
         
         // MARK: SENNA
-        senna = Champion(name: "senna", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "piercing darkness", description: "Senna fires a beam through her furthest ally, dealing 50/100/150 magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal 25/45/75 magic damage from Senna."), championElement: [.shadow], championClass: [.soulbound], bestItems: [items.seraphsEmbrace, items.thiefsGloves], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        senna = Champion(name: "senna", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "piercing darkness", description: "Senna fires a beam through her furthest ally, dealing 50/100/150 magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal 25/45/75 magic damage from Senna."), championElement: [.shadow], championClass: [.soulbound], bestItems: [items.seraphsEmbrace, items.morellonomicon, items.phantomDancer], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
         
         
         // MARK: AMUMU
-        amumu = Champion(name: "amumu", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "curse of the sad mummy", description: "Amumu explodes in an infernal tantrum, dealing 150/250/1337 magic damage to all enemies within 2/3/4 hexes, and stunning them for 2 seconds."), championElement: [.inferno], championClass: [.warden], bestItems: [items.morellonomicon, items.thiefsGloves], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        amumu = Champion(name: "amumu", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "curse of the sad mummy", description: "Amumu explodes in an infernal tantrum, dealing 150/250/1337 magic damage to all enemies within 2/3/4 hexes, and stunning them for 2 seconds."), championElement: [.inferno], championClass: [.warden], bestItems: [items.morellonomicon, items.dragonsClaw, items.phantomDancer], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
         
         setChampionRatings()
         

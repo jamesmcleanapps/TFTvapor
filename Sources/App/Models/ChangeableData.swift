@@ -187,7 +187,7 @@ extension ItemsSet2 {
         ]
         let cRated: [CombinedItem] = [
             dragonsClaw,
-            hextechGunblade,
+            hextechGunblade, 
             trapClaw,
             quicksilver,
             repeatingCrossbow,
