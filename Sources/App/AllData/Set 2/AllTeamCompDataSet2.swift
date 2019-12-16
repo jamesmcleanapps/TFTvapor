@@ -14,7 +14,7 @@ class TeamCompsSet2 {
     
     lazy var allTeamComps: [TeamComp] = {
         return [
-            fourOfAKind, beholdTheLight, sivirsHurricane, hyperrollPredators, sandCloneArmy, shadowRangers,
+            fourOfAKind, beholdTheLight, sivirsHurricane, hyperrollPredators, sandCloneArmy,
             sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees,
             brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando,
             the8thAlchemist, the8thOcean, shadowSummoners, soulboundLight, zombieSenna,
@@ -22,7 +22,9 @@ class TeamCompsSet2 {
         ] +
         [
             electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial,
-            poisonElectric
+            poisonElectric,
+            
+            shadowRangers, assassinSummoners
         ]
     }()
     
@@ -65,6 +67,7 @@ class TeamCompsSet2 {
     let oceanMages: TeamComp
     let poisonGlacial: TeamComp
     let poisonElectric: TeamComp
+    let assassinSummoners: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -254,45 +257,7 @@ class TeamCompsSet2 {
                                     27 : champions.annie,
                               ]) ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/sand-clone-army")
-        
-        // MARK: SHADOW RANGERS
-        shadowRangers = TeamComp(name: "Shadow Rangers",
-                                  teamCompSet: .set2,
-                              tier: .A,
-                              patch: TeamCompPatch.nineTwoThree.rawValue,
-                              
-                              earlyUnits: [champions.vayne, champions.varus, champions.diana, champions.zyra],
-                              
-                              midUnits: [champions.kindred, champions.vayne, champions.aatrox, champions.nasus, champions.sion, champions.yasuo],
-                              
-                              units: [
-                                champions.annie,
-                                champions.yorick,
-                                champions.kindred,
-                                champions.ashe,
-                                champions.sion,
-                                champions.masterYi,
-                                champions.taric,
-                                champions.malzahar],
-                              
-                              carries: [champions.ashe, champions.kindred],
-                              carryItems: [
-                                champions.ashe :
-                                    [items.statikkShiv, items.statikkShiv, items.statikkShiv],
-                                champions.kindred :
-                                    [items.seraphsEmbrace, items.infinityEdge, items.guinsoosRageblade]],
-                              teamCompPositions:  TeamCompPositions(champsPositions:
-                                [
-                                    2 : champions.yorick,
-                                    4 : champions.taric,
-                                    6 : champions.sion,
-                                    9 : champions.masterYi,
-                                    22 : champions.annie,
-                                    24 : champions.ashe,
-                                    25 : champions.kindred,
-                                    28 : champions.malzahar,
-                              ]) ,
-                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/shadow-rangers")
+
         
         
         // MARK: 6 MAGES 2 TIBBERS
@@ -1267,6 +1232,108 @@ class TeamCompsSet2 {
                     22 : champions.olaf,
                     23 : champions.zed,
                     28 : champions.volibear
+            ]),
+            webLink: nil)
+        
+        
+        // MARK: SHADOW RANGERS
+        shadowRangers = TeamComp(name: "Shadow Rangers",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              
+                              earlyUnits: [],
+                              
+                              midUnits: [champions.zyra, champions.senna, champions.varus, champions.kindred, champions.sion],
+                              
+                              units: [
+                                champions.senna,
+                                champions.varus,
+                                champions.ezreal,
+                                champions.kindred,
+                                champions.sion,
+                                champions.ashe,
+                                champions.amumu,
+                                champions.taric],
+                              
+                              carries: [champions.senna, champions.kindred, champions.taric],
+                              carryItems: [
+                                champions.senna :
+                                    [items.morellonomicon, items.seraphsEmbrace],
+                                champions.kindred :
+                                    [items.bloodthirster, items.guinsoosRageblade, items.infinityEdge],
+                                champions.taric : [items.redemption]],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    3 : champions.amumu,
+                                    4 : champions.taric,
+                                    5 : champions.sion,
+                                    22 : champions.ashe,
+                                    23 : champions.ezreal,
+                                    24 : champions.varus,
+                                    25 : champions.kindred,
+                                    28 : champions.senna,
+                              ]) ,
+                              webLink: nil)
+        
+        
+        // MARK: ASSASSIN SUMMONERS
+        assassinSummoners = TeamComp(
+            name: "Assassin Summoners",
+            teamCompSet: .set2,
+            tier: .S,
+            patch: TeamCompPatch.nineTwoFour.rawValue,
+            earlyUnits: [],
+            midUnits: [
+                champions.ivern,
+                champions.maokai,
+                champions.leBlanc,
+                champions.qiyana,
+                champions.khazix,
+            ],
+            units: [
+                champions.ornn,
+                champions.azir,
+                champions.qiyana,
+                champions.soraka,
+                champions.khazix,
+                champions.yorick,
+                champions.nami,
+                champions.zed
+            ],
+            carries: [
+                champions.yorick,
+                champions.nami,
+                champions.zed
+            ],
+            carryItems: [
+                champions.yorick :
+                    [
+                        items.dragonsClaw,
+                        items.redemption
+                ],
+                champions.nami :
+                    [
+                        items.morellonomicon
+                ],
+                champions.zed :
+                    [
+                        items.guardianAngel,
+                        items.infinityEdge,
+                        items.talismanOfLight
+                ]
+            ],
+            teamCompPositions:  TeamCompPositions(
+                champsPositions:
+                [
+                    20 : champions.ornn,
+                    21 : champions.yorick,
+                    22 : champions.zed,
+                    23 : champions.qiyana,
+                    25 : champions.khazix,
+                    26 : champions.soraka,
+                    27 : champions.azir,
+                    28 : champions.nami
             ]),
             webLink: nil)
         

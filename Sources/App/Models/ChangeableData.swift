@@ -150,6 +150,8 @@ extension ItemsSet2 {
     func setItemRatings() {
         let sRated = [
             forceOfNature,
+            guinsoosRageblade,
+            infinityEdge,
             morellonomicon,
             phantomDancer,
             runaansHurricane,
@@ -162,8 +164,6 @@ extension ItemsSet2 {
             giantSlayer,
             guardianAngel,
             handOfJustice,
-            infinityEdge,
-            jeweledGauntlet,
             rabadonsDeathcap,
             redemption,
             spearOfShojin,
@@ -173,11 +173,12 @@ extension ItemsSet2 {
             zephyr
         ]
         let bRated = [
-            guinsoosRageblade,
+            dragonsClaw,
             frozenHeart,
             hush,
             icebornGauntlet,
             ionicSpark,
+            jeweledGauntlet,
             ludensEcho,
             locket,
             rapidFirecannon,
@@ -186,7 +187,6 @@ extension ItemsSet2 {
             zekesHerald
         ]
         let cRated: [CombinedItem] = [
-            dragonsClaw,
             hextechGunblade, 
             trapClaw,
             quicksilver,
