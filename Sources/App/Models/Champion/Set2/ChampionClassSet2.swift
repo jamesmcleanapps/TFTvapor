@@ -19,7 +19,7 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
                            benefit3: nil)
         case "assassin":
             return Details(main: "At the start of  combat, Assassins leap to the farthest enemy. Assassins gain bonus Critical Strike Damage and Chance.",
-                           benefit1: "3  -  +75% Critical Strike Damage & +10% Critical Strike Chance",
+                           benefit1: "3  -  +50% Critical Strike Damage & +10% Critical Strike Chance",
                            benefit2: "6  -  +150% Critical Strike Damage & +20% Critical Strike Chance",
                            benefit3: nil)
         case "avatar":

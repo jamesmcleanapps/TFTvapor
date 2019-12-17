@@ -227,7 +227,7 @@ class ItemsSet2 {
         dragonsClaw = CombinedItem(name: "dragon's claw", bonus: "Gain 75% resistance to magic damage", rating: .S, recipe: [negatronCloak, negatronCloak])
         
         // MARK: HUSH
-        hush = CombinedItem(name: "hush", bonus: "Attacks have a 33% chance to prevent the enemy from gaining mana for 4 seconds", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
+        hush = CombinedItem(name: "hush", bonus: "Attacks have a 25% chance to prevent the enemy from gaining mana for 4 seconds", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
         
         // MARK: TALISMAN OF LIGHT
          talismanOfLight = CombinedItem(name: "talisman of light", bonus: "Wearer is also Light", rating: .A, recipe: [negatronCloak, spatula])

@@ -15,7 +15,7 @@ class TeamCompsSet2 {
     lazy var allTeamComps: [TeamComp] = {
         return [
             fourOfAKind, beholdTheLight, sivirsHurricane, hyperrollPredators, sandCloneArmy,
-            sixMages2Tibbers, glacialBerserkers, onePunchVeigar, saveTheTrees,
+            sixMages2Tibbers, onePunchVeigar, saveTheTrees,
             brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando,
             the8thAlchemist, the8thOcean, shadowSummoners, soulboundLight, zombieSenna,
             sennaRangers
@@ -24,7 +24,7 @@ class TeamCompsSet2 {
             electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial,
             poisonElectric,
             
-            shadowRangers, assassinSummoners
+            shadowRangers, assassinSummoners, glacialBerserkers
         ]
     }()
     
@@ -38,7 +38,6 @@ class TeamCompsSet2 {
     let shadowRangers: TeamComp
     
     let sixMages2Tibbers: TeamComp
-    let glacialBerserkers: TeamComp
     let onePunchVeigar: TeamComp
     let saveTheTrees: TeamComp
     
@@ -68,6 +67,7 @@ class TeamCompsSet2 {
     let poisonGlacial: TeamComp
     let poisonElectric: TeamComp
     let assassinSummoners: TeamComp
+    let glacialBerserkers: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -312,46 +312,7 @@ class TeamCompsSet2 {
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/6-mages-2-tibbers")
         
         
-        // MARK: GLACIAL BERSERKERS
-        glacialBerserkers = TeamComp(name: "Glacial Berserkers",
-                                  teamCompSet: .set2,
-                              tier: .B,
-                              patch: TeamCompPatch.nineTwoFour.rawValue,
-                              
-                              earlyUnits: [champions.reksai, champions.warwick, champions.kogmaw, champions.renekton],
-                              
-                              midUnits: [champions.renekton, champions.warwick, champions.braum, champions.reksai, champions.olaf, champions.volibear],
-                              
-                              units: [
-                                champions.olaf,
-                                champions.drMundo,
-                                champions.volibear,
-                                champions.kogmaw,
-                                champions.singed,
-                                champions.warwick,
-                                champions.reksai,
-                                champions.braum],
-                              
-                              carries: [champions.olaf, champions.kogmaw, champions.singed],
-                              carryItems: [
-                                champions.olaf :
-                                    [items.guinsoosRageblade, items.bloodthirster],
-                                champions.kogmaw :
-                                    [items.runaansHurricane, items.redBuff],
-                              champions.singed :
-                                [items.frozenHeart, items.morellonomicon]],
-                              teamCompPositions:  TeamCompPositions(champsPositions:
-                                [
-                                    18 : champions.braum,
-                                    22 : champions.warwick,
-                                    23 : champions.singed,
-                                    24 : champions.reksai,
-                                    25 : champions.kogmaw,
-                                    26 : champions.olaf,
-                                    27 : champions.drMundo,
-                                    28 : champions.volibear,
-                              ]) ,
-                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/glacial-berzerkers")
+        
         
         
         // MARK: ONE PUNCH VEIGAR
@@ -722,7 +683,7 @@ class TeamCompsSet2 {
         // MARK: SOULBOUND LIGHT
         soulboundLight = TeamComp(name: "Soulbound Light",
                                   teamCompSet: .set2,
-                              tier: .A,
+                              tier: .B,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               
                               earlyUnits: [
@@ -1239,7 +1200,7 @@ class TeamCompsSet2 {
         // MARK: SHADOW RANGERS
         shadowRangers = TeamComp(name: "Shadow Rangers",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               
                               earlyUnits: [],
@@ -1336,6 +1297,53 @@ class TeamCompsSet2 {
                     28 : champions.nami
             ]),
             webLink: nil)
+        
+        
+        // MARK: GLACIAL BERSERKERS
+        glacialBerserkers = TeamComp(name: "Glacial Berserkers",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              
+                              earlyUnits: [],
+                              
+                              midUnits: [
+                                champions.ornn,
+                                champions.braum,
+                                champions.volibear,
+                                champions.ezreal,
+                                champions.olaf],
+                              
+                              units: [
+                                champions.renekton,
+                                champions.braum,
+                                champions.jax,
+                                champions.volibear,
+                                champions.drMundo,
+                                champions.ezreal,
+                                champions.sion,
+                                champions.olaf],
+                              
+                              carries: [champions.volibear, champions.ezreal, champions.olaf],
+                              carryItems: [
+                                champions.volibear :
+                                    [items.locket, items.locket],
+                                champions.ezreal :
+                                    [items.seraphsEmbrace],
+                              champions.olaf :
+                                [items.bloodthirster, items.guinsoosRageblade, items.hush]],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    1 : champions.renekton,
+                                    2 : champions.jax,
+                                    3 : champions.drMundo,
+                                    4 : champions.volibear,
+                                    5 : champions.olaf,
+                                    6 : champions.braum,
+                                    7 : champions.sion,
+                                    18 : champions.ezreal,
+                              ]) ,
+                              webLink: nil)
         
         
     }

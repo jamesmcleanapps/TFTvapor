@@ -32,8 +32,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit3: nil)
         case "electric":
             return Details(main: "Electric champions shock nearby enemies whenever they deal or receive a critical strike.",
-                                 benefit1: "2  -  100 Damage",
-                                 benefit2: "3  -  300 Damage",
+                                 benefit1: "2  -  80 Damage",
+                                 benefit2: "3  -  250 Damage",
                                  benefit3: "4  -  500 Damage")
         case "glacial":
             return Details(main: "Basic Attacks from Glacials have a chance to stun their target for 1.50 seconds.",
@@ -43,8 +43,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case "inferno":
             return Details(main: "Inferno spell damage or critical strikes burn the ground beneath the target, dealing a percent of that spell's pre-mitigation damage as magic damage over 4 seconds.",
                                  benefit1: "3  -  70% Damage, 1 Hex on Fire",
-                                 benefit2: "6  -  120% Damage, 3 Hex on Fire",
-                                 benefit3: "9  -  180% Damage, 5 Hex on Fire")
+                                 benefit2: "6  -  140% Damage, 3 Hex on Fire",
+                                 benefit3: "9  -  210% Damage, 5 Hex on Fire")
         case "light":
             return Details(main: "Whenever a Light Champion dies, all other Light Champions gain Attack Speed and are healed for 25% of their Maximum Health.",
                                  benefit1: "3  -  +15% Attack Speed",
@@ -67,7 +67,7 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit3: nil)
         case "shadow":
             return Details(main: "Shadow champions gain bonus damage for 4 seconds. Resets when they participate in a takedown.",
-                                 benefit1: "3  -  +70% damage",
+                                 benefit1: "3  -  +60% damage",
                                  benefit2: "6  -  +140% damage and resets when any shadow champion gets a takedown",
                                  benefit3: nil)
         case "steel":

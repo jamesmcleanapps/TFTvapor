@@ -289,7 +289,7 @@ class ChampionsSet2 {
                 items.infinityEdge,
                 items.ionicSpark
             ],
-                       stats: Stats(health: 850, armor: 30, magicResist: 20, attackDamage: 80, attackSpeed: 1, attackRange: 80)
+                       stats: Stats(health: 850, armor: 25, magicResist: 20, attackDamage: 70, attackSpeed: 1, attackRange: 80)
         )
         
         
@@ -677,7 +677,7 @@ class ChampionsSet2 {
                 items.redBuff,
                 items.runaansHurricane
             ],
-                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.75, attackRange: 4)
+                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 65, attackSpeed: 0.75, attackRange: 4)
         )
         
         
@@ -769,7 +769,7 @@ class ChampionsSet2 {
                 items.phantomDancer,
                 items.redemption
             ],
-                          stats: Stats(health: 650, armor: 30, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
+                          stats: Stats(health: 650, armor: 30, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
         )
         
         
