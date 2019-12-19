@@ -24,7 +24,7 @@ class TeamCompsSet2 {
             electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial,
             poisonElectric,
             
-            shadowRangers, assassinSummoners, glacialBerserkers
+            shadowRangers, assassinSummoners, glacialBerserkers, soulboundWardens, wardenRangers
         ]
     }()
     
@@ -55,6 +55,7 @@ class TeamCompsSet2 {
     let zombieSenna: TeamComp
     
     let sennaRangers: TeamComp
+    let wardenRangers: TeamComp
     
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
@@ -68,6 +69,7 @@ class TeamCompsSet2 {
     let poisonElectric: TeamComp
     let assassinSummoners: TeamComp
     let glacialBerserkers: TeamComp
+    let soulboundWardens: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -838,7 +840,7 @@ class TeamCompsSet2 {
         electricWarden = TeamComp(
             name: "Electric Warden",
             teamCompSet: .set2,
-            tier: .S,
+            tier: .A,
             patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
@@ -952,7 +954,7 @@ class TeamCompsSet2 {
         blademasterAssassins = TeamComp(
             name: "Blademaster Assassins",
             teamCompSet: .set2,
-            tier: .S,
+            tier: .A,
             patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
@@ -1022,46 +1024,46 @@ class TeamCompsSet2 {
                 champions.brand,
             ],
             units: [
-                champions.vladimir,
-                champions.zyra,
+                champions.taliyah,
                 champions.syndra,
                 champions.thresh,
                 champions.nautilus,
-                champions.annie,
                 champions.brand,
-                champions.yorick
+                champions.malphite,
+                champions.amumu,
+                champions.nami
             ],
             carries: [
-                champions.vladimir,
-                champions.annie,
-                champions.brand
+                champions.brand,
+                champions.amumu,
+                champions.nami
             ],
             carryItems: [
-                champions.vladimir :
+                champions.brand :
                     [
-                        items.phantomDancer,
-                        items.spearOfShojin,
+                        items.rabadonsDeathcap,
+                        items.seraphsEmbrace,
+                        items.seraphsEmbrace,
                 ],
-                champions.annie :
+                champions.amumu :
                     [
-                        items.magesCap,
+                        items.icebornGauntlet,
                         items.morellonomicon,
                 ],
-                champions.brand :
+                champions.nami:
                 [
-                    items.morellonomicon,
-                    items.seraphsEmbrace
+                    items.morellonomicon
                 ]
             ],
             teamCompPositions:  TeamCompPositions(
                 champsPositions:
                 [
-                    8 : champions.vladimir,
+                    8 : champions.thresh,
                     10 : champions.nautilus,
-                    12 : champions.thresh,
-                    14 : champions.yorick,
-                    22 : champions.zyra,
-                    24 : champions.annie,
+                    12 : champions.amumu,
+                    14 : champions.malphite,
+                    22 : champions.nami,
+                    24 : champions.taliyah,
                     26 : champions.brand,
                     28 : champions.syndra
             ]),
@@ -1137,7 +1139,7 @@ class TeamCompsSet2 {
         poisonElectric = TeamComp(
             name: "Poison Electric",
             teamCompSet: .set2,
-            tier: .S,
+            tier: .A,
             patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
@@ -1242,7 +1244,7 @@ class TeamCompsSet2 {
         assassinSummoners = TeamComp(
             name: "Assassin Summoners",
             teamCompSet: .set2,
-            tier: .S,
+            tier: .A,
             patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
@@ -1302,7 +1304,7 @@ class TeamCompsSet2 {
         // MARK: GLACIAL BERSERKERS
         glacialBerserkers = TeamComp(name: "Glacial Berserkers",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               
                               earlyUnits: [],
@@ -1342,6 +1344,120 @@ class TeamCompsSet2 {
                                     6 : champions.braum,
                                     7 : champions.sion,
                                     18 : champions.ezreal,
+                              ]) ,
+                              webLink: nil)
+        
+        
+        // MARK: SOULBOUND WARDENS
+        soulboundWardens = TeamComp(name: "Soulbound Wardens",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              
+                              earlyUnits: [],
+                              
+                              midUnits: [
+                                champions.zyra,
+                                champions.senna,
+                                champions.varus,
+                                champions.kindred,
+                                champions.sion],
+                              
+                              units: [
+                                champions.senna,
+                                champions.nautilus,
+                                champions.lucian,
+                                champions.malphite,
+                                champions.amumu,
+                                champions.masterYi,
+                                champions.nami,
+                                champions.taric],
+                              
+                              carries: [champions.senna, champions.lucian, champions.amumu],
+                              carryItems: [
+                                champions.senna :
+                                    [
+                                        items.guardianAngel,
+                                        items.morellonomicon,
+                                        items.seraphsEmbrace
+                                ],
+                                champions.lucian :
+                                    [
+                                        items.giantSlayer,
+                                        items.hush
+                                ],
+                              champions.amumu :
+                                [
+                                    items.icebornGauntlet
+                                ]
+                            ],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    4 : champions.lucian,
+                                    9 : champions.malphite,
+                                    10 : champions.amumu,
+                                    11 : champions.taric,
+                                    16 : champions.masterYi,
+                                    17 : champions.nautilus,
+                                    22 : champions.senna,
+                                    23 : champions.nami,
+                              ]) ,
+                              webLink: nil)
+        
+        
+        // MARK: WARDEN RANGERS
+        wardenRangers = TeamComp(name: "Warden Rangers",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              
+                              earlyUnits: [],
+                              
+                              midUnits: [
+                                champions.braum,
+                                champions.thresh,
+                                champions.ezreal,
+                                champions.nautilus,
+                                champions.malphite],
+                              
+                              units: [
+                                champions.thresh,
+                                champions.varus,
+                                champions.nautilus,
+                                champions.kindred,
+                                champions.ashe,
+                                champions.twitch,
+                                champions.amumu,
+                                champions.taric],
+                              
+                              carries: [champions.ashe, champions.twitch, champions.taric],
+                              carryItems: [
+                                champions.ashe :
+                                    [
+                                        items.giantSlayer,
+                                        items.guinsoosRageblade,
+                                        items.runaansHurricane
+                                ],
+                                champions.twitch :
+                                    [
+                                        items.redBuff
+                                ],
+                              champions.taric :
+                                [
+                                    items.redemption,
+                                    items.thornmail
+                                ]
+                            ],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    8 : champions.nautilus,
+                                    10 : champions.taric,
+                                    12 : champions.amumu,
+                                    14 : champions.thresh,
+                                    22 : champions.varus,
+                                    24 : champions.ashe,
+                                    26 : champions.twitch,
+                                    28 : champions.kindred,
                               ]) ,
                               webLink: nil)
         

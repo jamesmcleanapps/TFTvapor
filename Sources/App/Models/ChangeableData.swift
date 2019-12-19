@@ -26,72 +26,82 @@ extension Champions {
 extension ChampionsSet2 {
     func setChampionRatings() {
         let sRating = [
-            khazix,
+            amumu,
+            ashe,
             lux,
+            malphite,
             masterYi,
             nami,
-            nocturne,
+            
             olaf,
             singed,
+            taric,
             zed
         ]
         
         let aRating = [
             annie,
-            amumu,
+            brand,
             ezreal,
             janna,
+            khazix,
             lucian,
-            malphite,
+            nautilus,
+            nocturne,
             qiyana,
-            senna,
-            taric,
-            volibear,
+            
+            thresh,
+            twitch,
+            
             yorick,
         ]
         let bRating = [
-            ashe,
-            brand,
+            
+            
             drMundo,
             kindred,
-            kogmaw,
+            
             malzahar,
-            nautilus,
+            
             ornn,
-            reksai,
-            renekton,
+            
+            senna,
+            sion,
             sivir,
             skarner,
             syndra,
-            thresh,
-            twitch,
+            
             vladimir,
+            volibear,
             yasuo,
-            zyra
+            
         ]
         let cRating: [Champion] = [
             azir,
-            diana,
             ivern,
+            kogmaw,
             leBlanc,
             maokai,
-            sion,
+            reksai,
+            renekton,
+            soraka,
             varus
         ]
         let dRating: [Champion] = [
             aatrox,
-            
+            braum,
+            diana,
             jax,
-            soraka,
+            taliyah,
             vayne,
             veigar,
-            warwick
+            zyra
         ]
         let eRating: [Champion] = [
-            braum,
             nasus,
             neeko,
-            taliyah
+            warwick
+            
         ]
         
         sRating.forEach { $0.rating = .S }
@@ -154,7 +164,7 @@ extension ItemsSet2 {
             guinsoosRageblade,
             infinityEdge,
             morellonomicon,
-            phantomDancer,
+            
             runaansHurricane,
             seraphsEmbrace,
             talismanOfLight
@@ -166,11 +176,13 @@ extension ItemsSet2 {
             guardianAngel,
             handOfJustice,
             rabadonsDeathcap,
-            redemption,
+            redBuff,
+            
             spearOfShojin,
             statikkShiv,
             thiefsGloves,
-            warmogsArmor,
+            thornmail,
+            
             zephyr
         ]
         let bRated = [
@@ -182,9 +194,10 @@ extension ItemsSet2 {
             jeweledGauntlet,
             ludensEcho,
             locket,
+            phantomDancer,
             rapidFirecannon,
-            redBuff,
-            swordBreaker,
+            redemption,
+                        warmogsArmor,
             zekesHerald
         ]
         let cRated: [CombinedItem] = [
@@ -192,7 +205,7 @@ extension ItemsSet2 {
             trapClaw,
             quicksilver,
             repeatingCrossbow,
-            thornmail,
+            swordBreaker,
             titanicHydra
         ]
         
