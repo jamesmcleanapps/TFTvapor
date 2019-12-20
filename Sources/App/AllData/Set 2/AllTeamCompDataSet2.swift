@@ -398,7 +398,7 @@ class TeamCompsSet2 {
         // MARK: BLENDER NOCTURNE
         blenderNocturne = TeamComp(name: "Blender Nocturne",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               earlyUnits: [
                                 champions.diana,
@@ -540,7 +540,7 @@ class TeamCompsSet2 {
         // MARK: THE 8TH ALCHEMIST
         the8thAlchemist = TeamComp(name: "The 8th Alchemist",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               earlyUnits: [
                                 champions.ivern,
