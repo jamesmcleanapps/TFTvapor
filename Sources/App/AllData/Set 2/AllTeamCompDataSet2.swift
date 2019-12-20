@@ -954,7 +954,7 @@ class TeamCompsSet2 {
         blademasterAssassins = TeamComp(
             name: "Blademaster Assassins",
             teamCompSet: .set2,
-            tier: .A,
+            tier: .S,
             patch: TeamCompPatch.nineTwoFour.rawValue,
             earlyUnits: [],
             midUnits: [
@@ -965,45 +965,43 @@ class TeamCompsSet2 {
                 champions.khazix,
             ],
             units: [
+                champions.reksai,
                 champions.yasuo,
+                champions.nocturne,
                 champions.qiyana,
                 champions.sivir,
                 champions.janna,
                 champions.khazix,
-                champions.masterYi,
-                champions.zed
+                champions.masterYi
             ],
             carries: [
+                champions.nocturne,
                 champions.sivir,
-                champions.khazix,
-                champions.zed
             ],
             carryItems: [
+                champions.nocturne :
+                    [
+                        items.bladeOfTheRuinedKing,
+                        items.deathBlade,
+                        items.guinsoosRageblade
+                ],
                 champions.sivir :
                     [
                         items.hush,
-                        items.swordBreaker
-                ],
-                champions.khazix :
-                    [
-                        items.bladeOfTheRuinedKing,
-                        items.bloodthirster,
-                        items.infinityEdge
-                ],
-                champions.zed :
-                    [
-                        items.guardianAngel
+                        items.redBuff,
+                        items.runaansHurricane
                 ]
             ],
             teamCompPositions:  TeamCompPositions(
                 champsPositions:
                 [
-                    3 : champions.yasuo,
-                    5 : champions.masterYi,
-                    18 : champions.sivir,
-                    19 : champions.janna,
-                    22 : champions.zed,
+                    18 : champions.reksai,
+                    22 : champions.nocturne,
                     23 : champions.khazix,
+                    24 : champions.janna,
+                    25 : champions.sivir,
+                    26 : champions.masterYi,
+                    27 : champions.yasuo,
                     28 : champions.qiyana
             ]),
             webLink: nil)
@@ -1351,7 +1349,7 @@ class TeamCompsSet2 {
         // MARK: SOULBOUND WARDENS
         soulboundWardens = TeamComp(name: "Soulbound Wardens",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               
                               earlyUnits: [],
