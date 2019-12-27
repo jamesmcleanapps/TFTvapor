@@ -18,7 +18,7 @@ class TeamCompsSet2 {
             sixMages2Tibbers, onePunchVeigar, saveTheTrees,
             brandWaitingRoom, blenderNocturne, goldenArmy, malphonBrando,
             the8thAlchemist, the8thOcean, shadowSummoners, soulboundLight, zombieSenna,
-            sennaRangers
+            sennaRangers, slamBerserkers
         ] +
         [
             electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial,
@@ -56,6 +56,8 @@ class TeamCompsSet2 {
     
     let sennaRangers: TeamComp
     let wardenRangers: TeamComp
+    
+    let slamBerserkers: TeamComp
     
     
     /////////////////https://tftactics.gg/tierlist/team-comps /////////
@@ -398,7 +400,7 @@ class TeamCompsSet2 {
         // MARK: BLENDER NOCTURNE
         blenderNocturne = TeamComp(name: "Blender Nocturne",
                                   teamCompSet: .set2,
-                              tier: .A,
+                              tier: .S,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               earlyUnits: [
                                 champions.diana,
@@ -428,7 +430,7 @@ class TeamCompsSet2 {
                                 champions.khazix :
                                     [items.seraphsEmbrace, items.infinityEdge],
                                 champions.nocturne :
-                                    [items.bladeOfTheRuinedKing, items.guinsoosRageblade, items.bloodthirster],
+                                    [items.bladeOfTheRuinedKing, items.infinityEdge, items.infinityEdge],
                                 champions.sivir : [items.hush, items.redBuff, items.swordBreaker] ],
                               teamCompPositions:  TeamCompPositions(champsPositions:
                                 [
@@ -493,7 +495,7 @@ class TeamCompsSet2 {
         // MARK: MALPHON BRANDO
         malphonBrando = TeamComp(name: "Malphon Brando",
                                   teamCompSet: .set2,
-                              tier: .A,
+                              tier: .S,
                               patch: TeamCompPatch.nineTwoFour.rawValue,
                               earlyUnits: [
                                 champions.diana,
@@ -513,11 +515,11 @@ class TeamCompsSet2 {
                                 champions.malphite,
                                 champions.brand,
                                 champions.nautilus,
-                                champions.taliyah,
+                                champions.annie,
                                 champions.thresh,
                                 champions.vladimir,
-                                champions.janna,
-                                champions.nami],
+                                champions.amumu,
+                                champions.syndra],
                               
                               carries: [champions.brand],
                               carryItems: [
@@ -525,14 +527,14 @@ class TeamCompsSet2 {
                                     [items.spearOfShojin, items.rabadonsDeathcap, items.morellonomicon],],
                               teamCompPositions:  TeamCompPositions(champsPositions:
                                 [
-                                    2 : champions.nautilus,
-                                    4 : champions.malphite,
-                                    7 : champions.thresh,
+                                    11 : champions.amumu,
+                                    16 : champions.nautilus,
+                                    19 : champions.malphite,
+                                    21 : champions.thresh,
                                     22 : champions.vladimir,
-                                    24 : champions.nami,
+                                    24 : champions.annie,
                                     25 : champions.brand,
-                                    26 : champions.janna,
-                                    28 : champions.taliyah
+                                    28 : champions.syndra
                               ]) ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/malphon-brando")
         
@@ -830,6 +832,57 @@ class TeamCompsSet2 {
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/senna-rangers")
         
         
+        // MARK: SLAM BERSERKERS
+        slamBerserkers = TeamComp(name: "Slam Berserkers",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              
+                              earlyUnits: [
+                                champions.jax,
+                                champions.ornn,
+                                champions.renekton,
+                                champions.volibear],
+                              
+                              midUnits: [
+                                champions.drMundo,
+                                champions.jax,
+                                champions.olaf,
+                                champions.renekton,
+                                champions.sion,
+                                champions.volibear],
+                              
+                              units: [champions.drMundo,
+                                      champions.khazix,
+                                      champions.olaf,
+                                      champions.singed,
+                                      champions.twitch,
+                                      champions.renekton,
+                                      champions.sion,
+                                      champions.volibear
+                                      ],
+                              
+                              carries: [champions.olaf, champions.drMundo, champions.khazix],
+                              carryItems: [
+                                champions.olaf :
+                                    [items.infinityEdge, items.guardianAngel],
+                                champions.drMundo :
+                                    [items.locket],
+                                champions.khazix : [items.berserkersAxe]],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    21 : champions.volibear,
+                                    22 : champions.khazix,
+                                    23 : champions.singed,
+                                    24 : champions.drMundo,
+                                    25 : champions.olaf,
+                                    26 : champions.sion,
+                                    27 : champions.renekton,
+                                    28 : champions.twitch
+                              ]) ,
+                              webLink: "https://app.mobalytics.gg/tft/set2/team-comps/slam-berserkers")
+        
+        
         
         
         // MARK: TFTACTICS TEAM COMPS
@@ -982,7 +1035,7 @@ class TeamCompsSet2 {
                 champions.nocturne :
                     [
                         items.bladeOfTheRuinedKing,
-                        items.deathBlade,
+                        items.infinityEdge,
                         items.guinsoosRageblade
                 ],
                 champions.sivir :
