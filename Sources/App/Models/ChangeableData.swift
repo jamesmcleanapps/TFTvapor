@@ -48,12 +48,10 @@ extension ChampionsSet2 {
             khazix,
             lucian,
             nautilus,
-            
             qiyana,
             sivir,
             thresh,
             twitch,
-            
             yorick,
         ]
         let bRating = [
@@ -69,7 +67,6 @@ extension ChampionsSet2 {
             vladimir,
             volibear,
             yasuo,
-            
         ]
         let cRating: [Champion] = [
             ivern,
@@ -94,7 +91,6 @@ extension ChampionsSet2 {
             nasus,
             neeko,
             warwick
-            
         ]
         
         sRating.forEach { $0.rating = .S }

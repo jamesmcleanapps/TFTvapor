@@ -734,6 +734,7 @@ class TeamCompsSet2 {
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/soulbound-light")
         
         
+        
         // MARK: ZOMBIE SENNA
         zombieSenna = TeamComp(name: "Zombie Senna",
                                   teamCompSet: .set2,
@@ -780,6 +781,7 @@ class TeamCompsSet2 {
                                     27 : champions.soraka
                               ]) ,
                               webLink: "https://app.mobalytics.gg/tft/set2/team-comps/zombie-senna")
+        
         
         
         // MARK: SENNA RANGERS
