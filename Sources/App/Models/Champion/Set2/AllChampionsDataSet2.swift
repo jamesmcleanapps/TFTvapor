@@ -96,6 +96,10 @@ class ChampionsSet2 {
     var senna: Champion
     var amumu: Champion
     
+    // lunar
+     var karma: Champion
+     var leona: Champion
+    
     lazy var allChampions: [Champion] = {
         return [ashe, skarner, taric,
                 renekton, azir, sivir, khazix,
@@ -110,7 +114,7 @@ class ChampionsSet2 {
                 reksai, nocturne,
                 yasuo, janna,
                 ivern, maokai, leBlanc, neeko,
-                lucian, senna, amumu
+                lucian, senna, amumu, karma, leona
         ]
     }()
     
@@ -186,7 +190,6 @@ class ChampionsSet2 {
                            bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.redemption
             ],
                            stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1)
@@ -197,7 +200,6 @@ class ChampionsSet2 {
         taric = Champion(name: "taric", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "cosmic radiance", description: "After a delay, Taric and all nearby allies become invulnerable for a few seconds."), championElement: [.crystal], championClass: [.warden],
                          bestItems:
             [
-                items.phantomDancer,
                 items.spearOfShojin,
                 items.spearOfShojin
             ],
@@ -220,8 +222,7 @@ class ChampionsSet2 {
                             bestItems:
             [
                 items.dragonsClaw,
-                items.hextechGunblade,
-                items.phantomDancer
+                items.hextechGunblade
             ],
                             stats: Stats(health: 600, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.6, attackRange: 1)
         )
@@ -262,7 +263,6 @@ class ChampionsSet2 {
                         bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.warmogsArmor
             ],
                         stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1)
@@ -274,8 +274,7 @@ class ChampionsSet2 {
                             bestItems:
             [
                 items.dragonsClaw,
-                items.hextechGunblade,
-                items.phantomDancer
+                items.hextechGunblade
             ],
                             stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
         )
@@ -307,7 +306,6 @@ class ChampionsSet2 {
                            bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.warmogsArmor
             ],
                            stats: Stats(health: 650, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.6, attackRange: 1)
@@ -318,8 +316,6 @@ class ChampionsSet2 {
         braum = Champion(name: "braum", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "unbreakable", description: "Braum raises his shield toward the furthest enemy, reducing incoming damage from that direction and blocking projectiles."), championElement: [.glacial], championClass: [.warden],
                          bestItems:
             [
-                items.thornmail,
-                items.thornmail,
                 items.warmogsArmor
             ],
                          stats: Stats(health: 750, armor: 60, magicResist: 20, attackDamage: 40, attackSpeed: 0.6, attackRange: 1)
@@ -332,7 +328,6 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.ludensEcho,
-                items.phantomDancer,
                 items.seraphsEmbrace
             ],
                           stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 3)
@@ -365,8 +360,7 @@ class ChampionsSet2 {
                          bestItems:
             [
                 items.infinityEdge,
-                items.jeweledGauntlet,
-                items.phantomDancer
+                items.jeweledGauntlet
             ],
                          stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1)
         )
@@ -401,7 +395,6 @@ class ChampionsSet2 {
                            bestItems:
             [
                 items.ludensEcho,
-                items.phantomDancer,
                 items.seraphsEmbrace
             ],
                            stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1)
@@ -458,7 +451,6 @@ class ChampionsSet2 {
                          bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.warmogsArmor
             ],
                          stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1)
@@ -470,8 +462,7 @@ class ChampionsSet2 {
                        bestItems:
             [
                 items.dragonsClaw,
-                items.icebornGauntlet,
-                items.phantomDancer
+                items.icebornGauntlet
             ],
                        stats: Stats(health: 600, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 1)
         )
@@ -482,8 +473,7 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.guardianAngel,
-                items.hextechGunblade,
-                items.phantomDancer
+                items.hextechGunblade
             ],
                           stats: Stats(health: 700, armor: 35, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
         )
@@ -494,7 +484,6 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.morellonomicon,
-                items.phantomDancer,
                 items.seraphsEmbrace
             ],
                           stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.7, attackRange: 3)
@@ -550,8 +539,7 @@ class ChampionsSet2 {
                             bestItems:
             [
                 items.dragonsClaw,
-                items.morellonomicon,
-                items.phantomDancer
+                items.morellonomicon
             ],
                             stats: Stats(health: 850, armor: 50, magicResist: 20, attackDamage: 60, attackSpeed: 0.55, attackRange: 1)
         )
@@ -570,7 +558,6 @@ class ChampionsSet2 {
                             bestItems:
             [
                 items.guardianAngel,
-                items.phantomDancer,
                 items.spearOfShojin
             ],
                             stats: Stats(health: 550, armor: 30, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 2)
@@ -593,7 +580,6 @@ class ChampionsSet2 {
         thresh = Champion(name: "thresh", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "deep sea lantern", description: "Thresh throws his lantern to the lowest-health ally, shielding them and nearby allies for a few seconds."), championElement: [.ocean], championClass: [.warden],
                           bestItems:
             [
-                items.phantomDancer,
                 items.spearOfShojin,
                 items.spearOfShojin
             ],
@@ -606,8 +592,7 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.infinityEdge,
-                items.jeweledGauntlet,
-                items.phantomDancer
+                items.jeweledGauntlet
             ],
                           stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
         )
@@ -618,7 +603,6 @@ class ChampionsSet2 {
                             bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.warmogsArmor
             ],
                             stats: Stats(health: 850, armor: 40, magicResist: 20, attackDamage: 55, attackSpeed: 0.6, attackRange: 1)
@@ -650,7 +634,6 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.ludensEcho,
-                items.phantomDancer,
                 items.statikkShiv
             ],
                           stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 4)
@@ -722,7 +705,6 @@ class ChampionsSet2 {
                         bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.warmogsArmor
             ],
                         stats: Stats(health: 850, armor: 35, magicResist: 20, attackDamage: 65, attackSpeed: 0.65, attackRange: 1)
@@ -734,7 +716,6 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.hextechGunblade,
-                items.phantomDancer,
                 items.seraphsEmbrace
             ],
                           stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.6, attackRange: 3)
@@ -747,7 +728,6 @@ class ChampionsSet2 {
             [
                 items.guardianAngel,
                 items.handOfJustice,
-                items.phantomDancer
             ],
                             stats: Stats(health: 850, armor: 30, magicResist: 20, attackDamage: 70, attackSpeed: 1, attackRange: 1)
         )
@@ -766,7 +746,6 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.redemption
             ],
                           stats: Stats(health: 650, armor: 30, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
@@ -799,8 +778,7 @@ class ChampionsSet2 {
                          bestItems:
             [
                 items.dragonsClaw,
-                items.icebornGauntlet,
-                items.phantomDancer
+                items.icebornGauntlet
             ],
                          stats: Stats(health: 600, armor: 30, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
         )
@@ -811,7 +789,6 @@ class ChampionsSet2 {
                          bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.zephyr
             ],
                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 3)
@@ -832,7 +809,6 @@ class ChampionsSet2 {
                          bestItems:
             [
                 items.guinsoosRageblade,
-                items.phantomDancer,
                 items.spearOfShojin
             ],
                          stats: Stats(health: 600, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.6, attackRange: 2)
@@ -844,7 +820,6 @@ class ChampionsSet2 {
                           bestItems:
             [
                 items.dragonsClaw,
-                items.phantomDancer,
                 items.warmogsArmor
             ],
                           stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 55, attackSpeed: 0.5, attackRange: 1)
@@ -879,11 +854,19 @@ class ChampionsSet2 {
         lucian = Champion(name: "lucian", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "the culling", description: "Lucian fires 10 + (2X his attacks per second) bullets in a direction over 4 seconds, each dealing 25/30/50% of his Attack Damage, applying on-hits, and dealing 40/50/100 additional magic damage."), championElement: [.light], championClass: [.soulbound], bestItems: [items.giantSlayer, items.guinsoosRageblade, items.statikkShiv], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
         
         // MARK: SENNA
-        senna = Champion(name: "senna", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "piercing darkness", description: "Senna fires a beam through her furthest ally, dealing 50/100/150 magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal 25/45/75 magic damage from Senna."), championElement: [.shadow], championClass: [.soulbound], bestItems: [items.seraphsEmbrace, items.morellonomicon, items.phantomDancer], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        senna = Champion(name: "senna", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "piercing darkness", description: "Senna fires a beam through her furthest ally, dealing 50/100/150 magic damage to enemies, and buffing allies' on-hits for 5 seconds to deal 25/45/75 magic damage from Senna."), championElement: [.shadow], championClass: [.soulbound], bestItems: [items.seraphsEmbrace, items.morellonomicon], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
         
         
         // MARK: AMUMU
-        amumu = Champion(name: "amumu", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "curse of the sad mummy", description: "Amumu explodes in an infernal tantrum, dealing 150/250/1337 magic damage to all enemies within 2/3/4 hexes, and stunning them for 2 seconds."), championElement: [.inferno], championClass: [.warden], bestItems: [items.morellonomicon, items.dragonsClaw, items.phantomDancer], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        amumu = Champion(name: "amumu", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "curse of the sad mummy", description: "Amumu explodes in an infernal tantrum, dealing 150/250/1337 magic damage to all enemies within 2/3/4 hexes, and stunning them for 2 seconds."), championElement: [.inferno], championClass: [.warden], bestItems: [items.morellonomicon, items.dragonsClaw], stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 2))
+        
+        
+        // MARK: KARMA
+        karma = Champion(name: "karma", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "inspire", description: "to be added"), championElement: [.lunar], championClass: [.mystic], bestItems: [], stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 3))
+        
+        
+        // MARK: LEONA
+        leona = Champion(name: "leona", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "lunar eclipse", description: "to be added"), championElement: [.lunar], championClass: [.warden], bestItems: [], stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
         
         setChampionRatings()
         

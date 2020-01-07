@@ -24,7 +24,7 @@ class ItemsSet2 {
     
     lazy var allCombinedItems: [CombinedItem] = {
         return [bloodthirster, guardianAngel, hextechGunblade, deathBlade, spearOfShojin, giantSlayer, youmuusGhostblade, zekesHerald ] +
-            [frozenHeart, locket, phantomDancer, redBuff, thornmail, wardensMail, swordBreaker] +
+            [frozenHeart, locket, titansResolve, redBuff, brambleVest, wardensMail, swordBreaker] +
             [frozenMallet, morellonomicon, redemption, warmogsArmor, zephyr, titanicHydra] +
             [guinsoosRageblade, ionicSpark, rabadonsDeathcap, ludensEcho, infernosCinder] +
             [talismanOfLight, dragonsClaw, hush, runaansHurricane] +
@@ -32,7 +32,7 @@ class ItemsSet2 {
             [magesCap, forceOfNature] +
             [seraphsEmbrace] +
             [ infinityEdge,
-             repeatingCrossbow, jeweledGauntlet, handOfJustice, icebornGauntlet, quicksilver, trapClaw, thiefsGloves, berserkersAxe]
+             lastWhisper, jeweledGauntlet, handOfJustice, icebornGauntlet, quicksilver, trapClaw, thiefsGloves, berserkersAxe]
     }()
     
     lazy var itemsByRating: [[CombinedItem]] = {
@@ -85,9 +85,9 @@ class ItemsSet2 {
     
     var frozenHeart: CombinedItem
     var locket: CombinedItem
-    var phantomDancer: CombinedItem
+    var titansResolve: CombinedItem
     var redBuff: CombinedItem
-    var thornmail: CombinedItem
+    var brambleVest: CombinedItem
     var wardensMail: CombinedItem
     var swordBreaker: CombinedItem
     
@@ -119,7 +119,7 @@ class ItemsSet2 {
     var seraphsEmbrace: CombinedItem
     
     
-    var repeatingCrossbow: CombinedItem
+    var lastWhisper: CombinedItem
     var handOfJustice: CombinedItem
     var jeweledGauntlet: CombinedItem
     var icebornGauntlet: CombinedItem
@@ -163,14 +163,14 @@ class ItemsSet2 {
         // MARK: LOCKET OF THE IRON SOLARI
         locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 7 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
         
-        // MARK: PHANTOM DANCER
-        phantomDancer = CombinedItem(name: "phantom dancer", bonus: "Wearer dodges bonus damage from critical strikes", rating: .A, recipe: [chainVest, recurveBow])
+        // MARK: TITANS RESOLVE
+        titansResolve = CombinedItem(name: "titans resolve", bonus: "When the wearer is hit by a source of damage, they gain a 2.5 percent stacking damage increase (stacks infinitely)", rating: .A, recipe: [chainVest, recurveBow])
         
         // MARK: RED BUFF
         redBuff = CombinedItem(name: "red buff", bonus: "Attacks deal 20% max health over 10 seconds as burn damage", rating: .A, recipe: [chainVest, giantsBelt])
         
-        // MARK: THORNMAIL
-        thornmail = CombinedItem(name: "thornmail", bonus: "Reflects 100% of physical damage that was mitigated as Magic Damage", rating: .B, recipe: [chainVest, chainVest])
+        // MARK: BRAMBLE VEST
+         brambleVest = CombinedItem(name: "bramble vest", bonus: "Negates bonus damage from critical hits on the wearer. When the wearer is hit by a basic attack, a hail of thorns hits nearby enemies for 80/120/160 magic damage ", rating: .B, recipe: [chainVest, chainVest])
         
         // MARK: WARDENS MAIL
         wardensMail = CombinedItem(name: "warden's mail", bonus: "Wearer is also a Warden", rating: .B, recipe: [chainVest, spatula])
@@ -261,8 +261,8 @@ class ItemsSet2 {
         // MARK: INFINITY EDGE
         infinityEdge = CombinedItem(name: "infinity edge", bonus: "20% Critical Strike chance, +125% Critical Strike damage", rating: .A, recipe: [sparringGloves, bfSword])
         
-        // MARK: REPEATING CROSSBOW
-        repeatingCrossbow = CombinedItem(name: "repeating crossbow", bonus: "On death, this jumps to an allied champion and grants an additional 20% Attack Speed & Critical Strike chance", rating: .B, recipe: [sparringGloves, recurveBow])
+        // MARK: LAST WHISPER
+        lastWhisper = CombinedItem(name: "last whisper", bonus: "When the wearer inflicts a critical hit, the target’s armor is reduced by 90 percent for three seconds", rating: .B, recipe: [sparringGloves, recurveBow])
         
         // MARK: JEWELLED GAUNTLET
         jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Your spells can crit", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])

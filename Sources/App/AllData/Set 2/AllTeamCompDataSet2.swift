@@ -330,7 +330,7 @@ class TeamCompsSet2 {
                               carries: [champions.veigar, champions.malphite],
                               carryItems: [
                                 champions.veigar :
-                                    [items.hextechGunblade, items.phantomDancer, items.seraphsEmbrace],
+                                    [items.hextechGunblade, items.seraphsEmbrace],
                                 champions.malphite :
                                     [items.guardianAngel, items.magesCap, items.morellonomicon]],
                               teamCompPositions:  nil ,
@@ -348,7 +348,7 @@ class TeamCompsSet2 {
                               carries: [champions.vladimir, champions.neeko, champions.maokai],
                               carryItems: [
                                 champions.vladimir :
-                                    [items.guardianAngel, items.phantomDancer, items.spearOfShojin],
+                                    [items.guardianAngel, items.spearOfShojin],
                                 champions.neeko :
                                     [items.morellonomicon, items.rabadonsDeathcap],
                               champions.maokai :
@@ -475,7 +475,7 @@ class TeamCompsSet2 {
                               carries: [champions.renekton, champions.khazix, champions.diana],
                               carryItems: [
                                 champions.renekton :
-                                    [items.dragonsClaw, items.phantomDancer, items.warmogsArmor],
+                                    [items.dragonsClaw],
                                 champions.khazix :
                                     [items.thiefsGloves, items.seraphsEmbrace],
                                 champions.diana :
@@ -619,7 +619,7 @@ class TeamCompsSet2 {
                               carries: [champions.zed, champions.zyra],
                               carryItems: [
                                 champions.zed :
-                                    [items.dragonsClaw, items.phantomDancer, items.redemption],
+                                    [items.dragonsClaw, items.redemption],
                                 champions.zyra :
                                     [items.morellonomicon, items.spearOfShojin]],
                               teamCompPositions:  TeamCompPositions(champsPositions:
@@ -988,8 +988,7 @@ class TeamCompsSet2 {
                 champions.renekton :
                     [
                         items.dragonsClaw,
-                        items.hextechGunblade,
-                        items.phantomDancer
+                        items.hextechGunblade
                 ]
             ],
             teamCompPositions:  TeamCompPositions(
@@ -1497,8 +1496,7 @@ class TeamCompsSet2 {
                                 ],
                               champions.taric :
                                 [
-                                    items.redemption,
-                                    items.thornmail
+                                    items.redemption
                                 ]
                             ],
                               teamCompPositions:  TeamCompPositions(champsPositions:

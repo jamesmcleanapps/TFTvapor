@@ -10,7 +10,7 @@ import Vapor
 
 enum TeamCompPatch: String, Comparable, Codable, ReflectionDecodable {
     
-    case nineOneFive = "9.15", nineOneFiveB = "9.15b", nineOneSix = "9.16", nineOneSixB = "9.16b", nineOneSeven = "9.17", nineOneNine = "9.19", nineTwoZero = "9.20", nineTwoOne = "9.21", nineTwoTwo = "9.22", nineTwoThree = "9.23", nineTwoFour = "9.24"
+    case nineOneFive = "9.15", nineOneFiveB = "9.15b", nineOneSix = "9.16", nineOneSixB = "9.16b", nineOneSeven = "9.17", nineOneNine = "9.19", nineTwoZero = "9.20", nineTwoOne = "9.21", nineTwoTwo = "9.22", nineTwoThree = "9.23", nineTwoFour = "9.24", nineTwoFive = "9.25", tenOneZero = "10.1", tenOneZeroB = "10.1b", tenOneOne = "10.11", tenOneOneB = "10.11b", tenOneTwo = "10.12", tenOneTwoB = "10.12b"
     
     static func ==(lhs: TeamCompPatch, rhs: TeamCompPatch) -> Bool {
         return lhs.sortOrder == rhs.sortOrder
@@ -44,6 +44,20 @@ enum TeamCompPatch: String, Comparable, Codable, ReflectionDecodable {
             return 10
         case .nineTwoFour:
             return 11
+            case .nineTwoFive:
+                return 12
+            case .tenOneZero:
+                return 13
+            case .tenOneZeroB:
+                return 14
+            case .tenOneOne:
+                return 15
+                case .tenOneOneB:
+                return 16
+            case .tenOneTwo:
+                return 17
+            case .tenOneTwoB:
+                return 18
         }
     }
     

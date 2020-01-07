@@ -170,7 +170,6 @@ extension ItemsSet2 {
             spearOfShojin,
             statikkShiv,
             thiefsGloves,
-            thornmail,
             
             zephyr
         ]
@@ -183,7 +182,6 @@ extension ItemsSet2 {
             jeweledGauntlet,
             ludensEcho,
             locket,
-            phantomDancer,
             rapidFirecannon,
             redemption,
                         warmogsArmor,
@@ -193,7 +191,6 @@ extension ItemsSet2 {
             hextechGunblade, 
             trapClaw,
             quicksilver,
-            repeatingCrossbow,
             swordBreaker,
             titanicHydra
         ]

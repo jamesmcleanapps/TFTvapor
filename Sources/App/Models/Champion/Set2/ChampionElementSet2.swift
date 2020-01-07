@@ -10,7 +10,7 @@ import Foundation
 
 
 enum ChampionElementSet2: String, CaseIterable, Codable {
-    case cloud, crystal, desert, electric, glacial, inferno, light, mountain, ocean, poison, shadow, steel, variable, woodland
+    case cloud, crystal, desert, electric, glacial, inferno, light, lunar, mountain, ocean, poison, shadow, steel, variable, woodland
     
     static func getElementInfo(element: String) -> Details? {
         switch element {
@@ -50,6 +50,12 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit1: "3  -  +15% Attack Speed",
                                  benefit2: "6  -  +25% Attack Speed",
                                  benefit3: "9  -  +35% Attack Speed")
+            
+        case "lunar":
+            return Details(main: "Every 7 seconds, your team gains 20% Critical Strike Chance, 20% Critical Strike Damage, and 10% Spell Power (Stacks up to 4 times).",
+                           benefit1: "2 - Lunar Enabled",
+                           benefit2: nil,
+                           benefit3: nil)
         case "mountain":
             return Details(main: "At the start of the combat, a random ally receives a 1500 health Stoneshield.",
                                  benefit1: "2  -  1 ally gains 1500 shield",
@@ -106,6 +112,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
             return 3
         case .light:
             return 3
+        case .lunar:
+            return 2
         case .mountain:
             return 2
         case .ocean:
