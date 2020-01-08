@@ -862,11 +862,11 @@ class ChampionsSet2 {
         
         
         // MARK: KARMA
-        karma = Champion(name: "karma", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "inspire", description: "At the start of combat, Karma tethers to her closest ally. Karma shields the tethered ally (or a random one if the tether is dead) for 5 seconds, absorbing the next 250/400/800 damage. While the shield holds, the ally receives bonus Attack Speed."), championElement: [.lunar], championClass: [.mystic], bestItems: [], stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 3))
+        karma = Champion(name: "karma", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "inspire", description: "At the start of combat, Karma tethers to her closest ally. Karma shields the tethered ally (or a random one if the tether is dead) for 5 seconds, absorbing the next 250/400/800 damage. While the shield holds, the ally receives bonus Attack Speed."), championElement: [.lunar], championClass: [.mystic], bestItems: [items.dragonsClaw, items.guardianAngel, items.spearOfShojin], stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 3))
         
         
         // MARK: LEONA
-        leona = Champion(name: "leona", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "lunar eclipse", description: "Leona reduces all damage done to her by 40/90/140 for 5 seconds."), championElement: [.lunar], championClass: [.warden], bestItems: [], stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
+        leona = Champion(name: "leona", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "lunar eclipse", description: "Leona reduces all damage done to her by 40/90/140 for 5 seconds."), championElement: [.lunar], championClass: [.warden], bestItems: [items.brambleVest, items.dragonsClaw, items.warmogsArmor], stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
         
         setChampionRatings()
         

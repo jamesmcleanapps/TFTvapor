@@ -23,73 +23,77 @@ extension Champions {
     }
 }
 
+// MARK: CHAMPIONS SET 2
+
 extension ChampionsSet2 {
     func setChampionRatings() {
         let sRating = [
             amumu,
-            ashe,
+            annie,
             brand,
             lux,
-            malphite,
             masterYi,
             nami,
             nocturne,
-            olaf,
             singed,
-            taric,
             zed
         ]
         
         let aRating = [
-            annie,
+            ashe,
             azir,
-            ezreal,
             janna,
             khazix,
-            lucian,
+            kindred,
+            malphite,
             nautilus,
+            olaf,
             qiyana,
             sivir,
+            taric,
             thresh,
             twitch,
             yorick,
+            lucian
         ]
         let bRating = [
             drMundo,
-            kindred,
+            ezreal,
             malzahar,
             ornn,
-            senna,
             sion,
             skarner,
             soraka,
-            syndra,
-            vladimir,
+            sion,
             volibear,
             yasuo,
+            zyra,
+            senna,
+            karma
         ]
         let cRating: [Champion] = [
+            braum,
             ivern,
             kogmaw,
             leBlanc,
             maokai,
+            neeko,
             reksai,
             renekton,
             varus,
-            veigar
+            veigar,
+            vladimir,
+            leona
         ]
         let dRating: [Champion] = [
             aatrox,
-            braum,
             diana,
             jax,
             taliyah,
-            vayne,
-            zyra
+            vayne
         ]
         let eRating: [Champion] = [
             nasus,
-            neeko,
             warwick
         ]
         
@@ -145,54 +149,55 @@ extension Items {
     
 }
 
+
+// MARK: ITEMS SET 2
 extension ItemsSet2 {
     
     func setItemRatings() {
         let sRated = [
             forceOfNature,
-            guinsoosRageblade,
             infinityEdge,
             morellonomicon,
-            
-            runaansHurricane,
             seraphsEmbrace,
-            talismanOfLight
+            zephyr
         ]
         let aRated = [
             bloodthirster,
+            brambleVest,
             deathBlade,
+            dragonsClaw,
             giantSlayer,
             guardianAngel,
-            handOfJustice,
+            guinsoosRageblade,
+            locket,
             rabadonsDeathcap,
             redBuff,
-            
+            runaansHurricane,
             spearOfShojin,
-            statikkShiv,
             thiefsGloves,
-            
-            zephyr
+            zekesHerald
         ]
         let bRated = [
-            dragonsClaw,
             frozenHeart,
+            handOfJustice,
             hush,
             icebornGauntlet,
             ionicSpark,
             jeweledGauntlet,
+            lastWhisper,
             ludensEcho,
-            locket,
+            quicksilver,
             rapidFirecannon,
             redemption,
-                        warmogsArmor,
-            zekesHerald
+            titansResolve,
+            warmogsArmor
         ]
         let cRated: [CombinedItem] = [
-            hextechGunblade, 
-            trapClaw,
-            quicksilver,
+            hextechGunblade,
+            statikkShiv,
             swordBreaker,
-            titanicHydra
+            titanicHydra,
+            trapClaw
         ]
         
         sRated.forEach { (item) in
