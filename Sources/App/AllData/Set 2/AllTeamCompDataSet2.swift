@@ -1370,7 +1370,7 @@ class TeamCompsSet2 {
         // MARK: WARDEN RANGERS
         wardenRangers = TeamComp(name: "Warden Rangers",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .A,
                               patch: TeamCompPatch.tenOneZero.rawValue,
                               
                               earlyUnits: [],
