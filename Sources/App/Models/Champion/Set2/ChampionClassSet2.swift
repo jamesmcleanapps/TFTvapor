@@ -38,8 +38,8 @@ enum ChampionClassSet2: String, CaseIterable, Codable {
                            benefit2: "4  -  2 Additional Attack",
                            benefit3: "6  -  3 Additional Attack")
         case "druid":
-            return Details(main: "Druids regenerate 40 health each second.",
-                           benefit1: "2  -  Druids regenerate 40 health each second.",
+            return Details(main: "Druids regenerate 45 health each second.",
+                           benefit1: "2  -  Druids regenerate 45 health each second.",
                            benefit2: nil,
                            benefit3: nil)
         case "mage":

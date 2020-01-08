@@ -442,7 +442,7 @@ class ChampionsSet2 {
                 items.guinsoosRageblade,
                 items.runaansHurricane
             ],
-                         stats: Stats(health: 500, armor: 25, magicResist: 20, attackDamage: 40, attackSpeed: 0.75, attackRange: 3)
+                         stats: Stats(health: 550, armor: 25, magicResist: 20, attackDamage: 40, attackSpeed: 0.75, attackRange: 3)
         )
         
         
@@ -464,7 +464,7 @@ class ChampionsSet2 {
                 items.dragonsClaw,
                 items.icebornGauntlet
             ],
-                       stats: Stats(health: 600, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 1)
+                       stats: Stats(health: 700, armor: 30, magicResist: 20, attackDamage: 55, attackSpeed: 0.8, attackRange: 1)
         )
         
         
@@ -475,7 +475,7 @@ class ChampionsSet2 {
                 items.guardianAngel,
                 items.hextechGunblade
             ],
-                          stats: Stats(health: 700, armor: 35, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
+                          stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
         )
         
         
@@ -760,7 +760,7 @@ class ChampionsSet2 {
                 items.guinsoosRageblade,
                 items.infinityEdge
             ],
-                            stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.75, attackRange: 1)
+                            stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 1)
         )
         
         
@@ -862,11 +862,11 @@ class ChampionsSet2 {
         
         
         // MARK: KARMA
-        karma = Champion(name: "karma", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "inspire", description: "to be added"), championElement: [.lunar], championClass: [.mystic], bestItems: [], stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 3))
+        karma = Champion(name: "karma", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "inspire", description: "At the start of combat, Karma tethers to her closest ally. Karma shields the tethered ally (or a random one if the tether is dead) for 5 seconds, absorbing the next 250/400/800 damage. While the shield holds, the ally receives bonus Attack Speed."), championElement: [.lunar], championClass: [.mystic], bestItems: [], stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 3))
         
         
         // MARK: LEONA
-        leona = Champion(name: "leona", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "lunar eclipse", description: "to be added"), championElement: [.lunar], championClass: [.warden], bestItems: [], stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
+        leona = Champion(name: "leona", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "lunar eclipse", description: "Leona reduces all damage done to her by 40/90/140 for 5 seconds."), championElement: [.lunar], championClass: [.warden], bestItems: [], stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
         
         setChampionRatings()
         

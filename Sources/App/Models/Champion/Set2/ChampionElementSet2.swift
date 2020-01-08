@@ -48,8 +48,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case "light":
             return Details(main: "Whenever a Light Champion dies, all other Light Champions gain Attack Speed and are healed for 25% of their Maximum Health.",
                                  benefit1: "3  -  +15% Attack Speed",
-                                 benefit2: "6  -  +25% Attack Speed",
-                                 benefit3: "9  -  +35% Attack Speed")
+                                 benefit2: "6  -  +35% Attack Speed",
+                                 benefit3: "9  -  +55% Attack Speed")
             
         case "lunar":
             return Details(main: "Every 7 seconds, your team gains 20% Critical Strike Chance, 20% Critical Strike Damage, and 10% Spell Power (Stacks up to 4 times).",
@@ -64,8 +64,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case "ocean":
             return Details(main: "All allies gain additional mana every 4 seconds.",
                                  benefit1: "2  -  +15 Mana",
-                                 benefit2: "4  -  +30 Mana",
-                                 benefit3: "6  -  +60 Mana")
+                                 benefit2: "4  -  +35 Mana",
+                                 benefit3: "6  -  +55 Mana")
         case "poison":
             return Details(main: "Poison Champions apply Neurotoxin when they deal damage, increasing the target's mana cost by 50%.",
                                  benefit1: "3  -  All Poison Champs reduce targets mana cost",
@@ -73,8 +73,8 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
                                  benefit3: nil)
         case "shadow":
             return Details(main: "Shadow champions gain bonus damage for 4 seconds. Resets when they participate in a takedown.",
-                                 benefit1: "3  -  +60% damage",
-                                 benefit2: "6  -  +140% damage and resets when any shadow champion gets a takedown",
+                                 benefit1: "3  -  +65% damage",
+                                 benefit2: "6  -  +150% damage and resets when any shadow champion gets a takedown",
                                  benefit3: nil)
         case "steel":
             return Details(main: "Steel Champions gain damage immunity for a few seconds when they are reduced below 50% health.",
