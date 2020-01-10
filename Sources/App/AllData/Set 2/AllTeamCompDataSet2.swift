@@ -25,7 +25,7 @@ class TeamCompsSet2 {
             poisonElectric,
             
             shadowRangers, assassinSummoners, glacialBerserkers, soulboundWardens, wardenRangers,
-            lunarMystics, luxOptions
+            lunarMystics, luxOptions, berserkers
         ]
     }()
     
@@ -73,6 +73,7 @@ class TeamCompsSet2 {
     let soulboundWardens: TeamComp
     let lunarMystics: TeamComp
     let luxOptions: TeamComp
+    let berserkers: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -620,23 +621,24 @@ class TeamCompsSet2 {
                                       champions.nami
                                       ],
                               
-                              carries: [champions.malzahar, champions.kindred, champions.yorick, champions.amumu],
+                              carries: [champions.kindred, champions.yorick, champions.amumu],
                               carryItems: [
                                 champions.kindred :
-                                    [items.rabadonsDeathcap, items.seraphsEmbrace],
-                                champions.malzahar :
-                                    [items.spearOfShojin, items.morellonomicon],
-                                champions.yorick : [items.guardianAngel],
+                                    [items.rabadonsDeathcap,
+                                     items.seraphsEmbrace,
+                                     items.rapidFirecannon],
+                                champions.yorick :
+                                    [items.guardianAngel],
                                 champions.amumu : [items.morellonomicon]],
                               teamCompPositions:  TeamCompPositions(champsPositions:
                                 [
-                                    18 : champions.masterYi,
-                                    19 : champions.amumu,
-                                    20 : champions.nautilus,
-                                    21 : champions.yorick,
+                                    4 : champions.amumu,
+                                    6 : champions.nautilus,
+                                    8 : champions.masterYi,
+                                    11 : champions.yorick,
+                                    19 : champions.annie,
+                                    22 : champions.malzahar,
                                     25 : champions.kindred,
-                                    26 : champions.annie,
-                                    27 : champions.malzahar,
                                     28 : champions.nami
                               ]) ,
                               webLink: nil)
@@ -659,33 +661,31 @@ class TeamCompsSet2 {
                                 champions.lucian,
                                 ],
                               
-                              units: [champions.vayne,
-                                      champions.jax,
+                              units: [champions.leona,
+                                      champions.nasus,
                                       champions.senna,
-                                      champions.kindred,
                                       champions.aatrox,
+                                      champions.karma,
+                                      champions.soraka,
                                       champions.lucian,
-                                      champions.yorick,
-                                      champions.masterYi
+                                      champions.yorick
                                       ],
                               
-                              carries: [champions.lucian, champions.senna, champions.masterYi],
+                              carries: [champions.senna, champions.lucian],
                               carryItems: [
                                 champions.lucian :
                                     [items.giantSlayer, items.giantSlayer, items.giantSlayer],
                                 champions.senna :
-                                    [items.guardianAngel, items.talismanOfLight, items.morellonomicon],
-                                champions.masterYi :
-                                    [items.rapidFirecannon] ],
+                                    [items.guardianAngel, items.talismanOfLight, items.morellonomicon] ],
                               teamCompPositions:  TeamCompPositions(champsPositions:
                                 [
-                                    6 : champions.lucian,
-                                    12 : champions.aatrox,
-                                    13 : champions.jax,
-                                    14 : champions.yorick,
-                                    20 : champions.masterYi,
-                                    21 : champions.kindred,
-                                    27 : champions.vayne,
+                                    4 : champions.lucian,
+                                    5 : champions.nasus,
+                                    6 : champions.leona,
+                                    11 : champions.karma,
+                                    13 : champions.yorick,
+                                    20 : champions.aatrox,
+                                    21 : champions.soraka,
                                     28 : champions.senna
                               ]) ,
                               webLink: nil)
@@ -1166,7 +1166,7 @@ class TeamCompsSet2 {
         shadowRangers = TeamComp(name: "Shadow Rangers",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.nineTwoFour.rawValue,
+                              patch: TeamCompPatch.tenOneZero.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1182,13 +1182,13 @@ class TeamCompsSet2 {
                                 champions.amumu,
                                 champions.taric],
                               
-                              carries: [champions.senna, champions.kindred, champions.taric],
+                              carries: [champions.senna, champions.kindred, champions.ashe],
                               carryItems: [
                                 champions.senna :
                                     [items.morellonomicon, items.seraphsEmbrace],
                                 champions.kindred :
-                                    [items.bloodthirster, items.guinsoosRageblade, items.infinityEdge],
-                                champions.taric : [items.redemption]],
+                                    [items.rapidFirecannon, items.guinsoosRageblade, items.infinityEdge],
+                                champions.ashe : [items.giantSlayer]],
                               teamCompPositions:  TeamCompPositions(champsPositions:
                                 [
                                     3 : champions.amumu,
@@ -1506,11 +1506,11 @@ class TeamCompsSet2 {
                                 champions.zed,
                                 champions.lux],
                               
-                              carries: [champions.yorick, champions.zed, champions.lux],
+                              carries: [champions.amumu, champions.zed, champions.lux],
                               carryItems: [
-                                champions.yorick :
+                                champions.amumu :
                                     [
-                                        items.guardianAngel
+                                        items.morellonomicon
                                 ],
                                 champions.zed :
                                     [
@@ -1536,6 +1536,62 @@ class TeamCompsSet2 {
                                     28 : champions.nami,
                               ]) ,
                               webLink: nil)
+        
+        
+        // MARK: BERSERKERS
+              berserkers = TeamComp(name: "Berserkers",
+                                        teamCompSet: .set2,
+                                    tier: .S,
+                                    patch: TeamCompPatch.tenOneZero.rawValue,
+                                    
+                                    earlyUnits: [],
+                                    
+                                    midUnits: [
+                                      champions.ornn,
+                                      champions.braum,
+                                      champions.volibear,
+                                      champions.ezreal,
+                                      champions.olaf],
+                                    
+                                    units: [
+                                      champions.renekton,
+                                      champions.jax,
+                                      champions.volibear,
+                                      champions.drMundo,
+                                      champions.sion,
+                                      champions.olaf,
+                                      champions.twitch,
+                                      champions.singed],
+                                    
+                                    carries: [champions.sion, champions.olaf, champions.singed],
+                                    carryItems: [
+                                      champions.sion :
+                                          [
+                                            items.locket, items.locket
+                                      ],
+                                      champions.olaf :
+                                          [
+                                              items.guinsoosRageblade,
+                                              items.hush,
+                                              items.rapidFirecannon
+                                      ],
+                                    champions.singed :
+                                      [
+                                          items.morellonomicon
+                                      ]
+                                  ],
+                                    teamCompPositions:  TeamCompPositions(champsPositions:
+                                      [
+                                          1 : champions.renekton,
+                                          2 : champions.jax,
+                                          3 : champions.drMundo,
+                                          4 : champions.volibear,
+                                          5 : champions.olaf,
+                                          6 : champions.singed,
+                                          7 : champions.sion,
+                                          18 : champions.twitch,
+                                    ]) ,
+                                    webLink: nil)
         
         
     }
