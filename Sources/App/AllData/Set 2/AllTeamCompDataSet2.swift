@@ -25,7 +25,7 @@ class TeamCompsSet2 {
             poisonElectric,
             
             shadowRangers, assassinSummoners, glacialBerserkers, soulboundWardens, wardenRangers,
-            lunarMystics, luxOptions, berserkers
+            lunarMystics, luxOptions, berserkers, blademasterSummoner
         ]
     }()
     
@@ -74,6 +74,7 @@ class TeamCompsSet2 {
     let lunarMystics: TeamComp
     let luxOptions: TeamComp
     let berserkers: TeamComp
+    let blademasterSummoner: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -647,7 +648,7 @@ class TeamCompsSet2 {
         // MARK: SOULBOUND LIGHT
         soulboundLight = TeamComp(name: "Soulbound Light",
                                   teamCompSet: .set2,
-                              tier: .A,
+                              tier: .S,
                               patch: TeamCompPatch.tenOneZero.rawValue,
                               
                               earlyUnits: [
@@ -1592,6 +1593,58 @@ class TeamCompsSet2 {
                                           18 : champions.twitch,
                                     ]) ,
                                     webLink: nil)
+        
+        
+        // MARK: VLADEMASTER SUMMONER
+        blademasterSummoner = TeamComp(name: "Blademaster Summoner",
+                                  teamCompSet: .set2,
+                              tier: .S,
+                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              
+                              earlyUnits: [],
+                              
+                              midUnits: [
+                                champions.yasuo,
+                                champions.aatrox,
+                                champions.azir,
+                                champions.sivir,
+                                champions.janna],
+                              
+                              units: [
+                                champions.yasuo,
+                                champions.azir,
+                                champions.sivir,
+                                champions.annie,
+                                champions.janna,
+                                champions.yorick,
+                                champions.amumu,
+                                champions.masterYi],
+                              
+                              carries: [champions.azir, champions.sivir],
+                              carryItems: [
+                                champions.azir :
+                                    [
+                                        items.bladeOfTheRuinedKing, items.runaansHurricane, items.spearOfShojin
+                                ],
+                                champions.sivir :
+                                    [
+                                        items.hush,
+                                        items.redBuff,
+                                        items.runaansHurricane
+                                ]
+                            ],
+                              teamCompPositions:  TeamCompPositions(champsPositions:
+                                [
+                                    2 : champions.masterYi,
+                                    4 : champions.amumu,
+                                    6 : champions.yasuo,
+                                    10 : champions.yorick,
+                                    20 : champions.janna,
+                                    23 : champions.annie,
+                                    25 : champions.azir,
+                                    27 : champions.sivir,
+                              ]) ,
+                              webLink: nil)
         
         
     }
