@@ -30,28 +30,26 @@ extension ChampionsSet2 {
         let sRating = [
             amumu,
             annie,
+            azir,
             lucian,
             lux,
             masterYi,
             nami,
             singed,
+            sivir,
             yorick,
             zed
         ]
         
         let aRating = [
             ashe,
-            azir,
-            brand,
             janna,
             khazix,
             kindred,
             malphite,
             nautilus,
-            nocturne,
             olaf,
             qiyana,
-            sivir,
             taric,
             thresh,
             twitch
@@ -59,9 +57,11 @@ extension ChampionsSet2 {
         ]
         let bRating = [
             aatrox,
+            brand,
             drMundo,
             ezreal,
             malzahar,
+            nocturne,
             ornn,
             sion,
             skarner,
@@ -159,6 +159,7 @@ extension ItemsSet2 {
             forceOfNature,
             guardianAngel,
             morellonomicon,
+            redBuff,
             seraphsEmbrace,
             zephyr
         ]
@@ -166,16 +167,14 @@ extension ItemsSet2 {
             deathBlade,
             dragonsClaw,
             giantSlayer,
-            infinityEdge,
             ionicSpark,
+            lastWhisper,
             locket,
             rabadonsDeathcap,
-            redBuff,
             redemption,
             runaansHurricane,
             spearOfShojin,
             thiefsGloves,
-            zekesHerald
         ]
         let bRated = [
             bloodthirster,
@@ -185,13 +184,14 @@ extension ItemsSet2 {
             hush,
             icebornGauntlet,
             jeweledGauntlet,
-            lastWhisper,
+            
             ludensEcho,
             quicksilver,
             rapidFirecannon,
             statikkShiv,
             titansResolve,
-            warmogsArmor
+            warmogsArmor,
+            zekesHerald
         ]
         let cRated: [CombinedItem] = [
             brambleVest,

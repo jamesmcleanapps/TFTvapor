@@ -195,7 +195,7 @@ class TeamCompsSet2 {
         hyperrollPredators = TeamComp(name: "Hyper-roll Predators",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               earlyUnits: [],
                               
                               midUnits: [champions.kogmaw, champions.skarner, champions.reksai, champions.nocturne, champions.ashe],
@@ -210,7 +210,12 @@ class TeamCompsSet2 {
                                 champions.singed,
                                 champions.taric],
                               
-                              carries: [champions.kogmaw, champions.skarner, champions.ashe, champions.singed],
+                              carries: [
+                                champions.kogmaw,
+                                champions.skarner,
+                                champions.ashe,
+                                champions.singed],
+                              
                               carryItems: [
                                 champions.kogmaw :
                                     [items.statikkShiv],
@@ -600,7 +605,7 @@ class TeamCompsSet2 {
         shadowSummoners = TeamComp(name: "Shadow Summoners",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               
                               earlyUnits: [
                                 ],
@@ -649,7 +654,7 @@ class TeamCompsSet2 {
         soulboundLight = TeamComp(name: "Soulbound Light",
                                   teamCompSet: .set2,
                               tier: .S,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               
                               earlyUnits: [
                                 ],
@@ -806,7 +811,7 @@ class TeamCompsSet2 {
             name: "Electric Warden",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenOneZero.rawValue,
+            patch: TeamCompPatch.tenOneZeroB.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.leona,
@@ -920,7 +925,7 @@ class TeamCompsSet2 {
             name: "Blademaster Assassins",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenOneZero.rawValue,
+            patch: TeamCompPatch.tenOneZeroB.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.yasuo,
@@ -954,7 +959,7 @@ class TeamCompsSet2 {
                     [
                         items.hush,
                         items.redBuff,
-                        items.runaansHurricane
+                        items.infinityEdge
                 ]
             ],
             teamCompPositions:  TeamCompPositions(
@@ -976,8 +981,8 @@ class TeamCompsSet2 {
         oceanMages = TeamComp(
             name: "Ocean Mages",
             teamCompSet: .set2,
-            tier: .S,
-            patch: TeamCompPatch.tenOneZero.rawValue,
+            tier: .A,
+            patch: TeamCompPatch.tenOneZeroB.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.vladimir,
@@ -1103,7 +1108,7 @@ class TeamCompsSet2 {
             name: "Poison Electric",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenOneZero.rawValue,
+            patch: TeamCompPatch.tenOneZeroB.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ornn,
@@ -1167,7 +1172,7 @@ class TeamCompsSet2 {
         shadowRangers = TeamComp(name: "Shadow Rangers",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1183,7 +1188,10 @@ class TeamCompsSet2 {
                                 champions.amumu,
                                 champions.taric],
                               
-                              carries: [champions.senna, champions.kindred, champions.ashe],
+                              carries: [
+                                champions.senna,
+                                champions.kindred,
+                                champions.ashe],
                               carryItems: [
                                 champions.senna :
                                     [items.morellonomicon, items.seraphsEmbrace],
@@ -1209,7 +1217,7 @@ class TeamCompsSet2 {
             name: "Assassin Summoners",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenOneZero.rawValue,
+            patch: TeamCompPatch.tenOneZeroB.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ivern,
@@ -1230,7 +1238,7 @@ class TeamCompsSet2 {
             ],
             carries: [
                 champions.yorick,
-                champions.azir,
+                champions.amumu,
                 champions.zed
             ],
             carryItems: [
@@ -1238,9 +1246,10 @@ class TeamCompsSet2 {
                     [
                         items.guardianAngel
                 ],
-                champions.azir :
+                champions.amumu :
                     [
-                        items.spearOfShojin
+                        items.guardianAngel,
+                        items.morellonomicon
                 ],
                 champions.zed :
                     [
@@ -1372,7 +1381,7 @@ class TeamCompsSet2 {
         wardenRangers = TeamComp(name: "Warden Rangers",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1384,39 +1393,39 @@ class TeamCompsSet2 {
                                 champions.malphite],
                               
                               units: [
-                                champions.thresh,
                                 champions.varus,
-                                champions.nautilus,
+                                champions.drMundo,
                                 champions.kindred,
                                 champions.ashe,
                                 champions.twitch,
                                 champions.amumu,
+                                champions.singed,
                                 champions.taric],
                               
-                              carries: [champions.ashe, champions.amumu, champions.taric],
+                              carries: [champions.ashe, champions.twitch, champions.singed],
                               carryItems: [
                                 champions.ashe :
                                     [
                                         items.giantSlayer,
-                                        items.guinsoosRageblade,
                                         items.runaansHurricane
                                 ],
-                                champions.amumu :
+                                champions.twitch :
                                     [
-                                        items.guardianAngel,
-                                        items.morellonomicon
+                                        items.infinityEdge,
+                                        items.infinityEdge,
+                                        items.lastWhisper
                                 ],
-                              champions.taric :
+                              champions.singed :
                                 [
-                                    items.brambleVest
+                                    items.morellonomicon
                                 ]
                             ],
                               teamCompPositions:  TeamCompPositions(champsPositions:
                                 [
-                                    8 : champions.nautilus,
-                                    10 : champions.taric,
-                                    12 : champions.amumu,
-                                    14 : champions.thresh,
+                                    4 : champions.amumu,
+                                    9 : champions.taric,
+                                    11 : champions.singed,
+                                    12 : champions.drMundo,
                                     22 : champions.varus,
                                     24 : champions.ashe,
                                     26 : champions.twitch,
@@ -1486,7 +1495,7 @@ class TeamCompsSet2 {
         luxOptions = TeamComp(name: "Lux Options",
                                   teamCompSet: .set2,
                               tier: .S,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1521,7 +1530,7 @@ class TeamCompsSet2 {
                               champions.lux :
                                 [
                                     items.morellonomicon,
-                                    items.seraphsEmbrace,
+                                    items.jeweledGauntlet,
                                     items.seraphsEmbrace
                                 ]
                             ],
@@ -1543,7 +1552,7 @@ class TeamCompsSet2 {
               berserkers = TeamComp(name: "Berserkers",
                                         teamCompSet: .set2,
                                     tier: .S,
-                                    patch: TeamCompPatch.tenOneZero.rawValue,
+                                    patch: TeamCompPatch.tenOneZeroB.rawValue,
                                     
                                     earlyUnits: [],
                                     
@@ -1564,16 +1573,17 @@ class TeamCompsSet2 {
                                       champions.twitch,
                                       champions.singed],
                                     
-                                    carries: [champions.sion, champions.olaf, champions.singed],
+                                    carries: [champions.olaf, champions.drMundo, champions.singed],
                                     carryItems: [
-                                      champions.sion :
+                                      champions.drMundo :
                                           [
-                                            items.locket, items.locket
+                                            items.locket,
+                                            items.locket
                                       ],
                                       champions.olaf :
                                           [
-                                              items.guinsoosRageblade,
-                                              items.hush,
+                                              items.guardianAngel,
+                                              items.infinityEdge,
                                               items.rapidFirecannon
                                       ],
                                     champions.singed :
@@ -1583,23 +1593,23 @@ class TeamCompsSet2 {
                                   ],
                                     teamCompPositions:  TeamCompPositions(champsPositions:
                                       [
-                                          1 : champions.renekton,
-                                          2 : champions.jax,
-                                          3 : champions.drMundo,
-                                          4 : champions.volibear,
-                                          5 : champions.olaf,
-                                          6 : champions.singed,
-                                          7 : champions.sion,
-                                          18 : champions.twitch,
+                                          15 : champions.renekton,
+                                          22 : champions.jax,
+                                          23 : champions.drMundo,
+                                          24 : champions.volibear,
+                                          25 : champions.olaf,
+                                          26 : champions.singed,
+                                          27 : champions.sion,
+                                          28 : champions.twitch,
                                     ]) ,
                                     webLink: nil)
         
         
-        // MARK: VLADEMASTER SUMMONER
+        // MARK: BLADEMASTER SUMMONER
         blademasterSummoner = TeamComp(name: "Blademaster Summoner",
                                   teamCompSet: .set2,
                               tier: .S,
-                              patch: TeamCompPatch.tenOneZero.rawValue,
+                              patch: TeamCompPatch.tenOneZeroB.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1618,19 +1628,22 @@ class TeamCompsSet2 {
                                 champions.janna,
                                 champions.yorick,
                                 champions.amumu,
-                                champions.masterYi],
+                                champions.masterYi
+                            ],
                               
                               carries: [champions.azir, champions.sivir],
                               carryItems: [
                                 champions.azir :
                                     [
-                                        items.bladeOfTheRuinedKing, items.runaansHurricane, items.spearOfShojin
+                                        items.bladeOfTheRuinedKing,
+                                        items.runaansHurricane,
+                                        items.spearOfShojin
                                 ],
                                 champions.sivir :
                                     [
                                         items.hush,
                                         items.redBuff,
-                                        items.runaansHurricane
+                                        items.infinityEdge
                                 ]
                             ],
                               teamCompPositions:  TeamCompPositions(champsPositions:
