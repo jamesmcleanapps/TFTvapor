@@ -161,7 +161,6 @@ extension ItemsSet2 {
             forceOfNature,
             guardianAngel,
             morellonomicon,
-            redBuff,
             seraphsEmbrace,
             zephyr
         ]
@@ -169,10 +168,14 @@ extension ItemsSet2 {
             deathBlade,
             dragonsClaw,
             giantSlayer,
+            infinityEdge,
             ionicSpark,
             lastWhisper,
             locket,
+            ludensEcho,
+            jeweledGauntlet,
             rabadonsDeathcap,
+            redBuff,
             redemption,
             runaansHurricane,
             spearOfShojin,
@@ -185,9 +188,6 @@ extension ItemsSet2 {
             handOfJustice,
             hush,
             icebornGauntlet,
-            jeweledGauntlet,
-            
-            ludensEcho,
             quicksilver,
             rapidFirecannon,
             statikkShiv,
