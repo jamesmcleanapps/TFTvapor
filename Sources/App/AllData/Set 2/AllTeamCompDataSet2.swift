@@ -656,7 +656,7 @@ class TeamCompsSet2 {
         // MARK: SOULBOUND LIGHT
         soulboundLight = TeamComp(name: "Soulbound Light",
                                   teamCompSet: .set2,
-                              tier: .S,
+                              tier: .B,
                               patch: TeamCompPatch.tenOneTwo.rawValue,
                               
                               earlyUnits: [
