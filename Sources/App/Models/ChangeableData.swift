@@ -30,12 +30,12 @@ extension ChampionsSet2 {
         let sRating = [
             amumu,
             annie,
-            azir,
+            
             khazix,
-            kindred,
+            
             lucian,
             lux,
-            masterYi,
+            
             nami,
             singed,
             sivir,
@@ -46,9 +46,12 @@ extension ChampionsSet2 {
         
         let aRating = [
             ashe,
-            janna,
+            azir,
+            drMundo,
             
+            kindred,
             malphite,
+            masterYi,
             nautilus,
             olaf,
             qiyana,
@@ -60,16 +63,18 @@ extension ChampionsSet2 {
         let bRating = [
             aatrox,
             brand,
-            drMundo,
+            
             ezreal,
+            janna,
             karma,
             malzahar,
             nocturne,
-            ornn,
+            
             sion,
             skarner,
             soraka,
             sion,
+            varus,
             volibear,
             yasuo,
             zyra,
@@ -81,20 +86,21 @@ extension ChampionsSet2 {
             ivern,
             kogmaw,
             leBlanc,
+            leona,
             maokai,
             nasus,
             neeko,
-            reksai,
             renekton,
-            varus,
+            taliyah,
             vladimir,
-            leona
+            vayne
         ]
         let dRating: [Champion] = [
             diana,
             jax,
-            taliyah,
-            vayne
+            ornn,
+            reksai
+            
         ]
         let eRating: [Champion] = [
             warwick

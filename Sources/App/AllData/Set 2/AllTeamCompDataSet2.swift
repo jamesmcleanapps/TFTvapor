@@ -1785,7 +1785,7 @@ class TeamCompsSet2 {
         // MARK: LIGHT
         light = TeamComp(name: "Light",
                           teamCompSet: .set2,
-                          tier: .S,
+                          tier: .A,
                       patch: TeamCompPatch.tenOneTwo.rawValue,
                       
                       earlyUnits: [],

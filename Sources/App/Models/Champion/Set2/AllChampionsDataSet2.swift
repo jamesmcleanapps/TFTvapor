@@ -442,7 +442,7 @@ class ChampionsSet2 {
                 items.guinsoosRageblade,
                 items.runaansHurricane
             ],
-                         stats: Stats(health: 550, armor: 25, magicResist: 20, attackDamage: 40, attackSpeed: 0.75, attackRange: 3)
+                         stats: Stats(health: 550, armor: 25, magicResist: 20, attackDamage: 40, attackSpeed: 0.7, attackRange: 3)
         )
         
         
@@ -498,7 +498,7 @@ class ChampionsSet2 {
                 items.seraphsEmbrace,
                 items.warmogsArmor
             ],
-                          stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
+                          stats: Stats(health: 850, armor: 35, magicResist: 20, attackDamage: 65, attackSpeed: 0.7, attackRange: 1)
         )
         
         
@@ -648,7 +648,7 @@ class ChampionsSet2 {
                 items.warmogsArmor,
                 items.warmogsArmor
             ],
-                           stats: Stats(health: 750, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.6, attackRange: 1)
+                           stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.6, attackRange: 1)
         )
         
         
@@ -729,7 +729,7 @@ class ChampionsSet2 {
                 items.guardianAngel,
                 items.handOfJustice,
             ],
-                            stats: Stats(health: 850, armor: 30, magicResist: 20, attackDamage: 70, attackSpeed: 1, attackRange: 1)
+                            stats: Stats(health: 850, armor: 30, magicResist: 20, attackDamage: 70, attackSpeed: 1.1, attackRange: 1)
         )
         
         
@@ -748,7 +748,7 @@ class ChampionsSet2 {
                 items.dragonsClaw,
                 items.redemption
             ],
-                          stats: Stats(health: 650, armor: 30, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
+                          stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
         )
         
         
@@ -760,7 +760,7 @@ class ChampionsSet2 {
                 items.guinsoosRageblade,
                 items.infinityEdge
             ],
-                            stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 1)
+                            stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1)
         )
         
         

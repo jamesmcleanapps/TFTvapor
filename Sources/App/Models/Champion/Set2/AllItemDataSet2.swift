@@ -206,13 +206,13 @@ class ItemsSet2 {
         guinsoosRageblade = CombinedItem(name: "guinsoo's rageblade", bonus: "Attacks grant 5% attack speed (stacks infinitely)", rating: .S, recipe: [needlesslyLargeRod, recurveBow])
         
         // MARK: IONIC SPARK
-        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Enemies within 3 hexes that cast a spell are zapped, taking magic damage equal to 200% of their max Mana.", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
+        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Enemies within 3 hexes that cast a spell are zapped, taking magic damage equal to 225% of their max Mana.", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
         
         // MARK: RABADONS DEATHCAP
         rabadonsDeathcap = CombinedItem(name: "rabadon's deathcap", bonus: "+50% Ability Power", rating: .A, recipe: [needlesslyLargeRod, needlesslyLargeRod])
         
         // MARK: LUDENS ECHO
-        ludensEcho = CombinedItem(name: "luden's echo", bonus: "Deals 120/160/200 magic damage (scales with wearer’s Star Level)", rating: .A, recipe: [needlesslyLargeRod, tearOfTheGoddess])
+        ludensEcho = CombinedItem(name: "luden's echo", bonus: "Deals 150/175/225 magic damage (scales with wearer’s Star Level)", rating: .A, recipe: [needlesslyLargeRod, tearOfTheGoddess])
         
         // MARK: INFERNOS CINDER
         infernosCinder = CombinedItem(name: "inferno's cinder", bonus: "Wearer is also Infernal", rating: .A, recipe: [needlesslyLargeRod, spatula])
@@ -236,7 +236,7 @@ class ItemsSet2 {
         rapidFirecannon = CombinedItem(name: "rapid firecannon", bonus: "Attack range is doubled", rating: .S, recipe: [recurveBow, recurveBow])
         
         // MARK: STATIC SHIV
-        statikkShiv = CombinedItem(name: "statikk shiv", bonus: "Deals 80 magic damage to 3/4/5 enemies (scales with wearer’s Star Level)", rating: .S, recipe: [recurveBow, tearOfTheGoddess])
+        statikkShiv = CombinedItem(name: "statikk shiv", bonus: "Deals 85 magic damage to 3/4/5 enemies (scales with wearer’s Star Level)", rating: .S, recipe: [recurveBow, tearOfTheGoddess])
         
         // MARK: BLADE OF THE RUINED KING
         bladeOfTheRuinedKing = CombinedItem(name: "blade of the ruined king", bonus: "Wearer is also a Blademaster", rating: .A, recipe: [recurveBow, spatula])
@@ -259,7 +259,7 @@ class ItemsSet2 {
         
         
         // MARK: INFINITY EDGE
-        infinityEdge = CombinedItem(name: "infinity edge", bonus: "Critical hits reduce the target’s Armor by 90% for 3 seconds. This effect does not stack.", rating: .A, recipe: [sparringGloves, bfSword])
+        infinityEdge = CombinedItem(name: "infinity edge", bonus: "The wearer gains +100% Critical Strike Damage.", rating: .A, recipe: [sparringGloves, bfSword])
         
         // MARK: LAST WHISPER
         lastWhisper = CombinedItem(name: "last whisper", bonus: "When the wearer inflicts a critical hit, the target’s armor is reduced by 90 percent for 3 seconds", rating: .B, recipe: [sparringGloves, recurveBow])
