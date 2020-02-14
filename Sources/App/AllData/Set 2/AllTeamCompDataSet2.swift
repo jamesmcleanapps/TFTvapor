@@ -14,7 +14,7 @@ class TeamCompsSet2 {
     
     lazy var allTeamComps: [TeamComp] = {
         return [
-            electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages, poisonGlacial,
+            electricWarden, hyperRollWoodland, blademasterAssassins, oceanMages,
             poisonElectric,
             
             shadowRangers, assassinSummoners, soulboundWardens,
@@ -32,7 +32,7 @@ class TeamCompsSet2 {
     let hyperRollWoodland: TeamComp
     let blademasterAssassins: TeamComp
     let oceanMages: TeamComp
-    let poisonGlacial: TeamComp
+    //let poisonGlacial: TeamComp
     let poisonElectric: TeamComp
     let assassinSummoners: TeamComp
     let soulboundWardens: TeamComp
@@ -287,68 +287,68 @@ class TeamCompsSet2 {
         
         
         // MARK: POISON GLACIAL
-        poisonGlacial = TeamComp(
-            name: "Poison Glacial",
-            teamCompSet: .set2,
-            tier: .S,
-            patch: TeamCompPatch.tenThree.rawValue,
-            earlyUnits: [],
-            midUnits: [
-                champions.warwick,
-                champions.braum,
-                champions.volibear,
-                champions.ezreal,
-                champions.olaf,
-            ],
-            units: [
-                champions.warwick,
-                champions.braum,
-                champions.volibear,
-                champions.ezreal,
-                champions.drMundo,
-                champions.olaf,
-                champions.twitch,
-                champions.singed
-            ],
-            carries: [
-                champions.ezreal,
-                champions.olaf,
-                champions.twitch,
-                champions.singed
-            ],
-            carryItems: [
-                champions.ezreal :
-                    [
-                        items.ludensEcho
-                ],
-                champions.olaf :
-                    [
-                        items.bloodthirster,
-                        items.guinsoosRageblade,
-                        items.hush
-                ],
-                champions.twitch :
-                    [
-                        items.frozenMallet
-                ],
-                champions.singed :
-                    [
-                        items.morellonomicon
-                ]
-            ],
-            teamCompPositions:  TeamCompPositions(
-                champsPositions:
-                [
-                    4 : champions.braum,
-                    11 : champions.singed,
-                    18 : champions.twitch,
-                    19 : champions.ezreal,
-                    23 : champions.volibear,
-                    24 : champions.olaf,
-                    26 : champions.drMundo,
-                    27 : champions.warwick
-            ]),
-            webLink: nil)
+//        poisonGlacial = TeamComp(
+//            name: "Poison Glacial",
+//            teamCompSet: .set2,
+//            tier: .S,
+//            patch: TeamCompPatch.tenThree.rawValue,
+//            earlyUnits: [],
+//            midUnits: [
+//                champions.warwick,
+//                champions.braum,
+//                champions.volibear,
+//                champions.ezreal,
+//                champions.olaf,
+//            ],
+//            units: [
+//                champions.warwick,
+//                champions.braum,
+//                champions.volibear,
+//                champions.ezreal,
+//                champions.drMundo,
+//                champions.olaf,
+//                champions.twitch,
+//                champions.singed
+//            ],
+//            carries: [
+//                champions.ezreal,
+//                champions.olaf,
+//                champions.twitch,
+//                champions.singed
+//            ],
+//            carryItems: [
+//                champions.ezreal :
+//                    [
+//                        items.ludensEcho
+//                ],
+//                champions.olaf :
+//                    [
+//                        items.bloodthirster,
+//                        items.guinsoosRageblade,
+//                        items.hush
+//                ],
+//                champions.twitch :
+//                    [
+//                        items.frozenMallet
+//                ],
+//                champions.singed :
+//                    [
+//                        items.morellonomicon
+//                ]
+//            ],
+//            teamCompPositions:  TeamCompPositions(
+//                champsPositions:
+//                [
+//                    4 : champions.braum,
+//                    11 : champions.singed,
+//                    18 : champions.twitch,
+//                    19 : champions.ezreal,
+//                    23 : champions.volibear,
+//                    24 : champions.olaf,
+//                    26 : champions.drMundo,
+//                    27 : champions.warwick
+//            ]),
+//            webLink: nil)
         
         
         // MARK: POISON ELECTRIC
