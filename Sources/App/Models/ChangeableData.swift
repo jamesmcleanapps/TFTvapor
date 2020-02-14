@@ -30,61 +30,54 @@ extension ChampionsSet2 {
         let sRating = [
             amumu,
             annie,
-            
+            ashe,
             khazix,
-            
-            lucian,
             lux,
-            
             nami,
             singed,
-            sivir,
             taric,
+            twitch,
             yorick,
             zed
         ]
         
         let aRating = [
-            ashe,
             azir,
             drMundo,
-            
             kindred,
+            lucian,
             malphite,
             masterYi,
             nautilus,
             olaf,
             qiyana,
-            
             thresh,
-            twitch
-            
+            yasuo
         ]
         let bRating = [
             aatrox,
             brand,
-            
             ezreal,
             janna,
             karma,
+            kogmaw,
             malzahar,
             nocturne,
-            
+            senna,
             sion,
+            sivir,
             skarner,
             soraka,
-            sion,
+            syndra,
             varus,
+            veigar,
             volibear,
-            yasuo,
-            zyra,
-            senna,
-            veigar
+            zyra
+            
         ]
         let cRating: [Champion] = [
             braum,
             ivern,
-            kogmaw,
             leBlanc,
             leona,
             maokai,
