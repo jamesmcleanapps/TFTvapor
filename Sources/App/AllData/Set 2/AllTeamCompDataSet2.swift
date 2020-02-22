@@ -817,7 +817,7 @@ class TeamCompsSet2 {
             name: "Electric Warden",
             teamCompSet: .set2,
             tier: .B,
-            patch: TeamCompPatch.tenThree.rawValue,
+            patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.leona,
@@ -874,8 +874,8 @@ class TeamCompsSet2 {
         hyperRollWoodland = TeamComp(
             name: "Hyper Roll Woodland",
             teamCompSet: .set2,
-            tier: .A,
-            patch: TeamCompPatch.tenThree.rawValue,
+            tier: .B,
+            patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.maokai,
@@ -931,7 +931,7 @@ class TeamCompsSet2 {
             name: "Blademaster Assassins",
             teamCompSet: .set2,
             tier: .B,
-            patch: TeamCompPatch.tenThree.rawValue,
+            patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.yasuo,
@@ -988,7 +988,7 @@ class TeamCompsSet2 {
             name: "Ocean Mages",
             teamCompSet: .set2,
             tier: .S,
-            patch: TeamCompPatch.tenThree.rawValue,
+            patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.vladimir,
@@ -1045,7 +1045,7 @@ class TeamCompsSet2 {
 //            name: "Poison Glacial",
 //            teamCompSet: .set2,
 //            tier: .S,
-//            patch: TeamCompPatch.tenThree.rawValue,
+//            patch: TeamCompPatch.tenFour.rawValue,
 //            earlyUnits: [],
 //            midUnits: [
 //                champions.warwick,
@@ -1110,7 +1110,7 @@ class TeamCompsSet2 {
             name: "Poison Electric",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenThree.rawValue,
+            patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ornn,
@@ -1174,7 +1174,7 @@ class TeamCompsSet2 {
         shadowRangers = TeamComp(name: "Shadow Rangers",
                                   teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.tenThree.rawValue,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1222,7 +1222,7 @@ class TeamCompsSet2 {
             name: "Assassin Summoners",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenThree.rawValue,
+            patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ivern,
@@ -1283,7 +1283,7 @@ class TeamCompsSet2 {
         soulboundWardens = TeamComp(name: "Soulbound Wardens",
                                   teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.tenThree.rawValue,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1342,7 +1342,7 @@ class TeamCompsSet2 {
         lunarMystics = TeamComp(name: "Lunar Mystics",
                                   teamCompSet: .set2,
                                   tier: .C,
-                              patch: TeamCompPatch.tenThree.rawValue,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1398,8 +1398,8 @@ class TeamCompsSet2 {
         // MARK: LUX OPTIONS
         luxOptions = TeamComp(name: "Lux Options",
                                   teamCompSet: .set2,
-                              tier: .S,
-                              patch: TeamCompPatch.tenThree.rawValue,
+                              tier: .A,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1456,7 +1456,7 @@ class TeamCompsSet2 {
               berserkers = TeamComp(name: "Berserkers",
                                         teamCompSet: .set2,
                                     tier: .A,
-                                    patch: TeamCompPatch.tenThree.rawValue,
+                                    patch: TeamCompPatch.tenFour.rawValue,
                                     
                                     earlyUnits: [],
                                     
@@ -1513,7 +1513,7 @@ class TeamCompsSet2 {
         blademasterSummoner = TeamComp(name: "Blademaster Summoner",
                                   teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.tenThree.rawValue,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1568,7 +1568,7 @@ class TeamCompsSet2 {
                 inferno = TeamComp(name: "Inferno",
                                   teamCompSet: .set2,
                               tier: .S,
-                              patch: TeamCompPatch.tenThree.rawValue,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1625,8 +1625,8 @@ class TeamCompsSet2 {
         // MARK: DESERT ASSASSINS
                    desertAssassins = TeamComp(name: "Desert Assassins",
                                      teamCompSet: .set2,
-                                 tier: .A,
-                                 patch: TeamCompPatch.tenThree.rawValue,
+                                 tier: .B,
+                                 patch: TeamCompPatch.tenFour.rawValue,
                                  
                                  earlyUnits: [],
                                  
@@ -1685,7 +1685,7 @@ class TeamCompsSet2 {
         poisonRangers = TeamComp(name: "Poison Rangers",
                           teamCompSet: .set2,
                           tier: .S,
-                      patch: TeamCompPatch.tenThree.rawValue,
+                      patch: TeamCompPatch.tenFour.rawValue,
                       
                       earlyUnits: [],
                       
@@ -1743,7 +1743,7 @@ class TeamCompsSet2 {
         light = TeamComp(name: "Light",
                           teamCompSet: .set2,
                           tier: .A,
-                      patch: TeamCompPatch.tenThree.rawValue,
+                      patch: TeamCompPatch.tenFour.rawValue,
                       
                       earlyUnits: [],
                       
@@ -1798,7 +1798,7 @@ class TeamCompsSet2 {
         lunarBlademaster = TeamComp(name: "Lunar Blademasters",
                           teamCompSet: .set2,
                           tier: .A,
-                      patch: TeamCompPatch.tenThree.rawValue,
+                      patch: TeamCompPatch.tenFour.rawValue,
                       
                       earlyUnits: [],
                       
