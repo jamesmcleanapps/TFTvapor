@@ -26,7 +26,7 @@ class TeamCompsSet2 {
             
             shadowRangers, assassinSummoners, soulboundWardens,
             lunarMystics, luxOptions, berserkers, blademasterSummoner, inferno, desertAssassins,
-            poisonRangers, light, lunarBlademaster
+            poisonRangers, light, lunarBlademaster, shadowInferno
         ]
     }()
     
@@ -80,6 +80,7 @@ class TeamCompsSet2 {
     let light: TeamComp
     let shadowRangers: TeamComp
     let lunarBlademaster: TeamComp
+    let shadowInferno: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -199,8 +200,8 @@ class TeamCompsSet2 {
         // MARK: HYPERROLL PREDATORS
         hyperrollPredators = TeamComp(name: "Hyper-roll Predators",
                                   teamCompSet: .set2,
-                              tier: .A,
-                              patch: TeamCompPatch.tenOneTwo.rawValue,
+                              tier: .S,
+                              patch: TeamCompPatch.tenFour.rawValue,
                               earlyUnits: [],
                               
                               midUnits: [champions.kogmaw, champions.skarner, champions.reksai, champions.nocturne, champions.ashe],
@@ -217,29 +218,27 @@ class TeamCompsSet2 {
                               
                               carries: [
                                 champions.kogmaw,
-                                champions.skarner,
                                 champions.ashe,
-                                champions.singed],
+                                champions.singed
+                    ],
                               
                               carryItems: [
                                 champions.kogmaw :
-                                    [items.statikkShiv],
-                                champions.skarner :
-                                    [items.warmogsArmor, items.ionicSpark, items.brambleVest],
+                                    [items.ludensEcho, items.ludensEcho, items.ludensEcho],
                                 champions.ashe :
-                                    [items.giantSlayer],
+                                    [items.statikkShiv, items.statikkShiv],
                                 champions.singed : [items.morellonomicon]],
                               teamCompPositions:
                                     TeamCompPositions(champsPositions:
                                         [
-                                            2 : champions.skarner,
-                                            4: champions.taric,
-                                            6 : champions.reksai,
-                                            11 : champions.singed,
-                                            16 : champions.kogmaw,
-                                            18 : champions.ashe,
-                                            20 : champions.twitch,
-                                            22 : champions.nocturne
+                                            3 : champions.reksai,
+                                            5: champions.nocturne,
+                                            8 : champions.singed,
+                                            11 : champions.taric,
+                                            22 : champions.skarner,
+                                            24 : champions.twitch,
+                                            25 : champions.kogmaw,
+                                            28 : champions.ashe
                                             ]),
                               webLink: nil)
         
@@ -1846,6 +1845,61 @@ class TeamCompsSet2 {
                             15 : champions.karma,
                             25 : champions.sivir,
                             28 : champions.khazix
+                      ]) ,
+                      webLink: nil)
+        
+        
+        // MARK: SHADOW INFERNO
+        shadowInferno = TeamComp(name: "Shadow Inferno",
+                          teamCompSet: .set2,
+                          tier: .S,
+                      patch: TeamCompPatch.tenFour.rawValue,
+                      
+                      earlyUnits: [],
+                      
+                      midUnits: [
+                        champions.zyra,
+                        champions.malzahar,
+                        champions.varus,
+                        champions.kindred,
+                        champions.sion],
+                      
+                      units: [
+                        champions.malzahar,
+                        champions.senna,
+                        champions.varus,
+                        champions.kindred,
+                        champions.sion,
+                        champions.veigar,
+                        champions.amumu,
+                        champions.masterYi
+                    ],
+                      
+                      carries: [champions.kindred, champions.masterYi],
+                      carryItems: [
+                        champions.kindred :
+                            [
+                                items.infinityEdge,
+                                items.jeweledGauntlet,
+                                items.seraphsEmbrace
+                        ],
+                        champions.masterYi :
+                            [
+                                items.guardianAngel,
+                                items.handOfJustice,
+                                items.rapidFirecannon
+                        ]
+                    ],
+                      teamCompPositions:  TeamCompPositions(champsPositions:
+                        [
+                            3 : champions.sion,
+                            5 : champions.amumu,
+                            8 : champions.masterYi,
+                            17 : champions.malzahar,
+                            19 : champions.veigar,
+                            25 : champions.kindred,
+                            27 : champions.varus,
+                            28 : champions.senna
                       ]) ,
                       webLink: nil)
         
