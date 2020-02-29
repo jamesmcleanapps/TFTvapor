@@ -986,7 +986,7 @@ class TeamCompsSet2 {
         oceanMages = TeamComp(
             name: "Ocean Mages",
             teamCompSet: .set2,
-            tier: .S,
+            tier: .A,
             patch: TeamCompPatch.tenFour.rawValue,
             earlyUnits: [],
             midUnits: [
