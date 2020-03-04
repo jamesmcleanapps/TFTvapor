@@ -660,7 +660,7 @@ class ChampionsSet2 {
                 items.redBuff,
                 items.runaansHurricane
             ],
-                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 65, attackSpeed: 0.75, attackRange: 4)
+                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 70, attackSpeed: 0.75, attackRange: 4)
         )
         
         

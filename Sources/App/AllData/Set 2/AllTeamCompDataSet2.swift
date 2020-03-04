@@ -26,7 +26,7 @@ class TeamCompsSet2 {
             
             shadowRangers, assassinSummoners, soulboundWardens,
             lunarMystics, luxOptions, berserkers, blademasterSummoner, inferno, desertAssassins,
-            poisonRangers, light, lunarBlademaster, shadowInferno
+            poisonRangers, light, lunarBlademaster, shadowInferno, fast8Electric
         ]
     }()
     
@@ -81,6 +81,7 @@ class TeamCompsSet2 {
     let shadowRangers: TeamComp
     let lunarBlademaster: TeamComp
     let shadowInferno: TeamComp
+    let fast8Electric: TeamComp
     
     init() {
         let champions = ChampionsSet2.shared
@@ -201,7 +202,7 @@ class TeamCompsSet2 {
         hyperrollPredators = TeamComp(name: "Hyper-roll Predators",
                                   teamCompSet: .set2,
                               tier: .S,
-                              patch: TeamCompPatch.tenFour.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               earlyUnits: [],
                               
                               midUnits: [champions.kogmaw, champions.skarner, champions.reksai, champions.nocturne, champions.ashe],
@@ -609,7 +610,7 @@ class TeamCompsSet2 {
         shadowSummoners = TeamComp(name: "Shadow Summoners",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.tenOneTwo.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               
                               earlyUnits: [
                                 ],
@@ -874,7 +875,7 @@ class TeamCompsSet2 {
             name: "Hyper Roll Woodland",
             teamCompSet: .set2,
             tier: .B,
-            patch: TeamCompPatch.tenFour.rawValue,
+            patch: TeamCompPatch.tenFive.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.maokai,
@@ -929,8 +930,8 @@ class TeamCompsSet2 {
         blademasterAssassins = TeamComp(
             name: "Blademaster Assassins",
             teamCompSet: .set2,
-            tier: .B,
-            patch: TeamCompPatch.tenFour.rawValue,
+            tier: .C,
+            patch: TeamCompPatch.tenFive.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.yasuo,
@@ -986,8 +987,8 @@ class TeamCompsSet2 {
         oceanMages = TeamComp(
             name: "Ocean Mages",
             teamCompSet: .set2,
-            tier: .A,
-            patch: TeamCompPatch.tenFour.rawValue,
+            tier: .S,
+            patch: TeamCompPatch.tenFive.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.vladimir,
@@ -1109,7 +1110,7 @@ class TeamCompsSet2 {
             name: "Poison Electric",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenFour.rawValue,
+            patch: TeamCompPatch.tenFive.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ornn,
@@ -1173,7 +1174,7 @@ class TeamCompsSet2 {
         shadowRangers = TeamComp(name: "Shadow Rangers",
                                   teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.tenFour.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1221,7 +1222,7 @@ class TeamCompsSet2 {
             name: "Assassin Summoners",
             teamCompSet: .set2,
             tier: .A,
-            patch: TeamCompPatch.tenFour.rawValue,
+            patch: TeamCompPatch.tenFive.rawValue,
             earlyUnits: [],
             midUnits: [
                 champions.ivern,
@@ -1242,7 +1243,7 @@ class TeamCompsSet2 {
             ],
             carries: [
                 champions.yorick,
-                champions.amumu,
+                champions.azir,
                 champions.zed
             ],
             carryItems: [
@@ -1250,16 +1251,16 @@ class TeamCompsSet2 {
                     [
                         items.guardianAngel
                 ],
-                champions.amumu :
+                champions.azir :
                     [
-                        items.guardianAngel,
-                        items.morellonomicon
+                        items.guinsoosRageblade,
+                        items.jeweledGauntlet,
+                        items.rapidFirecannon
                 ],
                 champions.zed :
                     [
                         items.guardianAngel,
-                        items.redemption,
-                        items.talismanOfLight
+                        items.redemption
                 ]
             ],
             teamCompPositions:  TeamCompPositions(
@@ -1282,7 +1283,7 @@ class TeamCompsSet2 {
         soulboundWardens = TeamComp(name: "Soulbound Wardens",
                                   teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.tenFour.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1398,7 +1399,7 @@ class TeamCompsSet2 {
         luxOptions = TeamComp(name: "Lux Options",
                                   teamCompSet: .set2,
                               tier: .A,
-                              patch: TeamCompPatch.tenFour.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1455,7 +1456,7 @@ class TeamCompsSet2 {
               berserkers = TeamComp(name: "Berserkers",
                                         teamCompSet: .set2,
                                     tier: .A,
-                                    patch: TeamCompPatch.tenFour.rawValue,
+                                    patch: TeamCompPatch.tenFive.rawValue,
                                     
                                     earlyUnits: [],
                                     
@@ -1512,7 +1513,7 @@ class TeamCompsSet2 {
         blademasterSummoner = TeamComp(name: "Blademaster Summoner",
                                   teamCompSet: .set2,
                               tier: .B,
-                              patch: TeamCompPatch.tenFour.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1567,7 +1568,7 @@ class TeamCompsSet2 {
                 inferno = TeamComp(name: "Inferno",
                                   teamCompSet: .set2,
                               tier: .S,
-                              patch: TeamCompPatch.tenFour.rawValue,
+                              patch: TeamCompPatch.tenFive.rawValue,
                               
                               earlyUnits: [],
                               
@@ -1625,7 +1626,7 @@ class TeamCompsSet2 {
                    desertAssassins = TeamComp(name: "Desert Assassins",
                                      teamCompSet: .set2,
                                  tier: .B,
-                                 patch: TeamCompPatch.tenFour.rawValue,
+                                 patch: TeamCompPatch.tenFive.rawValue,
                                  
                                  earlyUnits: [],
                                  
@@ -1684,7 +1685,7 @@ class TeamCompsSet2 {
         poisonRangers = TeamComp(name: "Poison Rangers",
                           teamCompSet: .set2,
                           tier: .S,
-                      patch: TeamCompPatch.tenFour.rawValue,
+                      patch: TeamCompPatch.tenFive.rawValue,
                       
                       earlyUnits: [],
                       
@@ -1742,7 +1743,7 @@ class TeamCompsSet2 {
         light = TeamComp(name: "Light",
                           teamCompSet: .set2,
                           tier: .A,
-                      patch: TeamCompPatch.tenFour.rawValue,
+                      patch: TeamCompPatch.tenFive.rawValue,
                       
                       earlyUnits: [],
                       
@@ -1793,7 +1794,7 @@ class TeamCompsSet2 {
                       webLink: nil)
         
         
-        // MARK: LIGHT
+        // MARK: LUNAR BLADEMASTER
         lunarBlademaster = TeamComp(name: "Lunar Blademasters",
                           teamCompSet: .set2,
                           tier: .A,
@@ -1853,7 +1854,7 @@ class TeamCompsSet2 {
         shadowInferno = TeamComp(name: "Shadow Inferno",
                           teamCompSet: .set2,
                           tier: .S,
-                      patch: TeamCompPatch.tenFour.rawValue,
+                      patch: TeamCompPatch.tenFive.rawValue,
                       
                       earlyUnits: [],
                       
@@ -1900,6 +1901,64 @@ class TeamCompsSet2 {
                             25 : champions.kindred,
                             27 : champions.varus,
                             28 : champions.senna
+                      ]) ,
+                      webLink: nil)
+        
+        
+        // MARK: FAST 8 ELECTRIC
+        fast8Electric = TeamComp(name: "Fast 8 Electric",
+                          teamCompSet: .set2,
+                          tier: .S,
+                      patch: TeamCompPatch.tenFive.rawValue,
+                      
+                      earlyUnits: [],
+                      
+                      midUnits: [
+                        champions.leona,
+                        champions.olaf,
+                        champions.volibear,
+                        champions.karma,
+                        champions.janna],
+                      
+                      units: [
+                        champions.leona,
+                        champions.olaf,
+                        champions.volibear,
+                        champions.karma,
+                        champions.qiyana,
+                        champions.khazix,
+                        champions.janna,
+                        champions.zed
+                    ],
+                      
+                      carries: [champions.olaf, champions.janna, champions.zed],
+                      carryItems: [
+                        champions.olaf :
+                            [
+                                items.brambleVest,
+                                items.brambleVest
+                        ],
+                        champions.janna :
+                            [
+                                items.zephyr
+                        ],
+                        champions.zed :
+                            [
+                                items.guardianAngel,
+                                items.lastWhisper,
+                                items.redemption
+                        ]
+                    ],
+                      teamCompPositions:  TeamCompPositions(champsPositions:
+                        [
+                            3 : champions.olaf,
+                            5 : champions.leona,
+                            11 : champions.volibear,
+                            18 : champions.janna,
+                            20 : champions.karma,
+                            22 : champions.qiyana,
+                            23 : champions.khazix,
+                            28 : champions.zed
                       ]) ,
                       webLink: nil)
         

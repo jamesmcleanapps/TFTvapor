@@ -37,6 +37,7 @@ extension ChampionsSet2 {
             taric,
             twitch,
             yorick,
+            zed
             
         ]
         
@@ -50,8 +51,7 @@ extension ChampionsSet2 {
             nami,
             olaf,
             qiyana,
-            yasuo,
-            zed
+            yasuo
         ]
         let bRating = [
             brand,

@@ -34,7 +34,7 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
             return Details(main: "Electric champions shock nearby enemies whenever they deal or receive a critical strike.",
                                  benefit1: "2  -  80 Damage",
                                  benefit2: "3  -  250 Damage",
-                                 benefit3: "4  -  500 Damage")
+                                 benefit3: "4  -  550 Damage")
         case "glacial":
             return Details(main: "Basic Attacks from Glacials have a chance to stun their target for 1.50 seconds.",
                                  benefit1: "2  -  20% Chance to Stun",
@@ -74,7 +74,7 @@ enum ChampionElementSet2: String, CaseIterable, Codable {
         case "shadow":
             return Details(main: "Shadow champions gain bonus damage for 4 seconds. Resets when they participate in a takedown.",
                                  benefit1: "3  -  +65% damage",
-                                 benefit2: "6  -  +165% damage and resets when any shadow champion gets a takedown",
+                                 benefit2: "6  -  +150% damage and resets when any shadow champion gets a takedown",
                                  benefit3: nil)
         case "steel":
             return Details(main: "Steel Champions gain damage immunity for a few seconds when they are reduced below 50% health.",
