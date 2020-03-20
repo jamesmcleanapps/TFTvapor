@@ -15,7 +15,7 @@ final class TeamCompTests: XCTestCase {
     func testCarriesAndCarryItemsMatch() throws {
         TeamComps.shared.allTeamComps.forEach { (teamComp) in
             let carries = teamComp.carries.map { $0.name }.sorted()
-            let carriesInCarryItems = teamComp.carryItems!.keys.map { $0.name }.sorted()
+            let carriesInCarryItems = teamComp.carryItems.keys.map { $0.name }.sorted()
             
             if carries != carriesInCarryItems {
                 print("TCT: \(teamComp.name) has an error")
@@ -30,7 +30,7 @@ final class TeamCompTests: XCTestCase {
     func testCarriesAndCarryItemsMatchSet2() throws {
         TeamCompsSet2.shared.allTeamComps.forEach { (teamComp) in
             let carries = teamComp.carries.map { $0.name }.sorted()
-            let carriesInCarryItems = teamComp.carryItems!.keys.map { $0.name }.sorted()
+            let carriesInCarryItems = teamComp.carryItems.keys.map { $0.name }.sorted()
             
             if carries != carriesInCarryItems {
                 print("TCT: \(teamComp.name) has an error")
@@ -45,7 +45,7 @@ final class TeamCompTests: XCTestCase {
     func testCarriesAndCarryItemsMatchSet3() throws {
         TeamCompsSet3.shared.allTeamComps.forEach { (teamComp) in
             let carries = teamComp.carries.map { $0.name }.sorted()
-            let carriesInCarryItems = teamComp.carryItems!.keys.map { $0.name }.sorted()
+            let carriesInCarryItems = teamComp.carryItems.keys.map { $0.name }.sorted()
             
             if carries != carriesInCarryItems {
                 print("TCT: \(teamComp.name) has an error")
