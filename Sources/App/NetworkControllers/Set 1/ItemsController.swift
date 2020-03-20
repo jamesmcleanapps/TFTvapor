@@ -29,7 +29,10 @@ struct ItemsController: RouteCollection {
     
     func getCombinedItemWithName(_ req: Request) throws -> CombinedItem {
         let str = try req.parameters.next(String.self)
-        var items = ItemsSet2.shared.allCombinedItems.filter { $0.name == str }
+        var items = ItemsSet3.shared.allCombinedItems.filter { $0.name == str }
+        if items.isEmpty {
+            items = ItemsSet2.shared.allCombinedItems.filter { $0.name == str }
+        }
         if items.isEmpty {
             items = Items.shared.allCombinedItems.filter { $0.name == str }
         }
@@ -41,19 +44,25 @@ struct ItemsController: RouteCollection {
         let set = try req.parameters.next(String.self)
         let itemName = try req.parameters.next(String.self)
         let item : [CombinedItem]
+        
         if set == "set1" {
             item = Items.shared.allCombinedItems.filter { $0.name == itemName }
+        } else if set == "set2" { // set2
+           item = ItemsSet2.shared.allCombinedItems.filter { $0.name == itemName }
         } else {
-            item = ItemsSet2.shared.allCombinedItems.filter { $0.name == itemName }
+            item = ItemsSet3.shared.allCombinedItems.filter { $0.name == itemName }
         }
         
         if item.count == 1 {
             if set == "set1" {
                 let champions = Champions.shared.goodChamps(for: item[0])
                 return champions.map { $0.name }
+            } else if set == "set2" { // set2
+              let champions = ChampionsSet2.shared.goodChamps(for: item[0])
+              return champions.map { $0.name }
             } else {
-                let champions = ChampionsSet2.shared.goodChamps(for: item[0])
-                return champions.map { $0.name }
+               let champions = ChampionsSet3.shared.goodChamps(for: item[0])
+               return champions.map { $0.name }
             }
             
             
@@ -66,8 +75,10 @@ struct ItemsController: RouteCollection {
         let set = try req.parameters.next(String.self)
         if set == "set1" {
             return Items.shared.itemsByRating
-        } else { // set2
+        } else if set == "set2" { // set2
             return ItemsSet2.shared.itemsByRating
+        } else {
+            return ItemsSet3.shared.itemsByRating
         }
         
     }

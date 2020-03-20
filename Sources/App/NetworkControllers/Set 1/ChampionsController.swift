@@ -26,8 +26,10 @@ struct ChampionsController: RouteCollection {
         let champion: Champion?
         if set == "set1" {
              champion = (Champions.shared.allChampions.filter { $0.name == champName }).first
-        } else {
+        } else if set == "set2" {
             champion = (ChampionsSet2.shared.allChampions.filter { $0.name == champName }).first
+        } else {
+            champion = (ChampionsSet3.shared.allChampions.filter { $0.name == champName }).first
         }
         
         if champion == nil { throw Abort(.badRequest) } else {
@@ -52,8 +54,14 @@ struct ChampionsController: RouteCollection {
                         champs.append(champion)
                     }
                 }
-            } else { // set 2
+            } else if set == "set2" { // set 2
                 ChampionsSet2.shared.allChampions.forEach { champion in
+                    if champion.rating == championRating {
+                        champs.append(champion)
+                    }
+                }
+            } else { // set3
+                ChampionsSet3.shared.allChampions.forEach { champion in
                     if champion.rating == championRating {
                         champs.append(champion)
                     }
@@ -101,6 +109,13 @@ struct ChampionsController: RouteCollection {
                 return chmpClass
             }
             if let chmpElement = ChampionElementSet2.getElementInfo(element: str) {
+                return chmpElement
+            }
+        case "set3":
+            if let chmpClass = ChampClassSet3.getClassInfo(classStr: str) {
+                return chmpClass
+            }
+            if let chmpElement = ChampOriginSet3.getOriginInfo(origin: str) {
                 return chmpElement
             }
         default:

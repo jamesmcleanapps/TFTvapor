@@ -109,6 +109,87 @@ extension ChampionsSet2 {
     }
 }
 
+// MARK: CHAMPIONS SET 3
+
+extension ChampionsSet3 {
+    func setChampionRatings() {
+        let sRating = [
+            aurelionSol,
+            ekko,
+            lulu,
+            thresh,
+            wukong
+            
+        ]
+        
+        let aRating = [
+            annie,
+            ashe,
+            chogath,
+            irelia,
+            jayce,
+            jhin,
+            jinx,
+            lucian,
+            missFortune,
+            shaco,
+            sona,
+            soraka
+        ]
+        let bRating = [
+          ahri,
+          caitlyn,
+          ezreal,
+          fizz,
+          gangplank,
+          kaisa,
+          kayle,
+          lux,
+          masterYi,
+          mordekaiser,
+          shen,
+          syndra,
+          velkoz,
+          vi,
+          xinZhao,
+          yasuo
+            
+        ]
+        let cRating: [Champion] = [
+            blitzcrank,
+            jarvan,
+            karma,
+            rakan,
+            rumble,
+            xayah
+        ]
+        let dRating: [Champion] = [
+            darius,
+            kassadin,
+            khazix,
+            leona,
+            neeko,
+            poppy,
+            ziggs,
+            zoe
+        ]
+        let eRating: [Champion] = [
+            fiora,
+            graves,
+            malphite,
+            twistedFate
+        ]
+        
+        sRating.forEach { $0.rating = .S }
+        aRating.forEach { $0.rating = .A }
+        bRating.forEach { $0.rating = .B }
+        cRating.forEach { $0.rating = .C }
+        dRating.forEach { $0.rating = .D }
+        eRating.forEach { $0.rating = .E }
+    }
+}
+
+
 extension Items {
     
     func setItemRatings() {
@@ -200,6 +281,76 @@ extension ItemsSet2 {
             hextechGunblade,
             swordBreaker,
             titanicHydra,
+            trapClaw
+        ]
+        
+        sRated.forEach { (item) in
+            item.setRating(to: .S)
+        }
+        
+        aRated.forEach { (item) in
+            item.setRating(to: .A)
+        }
+        
+        bRated.forEach { (item) in
+            item.setRating(to: .B)
+        }
+        
+        cRated.forEach { (item) in
+            item.setRating(to: .C)
+        }
+        
+    }
+    
+}
+
+
+// MARK: ITEMS SET 3
+extension ItemsSet3 {
+    
+    func setItemRatings() {
+        let sRated = [
+            forceOfNature,
+            guardianAngel,
+            ionicSpark,
+            seraphsEmbrace,
+            zephyr
+        ]
+        let aRated = [
+            bloodthirster,
+            brambleVest,
+            handOfJustice,
+            infinityEdge,
+            jeweledGauntlet,
+            morellonomicon,
+            redBuff,
+            redemption,
+            thiefsGloves,
+            warmogsArmor
+        ]
+        let bRated = [
+            deathBlade,
+            dragonsClaw,
+            giantSlayer,
+            lastWhisper,
+            locket,
+            ludensEcho,
+            rabadonsDeathcap,
+            runaansHurricane,
+            spearOfShojin,
+            statikkShiv,
+            titansResolve
+        ]
+        let cRated: [CombinedItem] = [
+            chaliceOfFavor,
+            guinsoosRageblade,
+            quicksilver,
+            rapidFirecannon,
+            shroud,
+            zzRot,
+            frozenHeart,
+            hextechGunblade,
+            swordBreaker,
             trapClaw
         ]
         

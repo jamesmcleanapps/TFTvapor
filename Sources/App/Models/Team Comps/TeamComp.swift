@@ -11,7 +11,7 @@ import Vapor
 import FluentMySQL
 
 enum TeamCompSet: String, CaseIterable, Codable, ReflectionDecodable {
-    case set1, set2
+    case set1, set2, set3
 }
 
 struct TeamComp: Equatable, Codable {
@@ -26,7 +26,7 @@ struct TeamComp: Equatable, Codable {
     var midUnits: [Champion]
     var units: [Champion]
     var carries: [Champion]
-    var carryItems: [Champion : [CombinedItem]]?
+    var carryItems: [Champion : [CombinedItem]]
     var teamCompPositions: TeamCompPositions?
     var webLink: String?
     
@@ -56,6 +56,17 @@ struct TeamComp: Equatable, Codable {
             classSet2Arr.forEach {
                 print("Has bonus for class \($0): \(calculateBonusItems(champClass: $0))")
                 synergiesString += "   \(unitsOfClassSet2(type: $0) + calculateBonusItems(champClass: $0)) x \($0)   ".capitalized
+            }
+        case .set3:
+            let originsArr = Array(Set(originsSet3))
+            originsArr.forEach {
+                synergiesString += "   \(unitsOfOriginSet3(type: $0) + calculateBonusItems(origin: $0)) x \($0)   ".capitalized
+            }
+            
+            let classSet3Arr = Array(Set(classesSet3))
+            classSet3Arr.forEach {
+                print("Has bonus for class \($0): \(calculateBonusItems(champClass: $0))")
+                synergiesString += "   \(unitsOfClassSet3(type: $0) + calculateBonusItems(champClass: $0)) x \($0)   ".capitalized
             }
         }
         
@@ -115,6 +126,31 @@ struct TeamComp: Equatable, Codable {
         return elementsToReturn
     }
     
+    var originsSet3: [ChampOriginSet3] {
+        var possibleOrigins = [ChampOriginSet3]()
+        units.forEach {
+            $0.championOriginSet3.forEach {
+                possibleOrigins.append($0)
+            }
+        }
+        print("Possible Origins for \(self.name): \(possibleOrigins)")
+        
+        var originsToReturn = [ChampOriginSet3]()
+        possibleOrigins.forEach { origin in
+            var elementCount = possibleOrigins.filter { $0 == origin }.count // the number of times this origin appears in possible elements
+            
+            elementCount += calculateBonusItems(origin: origin) // adds item bonuses, eg +1 knight for 1 knights vow
+            
+            if elementCount >= ChampOriginSet3.minimumUnitsForBonus(origin: origin) { // if this is greater than the bonus required add it to the origins for this team comp
+                originsToReturn.append(origin)
+            }
+        }
+        
+        originsToReturn = Array(Set(originsToReturn)) // get rid of duplicates
+        print("Origins for \(self.name): \(originsToReturn)")
+        return originsToReturn
+    }
+    
     var classess: [ChampionClass] {
         var possibleClasses = [ChampionClass]()
         units.forEach {
@@ -167,29 +203,67 @@ struct TeamComp: Equatable, Codable {
         return classesToReturn
     }
     
+    var classesSet3: [ChampClassSet3] {
+        var possibleClasses = [ChampClassSet3]()
+        units.forEach {
+            $0.championClassSet3.forEach {
+                possibleClasses.append($0)
+            }
+        }
+        
+        print("Possible Classes for \(self.name): \(possibleClasses)")
+        
+        var classesToReturn = [ChampClassSet3]()
+        possibleClasses.forEach { unitClass in
+            var classCount = possibleClasses.filter { $0 == unitClass }.count // the number of times this class appears in possble class
+            
+            classCount += calculateBonusItems(champClass: unitClass) // adds item bonuses, eg +1 knight for 1 knights vow
+            
+            if classCount >= ChampClassSet3.minimumUnitsForBonus(chmpClass: unitClass) { // if this is greater than the bonus required add it to the origins for this team comp
+                classesToReturn.append(unitClass)
+            }
+        }
+        
+        classesToReturn = Array(Set(classesToReturn)) // get rid of duplicates
+        print("Classes for \(self.name): \(classesToReturn)")
+        return classesToReturn
+    }
+    
     // MARK: METHODS
     private func calculateBonusItems(origin: ChampionOrigin) -> Int {
-        let items = carryItems?.values.flatMap { $0 }
+        let items = carryItems.values.flatMap { $0 }
         let itemForBonus = ChampionOrigin.itemForBonus(origin: origin)
-        return items!.filter { $0.name == itemForBonus?.name }.count
+        return items.filter { $0.name == itemForBonus?.name }.count
     }
     
     private func calculateBonusItems(element: ChampionElementSet2) -> Int {
-        let items = carryItems?.values.flatMap { $0 }
+        let items = carryItems.values.flatMap { $0 }
         let itemForBonus = ChampionElementSet2.itemForBonus(element: element)
-        return items!.filter { $0.name == itemForBonus?.name }.count
+        return items.filter { $0.name == itemForBonus?.name }.count
+    }
+    
+    private func calculateBonusItems(origin: ChampOriginSet3) -> Int {
+        let items = carryItems.values.flatMap { $0 }
+        let itemForBonus = ChampOriginSet3.itemForBonus(origin: origin)
+        return items.filter { $0.name == itemForBonus?.name }.count
     }
     
     private func calculateBonusItems(champClass: ChampionClass) -> Int {
-        let items = carryItems?.values.flatMap { $0 }
+        let items = carryItems.values.flatMap { $0 }
         let itemForBonus = ChampionClass.itemForBonus(champClass: champClass)
-        return items!.filter { $0.name == itemForBonus?.name }.count
+        return items.filter { $0.name == itemForBonus?.name }.count
     }
     
     private func calculateBonusItems(champClass: ChampionClassSet2) -> Int {
-        let items = carryItems?.values.flatMap { $0 }
+        let items = carryItems.values.flatMap { $0 }
         let itemForBonus = ChampionClassSet2.itemForBonus(champClass: champClass)
-        return items!.filter { $0.name == itemForBonus?.name }.count
+        return items.filter { $0.name == itemForBonus?.name }.count
+    }
+    
+    private func calculateBonusItems(champClass: ChampClassSet3) -> Int {
+        let items = carryItems.values.flatMap { $0 }
+        let itemForBonus = ChampClassSet3.itemForBonus(champClass: champClass)
+        return items.filter { $0.name == itemForBonus?.name }.count
     }
     
     private func unitsOfClass(type: ChampionClass) -> Int {
@@ -204,6 +278,12 @@ struct TeamComp: Equatable, Codable {
         return count
     }
     
+    private func unitsOfClassSet3(type: ChampClassSet3) -> Int {
+        var count = 0
+        units.forEach { if $0.championClassSet3.contains(type) { count += 1 } }
+        return count
+    }
+    
     private func unitsOfOrigin(type: ChampionOrigin) -> Int {
         var count = 0
         units.forEach { if $0.championOrigin.contains(type) { count += 1 } }
@@ -213,6 +293,12 @@ struct TeamComp: Equatable, Codable {
     private func unitsOfElement(type: ChampionElementSet2) -> Int {
         var count = 0
         units.forEach { if $0.championElementSet2.contains(type) { count += 1 } }
+        return count
+    }
+    
+    private func unitsOfOriginSet3(type: ChampOriginSet3) -> Int {
+        var count = 0
+        units.forEach { if $0.championOriginSet3.contains(type) { count += 1 } }
         return count
     }
     
@@ -231,8 +317,8 @@ struct TeamComp: Equatable, Codable {
         self.units.forEach { unitNamesCost[$0.name] = $0.cost }
         
         var carryItems = [String : [String]]()
-        self.carryItems?.keys.forEach({ (champ) in
-            carryItems[champ.name] = self.carryItems![champ].map { items in
+        self.carryItems.keys.forEach({ (champ) in
+            carryItems[champ.name] = self.carryItems[champ].map { items in
                 var itemsToReturn = [String]()
                 items.forEach { (item) in
                     itemsToReturn.append(item.name)

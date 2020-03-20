@@ -25,8 +25,10 @@ struct TeamCompsController: RouteCollection {
         let set = try req.parameters.next(String.self)
         if set == "set1" {
             return TeamComps.shared.allTeamComps.map { $0.toLowData() }
-        } else { // set2
+        } else if set == "set2" {
             return TeamCompsSet2.shared.allTeamComps.map { $0.toLowData() }
+        } else { // set 3
+            return TeamCompsSet3.shared.allTeamComps.map { $0.toLowData() }
         }
     }
     
@@ -51,8 +53,15 @@ struct TeamCompsController: RouteCollection {
             } else {
                 return teamComp!
             }
-        } else { // set 2
+        } else if set == "set2" {
             let teamComp = TeamCompsSet2.shared.allTeamComps.filter { $0.name == teamCompName }.first
+            if teamComp == nil {
+                throw Abort(.badRequest)
+            } else {
+                return teamComp!
+            }
+        } else { //set 3
+            let teamComp = TeamCompsSet3.shared.allTeamComps.filter { $0.name == teamCompName }.first
             if teamComp == nil {
                 throw Abort(.badRequest)
             } else {
