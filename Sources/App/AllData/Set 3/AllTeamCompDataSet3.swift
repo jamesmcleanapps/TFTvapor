@@ -22,7 +22,15 @@ class TeamCompsSet3 {
             vanguardMystics,
             protectorInfiltrators,
             rebelBlademasters,
-            mechSorcerers
+            mechSorcerers,
+            
+            rebelDemolitionists,
+            brawlerSorcerers,
+            darkStarSnipers,
+            hyperRollProtectors,
+            valkyrieBlademasters,
+            starGuardianSorcerers,
+            vanguardInfiltrators
         ]
     }()
     
@@ -42,6 +50,14 @@ class TeamCompsSet3 {
     let protectorInfiltrators: TeamComp
     let rebelBlademasters: TeamComp
     let mechSorcerers: TeamComp
+    
+    let rebelDemolitionists: TeamComp
+    let brawlerSorcerers: TeamComp
+    let darkStarSnipers: TeamComp
+    let hyperRollProtectors: TeamComp
+    let valkyrieBlademasters: TeamComp
+    let starGuardianSorcerers: TeamComp
+    let vanguardInfiltrators: TeamComp
     
     init() {
         let champions = ChampionsSet3.shared
@@ -506,6 +522,422 @@ class TeamCompsSet3 {
                                         25: champions.syndra,
                                         26 : champions.ahri,
                                         28 : champions.zoe
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: REBEL DEMOLITIONISTS
+        rebelDemolitionists = TeamComp(name: "Rebel Demolitionists",
+                                 teamCompSet: .set3,
+                                 tier: .B,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.shen,
+                                    champions.sona,
+                                    champions.yasuo,
+                                    champions.karma,
+                                    champions.masterYi
+            ],
+                                 
+                                 units: [
+                                    champions.malphite,
+                                    champions.ziggs,
+                                    champions.sona,
+                                    champions.masterYi,
+                                    champions.jinx,
+                                    champions.lulu,
+                                    champions.aurelionSol,
+                                    champions.gangplank
+            ],
+                                 
+                                 carries: [champions.aurelionSol, champions.gangplank],
+                                 carryItems: [
+                                    champions.aurelionSol :
+                                        [
+                                            items.demolitionistsCharge,
+                                            items.jeweledGauntlet,
+                                            items.seraphsEmbrace
+                                    ],
+                                    champions.gangplank:
+                                        [
+                                            items.guardianAngel,
+                                            items.jeweledGauntlet,
+                                            items.morellonomicon
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        2 : champions.gangplank,
+                                        4 : champions.masterYi,
+                                        5 : champions.malphite,
+                                        10 : champions.sona,
+                                        11 : champions.aurelionSol,
+                                        18: champions.jinx,
+                                        19: champions.ziggs,
+                                        27 : champions.lulu
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: BRAWLER SORCERERS
+        brawlerSorcerers = TeamComp(name: "Brawler Sorcerers",
+                                 teamCompSet: .set3,
+                                 tier: .B,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.caitlyn,
+                                    champions.malphite,
+                                    champions.blitzcrank,
+                                    champions.vi,
+                                    champions.chogath
+            ],
+                                 
+                                 units: [
+                                    champions.khazix,
+                                    champions.malphite,
+                                    champions.twistedFate,
+                                    champions.blitzcrank,
+                                    champions.vi,
+                                    champions.chogath,
+                                    champions.velkoz
+            ],
+                                 
+                                 carries: [champions.khazix, champions.chogath, champions.velkoz],
+                                 carryItems: [
+                                    champions.khazix :
+                                        [
+                                            items.thiefsGloves
+                                    ],
+                                    champions.chogath:
+                                        [
+                                            items.guardianAngel,
+                                            items.morellonomicon
+                                    ],
+                                    champions.velkoz:
+                                    [
+                                        items.jeweledGauntlet,
+                                        items.seraphsEmbrace,
+                                        items.seraphsEmbrace
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        1 : champions.chogath,
+                                        3 : champions.malphite,
+                                        5 : champions.blitzcrank,
+                                        7 : champions.vi,
+                                        24 : champions.twistedFate,
+                                        26: champions.velkoz,
+                                        28: champions.khazix
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: DARK STAR SNIPERS
+        darkStarSnipers = TeamComp(name: "Dark Star Snipers",
+                                 teamCompSet: .set3,
+                                 tier: .B,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.caitlyn,
+                                    champions.mordekaiser,
+                                    champions.karma,
+                                    champions.jhin,
+                                    champions.wukong
+            ],
+                                 
+                                 units: [
+                                    champions.jarvan,
+                                    champions.mordekaiser,
+                                    champions.ashe,
+                                    champions.karma,
+                                    champions.lux,
+                                    champions.shaco,
+                                    champions.jhin,
+                                    champions.lulu
+            ],
+                                 
+                                 carries: [champions.ashe, champions.shaco, champions.jhin],
+                                 carryItems: [
+                                    champions.ashe :
+                                        [
+                                            items.guinsoosRageblade,
+                                            items.spearOfShojin
+                                    ],
+                                    champions.shaco:
+                                        [
+                                            items.infinityEdge
+                                    ],
+                                    champions.jhin:
+                                        [
+                                            items.bloodthirster,
+                                            items.guardianAngel,
+                                            items.trapClaw
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.mordekaiser,
+                                        5 : champions.jarvan,
+                                        18 : champions.shaco,
+                                        22 : champions.karma,
+                                        23 : champions.jhin,
+                                        25: champions.ashe,
+                                        26: champions.lulu,
+                                        28 : champions.lux
+                                        
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: HYPER ROLL PROTECTORS
+        hyperRollProtectors = TeamComp(name: "Hyper Roll Protectors",
+                                 teamCompSet: .set3,
+                                 tier: .B,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.xinZhao,
+                                    champions.neeko,
+                                    champions.karma
+            ],
+                                 
+                                 units: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.sona,
+                                    champions.xinZhao,
+                                    champions.karma,
+                                    champions.neeko,
+                                    champions.jhin
+            ],
+                                 
+                                 carries: [champions.jarvan, champions.sona, champions.xinZhao],
+                                 carryItems: [
+                                    champions.jarvan :
+                                        [
+                                            items.ionicSpark
+                                    ],
+                                    champions.sona:
+                                        [
+                                            items.seraphsEmbrace
+                                    ],
+                                    champions.xinZhao:
+                                        [
+                                            items.brambleVest,
+                                            items.guardianAngel,
+                                            items.warmogsArmor
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.jarvan,
+                                        4 : champions.neeko,
+                                        5 : champions.xinZhao,
+                                        10 : champions.rakan,
+                                        20 : champions.karma,
+                                        22: champions.jhin,
+                                        24: champions.sona
+                                        
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: VALKYRIE BLADEMASTERS
+               valkyrieBlademasters = TeamComp(name: "Valkyrie Blademasters",
+                                        teamCompSet: .set3,
+                                        tier: .B,
+                                        patch: "10.6",
+                                        
+                                        earlyUnits: [],
+                                        
+                                        midUnits: [
+                                           champions.xayah,
+                                           champions.kaisa,
+                                           champions.shen,
+                                           champions.karma,
+                                           champions.kayle
+                   ],
+                                        
+                                        units: [
+                                           champions.shen,
+                                           champions.karma,
+                                           champions.kassadin,
+                                           champions.irelia,
+                                           champions.kayle,
+                                           champions.wukong,
+                                           champions.lulu,
+                                           champions.missFortune
+                   ],
+                                        
+                                        carries: [champions.irelia, champions.kayle, champions.wukong],
+                                        carryItems: [
+                                           champions.irelia :
+                                               [
+                                                   items.seraphsEmbrace
+                                           ],
+                                           champions.kayle:
+                                               [
+                                                   items.guinsoosRageblade,
+                                                   items.handOfJustice,
+                                                   items.rapidFirecannon
+                                           ],
+                                           champions.wukong:
+                                               [
+                                                   items.guardianAngel,
+                                                   items.morellonomicon
+                                           ]
+                   ],
+                                        teamCompPositions:  TeamCompPositions(champsPositions:
+                                           [
+                                               1 : champions.irelia,
+                                               3 : champions.wukong,
+                                               5 : champions.shen,
+                                               7 : champions.kassadin,
+                                               16 : champions.lulu,
+                                               25: champions.kayle,
+                                               26: champions.karma,
+                                               28 : champions.missFortune
+                                               
+                                               
+                                        ]) ,
+                                        webLink: nil)
+        
+        
+        // MARK: STAR GUARDIAN SORCERERS
+        starGuardianSorcerers = TeamComp(name: "Star Guardian Sorcerers",
+                                 teamCompSet: .set3,
+                                 tier: .B,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.poppy,
+                                    champions.zoe,
+                                    champions.ahri,
+                                    champions.annie,
+                                    champions.syndra
+            ],
+                                 
+                                 units: [
+                                    champions.poppy,
+                                    champions.zoe,
+                                    champions.ahri,
+                                    champions.annie,
+                                    champions.neeko,
+                                    champions.syndra,
+                                    champions.soraka,
+                                    champions.lulu
+            ],
+                                 
+                                 carries: [champions.annie, champions.syndra],
+                                 carryItems: [
+                                    champions.annie :
+                                        [
+                                            items.guardianAngel,
+                                            items.ionicSpark,
+                                            items.warmogsArmor
+                                    ],
+                                    champions.syndra:
+                                        [
+                                            items.chaliceOfFavor,
+                                            items.rabadonsDeathcap,
+                                            items.seraphsEmbrace
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        2 : champions.poppy,
+                                        4 : champions.neeko,
+                                        6 : champions.annie,
+                                        22 : champions.lulu,
+                                        24 : champions.ahri,
+                                        25: champions.syndra,
+                                        26: champions.soraka,
+                                        28 : champions.zoe
+                                        
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: VANGUARD INFILTRATORS
+        vanguardInfiltrators = TeamComp(name: "Vanguard Infiltrators",
+                                 teamCompSet: .set3,
+                                 tier: .B,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.kaisa,
+                                    champions.mordekaiser,
+                                    champions.jayce,
+                                    champions.shaco,
+                                    champions.jhin
+            ],
+                                 
+                                 units: [
+                                    champions.leona,
+                                    champions.mordekaiser,
+                                    champions.jayce,
+                                    champions.shaco,
+                                    champions.irelia,
+                                    champions.jhin,
+                                    champions.wukong,
+                                    champions.ekko
+            ],
+                                 
+                                 carries: [champions.leona, champions.shaco, champions.irelia, champions.ekko],
+                                 carryItems: [
+                                    champions.leona :
+                                        [
+                                            items.zephyr
+                                    ],
+                                    champions.shaco:
+                                        [
+                                            items.bloodthirster,
+                                            items.infinityEdge
+                                    ],
+                                    champions.irelia:
+                                        [
+                                            items.thiefsGloves
+                                    ],
+                                    champions.ekko:
+                                        [
+                                            items.ionicSpark
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        1 : champions.jayce,
+                                        3 : champions.wukong,
+                                        4 : champions.leona,
+                                        5 : champions.mordekaiser,
+                                        7 : champions.irelia,
+                                        22: champions.shaco,
+                                        25: champions.jhin,
+                                        28 : champions.ekko
+                                        
                                         
                                  ]) ,
                                  webLink: nil)
