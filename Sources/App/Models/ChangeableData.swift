@@ -115,16 +115,18 @@ extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
             aurelionSol,
-            chogath,
+            
             ekko,
+            gangplank,
             lulu,
-            missFortune,
-            thresh
+            missFortune
+            
         ]
         
         let aRating = [
+            chogath,
             ezreal,
-            gangplank,
+            
             irelia,
             jayce,
             jhin,
@@ -133,6 +135,7 @@ extension ChampionsSet3 {
             lucian,
             shaco,
             soraka,
+            thresh,
             vi,
             wukong
         ]
@@ -155,13 +158,15 @@ extension ChampionsSet3 {
             caitlyn,
             darius,
             fiora,
+            graves,
             jarvan,
             masterYi,
             rakan,
             rumble,
             xayah,
             xinZhao,
-            yasuo
+            yasuo,
+            ziggs
         ]
         let dRating: [Champion] = [
             kassadin,
@@ -170,11 +175,10 @@ extension ChampionsSet3 {
             malphite,
             neeko,
             poppy,
-            ziggs,
+            
             zoe
         ]
         let eRating: [Champion] = [
-            graves,
             twistedFate
         ]
         
@@ -309,6 +313,7 @@ extension ItemsSet3 {
     func setItemRatings() {
         let sRated = [
             forceOfNature,
+            giantSlayer,
             guardianAngel,
             ionicSpark,
             seraphsEmbrace,
@@ -322,22 +327,24 @@ extension ItemsSet3 {
             jeweledGauntlet,
             morellonomicon,
             redBuff,
-            redemption,
+            
             thiefsGloves,
+            titansResolve,
             warmogsArmor
         ]
         let bRated = [
             deathBlade,
             dragonsClaw,
-            giantSlayer,
+            
             lastWhisper,
             locket,
             ludensEcho,
             rabadonsDeathcap,
+            redemption,
             runaansHurricane,
             spearOfShojin,
-            statikkShiv,
-            titansResolve
+            statikkShiv
+            
         ]
         let cRated: [CombinedItem] = [
             chaliceOfFavor,
