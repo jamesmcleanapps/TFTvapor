@@ -115,70 +115,66 @@ extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
             aurelionSol,
-            
             ekko,
             gangplank,
             lulu,
             missFortune
-            
         ]
         
         let aRating = [
             chogath,
             ezreal,
-            
             irelia,
             jayce,
-            jhin,
             jinx,
             kayle,
             lucian,
             shaco,
-            soraka,
             thresh,
-            vi,
-            wukong
+            xinZhao
         ]
         let bRating = [
             ahri,
             annie,
             ashe,
             blitzcrank,
+            fiora,
             fizz,
-            kaisa,
-            karma,
-            lux,
-            mordekaiser,
-            shen,
-            sona,
+            jhin,
+            masterYi,
+            rakan,
+            soraka,
             syndra,
-            velkoz,
+            vi,
+            wukong,
+            yasuo
         ]
         let cRating: [Champion] = [
             caitlyn,
             darius,
-            fiora,
             graves,
-            jarvan,
-            masterYi,
-            rakan,
+            kaisa,
+            leona,
+            lux,
+            malphite,
+            mordekaiser,
+            neeko,
+            poppy,
             rumble,
+            shen,
+            sona,
             xayah,
-            xinZhao,
-            yasuo,
             ziggs
         ]
         let dRating: [Champion] = [
-            kassadin,
+            jarvan,
+            karma,
             khazix,
-            leona,
-            malphite,
-            neeko,
-            poppy,
-            
+            velkoz,
             zoe
         ]
         let eRating: [Champion] = [
+            kassadin,
             twistedFate
         ]
         
@@ -190,6 +186,11 @@ extension ChampionsSet3 {
         eRating.forEach { $0.rating = .E }
     }
 }
+
+
+
+
+
 
 
 extension Items {
@@ -315,27 +316,29 @@ extension ItemsSet3 {
             forceOfNature,
             giantSlayer,
             guardianAngel,
+            handOfJustice,
             ionicSpark,
+            morellonomicon,
             seraphsEmbrace,
             zephyr
         ]
         let aRated = [
-            bloodthirster,
+            
             brambleVest,
-            handOfJustice,
+            deathBlade,
+            dragonsClaw,
             infinityEdge,
             jeweledGauntlet,
-            morellonomicon,
+            
             redBuff,
             
             thiefsGloves,
             titansResolve,
-            warmogsArmor
+            
         ]
         let bRated = [
-            deathBlade,
-            dragonsClaw,
-            
+            bloodthirster,
+            guinsoosRageblade,
             lastWhisper,
             locket,
             ludensEcho,
@@ -343,12 +346,13 @@ extension ItemsSet3 {
             redemption,
             runaansHurricane,
             spearOfShojin,
-            statikkShiv
+            statikkShiv,
+            warmogsArmor
             
         ]
         let cRated: [CombinedItem] = [
             chaliceOfFavor,
-            guinsoosRageblade,
+            
             quicksilver,
             rapidFirecannon,
             shroud,

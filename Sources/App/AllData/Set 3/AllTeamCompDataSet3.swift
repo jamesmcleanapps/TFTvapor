@@ -33,7 +33,9 @@ class TeamCompsSet3 {
             vanguardInfiltrators,
             
             spacePirateVanguards,
-            celestialProtectors
+            celestialProtectors,
+            
+            protectorMystics
         ]
     }()
     
@@ -64,6 +66,8 @@ class TeamCompsSet3 {
     
     let spacePirateVanguards: TeamComp
     let celestialProtectors: TeamComp
+    
+    let protectorMystics: TeamComp
     
     init() {
         let champions = ChampionsSet3.shared
@@ -304,7 +308,7 @@ class TeamCompsSet3 {
         // MARK: VANGUARD MYSTICS
         vanguardMystics = TeamComp(name: "Vanguard Mystics",
                                  teamCompSet: .set3,
-                                 tier: .S,
+                                 tier: .A,
                                  patch: "10.6",
                                  
                                  earlyUnits: [],
@@ -1013,7 +1017,7 @@ class TeamCompsSet3 {
         // MARK: CELESTIAL PROTECTORS
         celestialProtectors = TeamComp(name: "Celestial Protectors",
                                  teamCompSet: .set3,
-                                 tier: .A,
+                                 tier: .B,
                                  patch: "10.6",
                                  
                                  earlyUnits: [],
@@ -1062,6 +1066,63 @@ class TeamCompsSet3 {
                                         22: champions.ashe,
                                         25: champions.xayah,
                                         28 : champions.lulu
+                                        
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: PROTECTOR MYSTICS
+        protectorMystics = TeamComp(name: "Protector Mystics",
+                                 teamCompSet: .set3,
+                                 tier: .S,
+                                 patch: "10.6",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.xinZhao,
+                                    champions.neeko,
+                                    champions.karma
+            ],
+                                 
+                                 units: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.sona,
+                                    champions.xinZhao,
+                                    champions.karma,
+                                    champions.neeko,
+                                    champions.soraka,
+                                    champions.lulu
+            ],
+                                 
+                                 carries: [champions.rakan, champions.xinZhao],
+                                 carryItems: [
+                                    champions.rakan :
+                                        [
+                                            items.morellonomicon,
+                                            items.spearOfShojin
+                                    ],
+                                    champions.xinZhao:
+                                        [
+                                            items.brambleVest,
+                                            items.dragonsClaw,
+                                            items.quicksilver
+                                    ]
+            ],
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.jarvan,
+                                        4 : champions.neeko,
+                                        5 : champions.xinZhao,
+                                        10 : champions.rakan,
+                                        12 : champions.karma,
+                                        23: champions.sona,
+                                        25: champions.soraka,
+                                        27 : champions.lulu
                                         
                                         
                                  ]) ,
