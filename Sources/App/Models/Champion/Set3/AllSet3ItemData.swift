@@ -135,7 +135,7 @@ class ItemsSet3 {
         
         
         // MARK: BLOODTHIRSTER
-        bloodthirster = CombinedItem(name: "bloodthirster", bonus: "Attacks heal for 40% of damage", rating: .A, recipe: [bfSword, negatronCloak])
+        bloodthirster = CombinedItem(name: "bloodthirster", bonus: "Attacks heal for 35% of damage", rating: .A, recipe: [bfSword, negatronCloak])
         
         // MARK: GUARDIAN ANGEL
         guardianAngel = CombinedItem(name: "guardian angel", bonus: "Wearer revives with 400 health after 2 seconds", rating: .S, recipe: [bfSword, chainVest])
@@ -144,19 +144,19 @@ class ItemsSet3 {
         hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 25% of all damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
         
         // MARK: DEATH BLADE
-        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 15 Attack Damage until end of combat (Stacks infinitely, starts with 1 stack).", rating: .A, recipe: [bfSword, bfSword])
+        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 15 Attack Damage until end of combat (Stacks infinitely, starts with 2 stack).", rating: .A, recipe: [bfSword, bfSword])
         
         // MARK: SPEAR OF SHOJIN
         spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 15% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
         
         // MARK: GIANT SLAYER
-        giantSlayer = CombinedItem(name: "giant slayer", bonus: "Attacks deal an additional 5% enemy max Health as True Damage.", rating: .S, recipe: [bfSword, recurveBow])
+        giantSlayer = CombinedItem(name: "giant slayer", bonus: "Attacks deal an additional 12% enemy current health as physical damage.", rating: .S, recipe: [bfSword, recurveBow])
         
         // MARK: INFILTRATOR'S TALONS
         infiltratorsTalons = CombinedItem(name: "infiltrator's talons", bonus: "Wearer is also an infiltrator", rating: .B, recipe: [recurveBow, spatula])
         
         // MARK: ZEKES HERALD
-        zekesHerald = CombinedItem(name: "zeke's herald", bonus: "Allies two spaces to the left and right gain +15% attack speed", rating: .B, recipe: [bfSword, giantsBelt])
+        zekesHerald = CombinedItem(name: "zeke's herald", bonus: "Allies two spaces to the left and right gain +18% attack speed", rating: .B, recipe: [bfSword, giantsBelt])
         
         
         
@@ -164,25 +164,25 @@ class ItemsSet3 {
         // CHAIN VEST
         
         // MARK: FROZEN HEART
-        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 35% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
+        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 40% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
         
         // MARK: LOCKET OF THE IRON SOLARI
-        locket = CombinedItem(name: "locket of the iron solari", bonus: "On start of combat, shields wearer and champions two spaces to the left and right for 300 for 7 seconds", rating: .B, recipe: [chainVest, needlesslyLargeRod])
+        locket = CombinedItem(name: "locket of the iron solari", bonus: "At the start of combat, all champions within two spaces to the left and right of the wearer gain a 250/275/300 health shield for 7 seconds. Scales with Star Level", rating: .B, recipe: [chainVest, needlesslyLargeRod])
         
         // MARK: TITANS RESOLVE
-        titansResolve = CombinedItem(name: "titan's resolve", bonus: "When the wearer is hit by a source of damage, they gain a 2.5 percent stacking damage increase (stacks infinitely)", rating: .A, recipe: [chainVest, recurveBow])
+        titansResolve = CombinedItem(name: "titan's resolve", bonus: "When wearer takes damage or critically hits, gain a 2% stacking damage bonus. Stacks up to 50 times at which point wearer gains 25 amor and magic resist.", rating: .A, recipe: [chainVest, recurveBow])
         
         // MARK: RED BUFF
-        redBuff = CombinedItem(name: "red buff", bonus: "Attacks deal 20% max health over 10 seconds as burn damage", rating: .A, recipe: [chainVest, giantsBelt])
+        redBuff = CombinedItem(name: "red buff", bonus: "Attacks deal burn damage equal to 3% of the enemy's maximum health per second for 10 seconds. Reduces enemy healing by 30%.", rating: .A, recipe: [chainVest, giantsBelt])
         
         // MARK: BRAMBLE VEST
-        brambleVest = CombinedItem(name: "bramble vest", bonus: "Negates bonus damage from critical hits on the wearer. When the wearer is hit by a basic attack, a hail of thorns hits nearby enemies for 80/120/160 magic damage ", rating: .B, recipe: [chainVest, chainVest])
+        brambleVest = CombinedItem(name: "bramble vest", bonus: "Negates bonus damage from critical hits for wearer. When hit by a basic attack, thorns hit nearby enemies up to once every 2.5 seconds and damage scales with star level (80/120/160).", rating: .B, recipe: [chainVest, chainVest])
         
         // MARK: REBEL MEDAL
         rebelMedal = CombinedItem(name: "rebel medal", bonus: "Wearer is also a Rebel", rating: .B, recipe: [chainVest, spatula])
         
         // MARK: SWORD BREAKER
-        swordBreaker = CombinedItem(name: "sword breaker", bonus: "Attacks have a 25% chance to disarm for 4 seconds", rating: .B, recipe: [chainVest, negatronCloak])
+        swordBreaker = CombinedItem(name: "sword breaker", bonus: "Attacks have a 25% chance to disarm for 3 seconds", rating: .B, recipe: [chainVest, negatronCloak])
         
         
         
@@ -213,16 +213,16 @@ class ItemsSet3 {
         // NEEDLESSLY
         
         // MARK: GUINSOOS RAGEBLADE
-        guinsoosRageblade = CombinedItem(name: "guinsoo's rageblade", bonus: "Attacks grant 5% attack speed (stacks infinitely)", rating: .S, recipe: [needlesslyLargeRod, recurveBow])
+        guinsoosRageblade = CombinedItem(name: "guinsoo's rageblade", bonus: "Attacks grant 4% attack speed (stacks infinitely)", rating: .S, recipe: [needlesslyLargeRod, recurveBow])
         
         // MARK: IONIC SPARK
-        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Whenever an enemy casts a spell, they take 125 true damage", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
+        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Enemies within 2 hexes that cast a spell are zapped, taking magic damage equal to 200% their max mana and reducing their Magic Resist by 50% (does not stack).", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
         
         // MARK: RABADONS DEATHCAP
         rabadonsDeathcap = CombinedItem(name: "rabadon's deathcap", bonus: "+50% Ability Power", rating: .A, recipe: [needlesslyLargeRod, needlesslyLargeRod])
         
         // MARK: LUDENS ECHO
-        ludensEcho = CombinedItem(name: "luden's echo", bonus: "Spells deal 180 splash damage on hit", rating: .A, recipe: [needlesslyLargeRod, tearOfTheGoddess])
+        ludensEcho = CombinedItem(name: "luden's echo", bonus: "Spells deal 120/160/200 splash damage on hit. Scales with Star Level", rating: .A, recipe: [needlesslyLargeRod, tearOfTheGoddess])
         
         // MARK: DEMOLITIONIST'S CHARGE
         demolitionistsCharge = CombinedItem(name: "demolitionist's charge", bonus: "Wearer is also a Demolitionist", rating: .A, recipe: [needlesslyLargeRod, spatula])
@@ -233,10 +233,10 @@ class ItemsSet3 {
         // NEGATRON
         
         // MARK: RUNAANS HURRICANE
-        runaansHurricane = CombinedItem(name: "runaan's hurricane", bonus: "Summon a spirit who mirrors your attacks)", rating: .A, recipe: [negatronCloak, recurveBow])
+        runaansHurricane = CombinedItem(name: "runaan's hurricane", bonus: "Attacks 1 extra target on attack. Extra attacks deal 70% damage.", rating: .A, recipe: [negatronCloak, recurveBow])
         
         // MARK: DRAGONS CLAW
-        dragonsClaw = CombinedItem(name: "dragon's claw", bonus: "Gain 75% resistance to magic damage", rating: .S, recipe: [negatronCloak, negatronCloak])
+        dragonsClaw = CombinedItem(name: "dragon's claw", bonus: "Gain 50% resistance to magic damage.", rating: .S, recipe: [negatronCloak, negatronCloak])
         
         // MARK: CHALICE OF FAVOR
         chaliceOfFavor  = CombinedItem(name: "chalice of favor", bonus: "Whenever the holder casts a spell, gives all nearby allies 10 mana.", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
@@ -286,19 +286,19 @@ class ItemsSet3 {
         infinityEdge = CombinedItem(name: "infinity edge", bonus: "20% Critical Strike chance, +125% Critical Strike damage", rating: .A, recipe: [sparringGloves, bfSword])
         
         // MARK: LAST WHISPER
-        lastWhisper = CombinedItem(name: "last whisper", bonus: "When the wearer inflicts a critical hit, the target’s armor is reduced by 90 percent for three seconds", rating: .B, recipe: [sparringGloves, recurveBow])
+        lastWhisper = CombinedItem(name: "last whisper", bonus: "When the wearer inflicts a critical hit, the target's armor is reduced by 90% for 3 seconds. Does not stack", rating: .B, recipe: [sparringGloves, recurveBow])
         
         // MARK: JEWELLED GAUNTLET
         jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Your spells can crit", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])
         
         // MARK: HAND OF JUSTICE
-        handOfJustice = CombinedItem(name: "hand of justice", bonus: "On round start, either gain 40% more damage or 40 life on hit.", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
+        handOfJustice = CombinedItem(name: "hand of justice", bonus: "On round start, either gain 50% more damage or 50 life on hit.", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
         
         // MARK: SHROUD
         shroud = CombinedItem(name: "shroud of stillness", bonus: "When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 40% until they cast.", rating: .A, recipe: [sparringGloves, chainVest])
         
         // MARK: QUICKSILVER
-        quicksilver = CombinedItem(name: "quicksilver", bonus: "When CC’d, cleanse the CC. 3 second cooldown.", rating: .A, recipe: [sparringGloves, negatronCloak])
+        quicksilver = CombinedItem(name: "quicksilver", bonus: "The wearer is immune to crowd control for the first 15 seconds of combat.", rating: .A, recipe: [sparringGloves, negatronCloak])
         
         // MARK: TRAP CLAW
         trapClaw = CombinedItem(name: "trap claw", bonus: "On combat begin, gain a spell shield. When it breaks, stun the champion who broke the shield.", rating: .B, recipe: [sparringGloves, giantsBelt])
