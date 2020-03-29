@@ -222,7 +222,7 @@ class ChampionsSet3 {
         
         
         // MARK: BLITZKRANK
-        blitzcrank = Champion(name: "blitzkrank", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "rocket grab", description: "Blitzcrank pulls the furthest enemy to him, dealing magic damage and stunning them for 2.5 seconds. The next attack after pulling knocks up for 1 second. Allies within range will prioritize attacking Blitzcrank's target."), championOriginSet3: [.chrono], championClassSet3: [.brawler], bestItems: [], stats: Stats(health: 0, armor: 0, magicResist: 0, attackDamage: 0, attackSpeed: 0, attackRange: 0))
+        blitzcrank = Champion(name: "xin zhao", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "rocket grab", description: "Blitzcrank pulls the furthest enemy to him, dealing magic damage and stunning them for 2.5 seconds. The next attack after pulling knocks up for 1 second. Allies within range will prioritize attacking Blitzcrank's target."), championOriginSet3: [.chrono], championClassSet3: [.brawler], bestItems: [], stats: Stats(health: 0, armor: 0, magicResist: 0, attackDamage: 0, attackSpeed: 0, attackRange: 0))
         
         // MARK: CAITLYN
         caitlyn = Champion(name: "caitlyn", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "ace in the hole", description: "Caitlyn takes aim at the furthest enemy, firing a deadly bullet towards them that deals magic damage to the first enemy it hits."), championOriginSet3: [.chrono], championClassSet3: [.sniper], bestItems: [items.statikkShiv, items.statikkShiv, items.statikkShiv], stats: Stats(health: 0, armor: 0, magicResist: 0, attackDamage: 0, attackSpeed: 0, attackRange: 0))
