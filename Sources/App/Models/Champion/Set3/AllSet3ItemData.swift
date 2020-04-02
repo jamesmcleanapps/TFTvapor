@@ -173,7 +173,7 @@ class ItemsSet3 {
         titansResolve = CombinedItem(name: "titan's resolve", bonus: "When wearer takes damage or critically hits, gain a 2% stacking damage bonus. Stacks up to 50 times at which point wearer gains 25 amor and magic resist.", rating: .A, recipe: [chainVest, recurveBow])
         
         // MARK: RED BUFF
-        redBuff = CombinedItem(name: "red buff", bonus: "Attacks deal burn damage equal to 3% of the enemy's maximum health per second for 10 seconds. Reduces enemy healing by 30%.", rating: .A, recipe: [chainVest, giantsBelt])
+        redBuff = CombinedItem(name: "red buff", bonus: "Attacks deal burn damage equal to 3% of the enemy's maximum health per second for 10 seconds. Reduces enemy healing by 27%.", rating: .A, recipe: [chainVest, giantsBelt])
         
         // MARK: BRAMBLE VEST
         brambleVest = CombinedItem(name: "bramble vest", bonus: "Negates bonus damage from critical hits for wearer. When hit by a basic attack, thorns hit nearby enemies up to once every 2.5 seconds and damage scales with star level (80/120/160).", rating: .B, recipe: [chainVest, chainVest])
@@ -193,13 +193,13 @@ class ItemsSet3 {
         protectorsChestguard = CombinedItem(name: "protector's chestguard", bonus: "Wearer is also a Protector", rating: .A, recipe: [giantsBelt, spatula])
         
         // MARK: MORELLONOMICON
-        morellonomicon = CombinedItem(name: "morellonomicon", bonus: "Spells deal burn damage equal to 20% of the enemy's maximum health over 10 seconds. Burned units cannot heal.", rating: .A, recipe: [giantsBelt, needlesslyLargeRod])
+        morellonomicon = CombinedItem(name: "morellonomicon", bonus: "Spells deal burn damage equal to 3% of the enemy's maximum health per second for 10 seconds. Reduces enemy healing by 27%.", rating: .A, recipe: [giantsBelt, needlesslyLargeRod])
         
         // MARK: REDEMPTION
         redemption = CombinedItem(name: "redemption", bonus: "At 25% health, heal all nearby allies for 1200 health", rating: .B, recipe: [giantsBelt, tearOfTheGoddess])
         
         // MARK: WARMOGS ARMOR
-        warmogsArmor = CombinedItem(name: "warmog's armor", bonus: "Wearer regenerates 6% max health per second", rating: .A, recipe: [giantsBelt, giantsBelt])
+        warmogsArmor = CombinedItem(name: "warmog's armor", bonus: "Wearer regenerates 5% max health per second", rating: .A, recipe: [giantsBelt, giantsBelt])
         
         // MARK: ZEPHYR
         zephyr = CombinedItem(name: "zephyr", bonus: "On start of combat, banish an enemy for 6 seconds", rating: .A, recipe: [giantsBelt, negatronCloak])

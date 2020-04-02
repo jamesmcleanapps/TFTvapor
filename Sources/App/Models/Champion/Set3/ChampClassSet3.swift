@@ -19,7 +19,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "blademaster":
             return Details(main: "Blademasters' Basic Attacks have a chance on hit to trigger two additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
                            benefit1: "3  -  30% Chance to trigger",
-                           benefit2: "6  -  55% Chance to trigger",
+                           benefit2: "6  -  60% Chance to trigger",
                            benefit3: nil
                            )
             
@@ -31,8 +31,8 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             )
         case "brawler":
             return Details(main: "Brawlers gain bonus Maximum Health.",
-            benefit1: "3  -  30% Chance to trigger",
-            benefit2: "6  -  55% Chance to trigger",
+            benefit1: "3  -  300 Health",
+            benefit2: "6  -  750 Health",
             benefit3: nil
             )
         case "demolitionist":
@@ -48,9 +48,9 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             benefit3: nil
             )
         case "manaReaver":
-            return Details(main: "Mana-Reaver's Basic Attacks increase the Mana cost of their target's next spellcast by 40%.",
-            benefit1: "2  -  First Attack each Combat",
-            benefit2: "4  -  All Attacks",
+            return Details(main: "Mana-Reaver's Basic Attacks increase the mana cost of their target’s next spell by 40%.",
+            benefit1: "2  -  40% increased cost",
+            benefit2: nil,
             benefit3: nil
             )
         case "mercenary":
@@ -62,7 +62,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "mystic":
             return Details(main: "All allies gain Magic Resistance.",
             benefit1: "2  -  30 Magic Resistance",
-            benefit2: "4  -  120 Magic Resistance",
+            benefit2: "4  -  105 Magic Resistance",
             benefit3: nil
             )
         case "protector":
@@ -72,7 +72,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             benefit3: nil
             )
         case "sniper":
-            return Details(main: "Snipers deal 12% increased damage for each hex between themselves and their target.",
+            return Details(main: "Snipers deal 15% increased damage for each hex between themselves and their target.",
             benefit1: "2  -  Active",
             benefit2: nil,
             benefit3: nil

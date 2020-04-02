@@ -25,9 +25,9 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
                            
         case "chrono":
             return Details(main: "All allies gain Attack Speed every 4 seconds.",
-            benefit1: "2  -  10% Attack Speed",
+            benefit1: "2  -  15% Attack Speed",
             benefit2: "4  -  35% Attack Speed",
-            benefit3: "6  -  70% Attack Speed"
+            benefit3: "6  -  75% Attack Speed"
             )
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
@@ -36,9 +36,9 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             benefit3: nil
             )
         case "dark star":
-            return Details(main: "When a Dark Star Champion dies, it gives increased damage, plus any previous stacks of this effect, to the nearest ally Dark Star Champion.",
-            benefit1: "3  -  35% Damage Increase",
-            benefit2: "6  -  80% Damage Increase",
+            return Details(main: "When a Dark Star Champion dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
+            benefit1: "3  -  +25 AD and Spell Power",
+            benefit2: "6  -  +35 AD and Spell Power",
             benefit3: nil
             )
         case "mech pilot":
