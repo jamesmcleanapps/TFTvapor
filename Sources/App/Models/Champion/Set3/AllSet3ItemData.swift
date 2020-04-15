@@ -70,7 +70,7 @@ class ItemsSet3 {
     let needlesslyLargeRod = BasicItem(name: "needlessly large rod", bonus: "+20% Spell Power")
     let negatronCloak = BasicItem(name: "negatron cloak", bonus: "+25 Magic Resist")
     let recurveBow = BasicItem(name: "recurve bow", bonus: "+15% Attack Speed")
-    let tearOfTheGoddess = BasicItem(name: "tear of the goddess", bonus: "+20 mana")
+    let tearOfTheGoddess = BasicItem(name: "tear of the goddess", bonus: "+15 mana")
     let spatula = BasicItem(name: "spatula", bonus: "It must do something...")
     let sparringGloves = BasicItem(name: "sparring gloves", bonus: "Gives +10% Critical Strike chance and +10% chance to Dodge chance.")
     
@@ -144,7 +144,7 @@ class ItemsSet3 {
         hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 25% of all damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
         
         // MARK: DEATH BLADE
-        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 15 Attack Damage until end of combat (Stacks infinitely, starts with 2 stack).", rating: .A, recipe: [bfSword, bfSword])
+        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 30 Attack Damage until end of combat (Stacks infinitely, starts with 0 stack).", rating: .A, recipe: [bfSword, bfSword])
         
         // MARK: SPEAR OF SHOJIN
         spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 15% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
@@ -156,7 +156,7 @@ class ItemsSet3 {
         infiltratorsTalons = CombinedItem(name: "infiltrator's talons", bonus: "Wearer is also an infiltrator", rating: .B, recipe: [recurveBow, spatula])
         
         // MARK: ZEKES HERALD
-        zekesHerald = CombinedItem(name: "zeke's herald", bonus: "Allies two spaces to the left and right gain +18% attack speed", rating: .B, recipe: [bfSword, giantsBelt])
+        zekesHerald = CombinedItem(name: "zeke's herald", bonus: "Allies two spaces to the left and right gain +30% attack speed", rating: .B, recipe: [bfSword, giantsBelt])
         
         
         
@@ -164,7 +164,7 @@ class ItemsSet3 {
         // CHAIN VEST
         
         // MARK: FROZEN HEART
-        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 40% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
+        frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 50% attack speed for 1 second", rating: .B, recipe: [chainVest, tearOfTheGoddess])
         
         // MARK: LOCKET OF THE IRON SOLARI
         locket = CombinedItem(name: "locket of the iron solari", bonus: "At the start of combat, all champions within two spaces to the left and right of the wearer gain a 250/275/300 health shield for 7 seconds. Scales with Star Level", rating: .B, recipe: [chainVest, needlesslyLargeRod])
@@ -239,13 +239,13 @@ class ItemsSet3 {
         dragonsClaw = CombinedItem(name: "dragon's claw", bonus: "Gain 50% resistance to magic damage.", rating: .S, recipe: [negatronCloak, negatronCloak])
         
         // MARK: CHALICE OF FAVOR
-        chaliceOfFavor  = CombinedItem(name: "chalice of favor", bonus: "Whenever the holder casts a spell, gives all nearby allies 10 mana.", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
+        chaliceOfFavor  = CombinedItem(name: "chalice of favor", bonus: "Whenever the holder casts a spell, gives all nearby allies and the caster 10 mana.", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
         
         // MARK: CELESTIAL ORB
          celestialOrb = CombinedItem(name: "celestial orb", bonus: "Wearer is also Celestial", rating: .A, recipe: [negatronCloak, spatula])
         
         // MARK: RAPIDFIRE CANNON
-        rapidFirecannon = CombinedItem(name: "rapid firecannon", bonus: "Attack range is doubled", rating: .S, recipe: [recurveBow, recurveBow])
+        rapidFirecannon = CombinedItem(name: "rapid firecannon", bonus: "Attack range is trebled", rating: .S, recipe: [recurveBow, recurveBow])
         
         
         

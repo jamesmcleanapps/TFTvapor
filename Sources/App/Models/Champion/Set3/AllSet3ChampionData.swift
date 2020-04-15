@@ -45,6 +45,7 @@ class ChampionsSet3 {
     var lux: Champion
     var mordekaiser: Champion
     var shaco: Champion
+    var xerath: Champion
     
     // mech pilot
     var annie: Champion
@@ -112,6 +113,7 @@ class ChampionsSet3 {
             lux,
             mordekaiser,
             shaco,
+            xerath,
             annie,
             fizz,
             rumble,
@@ -257,7 +259,7 @@ class ChampionsSet3 {
         // MARK: SHEN
         shen = Champion(name: "shen", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "future's refuge", description: "Shen creates a zone around himself for a few seconds, granting all narby allies 100% chance to dodge incoming basic attacks. While active, Shen gains Magic Resist."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
                         bestItems: [items.brambleVest, items.dragonsClaw, items.guardianAngel],
-                        stats: Stats(health: 700, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
+                        stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
         
         // MARK: THRESH
         thresh = Champion(name: "thresh", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "temporal passage", description: "Thresh tosses his lantern towards random unit(s) on your bench, pulling them into the current combat and granting them and himself bonus mana. Traits are unaffected."), championOriginSet3: [.chrono], championClassSet3: [.manaReaver],
@@ -306,7 +308,7 @@ class ChampionsSet3 {
         // MARK: LUCIAN
         lucian = Champion(name: "lucian", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "relentless pursuit", description: "Lucian dashes away from his current target, then Basic Attacks them and fires a second shot which deals magic damage."), championOriginSet3: [.cybernetic], championClassSet3: [.blaster],
                           bestItems: [items.giantSlayer, items.giantSlayer, items.redBuff],
-                          stats: Stats(health: 500, armor: 25, magicResist: 20, attackDamage: 55, attackSpeed: 0.7, attackRange: 4))
+                          stats: Stats(health: 500, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 4))
         
         
         // MARK: VI
@@ -350,7 +352,12 @@ class ChampionsSet3 {
         // MARK: SHACO
         shaco = Champion(name: "shaco", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "deceive", description: "Shaco teleports and backstabs his target, critically striking for a percentage of his Basic Attack damage."), championOriginSet3: [.darkStar], championClassSet3: [.infiltrator],
                          bestItems: [items.bloodthirster, items.guardianAngel, items.infinityEdge],
-                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 55, attackSpeed: 0.8, attackRange: 1))
+                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 1))
+        
+        // MARK: XERATH
+        xerath = Champion(name: "xerath", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "abyssal bombardment", description: "Xerath transforms, summoning meteors to strike random foes in place of his normal attacks for 6/8/45 seconds. Meteors deal 300/400/2500 magic damage upon impact and if they kill their target, all adjacent enemies take 150/200/1250 magic damage and are stunned for 1.5 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],
+                         bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
+                         stats: Stats(health: 750, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.9, attackRange: 5))
         
         
         
@@ -359,13 +366,13 @@ class ChampionsSet3 {
         // MARK: ANNIE
         annie = Champion(name: "annie", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "galaxy shield blast", description: "Annie blasts a cone of fire dealing magic damage to enemies in front of her, then shields herself for 4 seconds."), championOriginSet3: [.mechPilot], championClassSet3: [.sorcerer],
                          bestItems: [items.guardianAngel, items.ionicSpark, items.warmogsArmor],
-                         stats: Stats(health: 600, armor: 35, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 2))
+                         stats: Stats(health: 600, armor: 40, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 2))
         
         
         // MARK: FIZZ
         fizz = Champion(name: "fizz", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "chum the waters", description: "Fizz throws a lure that attracts a shark, causing it to emerge after a brief delay. It deals magic damage to enemies caught, knocking them back and stunning them for 1.5 seconds."), championOriginSet3: [.mechPilot], championClassSet3: [.infiltrator],
                         bestItems: [items.guardianAngel, items.ionicSpark, items.warmogsArmor],
-                        stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
+                        stats: Stats(health: 600, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 1))
         
         
         // MARK: RUMBLE
@@ -379,13 +386,13 @@ class ChampionsSet3 {
         // MARK: AURELION SOL
         aurelionSol = Champion(name: "aurelion sol", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "mobilize the fleet", description: "Aurelion Sol launches fighters, which fly out to random enemies, deal magic damage, and then return. Aurelion Sol launches all ready fighters plus 3 additional when he casts. Fighters prefer to target nearby enemies."), championOriginSet3: [.rebel], championClassSet3: [.starship],
                                bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
-                               stats: Stats(health: 900, armor: 30, magicResist: 20, attackDamage: 10, attackSpeed: 0.8, attackRange: 1))
+                               stats: Stats(health: 1100, armor: 35, magicResist: 20, attackDamage: 10, attackSpeed: 0.8, attackRange: 1))
         
         
         // MARK: JINX
         jinx = Champion(name: "jinx", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "get excited", description: "Jinx gets excited as she helps take down enemies. After her first takedown, Jinx gains bonus attack speed. After her second takedown, Jinx swaps to her rocket launcher, causing her Basic Attacks to deal bonus magic damage to all enemies in a small area around her target."), championOriginSet3: [.rebel], championClassSet3: [.blaster],
                         bestItems: [items.giantSlayer, items.guardianAngel, items.redBuff],
-                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 70, attackSpeed: 0.7, attackRange: 3))
+                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 70, attackSpeed: 0.75, attackRange: 3))
         
         
         // MARK: MALPHITE
@@ -464,13 +471,13 @@ class ChampionsSet3 {
         // MARK: SORAKA
         soraka = Champion(name: "soraka", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "wish", description: "Soraka heals all allies."), championOriginSet3: [.starGuardian], championClassSet3: [.mystic],
                           bestItems: [items.guardianAngel, items.spearOfShojin, items.zephyr],
-                          stats: Stats(health: 650, armor: 30, magicResist: 20, attackDamage: 45, attackSpeed: 0.75, attackRange: 3))
+                          stats: Stats(health: 700, armor: 30, magicResist: 20, attackDamage: 45, attackSpeed: 0.75, attackRange: 3))
         
         
         // MARK: SYNDRA
         syndra = Champion(name: "syndra", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "unleashed power", description: "Syndra pulls in all orbs on the battlefield and creates 3 new ones, then fires them all at the enemy with the highest health, dealing magic damage per orb."), championOriginSet3: [.starGuardian], championClassSet3: [.sorcerer],
                           bestItems: [items.jeweledGauntlet, items.rabadonsDeathcap, items.seraphsEmbrace],
-                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 3))
+                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 4))
         
         
         // MARK: ZOE

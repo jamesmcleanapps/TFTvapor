@@ -19,8 +19,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "celestial":
             return Details(main: "All allies heal for a percent of the damage they deal with spells and attacks.",
             benefit1: "2  -  15% Healing",
-            benefit2: "4  -  30% Healing",
-            benefit3: "6  -  60% Healing"
+            benefit2: "4  -  40% Healing",
+            benefit3: "6  -  65% Healing"
             )
                            
         case "chrono":
@@ -32,14 +32,14 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
             benefit1: "3  -  350 Health & 35 Attack Damage",
-            benefit2: "6  -  800 Health & 80 Attack Damage",
+            benefit2: "6  -  750 Health & 75 Attack Damage",
             benefit3: nil
             )
         case "dark star":
             return Details(main: "When a Dark Star Champion dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
             benefit1: "3  -  +25 AD and Spell Power",
             benefit2: "6  -  +35 AD and Spell Power",
-            benefit3: nil
+            benefit3: "9  -  +45 AD and Spell Power"
             )
         case "mech pilot":
             return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected, granted 25 Mana, and continue to fight.",
@@ -51,12 +51,12 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             return Details(main: "At the start of combat, Rebels gain a shield and increased damage for each adjacent Rebel.",
             benefit1: "3  -  150 Shield & 10% Damage",
             benefit2: "6  -  225 Shield & 12% Damage",
-            benefit3: nil
+            benefit3: "9  -  350 Shield & 15% Damage"
             )
         case "space pirate":
             return Details(main: "Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
             benefit1: "2  -  50% for 1 Gold",
-            benefit2: "4  -  50% for 1 Gold and 15% for a component item",
+            benefit2: "4  -  50% for 1 Gold and 20% for a component item",
             benefit3: nil
             )
         case "star guardian":
