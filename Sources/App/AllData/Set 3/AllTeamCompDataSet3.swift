@@ -857,7 +857,7 @@ class TeamCompsSet3 {
         // MARK: STAR GUARDIAN SORCERERS
         starGuardianSorcerers = TeamComp(name: "Star Guardian Sorcerers",
                                  teamCompSet: .set3,
-                                 tier: .A,
+                                 tier: .S,
                                  patch: "10.8",
                                  
                                  earlyUnits: [],
@@ -871,44 +871,44 @@ class TeamCompsSet3 {
             ],
                                  
                                  units: [
-                                    champions.poppy,
+                                    champions.lux,
                                     champions.zoe,
                                     champions.ahri,
                                     champions.neeko,
                                     champions.syndra,
                                     champions.soraka,
-                                    champions.lulu,
+                                    champions.velkoz,
                                     champions.xerath
             ],
                                  
-                                 carries: [champions.ahri, champions.neeko, champions.syndra],
+                                 carries: [champions.neeko, champions.syndra, champions.xerath],
                                  carryItems: [
-                                    champions.ahri:
+                                    champions.syndra:
                                         [
-                                            items.chaliceOfFavor,
+                                            items.jeweledGauntlet,
+                                            items.rabadonsDeathcap,
+                                            items.seraphsEmbrace
                                     ],
                                     champions.neeko :
                                         [
                                             items.brambleVest,
                                             items.guardianAngel
                                     ],
-                                    champions.syndra:
+                                    champions.xerath:
                                         [
-                                            items.jeweledGauntlet,
-                                            items.rabadonsDeathcap,
-                                            items.seraphsEmbrace
+                                            items.starGuardiansCharm
                                     ]
             ],
                                  teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
-                                        3 : champions.poppy,
-                                        5 : champions.neeko,
+                                        4 : champions.neeko,
                                         22 : champions.zoe,
+                                        23 : champions.lux,
                                         24 : champions.ahri,
                                         25 : champions.syndra,
-                                        26: champions.soraka,
-                                        27: champions.lulu,
-                                        28 : champions.xerath
+                                        26: champions.xerath,
+                                        27: champions.velkoz,
+                                        28 : champions.soraka
                                         
                                         
                                  ]) ,
@@ -1281,7 +1281,7 @@ class TeamCompsSet3 {
         // MARK: DARK STARS
         darkStars = TeamComp(name: "Dark Stars",
                                  teamCompSet: .set3,
-                                 tier: .S,
+                                 tier: .A,
                                  patch: "10.8",
                                  
                                  earlyUnits: [],
