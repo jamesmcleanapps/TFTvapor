@@ -27,6 +27,7 @@ struct TeamComp: Equatable, Codable {
     var units: [Champion]
     var carries: [Champion]
     var carryItems: [Champion : [CombinedItem]]
+    var threeStarUnits: [Champion]? = nil
     var teamCompPositions: TeamCompPositions?
     var webLink: String?
     
@@ -311,6 +312,7 @@ struct TeamComp: Equatable, Codable {
         let name = self.name
         let tier = self.tier
         let patch = self.patch
+        let threeStars = self.threeStarUnits?.map { $0.name }
         let synergiesString = self.synergiesLbl
         
         var unitNamesCost = [String : Int]()
@@ -327,7 +329,7 @@ struct TeamComp: Equatable, Codable {
             }
         })
         
-        return TeamCompLowData(id: nil, name: name, tier: tier, patch: patch, unitNamesCost: unitNamesCost, carryItems: carryItems, synergiesStr: synergiesString)
+        return TeamCompLowData(id: nil, name: name, tier: tier, patch: patch, unitNamesCost: unitNamesCost, carryItems: carryItems, threeStarUnits: threeStars, synergiesStr: synergiesString)
         
     }
 }

@@ -352,7 +352,7 @@ class ChampionsSet3 {
         // MARK: SHACO
         shaco = Champion(name: "shaco", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "deceive", description: "Shaco teleports and backstabs his target, critically striking for a percentage of his Basic Attack damage."), championOriginSet3: [.darkStar], championClassSet3: [.infiltrator],
                          bestItems: [items.bloodthirster, items.guardianAngel, items.infinityEdge],
-                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 1))
+                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 70, attackSpeed: 0.8, attackRange: 1))
         
         // MARK: XERATH
         xerath = Champion(name: "xerath", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "abyssal bombardment", description: "Xerath transforms, summoning meteors to strike random foes in place of his normal attacks for 6/8/45 seconds. Meteors deal 300/400/2500 magic damage upon impact and if they kill their target, all adjacent enemies take 150/200/1250 magic damage and are stunned for 1.5 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],

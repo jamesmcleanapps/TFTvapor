@@ -13,5 +13,8 @@ public func routes(_ router: Router) throws {
     
     let championsControllerSet2 = ChampionsControllerSet2()
     try router.register(collection: championsControllerSet2)
+    
+    let messagesController = MessageController()
+    try router.register(collection: messagesController)
  
 }

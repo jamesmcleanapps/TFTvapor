@@ -17,6 +17,7 @@ struct TeamCompLowData: Equatable, Codable {
     var patch: String
     var unitNamesCost: [String : Int]
     var carryItems: [String : [String]]
+    var threeStarUnits: [String]? = nil
     
     var synergiesStr: String
 }

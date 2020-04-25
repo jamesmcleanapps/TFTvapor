@@ -38,8 +38,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "dark star":
             return Details(main: "When a Dark Star Champion dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
             benefit1: "3  -  +25 AD and Spell Power",
-            benefit2: "6  -  +35 AD and Spell Power",
-            benefit3: "9  -  +45 AD and Spell Power"
+            benefit2: "6  -  +30 AD and Spell Power",
+            benefit3: "9  -  +35 AD and Spell Power"
             )
         case "mech pilot":
             return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected, granted 25 Mana, and continue to fight.",
