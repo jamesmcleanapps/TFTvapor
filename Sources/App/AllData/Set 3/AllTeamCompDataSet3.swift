@@ -40,7 +40,9 @@ class TeamCompsSet3 {
             
             chronoBlademasters,
             
-            darkStars
+            darkStars,
+            
+            spacePirateCelestials
         ]
     }()
     
@@ -78,6 +80,7 @@ class TeamCompsSet3 {
     let chronoBlademasters: TeamComp
     
     let darkStars: TeamComp
+    let spacePirateCelestials: TeamComp
     
     init() {
         let champions = ChampionsSet3.shared
@@ -1369,6 +1372,68 @@ class TeamCompsSet3 {
                                         26: champions.xerath,
                                         27: champions.ashe,
                                         28 : champions.lux
+                                        
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        
+        
+        // MARK: SPACE PIRATE CELESTIALS
+        spacePirateCelestials = TeamComp(name: "Space Pirate Celestials",
+                                 teamCompSet: .set3,
+                                 tier: .A,
+                                 patch: "10.8",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.poppy,
+                                    champions.darius,
+                                    champions.mordekaiser,
+                                    champions.jayce,
+                                    champions.wukong
+            ],
+                                 
+                                 units: [
+                                    champions.xayah,
+                                    champions.darius,
+                                    champions.rakan,
+                                    champions.xinZhao,
+                                    champions.ashe,
+                                    champions.jayce,
+                                    champions.kassadin,
+                                    champions.lulu
+            ],
+                                 
+                                 carries: [champions.darius, champions.jayce],
+                                 carryItems: [
+                                    champions.darius :
+                                        [
+                                            items.guardianAngel,
+                                            items.ionicSpark,
+                                            items.rabadonsDeathcap
+                                    ],
+                                    champions.jayce :
+                                        [
+                                            items.guardianAngel,
+                                            items.morellonomicon,
+                                            items.zzRot
+                                    ]
+            ],
+                                 threeStarUnits: [champions.darius],
+                                 
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.darius,
+                                        4 : champions.jayce,
+                                        5 : champions.xinZhao,
+                                        6 : champions.kassadin,
+                                        11 : champions.rakan,
+                                        23: champions.xayah,
+                                        25: champions.ashe,
+                                        27 : champions.lulu
                                         
                                         
                                  ]) ,
