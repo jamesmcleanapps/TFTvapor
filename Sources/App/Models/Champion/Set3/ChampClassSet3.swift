@@ -32,7 +32,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "brawler":
             return Details(main: "Brawlers gain bonus Maximum Health.",
             benefit1: "3  -  300 Health",
-            benefit2: "6  -  750 Health",
+            benefit2: "6  -  700 Health",
             benefit3: nil
             )
         case "demolitionist":
@@ -47,7 +47,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             benefit2: "4  -  80% Bonus Attack Speed.",
             benefit3: "6  -  125% Bonus Attack Speed."
             )
-        case "manaReaver":
+        case "mana-reaver":
             return Details(main: "Mana-Reaver's Basic Attacks increase the mana cost of their target’s next spell by 40%.",
             benefit1: "2  -  40% increased cost",
             benefit2: nil,
