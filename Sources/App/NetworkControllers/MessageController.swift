@@ -30,9 +30,9 @@ class Messages {
     
     var allMessages: [Message] {
         return [
-            Message(id: 5, title: "28 April 2020", body: "Fixed Crash caused by tapping info button on mana reaver class."),
-            Message(id: 6, title: "28 April 2020", body: "Apologies for the state of the items. All item details should now hopefully be correct.\n\nAlso, all out of date images will be fixed in patch 3.11, submitted today. Should be with you tomorrow at the latest after Apple review."),
-            Message(id: 7, title: "29 April 2020", body: "Patch 3.11 available on the App Store.\n\nThis patch updates Item images that were incorrect. So please update ASAP.")
+            Message(id: 7, title: "29 April 2020", body: "Patch 3.11 available on the App Store.\n\nThis patch updates Item images that were incorrect. So please update ASAP. All Item details should now also be correct."),
+            Message(id: 8, title: "29 April 2020", body: "All stats updated for patch 10.9"),
+            Message(id: 9, title: "29 April 2020", body: "All Team Comps have been updated for patch 10.9. There will be changes over the coming days as the meta shifts.")
             
         ]
     }

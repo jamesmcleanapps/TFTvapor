@@ -298,7 +298,7 @@ class ItemsSet3 {
         shroud = CombinedItem(name: "shroud of stillness", bonus: "When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 40% until they cast.", rating: .A, recipe: [sparringGloves, chainVest])
         
         // MARK: QUICKSILVER
-        quicksilver = CombinedItem(name: "quicksilver", bonus: "The wearer is immune to crowd control for the first 15 seconds of combat.", rating: .A, recipe: [sparringGloves, negatronCloak])
+        quicksilver = CombinedItem(name: "quicksilver", bonus: "The wearer is immune to crowd control for the first 10 seconds of combat.", rating: .A, recipe: [sparringGloves, negatronCloak])
         
         // MARK: TRAP CLAW
         trapClaw = CombinedItem(name: "trap claw", bonus: "Start combat with a spell shield. Stun the champion that breaks it for 4 sec", rating: .B, recipe: [sparringGloves, giantsBelt])

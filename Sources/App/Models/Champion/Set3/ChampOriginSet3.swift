@@ -19,30 +19,30 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "celestial":
             return Details(main: "All allies heal for a percent of the damage they deal with spells and attacks.",
             benefit1: "2  -  15% Healing",
-            benefit2: "4  -  40% Healing",
-            benefit3: "6  -  65% Healing"
+            benefit2: "4  -  35% Healing",
+            benefit3: "6  -  60% Healing"
             )
                            
         case "chrono":
-            return Details(main: "All allies gain Attack Speed every 4 seconds.",
-            benefit1: "2  -  15% Attack Speed",
-            benefit2: "4  -  35% Attack Speed",
-            benefit3: "6  -  75% Attack Speed"
+            return Details(main: "All allies gain 15% Attack Speed.",
+            benefit1: "2  -  every 8 seconds",
+            benefit2: "4  -  every 4 seconds",
+            benefit3: "6  -  every 2 seconds"
             )
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
             benefit1: "3  -  350 Health & 35 Attack Damage",
-            benefit2: "6  -  750 Health & 75 Attack Damage",
+            benefit2: "6  -  700 Health & 70 Attack Damage",
             benefit3: nil
             )
         case "dark star":
             return Details(main: "When a Dark Star Champion dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
-            benefit1: "3  -  +25 AD and Spell Power",
-            benefit2: "6  -  +30 AD and Spell Power",
+            benefit1: "3  -  +20 AD and Spell Power",
+            benefit2: "6  -  +25 AD and Spell Power",
             benefit3: "9  -  +35 AD and Spell Power"
             )
         case "mech pilot":
-            return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected, granted 25 Mana, and continue to fight.",
+            return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected and continue to fight.",
             benefit1: "3  -  Active",
             benefit2: nil,
             benefit3: nil
@@ -50,8 +50,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "rebel":
             return Details(main: "At the start of combat, Rebels gain a shield and increased damage for each adjacent Rebel.",
             benefit1: "3  -  150 Shield & 10% Damage",
-            benefit2: "6  -  225 Shield & 12% Damage",
-            benefit3: "9  -  350 Shield & 15% Damage"
+            benefit2: "6  -  210 Shield & 12% Damage",
+            benefit3: "9  -  330 Shield & 15% Damage"
             )
         case "space pirate":
             return Details(main: "Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
@@ -62,11 +62,11 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "star guardian":
             return Details(main: "Star Guardian's spellcasts grant Mana to other Star Guardians. (Spreads among them)",
             benefit1: "3  -  30 Total Mana",
-            benefit2: "6  -  60 Total Mana",
+            benefit2: "6  -  50 Total Mana",
             benefit3: nil
             )
         case "valkyrie":
-            return Details(main: "Valkyrie attacks and spells always critically strike targets below 50% health.",
+            return Details(main: "Valkyrie attacks and spells always critically strike targets below 40% health.",
             benefit1: "2  -  Active",
             benefit2: nil,
             benefit3: nil

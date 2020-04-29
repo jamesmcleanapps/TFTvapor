@@ -366,7 +366,7 @@ class ChampionsSet3 {
         // MARK: ANNIE
         annie = Champion(name: "annie", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "galaxy shield blast", description: "Annie blasts a cone of fire dealing magic damage to enemies in front of her, then shields herself for 4 seconds."), championOriginSet3: [.mechPilot], championClassSet3: [.sorcerer],
                          bestItems: [items.guardianAngel, items.ionicSpark, items.warmogsArmor],
-                         stats: Stats(health: 600, armor: 40, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 2))
+                         stats: Stats(health: 700, armor: 40, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 2))
         
         
         // MARK: FIZZ
