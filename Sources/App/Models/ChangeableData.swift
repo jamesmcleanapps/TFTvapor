@@ -122,58 +122,56 @@ extension ChampionsSet3 {
         ]
         
         let aRating = [
-            ashe,
             chogath,
             ekko,
             fizz,
             gangplank,
+            jayce,
             jinx,
             kaisa,
             lucian,
             rumble,
             shaco,
-            syndra,
             thresh,
             velkoz,
             xerath
         ]
         let bRating = [
+            ashe,
             aurelionSol,
             blitzcrank,
+            darius,
             ezreal,
+            graves,
+            kassadin,
             leona,
-            jayce,
             lux,
-            masterYi,
-            neeko,
             rakan,
             shen,
             soraka,
+            syndra,
             vi,
             wukong,
             xinZhao
-            
         ]
         let cRating: [Champion] = [
             ahri,
             annie,
-            caitlyn,
-            darius,
             fiora,
-            graves,
             jarvan,
             karma,
-            kassadin,
             khazix,
+            masterYi,
             mordekaiser,
+            neeko,
+            poppy,
             sona,
-            yasuo,
         ]
         let dRating: [Champion] = [
-            
+            caitlyn,
             malphite,
-            poppy,
             twistedFate,
+            yasuo,
             ziggs
         ]
         let eRating: [Champion] = [
@@ -328,10 +326,9 @@ extension ItemsSet3 {
     func setItemRatings() {
         let sRated = [
             forceOfNature,
-            
+            giantSlayer,
             guardianAngel,
-            handOfJustice,
-            
+            infinityEdge,
             morellonomicon,
             quicksilver,
             redBuff,
@@ -343,8 +340,7 @@ extension ItemsSet3 {
             brambleVest,
             deathBlade,
             dragonsClaw,
-            giantSlayer,
-            infinityEdge,
+           handOfJustice,
             ionicSpark,
             jeweledGauntlet,
             rabadonsDeathcap,

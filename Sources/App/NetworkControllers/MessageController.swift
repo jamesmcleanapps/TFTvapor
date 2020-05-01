@@ -32,7 +32,9 @@ class Messages {
         return [
             Message(id: 7, title: "29 April 2020", body: "Patch 3.11 available on the App Store.\n\nThis patch updates Item images that were incorrect. So please update ASAP. All Item details should now also be correct."),
             Message(id: 8, title: "29 April 2020", body: "All stats updated for patch 10.9"),
-            Message(id: 9, title: "29 April 2020", body: "All Team Comps have been updated for patch 10.9. There will be changes over the coming days as the meta shifts.")
+            Message(id: 9, title: "29 April 2020", body: "All Team Comps have been updated for patch 10.9. There will be changes over the coming days as the meta shifts."),
+            Message(id: 10, title: "1 May 2020", body: "Team Comps, Champion and Item Tier Lists Updated."),
+            Message(id: 11, title: "1 May 2020", body: "Rebel Demolitionist's has a few champ changes and moves up from B to A Tier.\n\n.Dark Stars and Star Guardian Sorcerers drop from S Tier to A Tier.\n\nGiant Slayet now S Tier Item.")
             
         ]
     }

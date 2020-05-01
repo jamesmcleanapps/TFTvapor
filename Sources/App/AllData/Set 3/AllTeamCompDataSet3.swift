@@ -587,58 +587,58 @@ class TeamCompsSet3 {
         // MARK: REBEL DEMOLITIONISTS
         rebelDemolitionists = TeamComp(name: "Rebel Demolitionists",
                                  teamCompSet: .set3,
-                                 tier: .B,
+                                 tier: .A,
                                  patch: "10.9",
                                  
                                  earlyUnits: [],
                                  
                                  midUnits: [
-                                    champions.shen,
+                                    champions.malphite,
+                                    champions.blitzcrank,
                                     champions.sona,
-                                    champions.yasuo,
-                                    champions.karma,
-                                    champions.masterYi
+                                    champions.ezreal,
+                                    champions.jinx
             ],
                                  
                                  units: [
                                     champions.malphite,
                                     champions.ziggs,
-                                    champions.sona,
+                                    champions.yasuo,
                                     champions.masterYi,
                                     champions.jinx,
-                                    champions.lulu,
                                     champions.aurelionSol,
-                                    champions.gangplank
+                                    champions.gangplank,
+                                    champions.missFortune
             ],
                                  
-                                 carries: [champions.aurelionSol, champions.gangplank, champions.lulu],
+                                 carries: [champions.aurelionSol, champions.gangplank, champions.jinx],
                                  carryItems: [
                                     champions.aurelionSol :
                                         [
-                                            items.demolitionistsCharge,
-                                            items.morellonomicon,
-                                            items.seraphsEmbrace
+                                            items.morellonomicon
                                     ],
                                     champions.gangplank:
                                         [
                                             items.guardianAngel,
-                                            items.rebelMedal
+                                            items.rabadonsDeathcap
                                     ],
-                                    champions.lulu:
+                                    champions.jinx:
                                         [
-                                            items.spearOfShojin
+                                            items.giantSlayer,
+                                            items.guardianAngel,
+                                            items.redBuff
                                     ]
             ],
                                  teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
-                                        4 : champions.gangplank,
-                                        5 : champions.malphite,
-                                        10 : champions.sona,
-                                        11 : champions.aurelionSol,
-                                        12 : champions.masterYi,
-                                        18: champions.jinx,
-                                        19: champions.ziggs,
-                                        25 : champions.lulu
+                                        3 : champions.gangplank,
+                                        12 : champions.yasuo,
+                                        13 : champions.malphite,
+                                        19 : champions.masterYi,
+                                        20 : champions.jinx,
+                                        21: champions.aurelionSol,
+                                        22: champions.missFortune,
+                                        27 : champions.ziggs
                                         
                                  ]) ,
                                  webLink: nil)
@@ -885,7 +885,7 @@ class TeamCompsSet3 {
         // MARK: STAR GUARDIAN SORCERERS
         starGuardianSorcerers = TeamComp(name: "Star Guardian Sorcerers",
                                  teamCompSet: .set3,
-                                 tier: .S,
+                                 tier: .A,
                                  patch: "10.9",
                                  
                                  earlyUnits: [],
@@ -1323,7 +1323,7 @@ class TeamCompsSet3 {
         // MARK: DARK STARS
         darkStars = TeamComp(name: "Dark Stars",
                                  teamCompSet: .set3,
-                                 tier: .S,
+                                 tier: .A,
                                  patch: "10.9",
                                  
                                  earlyUnits: [],
