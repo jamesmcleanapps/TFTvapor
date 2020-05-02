@@ -42,7 +42,9 @@ class TeamCompsSet3 {
             
             darkStars,
             
-            spacePirateCelestials
+            spacePirateCelestials,
+            
+            hyperrollVanguards
         ]
     }()
     
@@ -81,6 +83,8 @@ class TeamCompsSet3 {
     
     let darkStars: TeamComp
     let spacePirateCelestials: TeamComp
+    
+    let hyperrollVanguards: TeamComp
     
     init() {
         let champions = ChampionsSet3.shared
@@ -1436,6 +1440,66 @@ class TeamCompsSet3 {
                                         23: champions.xayah,
                                         25: champions.ashe,
                                         27 : champions.lulu
+                                        
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: HYPERROLL VANGUARDS
+        hyperrollVanguards = TeamComp(name: "Hyper-roll Vanguards",
+                                 teamCompSet: .set3,
+                                 tier: .A,
+                                 patch: "10.9",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.caitlyn,
+                                    champions.leona,
+                                    champions.poppy,
+                                    champions.twistedFate,
+                                    champions.zoe
+            ],
+                                 
+                                 units: [
+                                    champions.leona,
+                                    champions.poppy,
+                                    champions.twistedFate,
+                                    champions.zoe,
+                                    champions.jayce,
+                                    champions.soraka,
+                                    champions.wukong,
+                                    champions.lulu
+            ],
+                                 
+                                 carries: [champions.poppy, champions.twistedFate],
+                                 carryItems: [
+                                    champions.poppy :
+                                        [
+                                            items.brambleVest,
+                                            items.dragonsClaw,
+                                            items.titansResolve
+                                    ],
+                                    champions.twistedFate :
+                                        [
+                                            items.morellonomicon,
+                                            items.seraphsEmbrace,
+                                            items.spearOfShojin
+                                    ]
+            ],
+                                 threeStarUnits: [champions.leona, champions.poppy, champions.twistedFate, champions.zoe],
+                                 
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.poppy,
+                                        5 : champions.leona,
+                                        8 : champions.jayce,
+                                        14 : champions.wukong,
+                                        22 : champions.soraka,
+                                        24: champions.zoe,
+                                        26: champions.twistedFate,
+                                        28 : champions.lulu
                                         
                                         
                                  ]) ,
