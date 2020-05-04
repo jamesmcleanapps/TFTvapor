@@ -44,7 +44,10 @@ class TeamCompsSet3 {
             
             spacePirateCelestials,
             
-            hyperrollVanguards
+            //hyperrollVanguards,
+            
+            hyperrollSorcerers,
+            hyperrollCelestials
         ]
     }()
     
@@ -84,7 +87,10 @@ class TeamCompsSet3 {
     let darkStars: TeamComp
     let spacePirateCelestials: TeamComp
     
-    let hyperrollVanguards: TeamComp
+    //let hyperrollVanguards: TeamComp
+    
+    let hyperrollSorcerers: TeamComp
+    let hyperrollCelestials: TeamComp
     
     init() {
         let champions = ChampionsSet3.shared
@@ -1447,9 +1453,70 @@ class TeamCompsSet3 {
         
         
         // MARK: HYPERROLL VANGUARDS
-        hyperrollVanguards = TeamComp(name: "Hyper-roll Vanguards",
+//        hyperrollVanguards = TeamComp(name: "Hyper-roll Vanguards",
+//                                 teamCompSet: .set3,
+//                                 tier: .A,
+//                                 patch: "10.9",
+//
+//                                 earlyUnits: [],
+//
+//                                 midUnits: [
+//                                    champions.caitlyn,
+//                                    champions.leona,
+//                                    champions.poppy,
+//                                    champions.twistedFate,
+//                                    champions.zoe
+//            ],
+//
+//                                 units: [
+//                                    champions.leona,
+//                                    champions.poppy,
+//                                    champions.twistedFate,
+//                                    champions.zoe,
+//                                    champions.jayce,
+//                                    champions.soraka,
+//                                    champions.wukong,
+//                                    champions.lulu
+//            ],
+//
+//                                 carries: [champions.poppy, champions.twistedFate],
+//                                 carryItems: [
+//                                    champions.poppy :
+//                                        [
+//                                            items.brambleVest,
+//                                            items.dragonsClaw,
+//                                            items.titansResolve
+//                                    ],
+//                                    champions.twistedFate :
+//                                        [
+//                                            items.morellonomicon,
+//                                            items.seraphsEmbrace,
+//                                            items.spearOfShojin
+//                                    ]
+//            ],
+//                                 threeStarUnits: [champions.leona, champions.poppy, champions.twistedFate, champions.zoe],
+//
+//                                 teamCompPositions:  TeamCompPositions(champsPositions:
+//                                    [
+//                                        3 : champions.poppy,
+//                                        5 : champions.leona,
+//                                        8 : champions.jayce,
+//                                        14 : champions.wukong,
+//                                        22 : champions.soraka,
+//                                        24: champions.zoe,
+//                                        26: champions.twistedFate,
+//                                        28 : champions.lulu
+//
+//
+//                                 ]) ,
+//                                 webLink: nil)
+        
+        
+        
+        // MARK: HYPERROLL SORCERERS
+        hyperrollSorcerers = TeamComp(name: "Hyper-roll Sorcerers",
                                  teamCompSet: .set3,
-                                 tier: .A,
+                                 tier: .S,
                                  patch: "10.9",
                                  
                                  earlyUnits: [],
@@ -1463,14 +1530,14 @@ class TeamCompsSet3 {
             ],
                                  
                                  units: [
-                                    champions.leona,
                                     champions.poppy,
                                     champions.twistedFate,
                                     champions.zoe,
-                                    champions.jayce,
-                                    champions.soraka,
+                                    champions.lux,
+                                    champions.syndra,
+                                    champions.velkoz,
                                     champions.wukong,
-                                    champions.lulu
+                                    champions.xerath
             ],
                                  
                                  carries: [champions.poppy, champions.twistedFate],
@@ -1479,28 +1546,93 @@ class TeamCompsSet3 {
                                         [
                                             items.brambleVest,
                                             items.dragonsClaw,
-                                            items.titansResolve
+                                            items.rabadonsDeathcap
                                     ],
                                     champions.twistedFate :
                                         [
                                             items.morellonomicon,
-                                            items.seraphsEmbrace,
+                                            items.spearOfShojin,
                                             items.spearOfShojin
                                     ]
             ],
-                                 threeStarUnits: [champions.leona, champions.poppy, champions.twistedFate, champions.zoe],
+                                 threeStarUnits: [champions.poppy, champions.twistedFate, champions.zoe],
                                  
                                  teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
                                         3 : champions.poppy,
-                                        5 : champions.leona,
-                                        8 : champions.jayce,
-                                        14 : champions.wukong,
-                                        22 : champions.soraka,
-                                        24: champions.zoe,
+                                        5 : champions.wukong,
+                                        22 : champions.zoe,
+                                        24 : champions.syndra,
+                                        25 : champions.xerath,
                                         26: champions.twistedFate,
-                                        28 : champions.lulu
+                                        27: champions.velkoz,
+                                        28 : champions.lux
                                         
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: HYPERROLL CELESTIALS
+        hyperrollCelestials = TeamComp(name: "Hyper-roll Celestials",
+                                 teamCompSet: .set3,
+                                 tier: .S,
+                                 patch: "10.9",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.caitlyn,
+                                    champions.fiora,
+                                    champions.jarvan,
+                                    champions.xayah,
+                                    champions.shen
+            ],
+                                 
+                                 units: [
+                                    champions.caitlyn,
+                                    champions.fiora,
+                                    champions.jarvan,
+                                    champions.xayah,
+                                    champions.rakan,
+                                    champions.shen,
+                                    champions.ashe,
+                                    champions.kassadin
+            ],
+                                 
+                                 carries: [champions.fiora, champions.jarvan, champions.xayah, champions.rakan],
+                                 carryItems: [
+                                    champions.fiora :
+                                        [
+                                            items.thiefsGloves
+                                    ],
+                                    champions.jarvan :
+                                        [
+                                            items.zzRot
+                                    ],
+                                    champions.xayah :
+                                        [
+                                            items.infinityEdge,
+                                            items.lastWhisper,
+                                            items.guardianAngel
+                                    ],
+                                    champions.rakan :
+                                        [
+                                            items.morellonomicon
+                                    ]
+            ],
+                                 threeStarUnits: [champions.caitlyn, champions.fiora, champions.jarvan, champions.xayah],
+                                 
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        2 : champions.fiora,
+                                        3 : champions.rakan,
+                                        4 : champions.shen,
+                                        5 : champions.jarvan,
+                                        6 : champions.kassadin,
+                                        22: champions.caitlyn,
+                                        25: champions.xayah,
+                                        28 : champions.ashe
                                         
                                  ]) ,
                                  webLink: nil)

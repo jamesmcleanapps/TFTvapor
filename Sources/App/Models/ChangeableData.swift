@@ -130,6 +130,7 @@ extension ChampionsSet3 {
             jinx,
             kaisa,
             lucian,
+            poppy,
             rumble,
             shaco,
             thresh,
@@ -150,6 +151,7 @@ extension ChampionsSet3 {
             shen,
             soraka,
             syndra,
+            twistedFate,
             vi,
             wukong,
             xinZhao
@@ -164,18 +166,19 @@ extension ChampionsSet3 {
             masterYi,
             mordekaiser,
             neeko,
-            poppy,
+            
             sona,
+            xayah,
         ]
         let dRating: [Champion] = [
             caitlyn,
             malphite,
-            twistedFate,
+            
             yasuo,
             ziggs
         ]
         let eRating: [Champion] = [
-            xayah,
+            
             zoe
         ]
         
