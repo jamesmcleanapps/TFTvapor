@@ -31,9 +31,12 @@ class Messages {
     var allMessages: [Message] {
         return [
             Message(id: 7, title: "29 April 2020", body: "Patch 3.11 available on the App Store.\n\nThis patch updates Item images that were incorrect. So please update ASAP. All Item details should now also be correct."),
-            Message(id: 8, title: "29 April 2020", body: "All stats updated for patch 10.9"),
-            Message(id: 13, title: "4 May 2020", body: "Two new S Tier Team Comps\n\n - Hyper-roll Sorcerers\n\n - Hyper-roll Celestials"),
-            Message(id: 14, title: "4 May 2020", body: "Poppy up to A Tier\n\nTwisted Fate up to B Tier\n\nXayah up to C Tier")
+            
+            Message(id: 15, title: "8 May 2020", body: "New S Tier Team Comp - Void Brawler\n\n - Chrono Blademaster down to A Tier\n\n - Cybernetic Blademasters down to A Tier\n\n - Space Pirate Celestials down to A Tier"),
+            
+            Message(id: 16, title: "8 May 2020", body: " - Sona up to A Tier\n\n - Ahri and Xayah up to B Tier"),
+            
+            Message(id: 17, title: "8 May 2020", body: "Chalice of Favor now an A Tier Item")
             
         ]
     }

@@ -47,7 +47,9 @@ class TeamCompsSet3 {
             //hyperrollVanguards,
             
             hyperrollSorcerers,
-            hyperrollCelestials
+            hyperrollCelestials,
+            
+            voidBrawler
         ]
     }()
     
@@ -91,6 +93,8 @@ class TeamCompsSet3 {
     
     let hyperrollSorcerers: TeamComp
     let hyperrollCelestials: TeamComp
+    
+    let voidBrawler: TeamComp
     
     init() {
         let champions = ChampionsSet3.shared
@@ -222,7 +226,7 @@ class TeamCompsSet3 {
             // MARK: CYBERNETIC BLADEMASTERS
             cyberneticBlademasters = TeamComp(name: "Cybernetic Blademasters",
                                      teamCompSet: .set3,
-                                     tier: .S,
+                                     tier: .A,
                                      patch: "10.9",
                                      
                                      earlyUnits: [],
@@ -1270,7 +1274,7 @@ class TeamCompsSet3 {
         // MARK: CHRONO BLADEMASTERS
         chronoBlademasters = TeamComp(name: "Chrono Blademasters",
                                  teamCompSet: .set3,
-                                 tier: .S,
+                                 tier: .A,
                                  patch: "10.9",
                                  
                                  earlyUnits: [],
@@ -1395,7 +1399,7 @@ class TeamCompsSet3 {
         // MARK: SPACE PIRATE CELESTIALS
         spacePirateCelestials = TeamComp(name: "Space Pirate Celestials",
                                  teamCompSet: .set3,
-                                 tier: .S,
+                                 tier: .A,
                                  patch: "10.9",
                                  
                                  earlyUnits: [],
@@ -1633,6 +1637,68 @@ class TeamCompsSet3 {
                                         22: champions.caitlyn,
                                         25: champions.xayah,
                                         28 : champions.ashe
+                                        
+                                 ]) ,
+                                 webLink: nil)
+        
+        
+        // MARK: VOID BRAWLERS
+        voidBrawler = TeamComp(name: "Void Brawler",
+                                 teamCompSet: .set3,
+                                 tier: .S,
+                                 patch: "10.9",
+                                 
+                                 earlyUnits: [],
+                                 
+                                 midUnits: [
+                                    champions.malphite,
+                                    champions.twistedFate,
+                                    champions.blitzcrank,
+                                    champions.vi,
+                                    champions.chogath
+            ],
+                                 
+                                 units: [
+                                    champions.khazix,
+                                    champions.malphite,
+                                    champions.twistedFate,
+                                    champions.blitzcrank,
+                                    champions.sona,
+                                    champions.vi,
+                                    champions.chogath,
+                                    champions.velkoz
+            ],
+                                 
+                                 carries: [champions.sona, champions.chogath, champions.velkoz],
+                                 carryItems: [
+                                    champions.sona :
+                                        [
+                                            items.chaliceOfFavor,
+                                            items.chaliceOfFavor,
+                                            items.seraphsEmbrace
+                                    ],
+                                    champions.chogath :
+                                        [
+                                            items.guardianAngel
+                                    ],
+                                    champions.velkoz :
+                                        [
+                                            items.morellonomicon,
+                                            items.quicksilver
+                                    ]
+            ],
+                                 threeStarUnits: nil,
+                                 
+                                 teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        1 : champions.blitzcrank,
+                                        2 : champions.vi,
+                                        3 : champions.chogath,
+                                        4 : champions.malphite,
+                                        8 : champions.velkoz,
+                                        9: champions.sona,
+                                        22: champions.twistedFate,
+                                        25 : champions.khazix
                                         
                                  ]) ,
                                  webLink: nil)

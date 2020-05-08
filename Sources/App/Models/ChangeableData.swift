@@ -122,6 +122,7 @@ extension ChampionsSet3 {
         ]
         
         let aRating = [
+            ahri,
             chogath,
             ekko,
             fizz,
@@ -133,6 +134,7 @@ extension ChampionsSet3 {
             poppy,
             rumble,
             shaco,
+            sona,
             thresh,
             velkoz,
             xerath
@@ -154,10 +156,10 @@ extension ChampionsSet3 {
             twistedFate,
             vi,
             wukong,
+            xayah,
             xinZhao
         ]
         let cRating: [Champion] = [
-            ahri,
             annie,
             fiora,
             jarvan,
@@ -166,9 +168,6 @@ extension ChampionsSet3 {
             masterYi,
             mordekaiser,
             neeko,
-            
-            sona,
-            xayah,
         ]
         let dRating: [Champion] = [
             caitlyn,
@@ -341,6 +340,7 @@ extension ItemsSet3 {
         ]
         let aRated = [
             brambleVest,
+            chaliceOfFavor,
             deathBlade,
             dragonsClaw,
            handOfJustice,
@@ -349,11 +349,10 @@ extension ItemsSet3 {
             rabadonsDeathcap,
             titansResolve,
             trapClaw
-            
         ]
         let bRated = [
             bloodthirster,
-            chaliceOfFavor,
+            
             guinsoosRageblade,
             lastWhisper,
             locket,
@@ -369,14 +368,11 @@ extension ItemsSet3 {
             zzRot
         ]
         let cRated: [CombinedItem] = [
-            
             hextechGunblade,
             ludensEcho,
             frozenHeart,
             redemption,
             swordBreaker,
-            
-            
         ]
         
         sRated.forEach { (item) in
