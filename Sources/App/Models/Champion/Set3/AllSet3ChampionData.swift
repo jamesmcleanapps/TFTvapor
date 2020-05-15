@@ -227,7 +227,7 @@ class ChampionsSet3 {
         // MARK: XAYAH
         xayah = Champion(name: "xayah", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "deadly plumage", description: "Xayah creates a storm of blades, gaining Attack Speed."), championOriginSet3: [.celestial], championClassSet3: [.blademaster],
                          bestItems: [items.statikkShiv, items.statikkShiv, items.statikkShiv],
-                         stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.8, attackRange: 3))
+                         stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 3))
         
     
         // MARK: XIN ZHAO
@@ -416,7 +416,7 @@ class ChampionsSet3 {
         // MARK: YASUO
         yasuo = Champion(name: "yasuo", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "last breath", description: "Yasuo blinks to the enemy with the most items and knocks them up, holding them airborne for 1 second and hitting them multiple times, dealing Basic Attack damage and applying on-hit effects."), championOriginSet3: [.rebel], championClassSet3: [.blademaster],
                          bestItems: [items.guardianAngel, items.handOfJustice, items.infinityEdge],
-                         stats: Stats(health: 600, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 1))
+                         stats: Stats(health: 700, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 1))
         
         
         // MARK: ZIGGS

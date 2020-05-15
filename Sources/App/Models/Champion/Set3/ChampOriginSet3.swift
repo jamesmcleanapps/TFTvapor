@@ -56,7 +56,7 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "space pirate":
             return Details(main: "Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
             benefit1: "2  -  50% for 1 Gold",
-            benefit2: "4  -  50% for 1 Gold and 20% for a component item",
+            benefit2: "4  -  50% for 1 Gold and 25% for a component item",
             benefit3: nil
             )
         case "star guardian":

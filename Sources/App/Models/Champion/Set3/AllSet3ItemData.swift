@@ -144,7 +144,7 @@ class ItemsSet3 {
         hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 25% of all damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
         
         // MARK: DEATH BLADE
-        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 30 Attack Damage until end of combat (Stacks infinitely, starts with 0 stack).", rating: .A, recipe: [bfSword, bfSword])
+        deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 30 Attack Damage until end of combat (Stacks infinitely, starts with 1 stack).", rating: .A, recipe: [bfSword, bfSword])
         
         // MARK: SPEAR OF SHOJIN
         spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 18% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
@@ -173,7 +173,7 @@ class ItemsSet3 {
         titansResolve = CombinedItem(name: "titan's resolve", bonus: "When wearer takes damage or critically hits, gain a 2% stacking damage bonus. Stacks up to 50 times at which point wearer gains 25 amor and magic resist.", rating: .A, recipe: [chainVest, recurveBow])
         
         // MARK: RED BUFF
-        redBuff = CombinedItem(name: "red buff", bonus: "Gains 27% max hp true damage over 10 seconds on hit in addition to its burn. And reducing healing by 50% for the duration of the burn.", rating: .A, recipe: [chainVest, giantsBelt])
+        redBuff = CombinedItem(name: "red buff", bonus: "Gains 25% max hp true damage over 10 seconds on hit in addition to its burn. And reducing healing by 50% for the duration of the burn.", rating: .A, recipe: [chainVest, giantsBelt])
         
         // MARK: BRAMBLE VEST
         brambleVest = CombinedItem(name: "bramble vest", bonus: "Negates bonus damage from critical hits for wearer. When hit by a basic attack, thorns hit nearby enemies up to once every 2.5 seconds and damage scales with star level (80/120/160).", rating: .B, recipe: [chainVest, chainVest])
@@ -193,7 +193,7 @@ class ItemsSet3 {
         protectorsChestguard = CombinedItem(name: "protector's chestguard", bonus: "Wearer is also a Protector", rating: .A, recipe: [giantsBelt, spatula])
         
         // MARK: MORELLONOMICON
-        morellonomicon = CombinedItem(name: "morellonomicon", bonus: "When the wearer deals damage with their spell, they burn the target, dealing 27% of the target's Maximum Health as true damage over 10 seconds and reducing healing by 50% for the duration of the burn.", rating: .A, recipe: [giantsBelt, needlesslyLargeRod])
+        morellonomicon = CombinedItem(name: "morellonomicon", bonus: "When the wearer deals damage with their spell, they burn the target, dealing 25% of the target's Maximum Health as true damage over 10 seconds and reducing healing by 50% for the duration of the burn.", rating: .A, recipe: [giantsBelt, needlesslyLargeRod])
         
         // MARK: REDEMPTION
         redemption = CombinedItem(name: "redemption", bonus: "When the wearer dies, allies are healed for 800 Health.", rating: .B, recipe: [giantsBelt, tearOfTheGoddess])
@@ -239,7 +239,7 @@ class ItemsSet3 {
         dragonsClaw = CombinedItem(name: "dragon's claw", bonus: "Gain 50% resistance to magic damage.", rating: .S, recipe: [negatronCloak, negatronCloak])
         
         // MARK: CHALICE OF FAVOR
-        chaliceOfFavor  = CombinedItem(name: "chalice of favor", bonus: "When the wearer casts a spell, restores 10 mana to allies within 2 hexes.", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
+        chaliceOfFavor  = CombinedItem(name: "chalice of favor", bonus: "When the wearer casts a spell, restores 8 mana to allies within 2 hexes.", rating: .S, recipe: [negatronCloak, tearOfTheGoddess])
         
         // MARK: CELESTIAL ORB
          celestialOrb = CombinedItem(name: "celestial orb", bonus: "Wearer is also Celestial", rating: .A, recipe: [negatronCloak, spatula])

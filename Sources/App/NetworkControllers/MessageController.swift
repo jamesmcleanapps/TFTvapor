@@ -32,11 +32,8 @@ class Messages {
         return [
             Message(id: 7, title: "29 April 2020", body: "Patch 3.11 available on the App Store.\n\nThis patch updates Item images that were incorrect. So please update ASAP. All Item details should now also be correct."),
             
-            Message(id: 15, title: "8 May 2020", body: "New S Tier Team Comp - Void Brawler\n\n - Chrono Blademaster down to A Tier\n\n - Cybernetic Blademasters down to A Tier\n\n - Space Pirate Celestials down to A Tier"),
             
-            Message(id: 16, title: "8 May 2020", body: " - Sona up to A Tier\n\n - Ahri and Xayah up to B Tier"),
-            
-            Message(id: 17, title: "8 May 2020", body: "Chalice of Favor now an A Tier Item")
+            Message(id: 18, title: "8 May 2020", body: "App updated to reflect patch 10.10 changes in game.\n\nTwo New Team Comps have been added - Sorcerer Demolitionist's and a new version of Space Pirate Celestials.\n\nRebel Demolitionist's, Brawler Blasters and Hyperroll Celestials are the top team comps for the moment.\n\nChampion and Item Tier Lists have also been updated.")
             
         ]
     }
