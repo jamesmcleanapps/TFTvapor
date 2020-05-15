@@ -427,7 +427,7 @@ class TeamCompsSet3 {
         protectorInfiltrators = TeamComp(name: "Protector Infiltrators",
                                  teamCompSet: .set3,
                                  tier: .B,
-                                 patch: "10.9",
+                                 patch: "10.09",
                                  
                                  earlyUnits: [],
                                  
@@ -671,7 +671,7 @@ class TeamCompsSet3 {
         brawlerSorcerers = TeamComp(name: "Brawler Sorcerers",
                                  teamCompSet: .set3,
                                  tier: .B,
-                                 patch: "10.7",
+                                 patch: "10.07",
                                  
                                  earlyUnits: [],
                                  
@@ -729,7 +729,7 @@ class TeamCompsSet3 {
         darkStarSnipers = TeamComp(name: "Dark Star Snipers",
                                  teamCompSet: .set3,
                                  tier: .B,
-                                 patch: "10.6",
+                                 patch: "10.06",
                                  
                                  earlyUnits: [],
                                  
@@ -790,7 +790,7 @@ class TeamCompsSet3 {
         hyperRollProtectors = TeamComp(name: "Hyper Roll Protectors",
                                  teamCompSet: .set3,
                                  tier: .B,
-                                 patch: "10.6",
+                                 patch: "10.06",
                                  
                                  earlyUnits: [],
                                  
@@ -848,7 +848,7 @@ class TeamCompsSet3 {
                valkyrieBlademasters = TeamComp(name: "Valkyrie Blademasters",
                                         teamCompSet: .set3,
                                         tier: .B,
-                                        patch: "10.7",
+                                        patch: "10.07",
                                         
                                         earlyUnits: [],
                                         
@@ -972,7 +972,7 @@ class TeamCompsSet3 {
         vanguardInfiltrators = TeamComp(name: "Vanguard Infiltrators",
                                  teamCompSet: .set3,
                                  tier: .B,
-                                 patch: "10.7",
+                                 patch: "10.07",
                                  
                                  earlyUnits: [],
                                  
@@ -1099,7 +1099,7 @@ class TeamCompsSet3 {
         celestialProtectors = TeamComp(name: "Celestial Protectors",
                                  teamCompSet: .set3,
                                  tier: .B,
-                                 patch: "10.7",
+                                 patch: "10.07",
                                  
                                  earlyUnits: [],
                                  
