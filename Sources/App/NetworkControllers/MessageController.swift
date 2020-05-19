@@ -33,7 +33,8 @@ class Messages {
             Message(id: 7, title: "29 April 2020", body: "Patch 3.11 available on the App Store.\n\nThis patch updates Item images that were incorrect. So please update ASAP. All Item details should now also be correct."),
             
             
-            Message(id: 18, title: "8 May 2020", body: "App updated to reflect patch 10.10 changes in game.\n\nTwo New Team Comps have been added - Sorcerer Demolitionist's and a new version of Space Pirate Celestials.\n\nRebel Demolitionist's, Brawler Blasters and Hyperroll Celestials are the top team comps for the moment.\n\nChampion and Item Tier Lists have also been updated.")
+            Message(id: 18, title: "8 May 2020", body: "App updated to reflect patch 10.10 changes in game.\n\nTwo New Team Comps have been added - Sorcerer Demolitionist's and a new version of Space Pirate Celestials.\n\nRebel Demolitionist's, Brawler Blasters and Hyperroll Celestials are the top team comps for the moment.\n\nChampion and Item Tier Lists have also been updated."),
+            Message(id: 19, title: "19 May 2020", body: "Mech Infiltrators now an S Tier Comp.\n\nDark Stars slightly changed and moves up to A Tier Comp.\n\nCaitlyn goes from D Tier Champ to B Tier Champ.")
             
         ]
     }

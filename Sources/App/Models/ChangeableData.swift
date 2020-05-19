@@ -147,6 +147,7 @@ extension ChampionsSet3 {
             ashe,
             
             blitzcrank,
+            caitlyn,
             darius,
             ezreal,
             graves,
@@ -179,7 +180,7 @@ extension ChampionsSet3 {
             yasuo,
         ]
         let dRating: [Champion] = [
-            caitlyn,
+            
             zoe
         ]
         let eRating: [Champion] = [

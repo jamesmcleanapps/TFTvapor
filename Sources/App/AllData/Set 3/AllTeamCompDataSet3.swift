@@ -304,7 +304,7 @@ class TeamCompsSet3 {
         // MARK: MECH INFILTRATORS
         mechInfiltrators = TeamComp(name: "Mech Infiltrators",
                                  teamCompSet: .set3,
-                                 tier: .A,
+                                 tier: .S,
                                  patch: "10.10",
                                  
                                  earlyUnits: [],
@@ -1346,7 +1346,7 @@ class TeamCompsSet3 {
         // MARK: DARK STARS
         darkStars = TeamComp(name: "Dark Stars",
                                  teamCompSet: .set3,
-                                 tier: .B,
+                                 tier: .A,
                                  patch: "10.10",
                                  
                                  earlyUnits: [],
@@ -1364,19 +1364,19 @@ class TeamCompsSet3 {
                                     champions.ashe,
                                     champions.karma,
                                     champions.lux,
-                                    champions.shaco,
+                                    champions.mordekaiser,
                                     champions.jhin,
                                     champions.lulu,
                                     champions.xerath
             ],
                                  
-                                 carries: [champions.jhin, champions.shaco],
+                                 carries: [champions.jhin, champions.xerath],
                                  carryItems: [
-                                    champions.shaco :
+                                    champions.xerath :
                                         [
-                                            items.bloodthirster,
-                                            items.guardianAngel,
-                                            items.infinityEdge
+                                            items.guinsoosRageblade,
+                                            items.quicksilver,
+                                            items.rabadonsDeathcap
                                     ],
                                     champions.jhin :
                                         [
@@ -1385,14 +1385,14 @@ class TeamCompsSet3 {
                                             items.runaansHurricane
                                     ]
             ],
-                                 threeStarUnits: [champions.shaco],
+                                 threeStarUnits: nil,
                                  
                                  teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
                                         4 : champions.jarvan,
                                         22 : champions.karma,
                                         23 : champions.jhin,
-                                        24 : champions.shaco,
+                                        24 : champions.mordekaiser,
                                         25 : champions.lulu,
                                         26: champions.xerath,
                                         27: champions.ashe,
