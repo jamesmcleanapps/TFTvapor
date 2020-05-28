@@ -404,7 +404,7 @@ class ChampionsSet3 {
         // MARK: MASTER YI
         masterYi = Champion(name: "master yi", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "chosen one", description: "For 5 seconds, Master Yi gains massively increased movement speed, heals for a percentage of his maximum health each second, and deals bonus true damage with his Basic Attacks."), championOriginSet3: [.rebel], championClassSet3: [.blademaster],
                             bestItems: [items.guinsoosRageblade, items.handOfJustice, items.rapidFirecannon],
-                            stats: Stats(health: 750, armor: 30, magicResist: 20, attackDamage: 55, attackSpeed: 0.8, attackRange: 1))
+                            stats: Stats(health: 750, armor: 30, magicResist: 20, attackDamage: 55, attackSpeed: 0.85, attackRange: 1))
         
         
         // MARK: SONA

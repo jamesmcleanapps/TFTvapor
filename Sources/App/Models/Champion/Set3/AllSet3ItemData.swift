@@ -286,7 +286,7 @@ class ItemsSet3 {
         infinityEdge = CombinedItem(name: "infinity edge", bonus: "100% critical strike damage.", rating: .A, recipe: [sparringGloves, bfSword])
         
         // MARK: LAST WHISPER
-        lastWhisper = CombinedItem(name: "last whisper", bonus: "Critical hits reduce the target’s Armor by 90% for 3 seconds. This effect does not stack.", rating: .B, recipe: [sparringGloves, recurveBow])
+        lastWhisper = CombinedItem(name: "last whisper", bonus: "Critical hits reduce the target’s Armor by 75% for 3 seconds. This effect does not stack.", rating: .B, recipe: [sparringGloves, recurveBow])
         
         // MARK: JEWELLED GAUNTLET
         jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Your spells can crit", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])

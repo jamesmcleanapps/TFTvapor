@@ -26,8 +26,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "chrono":
             return Details(main: "All allies gain 15% Attack Speed.",
             benefit1: "2  -  every 8 seconds",
-            benefit2: "4  -  every 4 seconds",
-            benefit3: "6  -  every 2 seconds"
+            benefit2: "4  -  every 3.5 seconds",
+            benefit3: "6  -  every 1.5 seconds"
             )
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
