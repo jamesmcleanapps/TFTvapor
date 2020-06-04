@@ -1530,7 +1530,7 @@ class TeamCompsSet3 {
         // MARK: HYPERROLL SORCERERS
         hyperrollSorcerers = TeamComp(name: "Hyper-roll Sorcerers",
                                  teamCompSet: .set3,
-                                 tier: .B,
+                                 tier: .A,
                                  patch: "10.11",
                                  
                                  earlyUnits: [],
@@ -1590,7 +1590,7 @@ class TeamCompsSet3 {
         // MARK: HYPERROLL CELESTIALS
         hyperrollCelestials = TeamComp(name: "Hyper-roll Celestials",
                                  teamCompSet: .set3,
-                                 tier: .A,
+                                 tier: .B,
                                  patch: "10.11",
                                  
                                  earlyUnits: [],

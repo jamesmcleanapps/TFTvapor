@@ -37,7 +37,11 @@ class Messages {
             
             Message(id: 22, title: "28 May 2020", body: "App updated to reflect Patch 10.11 changes in game."),
             
-            Message(id: 23, title: "28 May 2020", body: "Team Comps have been updated for patch 10.11. Top Team Comps for now are:\n\n - Brawler Blasters\n\n - Mech Infiltrators\n\n - Rebel Demolitionists\n\n - Void Brawler")
+            Message(id: 23, title: "28 May 2020", body: "Team Comps have been updated for patch 10.11. Top Team Comps for now are:\n\n - Brawler Blasters\n\n - Mech Infiltrators\n\n - Rebel Demolitionists\n\n - Void Brawler"),
+            
+            Message(id: 24, title: "4 June 2020", body: "Not much change in the last few days. I have moved Hyper Roll Celestials from A down to B Tier, and moved Hyper Roll Sorcerers from B up to A Tier"),
+            
+            Message(id: 25, title: "4 June 2020", body: "If anyone is playing patch 10.12 on the Beta Servers. I am looking for screenshots of the new champions images, as they appear in the shop.\n\nIf anyone is interested they can email the screenshots to me at: jamesmcleanapps@gmail.com. Or they can send them in the Contact Developer section in the options menu of this app. Thanks, James.")
             
         ]
     }
