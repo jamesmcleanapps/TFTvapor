@@ -114,70 +114,72 @@ extension ChampionsSet2 {
 extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
-            gangplank,
-            irelia,
-            
-            jinx,
-            
             lulu,
+            thresh,
+            gnar,
+            urgot
             
         ]
         
         let aRating = [
-            ahri,
             aurelionSol,
             ekko,
+            ezreal,
             fizz,
-            
-            jayce,
+            gangplank,
+            irelia,
             jhin,
-            
             lucian,
-            
-            rumble,
-            shaco,
-            
-            thresh,
-            
-            xayah,
-            xerath
+            xerath,
+            viktor,
+            zed,
+            riven,
+            janna
         ]
         let bRating = [
+            ahri,
+            annie,
             ashe,
-            
             blitzcrank,
             caitlyn,
             darius,
-            ezreal,
             graves,
-            
+            jayce,
+            jinx,
             poppy,
             rakan,
+            rumble,
             shen,
-            
             soraka,
             syndra,
             twistedFate,
             vi,
             wukong,
-            xinZhao,
-            ziggs
+            xayah,
+            ziggs,
+            nautilus,
+            bard,
+            teemo,
+            kogmaw,
+            cassiopeia,
+            vayne
         ]
         let cRating: [Champion] = [
-            annie,
             fiora,
             jarvan,
             karma,
-            
             leona,
-            masterYi,
             malphite,
+            masterYi,
             mordekaiser,
             neeko,
+            shaco,
+            xinZhao,
             yasuo,
+            nocturne,
+            illaoi
         ]
         let dRating: [Champion] = [
-            
             zoe
         ]
         let eRating: [Champion] = [
@@ -329,53 +331,53 @@ extension ItemsSet2 {
 extension ItemsSet3 {
     
     func setItemRatings() {
+        
         let sRated = [
-            forceOfNature,
-            giantSlayer,
             guardianAngel,
-            infinityEdge,
             morellonomicon,
             quicksilver,
-            redBuff,
-            blueBuff,
             thiefsGloves,
             zephyr
         ]
+        
         let aRated = [
             brambleVest,
-            chaliceOfPower,
             deathBlade,
-            dragonsClaw,
+            giantSlayer,
             handOfJustice,
+            infinityEdge,
             ionicSpark,
             jeweledGauntlet,
+            ludensEcho,
             rabadonsDeathcap,
+            redBuff,
+            redemption,
             titansResolve,
-            trapClaw
+            trapClaw,
+            zzRot
         ]
+        
         let bRated = [
             bloodthirster,
-            
+            blueBuff,
+            chaliceOfPower,
+            dragonsClaw,
             guinsoosRageblade,
             lastWhisper,
-            locket,
-            
             rapidFirecannon,
-            
             runaansHurricane,
             shroud,
             spearOfShojin,
-            statikkShiv,
+            statikkShiv
+        ]
+        
+        let cRated: [CombinedItem] = [
+            locket,
             warmogsArmor,
             zekesHerald,
-            zzRot
-        ]
-        let cRated: [CombinedItem] = [
-            hextechGunblade,
-            ludensEcho,
             frozenHeart,
-            redemption,
-            swordBreaker,
+            hextechGunblade,
+            swordBreaker
         ]
         
         sRated.forEach { (item) in
