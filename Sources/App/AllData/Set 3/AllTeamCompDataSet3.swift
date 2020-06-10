@@ -387,11 +387,15 @@ class TeamCompsSet3 {
                                    carryItems: [
                                     champions.poppy :
                                         [
-                                            items.redBuff
+                                            items.brambleVest,
+                                            items.dragonsClaw,
+                                            items.rabadonsDeathcap
                                     ],
                                     champions.twistedFate:
                                         [
-                                            items.blueBuff
+                                            items.morellonomicon,
+                                            items.spearOfShojin,
+                                            items.spearOfShojin
                                     ]
             ],
                                    
