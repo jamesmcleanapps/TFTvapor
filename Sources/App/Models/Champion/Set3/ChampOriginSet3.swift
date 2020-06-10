@@ -11,35 +11,50 @@ import Foundation
 
 enum ChampOriginSet3: String, CaseIterable, Codable {
     
-    case celestial, chrono, cybernetic, darkStar = "dark star",  mechPilot = "mech pilot", rebel, spacePirate = "space pirate", starGuardian = "star guardian", valkyrie, void
+    case astro, battlecast, celestial, chrono, cybernetic, darkStar = "dark star",  mechPilot = "mech pilot", rebel, spacePirate = "space pirate", starGuardian = "star guardian"
     
     static func getOriginInfo(origin: String) -> Details? {
         switch origin {
             
+        case "astro":
+            return Details(main: "Astros have 30 reduced mana cost",
+                           benefit1: "3  -  Active"
+            )
+            
+        case "battlecast":
+            return Details(main: "Upon dealing or taking 10 instances of damage, Battlecast champions heal if below half health or deal damage to the nearest enemy if above half health.",
+                           benefit1: "2  -  70 Healing or Damage",
+                           benefit2: "4  -  160 Healing or Damage",
+                           benefit3: "6  -  325 Healing or Damage",
+                           benefit4: "8  -  600 Healing or Damage"
+            )
+            
         case "celestial":
             return Details(main: "All allies heal for a percent of the damage they deal with spells and attacks.",
             benefit1: "2  -  15% Healing",
-            benefit2: "4  -  35% Healing",
-            benefit3: "6  -  60% Healing"
+            benefit2: "4  -  40% Healing",
+            benefit3: "6  -  99% Healing"
             )
                            
         case "chrono":
             return Details(main: "All allies gain 15% Attack Speed.",
             benefit1: "2  -  every 8 seconds",
             benefit2: "4  -  every 3.5 seconds",
-            benefit3: "6  -  every 1.5 seconds"
+            benefit3: "6  -  every 1.5 seconds",
+            benefit4: "8  -  every 0.75 seconds"
             )
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
-            benefit1: "3  -  350 Health & 35 Attack Damage",
-            benefit2: "6  -  700 Health & 70 Attack Damage",
+            benefit1: "3  -  350 Health & 40 Attack Damage",
+            benefit2: "6  -  600 Health & 80 Attack Damage",
             benefit3: nil
             )
         case "dark star":
-            return Details(main: "When a Dark Star Champion dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
-            benefit1: "3  -  +20 AD and Spell Power",
-            benefit2: "6  -  +25 AD and Spell Power",
-            benefit3: "9  -  +35 AD and Spell Power"
+            return Details(main: "When an ally dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
+            benefit1: "2  -  +8 AD and Spell Power",
+            benefit2: "4  -  +16 AD and Spell Power",
+            benefit3: "6  -  +24 AD and Spell Power",
+            benefit4: "8  -  +32 AD and Spell Power"
             )
         case "mech pilot":
             return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected and continue to fight.",
@@ -61,21 +76,9 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             )
         case "star guardian":
             return Details(main: "Star Guardian's spellcasts grant Mana to other Star Guardians. (Spreads among them)",
-            benefit1: "3  -  30 Total Mana",
-            benefit2: "6  -  50 Total Mana",
-            benefit3: nil
-            )
-        case "valkyrie":
-            return Details(main: "Valkyrie attacks and spells always critically strike targets below 40% health.",
-            benefit1: "2  -  Active",
-            benefit2: nil,
-            benefit3: nil
-            )
-        case "void":
-            return Details(main: "Attacks and spells from Void Champions deal true damage.",
-            benefit1: "3  -  Active",
-            benefit2: nil,
-            benefit3: nil
+            benefit1: "3  -  25 Total Mana",
+            benefit2: "6  -  49 Total Mana",
+            benefit3: "9  -  55 Total Mana"
             )
             
         default:
@@ -93,7 +96,7 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
     case .cybernetic:
         return 3
     case .darkStar:
-        return 3
+        return 2
     case .mechPilot:
         return 3
     case .rebel:
@@ -102,10 +105,10 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         return 2
     case .starGuardian:
         return 3
-    case .valkyrie:
-        return 2
-    case .void:
+    case .astro:
         return 3
+    case .battlecast:
+        return 2
         }
     }
     
@@ -120,6 +123,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             return ItemsSet3.shared.starGuardiansCharm
         case .darkStar:
             return ItemsSet3.shared.darkStarsHeart
+        case .battlecast:
+            return ItemsSet3.shared.battlecastHexcore
         default:
             return nil
         }
@@ -135,6 +140,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             return starGuardian
         case ItemsSet3.shared.darkStarsHeart:
             return .darkStar
+            case ItemsSet3.shared.battlecastHexcore:
+            return .battlecast
         default:
             return nil
         }

@@ -15,7 +15,7 @@ class ChampionsSet3 {
     
     // celestial
     var ashe: Champion
-    var kassadin: Champion
+    //var kassadin: Champion
     var lulu: Champion
     var rakan: Champion
     var xayah: Champion
@@ -42,7 +42,7 @@ class ChampionsSet3 {
     var jarvan: Champion
     var jhin: Champion
     var karma: Champion
-    var lux: Champion
+    //var lux: Champion
     var mordekaiser: Champion
     var shaco: Champion
     var xerath: Champion
@@ -57,7 +57,7 @@ class ChampionsSet3 {
     var jinx: Champion
     var malphite: Champion
     var masterYi: Champion
-    var sona: Champion
+    //var sona: Champion
     var yasuo: Champion
     var ziggs: Champion
     
@@ -75,21 +75,43 @@ class ChampionsSet3 {
     var syndra: Champion
     var zoe: Champion
     
-    // valkyrie
-    var kaisa: Champion
-    var kayle: Champion
-    var missFortune: Champion
+    // astro
+    var bard: Champion
+    var gnar: Champion
+    var nautilus: Champion
+    var teemo: Champion
     
-    // void
-    var chogath: Champion
-    var khazix: Champion
-    var velkoz: Champion
+    // battlecastr
+    var illaoi: Champion
+    var nocturne: Champion
+    var kogmaw: Champion
+    var cassiopeia: Champion
+    var viktor: Champion
+    var urgot: Champion
+    
+    // paragon
+    var janna: Champion
+    
+    // other
+    var riven: Champion
+    var vayne: Champion
+    var zed: Champion
+    
+//    // valkyrie
+//    var kaisa: Champion
+//    var kayle: Champion
+//    var missFortune: Champion
+//
+//    // void
+//    var chogath: Champion
+//    var khazix: Champion
+//    var velkoz: Champion
     
     
     lazy var allChampions: [Champion] = {
         return [
             ashe,
-            kassadin,
+            //kassadin,
             lulu,
             rakan,
             xayah,
@@ -110,7 +132,7 @@ class ChampionsSet3 {
             jarvan,
             jhin,
             karma,
-            lux,
+            //lux,
             mordekaiser,
             shaco,
             xerath,
@@ -121,7 +143,7 @@ class ChampionsSet3 {
             jinx,
             malphite,
             masterYi,
-            sona,
+            //sona,
             yasuo,
             ziggs,
             darius,
@@ -134,12 +156,31 @@ class ChampionsSet3 {
             soraka,
             syndra,
             zoe,
-            kaisa,
-            kayle,
-            missFortune,
-            chogath,
-            khazix,
-            velkoz
+            
+            
+                  bard,
+                  gnar,
+                  nautilus,
+                  teemo,
+                  illaoi,
+                  nocturne,
+                  kogmaw,
+                  cassiopeia,
+                  viktor,
+                  urgot,
+                     
+                  janna,
+                  riven,
+                  vayne,
+                  zed
+        
+        
+//            kaisa,
+//            kayle,
+//            missFortune,
+//            chogath,
+//            khazix,
+//            velkoz
         ]
     }()
     
@@ -206,10 +247,10 @@ class ChampionsSet3 {
                         stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 5))
         
         
-        // MARK: KASSADIN
-        kassadin = Champion(name: "kassadin", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "force pulse", description: "Kassadin releases a wave of energy in front of him, dealing magic damage and disarming all targets hit."), championOriginSet3: [.celestial], championClassSet3: [.manaReaver],
-                            bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                            stats: Stats(health: 800, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.65, attackRange: 1))
+//        // MARK: KASSADIN
+//        kassadin = Champion(name: "kassadin", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "force pulse", description: "Kassadin releases a wave of energy in front of him, dealing magic damage and disarming all targets hit."), championOriginSet3: [.celestial], championClassSet3: [.manaReaver],
+//                            bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
+//                            stats: Stats(health: 800, armor: 30, magicResist: 20, attackDamage: 50, attackSpeed: 0.65, attackRange: 1))
         
         
         // MARK: LULU
@@ -221,7 +262,7 @@ class ChampionsSet3 {
         // MARK: RAKAN
         rakan = Champion(name: "rakan", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "grand entrance", description: "Rakan dashes to his attack target and leaps into the air, knocking up and dealing magic damage to all nearby enemies."), championOriginSet3: [.celestial], championClassSet3: [.protector],
                          bestItems: [items.guardianAngel, items.spearOfShojin, items.warmogsArmor],
-                         stats: Stats(health: 600, armor: 35, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 2))
+                         stats: Stats(health: 600, armor: 45, magicResist: 35, attackDamage: 45, attackSpeed: 0.7, attackRange: 2))
         
         
         // MARK: XAYAH
@@ -233,7 +274,7 @@ class ChampionsSet3 {
         // MARK: XIN ZHAO
         xinZhao = Champion(name: "xin zhao", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "three talon strike", description: "Xin Zhao quickly strikes his target three times, dealing Basic Attack damage and applying on-hit effects. The third strike deals bonus magic damage and knocks his target up for 1.5 seconds."), championOriginSet3: [.celestial], championClassSet3: [.protector],
                            bestItems: [items.brambleVest, items.dragonsClaw, items.warmogsArmor],
-                           stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
+                           stats: Stats(health: 650, armor: 45, magicResist: 35, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
         
         
         
@@ -243,7 +284,7 @@ class ChampionsSet3 {
         // MARK: BLITZCRANK
         blitzcrank = Champion(name: "blitzcrank", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "rocket grab", description: "Blitzcrank pulls the furthest enemy to him, dealing magic damage and stunning them for 2.5 seconds. The next attack after pulling knocks up for 1 second. Allies within range will prioritize attacking Blitzcrank's target."), championOriginSet3: [.chrono], championClassSet3: [.brawler],
                               bestItems: [items.dragonsClaw, items.warmogsArmor, items.warmogsArmor],
-                              stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 55, attackSpeed: 0.5, attackRange: 1))
+                              stats: Stats(health: 650, armor: 45, magicResist: 35, attackDamage: 55, attackSpeed: 0.5, attackRange: 1))
         
         // MARK: CAITLYN
         caitlyn = Champion(name: "caitlyn", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "ace in the hole", description: "Caitlyn takes aim at the furthest enemy, firing a deadly bullet towards them that deals magic damage to the first enemy it hits."), championOriginSet3: [.chrono], championClassSet3: [.sniper],
@@ -254,17 +295,17 @@ class ChampionsSet3 {
         // MARK: EZREAL
         ezreal = Champion(name: "ezreal", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "emp", description: "Ezreal fires an electromagnetic pulse at a random enemy that explodes on impact, dealing magic damage to all nearby enemies and increases the cost of their next spell cast by 40%."), championOriginSet3: [.chrono], championClassSet3: [.blaster],
                           bestItems: [items.giantSlayer, items.redBuff, items.spearOfShojin],
-                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 3))
+                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.75, attackRange: 3))
         
         // MARK: SHEN
         shen = Champion(name: "shen", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "future's refuge", description: "Shen creates a zone around himself for a few seconds, granting all narby allies 100% chance to dodge incoming basic attacks. While active, Shen gains Magic Resist."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
                         bestItems: [items.brambleVest, items.dragonsClaw, items.guardianAngel],
-                        stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
+                        stats: Stats(health: 800, armor: 45, magicResist: 35, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
         
         // MARK: THRESH
         thresh = Champion(name: "thresh", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "temporal passage", description: "Thresh tosses his lantern towards random unit(s) on your bench, pulling them into the current combat and granting them and himself bonus mana. Traits are unaffected."), championOriginSet3: [.chrono], championClassSet3: [.manaReaver],
-                          bestItems: [items.guardianAngel, items.seraphsEmbrace, items.spearOfShojin],
-                          stats: Stats(health: 950, armor: 35, magicResist: 20, attackDamage: 50, attackSpeed: 0.95, attackRange: 2))
+                          bestItems: [items.guardianAngel, items.spearOfShojin],
+                          stats: Stats(health: 950, armor: 55, magicResist: 40, attackDamage: 50, attackSpeed: 0.95, attackRange: 2))
         
         
         // MARK: TWISTED FATE
@@ -276,7 +317,7 @@ class ChampionsSet3 {
         // MARK: WUKONG
         wukong = Champion(name: "wukong", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "cyclone", description: "Wukong spins rapidly around, dealing magic damage to nearby units over 3 seconds. The first time Wukong hits each enemy, he knocks them into the air and stuns them."), championOriginSet3: [.chrono], championClassSet3: [.vanguard],
                           bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                          stats: Stats(health: 950, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 1))
+                          stats: Stats(health: 950, armor: 50, magicResist: 40, attackDamage: 50, attackSpeed: 0.75, attackRange: 1))
         
         
         // MARK: ------ CYBERNETIC -----
@@ -302,7 +343,7 @@ class ChampionsSet3 {
         // MARK: LEONA
         leona = Champion(name: "leona", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "cyber barrier", description: "Leona creates a barrier, reducing all incoming damage for 4 seconds."), championOriginSet3: [.cybernetic], championClassSet3: [.vanguard],
                          bestItems: [items.brambleVest, items.brambleVest, items.warmogsArmor],
-                         stats: Stats(health: 600, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
+                         stats: Stats(health: 600, armor: 45, magicResist: 30, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
         
         
         // MARK: LUCIAN
@@ -314,7 +355,7 @@ class ChampionsSet3 {
         // MARK: VI
         vi = Champion(name: "vi", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "assault and battery", description: "Vi charges at the furthest enemy, knocking aside and dealing magic damage to all enemies along the way. When she reaches her target, she deals magic damage and knocks them up."), championOriginSet3: [.cybernetic], championClassSet3: [.brawler],
                       bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                      stats: Stats(health: 700, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
+                      stats: Stats(health: 700, armor: 45, magicResist: 40, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
         
         
         // MARK: ------ DARK STAR -----
@@ -322,13 +363,13 @@ class ChampionsSet3 {
         // MARK: JARVAN IV
         jarvan = Champion(name: "jarvan IV", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "ageless standard", description: "Jarvan calls down his standard to a nearby location, granting nearby allies Attack Speed for 6 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.protector],
                           bestItems: [items.brambleVest, items.guardianAngel, items.warmogsArmor],
-                          stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.6, attackRange: 1))
+                          stats: Stats(health: 650, armor: 45, magicResist: 30, attackDamage: 50, attackSpeed: 0.6, attackRange: 1))
         
         
         // MARK: JHIN
         jhin = Champion(name: "jhin", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "whisper", description: "Jhin converts each 1% of bonus attack speed he has into 0.8 attack damage. Every fourth shot, Jhin deals a bonus percent of attack damage."), championOriginSet3: [.darkStar], championClassSet3: [.sniper],
                         bestItems: [items.infinityEdge, items.guardianAngel, items.lastWhisper],
-                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 90, attackSpeed: 0.9, attackRange: 5))
+                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 80, attackSpeed: 0.85, attackRange: 5))
         
         
         // MARK: KARMA
@@ -337,26 +378,26 @@ class ChampionsSet3 {
                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.65, attackRange: 3))
         
         
-        // MARK: LUX
-        lux = Champion(name: "lux", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "lurid binding", description: "Lux fires a sphere of darkness towards the farthest enemy. Enemies caught along its path take magic damage and are stunned."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],
-                       bestItems: [items.jeweledGauntlet, items.rabadonsDeathcap, items.seraphsEmbrace],
-                       stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.7, attackRange: 4))
+//        // MARK: LUX
+//        lux = Champion(name: "lux", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "lurid binding", description: "Lux fires a sphere of darkness towards the farthest enemy. Enemies caught along its path take magic damage and are stunned."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],
+//                       bestItems: [items.jeweledGauntlet, items.rabadonsDeathcap, items.seraphsEmbrace],
+//                       stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.7, attackRange: 4))
         
         
         // MARK: MORDEKAISER
         mordekaiser = Champion(name: "mordekaiser", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "indestructible", description: "Mordekaiser gains a shield that absorbs damage. While the shield persists, Mordekaiser deals magic damage per second to all nearby enemies."), championOriginSet3: [.darkStar], championClassSet3: [.vanguard],
                                bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                               stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
+                               stats: Stats(health: 650, armor: 40, magicResist: 35, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
         
         
         // MARK: SHACO
         shaco = Champion(name: "shaco", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "deceive", description: "Shaco teleports and backstabs his target, critically striking for a percentage of his Basic Attack damage."), championOriginSet3: [.darkStar], championClassSet3: [.infiltrator],
                          bestItems: [items.bloodthirster, items.guardianAngel, items.infinityEdge],
-                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 70, attackSpeed: 0.8, attackRange: 1))
+                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 75, attackSpeed: 0.8, attackRange: 1))
         
         // MARK: XERATH
         xerath = Champion(name: "xerath", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "abyssal bombardment", description: "Xerath transforms, summoning meteors to strike random foes in place of his normal attacks for 6/8/45 seconds. Meteors deal 300/400/2500 magic damage upon impact and if they kill their target, all adjacent enemies take 150/200/1250 magic damage and are stunned for 1.5 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],
-                         bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
+                         bestItems: [items.jeweledGauntlet, items.morellonomicon],
                          stats: Stats(health: 750, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.9, attackRange: 5))
         
         
@@ -366,27 +407,27 @@ class ChampionsSet3 {
         // MARK: ANNIE
         annie = Champion(name: "annie", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "galaxy shield blast", description: "Annie blasts a cone of fire dealing magic damage to enemies in front of her, then shields herself for 4 seconds."), championOriginSet3: [.mechPilot], championClassSet3: [.sorcerer],
                          bestItems: [items.guardianAngel, items.ionicSpark, items.warmogsArmor],
-                         stats: Stats(health: 700, armor: 40, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 2))
+                         stats: Stats(health: 750, armor: 40, magicResist: 35, attackDamage: 40, attackSpeed: 0.65, attackRange: 2))
         
         
         // MARK: FIZZ
         fizz = Champion(name: "fizz", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "chum the waters", description: "Fizz throws a lure that attracts a shark, causing it to emerge after a brief delay. It deals magic damage to enemies caught, knocking them back and stunning them for 1.5 seconds."), championOriginSet3: [.mechPilot], championClassSet3: [.infiltrator],
                         bestItems: [items.guardianAngel, items.ionicSpark, items.warmogsArmor],
-                        stats: Stats(health: 600, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 1))
+                        stats: Stats(health: 700, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.85, attackRange: 1))
         
         
         // MARK: RUMBLE
         rumble = Champion(name: "rumble", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "flamespitter", description: "Rumble torches his enemies, dealing magic damage in a cone over 3 seconds, and reducing healing on them by 50% for 5 seconds."), championOriginSet3: [.mechPilot], championClassSet3: [.demolitionist],
                           bestItems: [items.guardianAngel, items.ionicSpark, items.warmogsArmor],
-                          stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1))
+                          stats: Stats(health: 900, armor: 45, magicResist: 40, attackDamage: 50, attackSpeed: 0.7, attackRange: 1))
         
         
         // MARK: ------ REBEL -----
         
         // MARK: AURELION SOL
         aurelionSol = Champion(name: "aurelion sol", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "mobilize the fleet", description: "Aurelion Sol launches fighters, which fly out to random enemies, deal magic damage, and then return. Aurelion Sol launches all ready fighters plus 3 additional when he casts. Fighters prefer to target nearby enemies."), championOriginSet3: [.rebel], championClassSet3: [.starship],
-                               bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
-                               stats: Stats(health: 1100, armor: 35, magicResist: 20, attackDamage: 10, attackSpeed: 0.8, attackRange: 1))
+                               bestItems: [items.jeweledGauntlet, items.morellonomicon],
+                               stats: Stats(health: 1100, armor: 55, magicResist: 40, attackDamage: 10, attackSpeed: 0.2, attackRange: 1))
         
         
         // MARK: JINX
@@ -398,7 +439,7 @@ class ChampionsSet3 {
         // MARK: MALPHITE
         malphite = Champion(name: "malphite", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "energy shield", description: "Malphite starts combat with a shield equal to a percent of his maximum health."), championOriginSet3: [.rebel], championClassSet3: [.brawler],
                             bestItems: [items.warmogsArmor, items.warmogsArmor, items.warmogsArmor],
-                            stats: Stats(health: 700, armor: 30, magicResist: 20, attackDamage: 70, attackSpeed: 0.5, attackRange: 1))
+                            stats: Stats(health: 700, armor: 35, magicResist: 30, attackDamage: 70, attackSpeed: 0.5, attackRange: 1))
         
         
         // MARK: MASTER YI
@@ -407,10 +448,10 @@ class ChampionsSet3 {
                             stats: Stats(health: 750, armor: 30, magicResist: 20, attackDamage: 55, attackSpeed: 0.85, attackRange: 1))
         
         
-        // MARK: SONA
-        sona = Champion(name: "sona", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "aria of perseverance", description: "Sona heals injured allies and cleanses them of all negative effects."), championOriginSet3: [.rebel], championClassSet3: [.mystic],
-                        bestItems: [items.guardianAngel, items.seraphsEmbrace, items.zephyr],
-                        stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 3))
+//        // MARK: SONA
+//        sona = Champion(name: "sona", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "aria of perseverance", description: "Sona heals injured allies and cleanses them of all negative effects."), championOriginSet3: [.rebel], championClassSet3: [.mystic],
+//                        bestItems: [items.guardianAngel, items.seraphsEmbrace, items.zephyr],
+//                        stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.65, attackRange: 3))
         
         
         // MARK: YASUO
@@ -421,7 +462,7 @@ class ChampionsSet3 {
         
         // MARK: ZIGGS
         ziggs = Champion(name: "ziggs", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "bomb", description: "Ziggs throws a bomb at an enemy, dealing magic damage."), championOriginSet3: [.rebel], championClassSet3: [.demolitionist],
-                         bestItems: [items.jeweledGauntlet, items.seraphsEmbrace, items.rabadonsDeathcap],
+                         bestItems: [items.jeweledGauntlet, items.rabadonsDeathcap],
                          stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.7, attackRange: 3))
         
         
@@ -440,32 +481,32 @@ class ChampionsSet3 {
         // MARK: GRAVES
         graves = Champion(name: "graves", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "smoke grenade", description: "Graves launches a smoke grenade toward the highest attack speed enemy, which explodes on impact dealing magic damage to enemies in the area and causing their attacks to miss for 4 seconds."), championOriginSet3: [.spacePirate], championClassSet3: [.blaster],
                           bestItems: [items.giantSlayer, items.rapidFirecannon, items.redBuff],
-                          stats: Stats(health: 650, armor: 35, magicResist: 20, attackDamage: 55, attackSpeed: 0.55, attackRange: 1))
+                          stats: Stats(health: 650, armor: 40, magicResist: 30, attackDamage: 55, attackSpeed: 0.55, attackRange: 1))
         
         // MARK: JAYCE
         jayce = Champion(name: "jayce", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "to the skies", description: "Jayce jumps into the air and slams his hammer, dealing magic damage to nearby enemies."), championOriginSet3: [.spacePirate], championClassSet3: [.blaster],
                          bestItems: [items.guardianAngel, items.hextechGunblade, items.ionicSpark],
-                         stats: Stats(health: 750, armor: 40, magicResist: 20, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
+                         stats: Stats(health: 850, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
         
         
         // MARK: ------ STAR GUARDIAN -----
         
         // MARK: AHRI
         ahri = Champion(name: "ahri", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "orb of deception", description: "Ahri fires an orb in a line dealing magic damage to enemies it passes through. It then returns to her, dealing true damage to all enemies it passes through."), championOriginSet3: [.starGuardian], championClassSet3: [.sorcerer],
-                        bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
+                        bestItems: [items.jeweledGauntlet, items.morellonomicon],
                         stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.75, attackRange: 3))
         
         
         // MARK: NEEKO
         neeko = Champion(name: "neeko", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "pop blossom", description: "Neeko leaps into the air and slams into the ground, dealing magic damage and stunning all nearby enemies."), championOriginSet3: [.starGuardian], championClassSet3: [.protector],
                          bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                         stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 50, attackSpeed: 0.65, attackRange: 2))
+                         stats: Stats(health: 800, armor: 45, magicResist: 40, attackDamage: 50, attackSpeed: 0.65, attackRange: 2))
         
         
         // MARK: POPPY
         poppy = Champion(name: "poppy", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "buckler toss", description: "Poppy throws her buckler at the furthest enemy dealing damage. The buckler bounces back to Poppy, shielding her."), championOriginSet3: [.starGuardian], championClassSet3: [.vanguard],
                          bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                         stats: Stats(health: 650, armor: 40, magicResist: 20, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
+                         stats: Stats(health: 650, armor: 45, magicResist: 30, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
         
         
         // MARK: SORAKA
@@ -476,7 +517,7 @@ class ChampionsSet3 {
         
         // MARK: SYNDRA
         syndra = Champion(name: "syndra", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "unleashed power", description: "Syndra pulls in all orbs on the battlefield and creates 3 new ones, then fires them all at the enemy with the highest health, dealing magic damage per orb."), championOriginSet3: [.starGuardian], championClassSet3: [.sorcerer],
-                          bestItems: [items.jeweledGauntlet, items.rabadonsDeathcap, items.seraphsEmbrace],
+                          bestItems: [items.jeweledGauntlet, items.rabadonsDeathcap],
                           stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 4))
         
         
@@ -485,44 +526,140 @@ class ChampionsSet3 {
                        bestItems: [items.guinsoosRageblade, items.spearOfShojin, items.spearOfShojin],
                        stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 40, attackSpeed: 0.7, attackRange: 3))
         
+        // MARK: ------ ASTRO -----
+        
+        
+        // MARK: BARD
+               bard = Champion(name: "bard", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "traveller's call", description: "Passive: Bard gains an additional 8/20/90 mana each attack, but cannot gain mana against non-Champions. Active: Bard spawns a meep on his owner’s bench which can be sold for 1 experience."), championOriginSet3: [.astro], championClassSet3: [.mystic],
+                              bestItems: [items.guardianAngel, items.spearOfShojin],
+                              stats: Stats(health: 700, armor: 30, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 3))
+        
+        // MARK: GNAR
+        gnar = Champion(name: "gnar", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "GNAR!", description: "Gnar leaps towards his target and transforms into Mega Gnar, throwing nearby enemies, dealing 100/200/800 magic damage and stunning them for 2 seconds. While in Mega Gnar form, Gnar is melee and gains 750/1250/2500 Health and 100/175/400 Attack Damage."), championOriginSet3: [.astro], championClassSet3: [.brawler],
+                       bestItems: [items.dragonsClaw, items.quicksilver, items.titansResolve],
+                       stats: Stats(health: 750, armor: 40, magicResist: 45, attackDamage: 50, attackSpeed: 0.8, attackRange: 2))
+        
+        // MARK: NAUTILUS
+        nautilus = Champion(name: "nautilus", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "impact crater", description: "Nautilus erupts the ground beneath his target, knocking them up and stunning them for 3/3.5/4 seconds, and dealing 100/200/400 magic damage. Enemies adjacent to the target receive half of this effect."), championOriginSet3: [.astro], championClassSet3: [.vanguard],
+                       bestItems: [items.ionicSpark, items.redemption, items.zephyr],
+                       stats: Stats(health: 750, armor: 40, magicResist: 35, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
+        
+        // MARK: TEEMO
+        teemo = Champion(name: "teemo", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "satellite traps", description: "Teemo scatters 3 traps around the nearest enemy. When an enemy nears a trap (or after 3 seconds), it explodes on nearby enemies dealing 125/175/600 magic damage, knocking them down, and slowing them for 4 seconds."), championOriginSet3: [.astro], championClassSet3: [.sniper],
+                       bestItems: [items.guardianAngel, items.morellonomicon],
+                       stats: Stats(health: 750, armor: 40, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
+        
+        
+        
+        // MARK: ------ BATTLECAST -----
+               
+               
+        // MARK: ILLAOI
+          illaoi = Champion(name: "illaoi", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "tentacle smash", description: "Illaoi slams a tentacle in a line in front of her, dealing 125/200/325 damage and stealing 20/30/50% Armor and Magic Resist from each target hit for 4 seconds."), championOriginSet3: [.battlecast], championClassSet3: [.brawler],
+                         bestItems: [items.brambleVest, items.locket, items.zzRot],
+                         stats: Stats(health: 650, armor: 40, magicResist: 30, attackDamage: 45, attackSpeed: 0.7, attackRange: 1))
+        
+        // MARK: NOCTURNE
+        nocturne = Champion(name: "nocturne", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "unspeakable horror", description: "Nocturne terrifies his target, causing them to be stunned with fear for 2/2.5/4 seconds and dealing 200/250/350 magic damage over the duration."), championOriginSet3: [.battlecast], championClassSet3: [.infiltrator],
+                       bestItems: [items.guardianAngel, items.infinityEdge, items.lastWhisper],
+                       stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1))
+        
+        // MARK: KOGMAW
+        kogmaw = Champion(name: "kogmaw", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "barrage", description: "For 3 seconds, Kog’Maw gains infinite Attack Range and 80% attack speed, and his auto attacks deal 2%/4%/7% of the target’s maximum Health as magic damage."), championOriginSet3: [.battlecast], championClassSet3: [.blaster],
+                       bestItems: [items.giantSlayer, items.guinsoosRageblade, items.trapClaw],
+                       stats: Stats(health: 550, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 3))
+        
+        // MARK: CASSIOPEIA
+        cassiopeia = Champion(name: "cassiopeia", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "noxious blast", description: "Cassiopeia launches her fangs at the nearest unpoisoned enemy, causing them to take 700/1500/3000 damage over 12 seconds, and reducing the effectiveness of shields used on them by 50%."), championOriginSet3: [.battlecast], championClassSet3: [.mystic],
+                       bestItems: [items.ludensEcho, items.morellonomicon],
+                       stats: Stats(health: 750, armor: 30, magicResist: 20, attackDamage: 40, attackSpeed: 0.75, attackRange: 2))
+        
+        // MARK: VIKTOR
+        viktor = Champion(name: "viktor", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "death ray", description: "Viktor burns a path between the two enemies most distant from one another, initially dealing 15/20/80% max Health magic damage, then 1 second later dealing 250/400/1500 magic damage in an explosion along the same path."), championOriginSet3: [.battlecast], championClassSet3: [.sorcerer],
+                       bestItems: [items.guardianAngel, items.morellonomicon, items.rabadonsDeathcap],
+                       stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.75, attackRange: 3))
+        
+        // MARK: URGOT
+        urgot = Champion(name: "urgot", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "fear beyond death", description: "Urgot fires a drill at the farthest enemy in his Attack Range, reeling them in and dealing 2000 true damage repeatedly until they reach him and die. After his first successful cast, Urgot's Mana Cost is reduced by 10/20/100."), championOriginSet3: [.battlecast], championClassSet3: [.protector],
+                         bestItems: [items.hextechGunblade, items.quicksilver, items.guardianAngel],
+                       stats: Stats(health: 950, armor: 30, magicResist: 20, attackDamage: 80, attackSpeed: 0.7, attackRange: 3))
+
+         
+        
+         // MARK: ------ PARAGON -----
+        
+        
+        // MARK: JANNA
+        janna = Champion(name: "janna", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "howling gale", description: "Janna summons five tornados which fly forward in a large cone. Tornados grant allies they pass through 100/150/500% attack speed for 5 seconds, while knocking up and stunning enemies for 1.5 seconds."), championOriginSet3: [.starGuardian], championClassSet3: [.paragon],
+                         bestItems: [items.chaliceOfPower, items.chaliceOfPower, items.zephyr],
+                       stats: Stats(health: 750, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 4))
+        
+        
+        // MARK: ------ OTHER NEW -----
+        
+         // MARK: RIVEN
+               riven = Champion(name: "riven", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "energy slash", description: "Riven dashes and shields herself for 250/400/1000, then slashes forward dealing 100/150/450 magic damage. Every third cast, Riven leaps into the air and launches a wave of energy that deals 300/500/1500 magic damage."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
+                                bestItems: [items.guardianAngel, items.titansResolve],
+                              stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 70, attackSpeed: 0.85, attackRange: 1))
+        
+        // MARK: VAYNE
+        vayne = Champion(name: "vayne", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "final hour", description: "Vayne focuses for 10 seconds, tumbling away from her target immediately and every third attack thereafter. Vayne is invisible while tumbling, and attacks after tumbling deal 175/200/225% of her Attack Damage."), championOriginSet3: [.cybernetic], championClassSet3: [.sniper],
+                         bestItems: [items.infinityEdge, items.lastWhisper, items.trapClaw],
+                       stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 5))
+        
+        // MARK: ZED
+               zed = Champion(name: "zed", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "contempt for the weak", description: "Every third attack Zed steals 20/25/40% of the target’s Attack Damage and deals 50/90/150 bonus magic damage."), championOriginSet3: [.rebel], championClassSet3: [.infiltrator],
+                                bestItems: [items.bloodthirster, items.deathBlade, items.guardianAngel],
+                              stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 55, attackSpeed: 0.75, attackRange: 1))
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         // MARK: ------ VALKYRIE -----
                
-        // MARK: KAISA
-        kaisa = Champion(name: "kaisa", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "missile rain", description: "Kai'Sa launches missiles towards each nearby enemy that deal 50 magic damage each."), championOriginSet3: [.valkyrie], championClassSet3: [.infiltrator],
-                         bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
-                         stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 2))
+//        // MARK: KAISA
+//        kaisa = Champion(name: "kaisa", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "missile rain", description: "Kai'Sa launches missiles towards each nearby enemy that deal 50 magic damage each."), championOriginSet3: [.valkyrie], championClassSet3: [.infiltrator],
+//                         bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
+//                         stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 2))
         
-        // MARK: KAYLE
-        kayle = Champion(name: "kayle", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "ascent", description: "Kayle Ascends, causing her attacks to launch waves that deal bonus magic damage until the end of combat."), championOriginSet3: [.valkyrie], championClassSet3: [.blademaster],
-                         bestItems: [items.guinsoosRageblade, items.handOfJustice, items.rapidFirecannon],
-                         stats: Stats(health: 700, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 3))
+//        // MARK: KAYLE
+//        kayle = Champion(name: "kayle", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "ascent", description: "Kayle Ascends, causing her attacks to launch waves that deal bonus magic damage until the end of combat."), championOriginSet3: [.valkyrie], championClassSet3: [.blademaster],
+//                         bestItems: [items.guinsoosRageblade, items.handOfJustice, items.rapidFirecannon],
+//                         stats: Stats(health: 700, armor: 25, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 3))
         
-        
-        // MARK: MISS FORTUNE
-        missFortune = Champion(name: "miss fortune", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "bullet time", description: "Miss Fortune channels and fires waves of bullets in a cone for 2.25 seconds, dealing a percentage of enemies' maximum health in magic damage over the duration."), championOriginSet3: [.valkyrie], championClassSet3: [.mercenary, .blaster],
-                               bestItems: [items.quicksilver, items.seraphsEmbrace, items.seraphsEmbrace],
-                               stats: Stats(health: 800, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 1, attackRange: 4))
+//
+//        // MARK: MISS FORTUNE
+//        missFortune = Champion(name: "miss fortune", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "bullet time", description: "Miss Fortune channels and fires waves of bullets in a cone for 2.25 seconds, dealing a percentage of enemies' maximum health in magic damage over the duration."), championOriginSet3: [.valkyrie], championClassSet3: [.mercenary, .blaster],
+//                               bestItems: [items.quicksilver, items.seraphsEmbrace, items.seraphsEmbrace],
+//                               stats: Stats(health: 800, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 1, attackRange: 4))
         
         
         // MARK: ------ VOID -----
         
-        // MARK: CHOGATH
-        chogath = Champion(name: "chogath", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "rupture", description: "Cho'Gath ruptures a large area, dealing magic damage and knocking up all enemies within."), championOriginSet3: [.void], championClassSet3: [.brawler],
-                           bestItems: [items.guardianAngel, items.morellonomicon, items.warmogsArmor],
-                           stats: Stats(health: 1000, armor: 20, magicResist: 20, attackDamage: 70, attackSpeed: 0.6, attackRange: 1))
+//        // MARK: CHOGATH
+//        chogath = Champion(name: "chogath", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "rupture", description: "Cho'Gath ruptures a large area, dealing magic damage and knocking up all enemies within."), championOriginSet3: [.void], championClassSet3: [.brawler],
+//                           bestItems: [items.guardianAngel, items.morellonomicon, items.warmogsArmor],
+//                           stats: Stats(health: 1000, armor: 20, magicResist: 20, attackDamage: 70, attackSpeed: 0.6, attackRange: 1))
         
         
-        // MARK: KHAZIX
-        khazix = Champion(name: "khazix", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "taste their fear", description: "Kha'Zix slashes the nearest enemy, dealing magic damage. If the target has no adjacent teammates, this damage is increased."), championOriginSet3: [.void], championClassSet3: [.infiltrator],
-                          bestItems: [items.bloodthirster, items.infinityEdge, items.rapidFirecannon],
-                          stats: Stats(health: 500, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1))
+//        // MARK: KHAZIX
+//        khazix = Champion(name: "khazix", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "taste their fear", description: "Kha'Zix slashes the nearest enemy, dealing magic damage. If the target has no adjacent teammates, this damage is increased."), championOriginSet3: [.void], championClassSet3: [.infiltrator],
+//                          bestItems: [items.bloodthirster, items.infinityEdge, items.rapidFirecannon],
+//                          stats: Stats(health: 500, armor: 25, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1))
         
         
-        // MARK: VELKOZ
-        velkoz = Champion(name: "velkoz", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "lifeform disintegration ray", description: "Vel'Koz channels a ray of energy that sweeps across the battlefield over 2.5 seconds, dealing magic damage per second to enemies hit."), championOriginSet3: [.void], championClassSet3: [.sorcerer],
-                          bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
-                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.75, attackRange: 4))
+//        // MARK: VELKOZ
+//        velkoz = Champion(name: "velkoz", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "lifeform disintegration ray", description: "Vel'Koz channels a ray of energy that sweeps across the battlefield over 2.5 seconds, dealing magic damage per second to enemies hit."), championOriginSet3: [.void], championClassSet3: [.sorcerer],
+//                          bestItems: [items.jeweledGauntlet, items.morellonomicon, items.seraphsEmbrace],
+//                          stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 45, attackSpeed: 0.75, attackRange: 4))
         
         
         setChampionRatings()

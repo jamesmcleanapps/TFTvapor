@@ -32,16 +32,11 @@ class Messages {
         return [
          
             
-            Message(id: 20, title: "21 May 2020", body: "Crashes are down to less than 4 per day with over 2000 active users in the last 30 days. I am pretty happy with this, but if there are having any issues with the app, or repetetive crashes please get in touch through the options menu and contact Developer button.\n\nAlso, I hate to beg, but a quick Star Rating Review (doesn't have to be written) helps the app out so much. Especially for visibility in the App Store. It would be greatly appreciated if you could take the 20 seconds to do so. Options Menu -> Leave Review. Thanks, James :) "),
             
             
-            Message(id: 22, title: "28 May 2020", body: "App updated to reflect Patch 10.11 changes in game."),
+            Message(id: 26, title: "10 June 2020", body: "REALLY IMPORTANT\n\nPlease make sure this app is updated to version 3.20.3\n\nYou can find the version number in the Options Menu, at the bottom of the screen.\n\nIf not there will be crashes as the server is now updated for the Mid Season 10.12 TFT Patch."),
             
-            Message(id: 23, title: "28 May 2020", body: "Team Comps have been updated for patch 10.11. Top Team Comps for now are:\n\n - Brawler Blasters\n\n - Mech Infiltrators\n\n - Rebel Demolitionists\n\n - Void Brawler"),
-            
-            Message(id: 24, title: "4 June 2020", body: "Not much change in the last few days. I have moved Hyper Roll Celestials from A down to B Tier, and moved Hyper Roll Sorcerers from B up to A Tier"),
-            
-            Message(id: 25, title: "4 June 2020", body: "If anyone is playing patch 10.12 on the Beta Servers. I am looking for screenshots of the new champions images, as they appear in the shop.\n\nIf anyone is interested they can email the screenshots to me at: jamesmcleanapps@gmail.com. Or they can send them in the Contact Developer section in the options menu of this app. Thanks, James.")
+            Message(id: 27, title: "10 June 2020", body: "Server Updated to reflect TFT patch 10.12/n/nNew Team Comps have been added. I will be adding more and also updating champion and item tier lists in the next few hours.")
             
         ]
     }

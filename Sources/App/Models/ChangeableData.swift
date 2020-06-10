@@ -118,28 +118,27 @@ extension ChampionsSet3 {
             irelia,
             
             jinx,
-            kayle,
+            
             lulu,
-            missFortune
+            
         ]
         
         let aRating = [
             ahri,
             aurelionSol,
-            chogath,
             ekko,
             fizz,
             
             jayce,
             jhin,
-            kaisa,
+            
             lucian,
             
             rumble,
             shaco,
             
             thresh,
-            velkoz,
+            
             xayah,
             xerath
         ]
@@ -151,13 +150,11 @@ extension ChampionsSet3 {
             darius,
             ezreal,
             graves,
-            kassadin,
             
-            lux,
             poppy,
             rakan,
             shen,
-            sona,
+            
             soraka,
             syndra,
             twistedFate,
@@ -171,7 +168,7 @@ extension ChampionsSet3 {
             fiora,
             jarvan,
             karma,
-            khazix,
+            
             leona,
             masterYi,
             malphite,
@@ -340,16 +337,16 @@ extension ItemsSet3 {
             morellonomicon,
             quicksilver,
             redBuff,
-            seraphsEmbrace,
+            blueBuff,
             thiefsGloves,
             zephyr
         ]
         let aRated = [
             brambleVest,
-            chaliceOfFavor,
+            chaliceOfPower,
             deathBlade,
             dragonsClaw,
-           handOfJustice,
+            handOfJustice,
             ionicSpark,
             jeweledGauntlet,
             rabadonsDeathcap,

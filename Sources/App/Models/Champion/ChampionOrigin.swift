@@ -175,12 +175,3 @@ enum ChampionOrigin: String, CaseIterable, Codable, ReflectionDecodable {
         return (.demon, .dragon)
     }
 }
-
-struct Details: Codable {
-    var main: String
-    var benefit1: String?
-    var benefit2: String?
-    var benefit3: String?
-}
-
-extension Details: Content {}
