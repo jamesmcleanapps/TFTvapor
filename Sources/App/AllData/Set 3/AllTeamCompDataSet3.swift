@@ -16,7 +16,8 @@ class TeamCompsSet3 {
         return [
 //
             astroSnipers, battlecastBlasters, battlecastRebels, rebelBlademasters,
-            brawlerBlasters, hyperrollSorcerers, mechInfiltrator, sorcerers, cyberneticBlademasters
+            brawlerBlasters, hyperrollSorcerers, mechInfiltrator, sorcerers, cyberneticBlademasters,
+            protectorMystics, mechSorcerers
         ]
     }()
     
