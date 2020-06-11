@@ -114,27 +114,28 @@ extension ChampionsSet2 {
 extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
-            lulu,
-            thresh,
+            aurelionSol,
+            ekko,
             gnar,
-            urgot
-            
+            jinx,
+            lulu,
+            thresh            
         ]
         
         let aRating = [
-            aurelionSol,
-            ekko,
             ezreal,
             fizz,
             gangplank,
             irelia,
             jhin,
             lucian,
+            urgot,
             xerath,
             viktor,
             zed,
             riven,
-            janna
+            janna,
+            vayne
         ]
         let bRating = [
             ahri,
@@ -142,10 +143,10 @@ extension ChampionsSet3 {
             ashe,
             blitzcrank,
             caitlyn,
+            cassiopeia,
             darius,
             graves,
             jayce,
-            jinx,
             poppy,
             rakan,
             rumble,
@@ -161,10 +162,11 @@ extension ChampionsSet3 {
             bard,
             teemo,
             kogmaw,
-            cassiopeia,
-            vayne
+            xinZhao,
+            
         ]
         let cRating: [Champion] = [
+            illaoi,
             fiora,
             jarvan,
             karma,
@@ -174,12 +176,10 @@ extension ChampionsSet3 {
             mordekaiser,
             neeko,
             shaco,
-            xinZhao,
-            yasuo,
-            nocturne,
-            illaoi
+            yasuo
         ]
         let dRating: [Champion] = [
+            nocturne,
             zoe
         ]
         let eRating: [Champion] = [
@@ -333,7 +333,10 @@ extension ItemsSet3 {
     func setItemRatings() {
         
         let sRated = [
+            forceOfNature,
+            giantSlayer,
             guardianAngel,
+            infinityEdge,
             morellonomicon,
             quicksilver,
             thiefsGloves,
@@ -343,7 +346,6 @@ extension ItemsSet3 {
         let aRated = [
             brambleVest,
             deathBlade,
-            giantSlayer,
             handOfJustice,
             infinityEdge,
             ionicSpark,

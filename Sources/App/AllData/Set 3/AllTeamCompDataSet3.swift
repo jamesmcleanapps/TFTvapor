@@ -35,6 +35,9 @@ class TeamCompsSet3 {
     let mechInfiltrator: TeamComp
     let sorcerers: TeamComp
     let cyberneticBlademasters: TeamComp
+    
+    let protectorMystics: TeamComp
+    let mechSorcerers: TeamComp
 
     
     init() {
@@ -106,7 +109,7 @@ class TeamCompsSet3 {
         // MARK: BATTLECAST BLASTERS
         battlecastBlasters = TeamComp(name: "Battlecast Blasters",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .A,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
@@ -600,6 +603,134 @@ class TeamCompsSet3 {
                                         26 : champions.vayne
                                    ]) ,
                                    webLink: nil)
+        
+        
+        // MARK: PROTECTOR MYSTICS
+        protectorMystics = TeamComp(name: "Protector Mystics",
+                                   teamCompSet: .set3,
+                                   tier: .S,
+                                   patch: "10.12",
+                                   
+                                   earlyUnits: [],
+                                   
+                                   midUnits: [
+                                    champions.kogmaw,
+                                    champions.rakan,
+                                    champions.xinZhao,
+                                    champions.bard,
+                                    champions.cassiopeia
+            ],
+                                   
+                                   units: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.xinZhao,
+                                    champions.cassiopeia,
+                                    champions.karma,
+                                    champions.soraka,
+                                    champions.lulu,
+                                    champions.urgot
+            ],
+                                   
+                                   carries: [champions.rakan, champions.xinZhao, champions.cassiopeia],
+                                   
+                                   carryItems: [
+                                    champions.rakan :
+                                        [
+                                            items.morellonomicon,
+                                            items.spearOfShojin
+                                    ],
+                                    champions.xinZhao:
+                                        [
+                                            items.brambleVest,
+                                            items.dragonsClaw,
+                                            items.titansResolve
+                                    ],
+                                    champions.cassiopeia:
+                                        [
+                                            items.blueBuff
+                                    ]
+            ],
+                                   
+                                   threeStarUnits: [champions.jarvan, champions.rakan, champions.xinZhao],
+                                   
+                                   teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.jarvan,
+                                        4 : champions.rakan,
+                                        5 : champions.xinZhao,
+                                        9 : champions.urgot,
+                                        10 : champions.cassiopeia,
+                                        12 : champions.karma,
+                                        22 : champions.soraka,
+                                        28 : champions.lulu
+                                   ]) ,
+                                   webLink: nil)
+        
+        
+        // MARK: MECH SORCERERS
+        mechSorcerers = TeamComp(name: "Mech Sorcerers",
+                                   teamCompSet: .set3,
+                                   tier: .A,
+                                   patch: "10.12",
+                                   
+                                   earlyUnits: [],
+                                   
+                                   midUnits: [
+                                    champions.twistedFate,
+                                    champions.annie,
+                                    champions.rumble,
+                                    champions.fizz,
+                                    champions.riven
+            ],
+                                   
+                                   units: [
+                                    champions.twistedFate,
+                                    champions.annie,
+                                    champions.rumble,
+                                    champions.fizz,
+                                    champions.viktor,
+                                    champions.xerath,
+                                    champions.ekko,
+                                    champions.gangplank
+            ],
+                                   
+                                   carries: [champions.annie, champions.ekko, champions.gangplank],
+                                   
+                                   carryItems: [
+                                    champions.annie :
+                                        [
+                                            items.quicksilver,
+                                            items.titansResolve
+                                    ],
+                                    champions.ekko:
+                                        [
+                                            items.morellonomicon
+                                    ],
+                                    champions.gangplank:
+                                        [
+                                            items.guardianAngel,
+                                            items.ionicSpark,
+                                            items.rabadonsDeathcap
+                                    ]
+            ],
+                                   
+                                   threeStarUnits: nil,
+                                   
+                                   teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.fizz,
+                                        4 : champions.annie,
+                                        5 : champions.rumble,
+                                        10 : champions.gangplank,
+                                        22 : champions.viktor,
+                                        25 : champions.ekko,
+                                        27 : champions.xerath,
+                                        28 : champions.twistedFate
+                                   ]) ,
+                                   webLink: nil)
+        
+        
 
         
 
