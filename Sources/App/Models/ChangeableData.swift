@@ -115,6 +115,7 @@ extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
             aurelionSol,
+            cassiopeia,
             ekko,
             gnar,
             jinx,
@@ -127,6 +128,7 @@ extension ChampionsSet3 {
             fizz,
             gangplank,
             irelia,
+            jayce,
             jhin,
             lucian,
             urgot,
@@ -143,10 +145,10 @@ extension ChampionsSet3 {
             ashe,
             blitzcrank,
             caitlyn,
-            cassiopeia,
+            
             darius,
             graves,
-            jayce,
+            masterYi,
             poppy,
             rakan,
             rumble,
@@ -172,7 +174,7 @@ extension ChampionsSet3 {
             karma,
             leona,
             malphite,
-            masterYi,
+            
             mordekaiser,
             neeko,
             shaco,
@@ -333,6 +335,7 @@ extension ItemsSet3 {
     func setItemRatings() {
         
         let sRated = [
+            blueBuff,
             forceOfNature,
             giantSlayer,
             guardianAngel,
@@ -346,10 +349,12 @@ extension ItemsSet3 {
         let aRated = [
             brambleVest,
             deathBlade,
+            dragonsClaw,
             handOfJustice,
             infinityEdge,
             ionicSpark,
             jeweledGauntlet,
+            lastWhisper,
             ludensEcho,
             rabadonsDeathcap,
             redBuff,
@@ -361,11 +366,11 @@ extension ItemsSet3 {
         
         let bRated = [
             bloodthirster,
-            blueBuff,
+            
             chaliceOfPower,
-            dragonsClaw,
+            frozenHeart,
             guinsoosRageblade,
-            lastWhisper,
+            
             rapidFirecannon,
             runaansHurricane,
             shroud,
@@ -377,7 +382,7 @@ extension ItemsSet3 {
             locket,
             warmogsArmor,
             zekesHerald,
-            frozenHeart,
+            
             hextechGunblade,
             swordBreaker
         ]
