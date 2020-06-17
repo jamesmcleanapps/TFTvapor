@@ -484,7 +484,7 @@ class ChampionsSet3 {
                           stats: Stats(health: 650, armor: 40, magicResist: 30, attackDamage: 55, attackSpeed: 0.55, attackRange: 1))
         
         // MARK: JAYCE
-        jayce = Champion(name: "jayce", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "to the skies", description: "Jayce jumps into the air and slams his hammer, dealing magic damage to nearby enemies."), championOriginSet3: [.spacePirate], championClassSet3: [.blaster],
+        jayce = Champion(name: "jayce", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "to the skies", description: "Jayce jumps into the air and slams his hammer, dealing magic damage to nearby enemies."), championOriginSet3: [.spacePirate], championClassSet3: [.vanguard],
                          bestItems: [items.guardianAngel, items.hextechGunblade, items.ionicSpark],
                          stats: Stats(health: 850, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
         

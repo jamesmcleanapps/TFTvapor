@@ -39,7 +39,9 @@ class Messages {
             
             Message(id: 31, title: "13 June 2020", body: "Three New Team Comps Added\n\nS Tier - Vanguard Mystics\n\nS Tier - Rebel Demolitionists\n\nA Tier - Dark Star Snipers"),
             
-            Message(id: 32, title: "13 June 2020", body: "Updated Champions and Item Tier Lists")
+            Message(id: 32, title: "13 June 2020", body: "Updated Champions and Item Tier Lists"),
+            
+            Message(id: 33, title: "17 June 2020", body: "Jayce now classed as a Vanguard instead of a Blaster in this app. Apologies for the bug and thank you to Gustavo for bringing it to my attention.")
             
             
             
