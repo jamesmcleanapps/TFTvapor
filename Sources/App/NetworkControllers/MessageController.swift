@@ -41,7 +41,9 @@ class Messages {
             
             Message(id: 32, title: "13 June 2020", body: "Updated Champions and Item Tier Lists"),
             
-            Message(id: 33, title: "17 June 2020", body: "Jayce now classed as a Vanguard instead of a Blaster in this app. Apologies for the bug and thank you to Gustavo for bringing it to my attention.")
+            Message(id: 33, title: "17 June 2020", body: "Jayce now classed as a Vanguard instead of a Blaster in this app. Apologies for the bug and thank you to Gustavo for bringing it to my attention."),
+            
+            Message(id: 34, title: "21 June 2020", body: "Team Comps and Tier Lists have been updated.\n\nTop Team Comps are now:\n\nBrawler Blasters\n\nCybernetic Blademasters\n\nVanguard Mystics")
             
             
             

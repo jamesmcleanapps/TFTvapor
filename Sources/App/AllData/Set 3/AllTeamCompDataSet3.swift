@@ -54,7 +54,7 @@ class TeamCompsSet3 {
         // MARK: ASTRO SNIPERS
         astroSnipers = TeamComp(name: "Astro Snipers",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .A,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
@@ -78,27 +78,27 @@ class TeamCompsSet3 {
                                     champions.thresh
             ],
                                    
-                                   carries: [champions.jhin, champions.teemo, champions.wukong],
+                                   carries: [champions.jhin, champions.teemo, champions.gnar],
                                    
                                    carryItems: [
                                     champions.jhin :
                                         [
                                             items.giantSlayer,
-                                            items.guardianAngel,
-                                            items.runaansHurricane
+                                            items.infinityEdge,
+                                            items.lastWhisper
                                     ],
                                     champions.teemo :
                                         [
                                             items.rabadonsDeathcap,
-                                            items.spearOfShojin
+                                            items.blueBuff
                                     ],
-                                    champions.wukong :
+                                    champions.gnar :
                                         [
-                                            items.frozenHeart
+                                            items.ionicSpark
                                     ]
             ],
                                    
-                                   threeStarUnits: nil,
+                                   threeStarUnits: [champions.jhin],
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
@@ -116,7 +116,7 @@ class TeamCompsSet3 {
         // MARK: BATTLECAST BLASTERS
         battlecastBlasters = TeamComp(name: "Battlecast Blasters",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .B,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
@@ -302,7 +302,7 @@ class TeamCompsSet3 {
         // MARK: BRAWLER BLASTERS
         brawlerBlasters = TeamComp(name: "Brawler Blasters",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .S,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
@@ -316,30 +316,27 @@ class TeamCompsSet3 {
             ],
                                    
                                    units: [
-                                    champions.illaoi,
-                                    champions.graves,
                                     champions.malphite,
                                     champions.blitzcrank,
-                                    champions.kogmaw,
                                     champions.ezreal,
+                                    champions.vi,
                                     champions.gnar,
-                                    champions.jinx
+                                    champions.jinx,
+                                    champions.soraka,
+                                    champions.lulu
             ],
                                    
-                                   carries: [champions.kogmaw, champions.ezreal, champions.gnar, champions.jinx],
+                                   carries: [champions.ezreal, champions.gnar, champions.jinx],
                                    
                                    carryItems: [
-                                    champions.kogmaw :
+                                    champions.ezreal :
                                         [
                                             items.redBuff
                                     ],
-                                    champions.ezreal:
-                                        [
-                                            items.blueBuff
-                                    ],
                                     champions.gnar:
                                         [
-                                            items.thiefsGloves
+                                            items.frozenHeart,
+                                            items.ionicSpark
                                     ],
                                     champions.jinx:
                                         [
@@ -349,16 +346,16 @@ class TeamCompsSet3 {
                                     ]
             ],
                                    
-                                   threeStarUnits: nil,
+                                   threeStarUnits: [champions.jinx],
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
-                                        1 : champions.illaoi,
-                                        3 : champions.gnar,
-                                        5 : champions.graves,
-                                        7 : champions.malphite,
-                                        22 : champions.kogmaw,
-                                        25 : champions.ezreal,
+                                        2 : champions.malphite,
+                                        4 : champions.gnar,
+                                        6 : champions.vi,
+                                        22 : champions.lulu,
+                                        23 : champions.ezreal,
+                                        25 : champions.soraka,
                                         27 : champions.jinx,
                                         28 : champions.blitzcrank
                                    ]) ,
@@ -578,7 +575,7 @@ class TeamCompsSet3 {
                                    carryItems: [
                                     champions.vayne :
                                         [
-                                            items.giantSlayer
+                                            items.guinsoosRageblade
                                     ],
                                     champions.vi:
                                         [
@@ -596,7 +593,7 @@ class TeamCompsSet3 {
                                     ]
             ],
                                    
-                                   threeStarUnits: [champions.fiora],
+                                   threeStarUnits: [champions.irelia],
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
@@ -615,7 +612,7 @@ class TeamCompsSet3 {
         // MARK: PROTECTOR MYSTICS
         protectorMystics = TeamComp(name: "Protector Mystics",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .B,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
@@ -635,11 +632,11 @@ class TeamCompsSet3 {
                                     champions.karma,
                                     champions.soraka,
                                     champions.lulu,
-                                    champions.aurelionSol,
+                                    champions.ashe,
                                     champions.urgot
             ],
                                    
-                                   carries: [champions.xinZhao, champions.cassiopeia, champions.aurelionSol],
+                                   carries: [champions.xinZhao, champions.cassiopeia],
                                    
                                    carryItems: [
                                     champions.xinZhao :
@@ -651,10 +648,7 @@ class TeamCompsSet3 {
                                     champions.cassiopeia:
                                         [
                                             items.blueBuff,
-                                            items.morellonomicon
-                                    ],
-                                    champions.aurelionSol:
-                                        [
+                                            items.morellonomicon,
                                             items.protectorsChestguard
                                     ]
             ],
@@ -668,8 +662,8 @@ class TeamCompsSet3 {
                                         9 : champions.urgot,
                                         10 : champions.cassiopeia,
                                         12 : champions.karma,
-                                        18 : champions.aurelionSol,
                                         22 : champions.soraka,
+                                        27 : champions.ashe,
                                         28 : champions.lulu
                                    ]) ,
                                    webLink: nil)
@@ -801,7 +795,7 @@ class TeamCompsSet3 {
         // MARK: REBEL DEMOLITIONISTS
         rebelDemolitionists = TeamComp(name: "Rebel Demolitionists",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .A,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
@@ -843,7 +837,7 @@ class TeamCompsSet3 {
                                     ]
             ],
                                    
-                                   threeStarUnits: [champions.ziggs],
+                                   threeStarUnits: [champions.jinx],
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
@@ -863,7 +857,7 @@ class TeamCompsSet3 {
         // MARK: DARK STAR SNIPERS
         darkStarSnipers = TeamComp(name: "Dark Star Snipers",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .B,
                                    patch: "10.12",
                                    
                                    earlyUnits: [],
