@@ -19,14 +19,14 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "blademaster":
             return Details(main: "Blademasters' Basic Attacks have a chance on hit to trigger two additional attacks against their target. These additional attacks deal damage like Basic Attacks and trigger on-hit effects.",
                            benefit1: "3  -  30% Chance to trigger",
-                           benefit2: "6  -  70% Chance to trigger",
+                           benefit2: "6  -  65% Chance to trigger",
                            benefit3: "9  -  100% Chance to trigger"
                            )
             
         case "blaster":
             return Details(main: "Every fourth Basic Attack from a Blast fires additional attacks at random enemies. These addiotional attacks deal damage like Basic Attacks and trigger on-hit effects.",
             benefit1: "2  -  3 Additional Attacks",
-            benefit2: "4  -  5 Additional Attacks",
+            benefit2: "4  -  6 Additional Attacks",
             benefit3: nil
             )
         case "brawler":
@@ -44,7 +44,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "infiltrator":
             return Details(main: "At the start of combat, Infiltrators move to the enemy's backline. Infiltrators gain Attack Speed for 6 seconds at the start of combat. Refreshes on takedown",
             benefit1: "2  -  40% Bonus Attack Speed",
-            benefit2: "4  -  70% Bonus Attack Speed.",
+            benefit2: "4  -  80% Bonus Attack Speed.",
             benefit3: "6  -  120% Bonus Attack Speed."
             )
         case "mana-reaver":
@@ -62,7 +62,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "mystic":
             return Details(main: "All allies gain Magic Resistance.",
             benefit1: "2  -  50 Magic Resistance",
-            benefit2: "4  -  125 Magic Resistance",
+            benefit2: "4  -  120 Magic Resistance",
             benefit3: nil
             )
             

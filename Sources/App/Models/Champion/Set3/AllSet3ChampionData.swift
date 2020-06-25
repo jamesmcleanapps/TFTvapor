@@ -471,7 +471,7 @@ class ChampionsSet3 {
         // MARK: DARIUS
         darius = Champion(name: "darius", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "dreadnova guillotine", description: "Darius dunks an enemy, dealing magic damage. If this kills the target, Darius immediately casts again. Targets below 50% health take double damage."), championOriginSet3: [.spacePirate], championClassSet3: [.manaReaver],
                           bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                          stats: Stats(health: 750, armor: 35, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
+                          stats: Stats(health: 750, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
         
         // MARK: GANGPLANK
         gangplank = Champion(name: "gangplank", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "orbital strike", description: "Gangplank calls down a large orbital strike around his target, dealing magic damage to all enemies in that area for 2 seconds."), championOriginSet3: [.spacePirate], championClassSet3: [.mercenary, .demolitionist],
@@ -486,7 +486,7 @@ class ChampionsSet3 {
         // MARK: JAYCE
         jayce = Champion(name: "jayce", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "to the skies", description: "Jayce jumps into the air and slams his hammer, dealing magic damage to nearby enemies."), championOriginSet3: [.spacePirate], championClassSet3: [.vanguard],
                          bestItems: [items.guardianAngel, items.hextechGunblade, items.ionicSpark],
-                         stats: Stats(health: 850, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
+                         stats: Stats(health: 800, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.7, attackRange: 1))
         
         
         // MARK: ------ STAR GUARDIAN -----
@@ -535,7 +535,7 @@ class ChampionsSet3 {
                               stats: Stats(health: 700, armor: 30, magicResist: 20, attackDamage: 45, attackSpeed: 0.7, attackRange: 3))
         
         // MARK: GNAR
-        gnar = Champion(name: "gnar", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "GNAR!", description: "Gnar leaps towards his target and transforms into Mega Gnar, throwing nearby enemies, dealing 100/200/800 magic damage and stunning them for 2 seconds. While in Mega Gnar form, Gnar is melee and gains 750/1250/2500 Health and 100/175/400 Attack Damage."), championOriginSet3: [.astro], championClassSet3: [.brawler],
+        gnar = Champion(name: "gnar", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "GNAR!", description: "Gnar leaps towards his target and transforms into Mega Gnar, throwing nearby enemies, dealing 100/200/800 magic damage and stunning them for 1.5 seconds. While in Mega Gnar form, Gnar is melee and gains 750/1250/4000 Health and 100/175/550 Attack Damage."), championOriginSet3: [.astro], championClassSet3: [.brawler],
                        bestItems: [items.dragonsClaw, items.quicksilver, items.titansResolve],
                        stats: Stats(health: 750, armor: 40, magicResist: 45, attackDamage: 50, attackSpeed: 0.8, attackRange: 2))
         
@@ -545,7 +545,7 @@ class ChampionsSet3 {
                        stats: Stats(health: 750, armor: 40, magicResist: 35, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
         
         // MARK: TEEMO
-        teemo = Champion(name: "teemo", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "satellite traps", description: "Teemo scatters 3 traps around the nearest enemy. When an enemy nears a trap (or after 3 seconds), it explodes on nearby enemies dealing 125/175/600 magic damage, knocking them down, and slowing them for 4 seconds."), championOriginSet3: [.astro], championClassSet3: [.sniper],
+        teemo = Champion(name: "teemo", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "satellite traps", description: "Teemo scatters 3 traps around the nearest enemy. When an enemy nears a trap (or after 3 seconds), it explodes on nearby enemies dealing 125/175/550 magic damage, knocking them down, and slowing them for 3 seconds."), championOriginSet3: [.astro], championClassSet3: [.sniper],
                        bestItems: [items.guardianAngel, items.morellonomicon],
                        stats: Stats(health: 750, armor: 40, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
         
@@ -557,12 +557,12 @@ class ChampionsSet3 {
         // MARK: ILLAOI
           illaoi = Champion(name: "illaoi", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "tentacle smash", description: "Illaoi slams a tentacle in a line in front of her, dealing 125/200/325 damage and stealing 20/30/50% Armor and Magic Resist from each target hit for 4 seconds."), championOriginSet3: [.battlecast], championClassSet3: [.brawler],
                          bestItems: [items.brambleVest, items.locket, items.zzRot],
-                         stats: Stats(health: 650, armor: 40, magicResist: 30, attackDamage: 45, attackSpeed: 0.7, attackRange: 1))
+                         stats: Stats(health: 700, armor: 40, magicResist: 30, attackDamage: 45, attackSpeed: 0.7, attackRange: 1))
         
         // MARK: NOCTURNE
         nocturne = Champion(name: "nocturne", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "unspeakable horror", description: "Nocturne terrifies his target, causing them to be stunned with fear for 2/2.5/4 seconds and dealing 200/250/350 magic damage over the duration."), championOriginSet3: [.battlecast], championClassSet3: [.infiltrator],
                        bestItems: [items.guardianAngel, items.infinityEdge, items.lastWhisper],
-                       stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.7, attackRange: 1))
+                       stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 1))
         
         // MARK: KOGMAW
         kogmaw = Champion(name: "kogmaw", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "barrage", description: "For 3 seconds, Kog’Maw gains infinite Attack Range and 80% attack speed, and his auto attacks deal 2%/4%/7% of the target’s maximum Health as magic damage."), championOriginSet3: [.battlecast], championClassSet3: [.blaster],
@@ -598,7 +598,7 @@ class ChampionsSet3 {
         // MARK: ------ OTHER NEW -----
         
          // MARK: RIVEN
-               riven = Champion(name: "riven", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "energy slash", description: "Riven dashes and shields herself for 250/400/1000, then slashes forward dealing 100/150/450 magic damage. Every third cast, Riven leaps into the air and launches a wave of energy that deals 300/500/1500 magic damage."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
+               riven = Champion(name: "riven", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "energy slash", description: "Riven dashes and shields herself for 225/375/1000, then slashes forward dealing 100/150/450 magic damage. Every third cast, Riven leaps into the air and launches a wave of energy that deals 300/500/1500 magic damage."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
                                 bestItems: [items.guardianAngel, items.titansResolve],
                               stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 70, attackSpeed: 0.85, attackRange: 1))
         

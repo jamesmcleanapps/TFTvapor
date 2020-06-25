@@ -34,16 +34,13 @@ class Messages {
             
             
             
-            Message(id: 26, title: "10 June 2020", body: "REALLY IMPORTANT\n\nPlease make sure this app is updated from the App Store to version 3.20.3\n\nYou can find the version number in the Options Menu, at the bottom of the screen.\n\nIf not there will be crashes as the server is now updated for the Mid Season 10.12 TFT Patch."),
+            Message(id: 26, title: "10 June 2020", body: "REALLY IMPORTANT\n\nPlease make sure this app is updated from the App Store to at least version 3.20.3\n\nYou can find the version number in the Options Menu, at the bottom of the screen.\n\nIf not there will be crashes as the server is now updated for the Mid Season 10.12 TFT Patch."),
             
             
-            Message(id: 31, title: "13 June 2020", body: "Three New Team Comps Added\n\nS Tier - Vanguard Mystics\n\nS Tier - Rebel Demolitionists\n\nA Tier - Dark Star Snipers"),
             
-            Message(id: 32, title: "13 June 2020", body: "Updated Champions and Item Tier Lists"),
+            Message(id: 35, title: "25 June 2020", body: "App has been updated to reflect patch 10.13 changes.\n\nAll Team Comps have also been updated. Top Comps just now are:\n\n - Brawler Blasters\n\n - Cybernetic Blademasters\n\n - Vanguard Mystics"),
             
-            Message(id: 33, title: "17 June 2020", body: "Jayce now classed as a Vanguard instead of a Blaster in this app. Apologies for the bug and thank you to Gustavo for bringing it to my attention."),
-            
-            Message(id: 34, title: "21 June 2020", body: "Team Comps and Tier Lists have been updated.\n\nTop Team Comps are now:\n\nBrawler Blasters\n\nCybernetic Blademasters\n\nVanguard Mystics")
+            Message(id: 36, title: "25 June 2020", body: "I am aware that a few of the images are incorrect, for example, Blue Buff still uses the old Seraphs Embrace image. Images for this app are stored on your device, so i need to update the client through Apple, which is a longer process that simply updating the server.\n\nI will have everything update soon, apologies for the delay.\n\nJames")
             
             
             

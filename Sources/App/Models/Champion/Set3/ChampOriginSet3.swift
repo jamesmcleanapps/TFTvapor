@@ -23,10 +23,10 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             
         case "battlecast":
             return Details(main: "Upon dealing or taking 10 instances of damage, Battlecast champions heal if below half health or deal damage to the nearest enemy if above half health.",
-                           benefit1: "2  -  70 Healing or Damage",
-                           benefit2: "4  -  160 Healing or Damage",
-                           benefit3: "6  -  325 Healing or Damage",
-                           benefit4: "8  -  600 Healing or Damage"
+                           benefit1: "2  -  80 Healing or Damage",
+                           benefit2: "4  -  180 Healing or Damage",
+                           benefit3: "6  -  480 Healing or Damage",
+                           benefit4: "8  -  880 Healing or Damage"
             )
             
         case "celestial":
@@ -46,15 +46,15 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
             benefit1: "3  -  350 Health & 40 Attack Damage",
-            benefit2: "6  -  600 Health & 80 Attack Damage",
+            benefit2: "6  -  600 Health & 75 Attack Damage",
             benefit3: nil
             )
         case "dark star":
             return Details(main: "When an ally dies, all other allied Dark Star Champions gain Attack Damage and Spell Power",
             benefit1: "2  -  +8 AD and Spell Power",
-            benefit2: "4  -  +16 AD and Spell Power",
-            benefit3: "6  -  +24 AD and Spell Power",
-            benefit4: "8  -  +32 AD and Spell Power"
+            benefit2: "4  -  +18 AD and Spell Power",
+            benefit3: "6  -  +28 AD and Spell Power",
+            benefit4: "8  -  +38 AD and Spell Power"
             )
         case "mech pilot":
             return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected and continue to fight.",

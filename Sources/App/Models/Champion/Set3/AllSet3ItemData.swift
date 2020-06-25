@@ -135,13 +135,13 @@ class ItemsSet3 {
         
         
         // MARK: BLOODTHIRSTER
-        bloodthirster = CombinedItem(name: "bloodthirster", bonus: "Attacks heal for 40% of damage", rating: .A, recipe: [bfSword, negatronCloak])
+        bloodthirster = CombinedItem(name: "bloodthirster", bonus: "Attacks heal for 45% of damage", rating: .A, recipe: [bfSword, negatronCloak])
         
         // MARK: GUARDIAN ANGEL
         guardianAngel = CombinedItem(name: "guardian angel", bonus: "Wearer revives with 400 health after 2 seconds", rating: .S, recipe: [bfSword, chainVest])
         
         // MARK: HEXTECH GUNBLADE
-        hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 35% of all spell damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
+        hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 45% of all spell damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
         
         // MARK: DEATH BLADE
         deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 25 Attack Damage until end of combat (Stacks infinitely, starts with 1 stack).", rating: .A, recipe: [bfSword, bfSword])
@@ -205,7 +205,7 @@ class ItemsSet3 {
         zephyr = CombinedItem(name: "zephyr", bonus: "When combat begins, the wearer summons a whirlwind on the opposite side of the arena that removes the closest enemy from combat for 5 seconds.", rating: .A, recipe: [giantsBelt, negatronCloak])
         
         // MARK: ZZ'ROT PORTAL
-        zzRot = CombinedItem(name: "zz'rot portal", bonus: "When the wearer dies, a Construct with 1000/2000/3000 health to continue the fight.", rating: .A, recipe: [giantsBelt, recurveBow])
+        zzRot = CombinedItem(name: "zz'rot portal", bonus: "When the wearer dies, a Construct with 1500/2250/3000 health to continue the fight.", rating: .A, recipe: [giantsBelt, recurveBow])
         
         
         
@@ -254,7 +254,7 @@ class ItemsSet3 {
         
         
         // MARK: STATIC SHIV
-        statikkShiv = CombinedItem(name: "statikk shiv", bonus: "Every third Basic Attack from the wearer deals 80 magic damage to 3/4/5 enemies.", rating: .S, recipe: [recurveBow, tearOfTheGoddess])
+        statikkShiv = CombinedItem(name: "statikk shiv", bonus: "Every third Basic Attack from the wearer deals 90 magic damage to 3/4/5 enemies.", rating: .S, recipe: [recurveBow, tearOfTheGoddess])
         
         
         
@@ -292,7 +292,7 @@ class ItemsSet3 {
         lastWhisper = CombinedItem(name: "last whisper", bonus: "Critical hits reduce the target’s Armor by 75% for 3 seconds. This effect does not stack.", rating: .B, recipe: [sparringGloves, recurveBow])
         
         // MARK: JEWELLED GAUNTLET
-        jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Holder’s spells can crit and holder gains +20% Critical Strike Damage.", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])
+        jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Holder’s spells can crit and holder gains +30% Critical Strike Damage.", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])
         
         // MARK: HAND OF JUSTICE
         handOfJustice = CombinedItem(name: "hand of justice", bonus: "Each planning phase, gain one: Deal +50% more damage / Basic Attack heal 50 health on Hit", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
