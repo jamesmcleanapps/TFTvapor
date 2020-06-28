@@ -114,29 +114,30 @@ extension ChampionsSet2 {
 extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
-            
-            cassiopeia,
+            aurelionSol,
             ekko,
             gnar,
             jinx,
             lulu,
-            thresh            
+            riven,
+            thresh,
+            urgot
         ]
         
         let aRating = [
-            aurelionSol,
+            cassiopeia,
             ezreal,
             fizz,
             gangplank,
             irelia,
             janna,
-            jayce,
-            jhin,
+            
+           
             lucian,
             nautilus,
             soraka,
-            riven,
-            urgot,
+            
+            
             viktor,
             vayne,
             wukong,
@@ -147,43 +148,38 @@ extension ChampionsSet3 {
             ahri,
             annie,
             ashe,
+            bard,
             blitzcrank,
             caitlyn,
-            
             darius,
             graves,
+            jayce,
+            jhin,
             karma,
+            kogmaw,
             masterYi,
-            mordekaiser,
-            poppy,
-            rakan,
             rumble,
             shen,
-            
             syndra,
-            twistedFate,
-            vi,
-            
-            xayah,
-            ziggs,
-            
-            bard,
             teemo,
-            kogmaw,
-            xinZhao,
+            vi,
+            ziggs,
+            xinZhao
             
         ]
         let cRating: [Champion] = [
             illaoi,
             fiora,
             jarvan,
-            
             leona,
             malphite,
-            
-            
+            mordekaiser,
             neeko,
+            poppy,
+            rakan,
             shaco,
+            twistedFate,
+            xayah,
             yasuo
         ]
         let dRating: [Champion] = [
@@ -346,6 +342,7 @@ extension ItemsSet3 {
             giantSlayer,
             guardianAngel,
             infinityEdge,
+            ionicSpark,
             morellonomicon,
             quicksilver,
             thiefsGloves,
@@ -358,7 +355,7 @@ extension ItemsSet3 {
             dragonsClaw,
             
             infinityEdge,
-            ionicSpark,
+            
             
             lastWhisper,
             

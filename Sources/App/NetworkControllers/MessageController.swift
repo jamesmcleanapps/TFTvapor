@@ -40,7 +40,9 @@ class Messages {
             
             Message(id: 35, title: "25 June 2020", body: "App has been updated to reflect patch 10.13 changes.\n\nAll Team Comps have also been updated. Top Comps just now are:\n\n - Brawler Blasters\n\n - Cybernetic Blademasters\n\n - Vanguard Mystics"),
             
-            Message(id: 36, title: "25 June 2020", body: "I am aware that a few of the images are incorrect, for example, Blue Buff still uses the old Seraphs Embrace image. Images for this app are stored on your device, so i need to update the client through Apple, which is a longer process that simply updating the server.\n\nI will have everything update soon, apologies for the delay.\n\nJames")
+            Message(id: 36, title: "25 June 2020", body: "I am aware that a few of the images are incorrect, for example, Blue Buff still uses the old Seraphs Embrace image. Images for this app are stored on your device, so i need to update the client through Apple, which is a longer process that simply updating the server.\n\nI will have everything update soon, apologies for the delay.\n\nJames"),
+            
+            Message(id: 37, title: "28 June 2020", body: "Many Team Comps have been updated and a few new Team Comps have been added. Including Cybernetics, Battlecast and Mech Rebels\n\nTop Team Comps are currently:\n\n - Brawler Blasters\n\n - Cybernetics\n\n - Sorcerers\n\nChampion and Items Tier Lists have also been updated.")
             
             
             
