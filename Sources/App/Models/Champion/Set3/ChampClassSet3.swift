@@ -85,8 +85,8 @@ enum ChampClassSet3: String, CaseIterable, Codable {
         case "sorcerer":
             return Details(main: "All allies have increased Spell Power.",
             benefit1: "2  -  20% Spell Power",
-            benefit2: "4  -  45% Spell Power",
-            benefit3: "6  -  75% Spell Power"
+            benefit2: "4  -  40% Spell Power",
+            benefit3: "6  -  70% Spell Power"
             )
         case "starship":
             return Details(main: "Starships gain 40 mana per second, maneuver around the board, and are immune to movement impairing effects, but can't Basic Attack.",

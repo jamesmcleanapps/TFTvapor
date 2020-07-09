@@ -244,7 +244,7 @@ class ChampionsSet3 {
     // MARK: ASHE
         ashe = Champion(name: "ashe", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "enchanted crystal arrow", description: "Ashe fires and arrow toward the farthest enemy, colliding with the first enemy hit, dealing damage and stunning them. The stun lasts longer the farther the arrow travels."), championOriginSet3: [.celestial], championClassSet3: [.sniper],
                         bestItems: [items.guinsoosRageblade, items.spearOfShojin, items.spearOfShojin],
-                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 5))
+                        stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.85, attackRange: 5))
         
         
 //        // MARK: KASSADIN
@@ -262,13 +262,13 @@ class ChampionsSet3 {
         // MARK: RAKAN
         rakan = Champion(name: "rakan", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "grand entrance", description: "Rakan dashes to his attack target and leaps into the air, knocking up and dealing magic damage to all nearby enemies."), championOriginSet3: [.celestial], championClassSet3: [.protector],
                          bestItems: [items.guardianAngel, items.spearOfShojin, items.warmogsArmor],
-                         stats: Stats(health: 600, armor: 45, magicResist: 35, attackDamage: 45, attackSpeed: 0.7, attackRange: 2))
+                         stats: Stats(health: 700, armor: 45, magicResist: 35, attackDamage: 45, attackSpeed: 0.7, attackRange: 2))
         
         
         // MARK: XAYAH
         xayah = Champion(name: "xayah", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "deadly plumage", description: "Xayah creates a storm of blades, gaining Attack Speed."), championOriginSet3: [.celestial], championClassSet3: [.blademaster],
                          bestItems: [items.statikkShiv, items.statikkShiv, items.statikkShiv],
-                         stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 3))
+                         stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.9, attackRange: 3))
         
     
         // MARK: XIN ZHAO
@@ -295,7 +295,7 @@ class ChampionsSet3 {
         // MARK: EZREAL
         ezreal = Champion(name: "ezreal", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "emp", description: "Ezreal fires an electromagnetic pulse at a random enemy that explodes on impact, dealing magic damage to all nearby enemies and increases the cost of their next spell cast by 40%."), championOriginSet3: [.chrono], championClassSet3: [.blaster],
                           bestItems: [items.giantSlayer, items.redBuff, items.spearOfShojin],
-                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.75, attackRange: 3))
+                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 3))
         
         // MARK: SHEN
         shen = Champion(name: "shen", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "future's refuge", description: "Shen creates a zone around himself for a few seconds, granting all narby allies 100% chance to dodge incoming basic attacks. While active, Shen gains Magic Resist."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
@@ -337,7 +337,7 @@ class ChampionsSet3 {
         // MARK: IRELIA
         irelia = Champion(name: "irelia", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "bladesurge", description: "Irelia dashes past her target, attacking them for a percentage of her Attack Damage as she passes through. If this kills the target, she casts again immediately at the enemy with the highest mana."), championOriginSet3: [.cybernetic], championClassSet3: [.manaReaver, .blademaster],
                           bestItems: [items.bloodthirster, items.guardianAngel, items.infinityEdge],
-                          stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 70, attackSpeed: 0.85, attackRange: 1))
+                          stats: Stats(health: 900, armor: 50, magicResist: 40, attackDamage: 85, attackSpeed: 0.85, attackRange: 1))
         
         
         // MARK: LEONA
@@ -363,13 +363,13 @@ class ChampionsSet3 {
         // MARK: JARVAN IV
         jarvan = Champion(name: "jarvan IV", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "ageless standard", description: "Jarvan calls down his standard to a nearby location, granting nearby allies Attack Speed for 6 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.protector],
                           bestItems: [items.brambleVest, items.guardianAngel, items.warmogsArmor],
-                          stats: Stats(health: 650, armor: 45, magicResist: 30, attackDamage: 50, attackSpeed: 0.6, attackRange: 1))
+                          stats: Stats(health: 700, armor: 45, magicResist: 30, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
         
         
         // MARK: JHIN
         jhin = Champion(name: "jhin", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "whisper", description: "Jhin converts each 1% of bonus attack speed he has into 0.8 attack damage. Every fourth shot, Jhin deals a bonus percent of attack damage."), championOriginSet3: [.darkStar], championClassSet3: [.sniper],
                         bestItems: [items.infinityEdge, items.guardianAngel, items.lastWhisper],
-                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 80, attackSpeed: 0.85, attackRange: 5))
+                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 85, attackSpeed: 0.7, attackRange: 5))
         
         
         // MARK: KARMA
@@ -387,7 +387,7 @@ class ChampionsSet3 {
         // MARK: MORDEKAISER
         mordekaiser = Champion(name: "mordekaiser", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "indestructible", description: "Mordekaiser gains a shield that absorbs damage. While the shield persists, Mordekaiser deals magic damage per second to all nearby enemies."), championOriginSet3: [.darkStar], championClassSet3: [.vanguard],
                                bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                               stats: Stats(health: 650, armor: 40, magicResist: 35, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
+                               stats: Stats(health: 700, armor: 40, magicResist: 35, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
         
         
         // MARK: SHACO
@@ -500,7 +500,7 @@ class ChampionsSet3 {
         // MARK: NEEKO
         neeko = Champion(name: "neeko", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "pop blossom", description: "Neeko leaps into the air and slams into the ground, dealing magic damage and stunning all nearby enemies."), championOriginSet3: [.starGuardian], championClassSet3: [.protector],
                          bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                         stats: Stats(health: 800, armor: 45, magicResist: 40, attackDamage: 50, attackSpeed: 0.65, attackRange: 2))
+                         stats: Stats(health: 850, armor: 50, magicResist: 40, attackDamage: 50, attackSpeed: 0.65, attackRange: 2))
         
         
         // MARK: POPPY
@@ -582,7 +582,7 @@ class ChampionsSet3 {
         // MARK: URGOT
         urgot = Champion(name: "urgot", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "fear beyond death", description: "Urgot fires a drill at the farthest enemy in his Attack Range, reeling them in and dealing 2000 true damage repeatedly until they reach him and die. After his first successful cast, Urgot's Mana Cost is reduced by 10/20/100."), championOriginSet3: [.battlecast], championClassSet3: [.protector],
                          bestItems: [items.hextechGunblade, items.quicksilver, items.guardianAngel],
-                       stats: Stats(health: 950, armor: 30, magicResist: 20, attackDamage: 80, attackSpeed: 0.7, attackRange: 3))
+                       stats: Stats(health: 950, armor: 40, magicResist: 40, attackDamage: 80, attackSpeed: 0.7, attackRange: 2))
 
          
         
@@ -605,7 +605,7 @@ class ChampionsSet3 {
         // MARK: VAYNE
         vayne = Champion(name: "vayne", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "final hour", description: "Vayne focuses for 10 seconds, tumbling away from her target immediately and every third attack thereafter. Vayne is invisible while tumbling, and attacks after tumbling deal 175/200/225% of her Attack Damage."), championOriginSet3: [.cybernetic], championClassSet3: [.sniper],
                          bestItems: [items.infinityEdge, items.lastWhisper, items.trapClaw],
-                       stats: Stats(health: 550, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.8, attackRange: 5))
+                       stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 5))
         
         // MARK: ZED
                zed = Champion(name: "zed", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "contempt for the weak", description: "Every third attack Zed steals 20/25/40% of the target’s Attack Damage and deals 50/90/150 bonus magic damage."), championOriginSet3: [.rebel], championClassSet3: [.infiltrator],

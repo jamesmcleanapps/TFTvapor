@@ -59,7 +59,7 @@ class TeamCompsSet3 {
         astroSnipers = TeamComp(name: "Astro Snipers",
                                    teamCompSet: .set3,
                                    tier: .B,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -185,7 +185,7 @@ class TeamCompsSet3 {
         rebelBlademasters = TeamComp(name: "Rebel Blademasters",
                                    teamCompSet: .set3,
                                    tier: .A,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -246,7 +246,7 @@ class TeamCompsSet3 {
         brawlerBlasters = TeamComp(name: "Brawler Blasters",
                                    teamCompSet: .set3,
                                    tier: .S,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -266,10 +266,11 @@ class TeamCompsSet3 {
                                     champions.gnar,
                                     champions.jinx,
                                     champions.soraka,
+                                    champions.aurelionSol,
                                     champions.lulu
             ],
                                    
-                                   carries: [champions.ezreal, champions.gnar, champions.jinx],
+                                   carries: [champions.ezreal, champions.gnar, champions.jinx, champions.aurelionSol],
                                    
                                    carryItems: [
                                     champions.ezreal :
@@ -278,7 +279,6 @@ class TeamCompsSet3 {
                                     ],
                                     champions.gnar:
                                         [
-                                            items.frozenHeart,
                                             items.ionicSpark
                                     ],
                                     champions.jinx:
@@ -286,6 +286,10 @@ class TeamCompsSet3 {
                                             items.giantSlayer,
                                             items.giantSlayer,
                                             items.guardianAngel
+                                    ],
+                                    champions.aurelionSol:
+                                        [
+                                            items.morellonomicon
                                     ]
             ],
                                    
@@ -296,6 +300,7 @@ class TeamCompsSet3 {
                                         2 : champions.malphite,
                                         4 : champions.gnar,
                                         6 : champions.vi,
+                                        21 : champions.aurelionSol,
                                         22 : champions.lulu,
                                         23 : champions.ezreal,
                                         25 : champions.soraka,
@@ -309,7 +314,7 @@ class TeamCompsSet3 {
         hyperrollSorcerers = TeamComp(name: "Hyperroll Sorcerers",
                                    teamCompSet: .set3,
                                    tier: .C,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -369,7 +374,7 @@ class TeamCompsSet3 {
         mechInfiltrator = TeamComp(name: "Mech Infiltrator",
                                    teamCompSet: .set3,
                                    tier: .B,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -386,9 +391,9 @@ class TeamCompsSet3 {
                                     champions.annie,
                                     champions.zed,
                                     champions.rumble,
+                                    champions.shaco,
                                     champions.fizz,
-                                    champions.viktor,
-                                    champions.ekko
+                                    champions.viktor
             ],
                                    
                                    carries: [champions.zed, champions.rumble],
@@ -396,9 +401,9 @@ class TeamCompsSet3 {
                                    carryItems: [
                                     champions.zed :
                                         [
-                                            items.deathBlade,
-                                            items.giantSlayer,
-                                            items.guardianAngel
+                                            items.infinityEdge,
+                                            items.guardianAngel,
+                                            items.rapidFirecannon
                                     ],
                                     champions.rumble:
                                         [
@@ -408,14 +413,14 @@ class TeamCompsSet3 {
                                     ]
             ],
                                    
-                                   threeStarUnits: [champions.annie, champions.zed, champions.rumble, champions.fizz],
+                                   threeStarUnits: [champions.annie, champions.zed, champions.rumble],
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
                                         10 : champions.rumble,
                                         11 : champions.fizz,
                                         12 : champions.annie,
-                                        22 : champions.ekko,
+                                        22 : champions.shaco,
                                         23 : champions.zed,
                                         27 : champions.nocturne,
                                         28 : champions.viktor
@@ -427,7 +432,7 @@ class TeamCompsSet3 {
         sorcerers = TeamComp(name: "Sorcerers",
                                    teamCompSet: .set3,
                                    tier: .S,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -490,7 +495,7 @@ class TeamCompsSet3 {
         cybernetics = TeamComp(name: "Cybernetics",
                                    teamCompSet: .set3,
                                    tier: .S,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -505,31 +510,26 @@ class TeamCompsSet3 {
                                    units: [
                                     champions.fiora,
                                     champions.leona,
-                                    champions.ashe,
+                                    champions.shen,
                                     champions.vayne,
                                     champions.vi,
                                     champions.irelia,
-                                    champions.wukong,
                                     champions.ekko,
                                     champions.thresh
             ],
                                    
-                                   carries: [champions.leona, champions.vayne, champions.irelia, champions.ekko],
+                                   carries: [champions.leona, champions.irelia, champions.ekko],
                                    
                                    carryItems: [
                                     champions.leona :
                                         [
                                             items.ionicSpark
                                     ],
-                                    champions.vayne:
-                                        [
-                                            items.giantSlayer,
-                                            items.infinityEdge,
-                                            items.lastWhisper
-                                    ],
                                     champions.irelia:
                                         [
-                                            items.thiefsGloves
+                                            items.guardianAngel,
+                                            items.infinityEdge,
+                                            items.ionicSpark
                                     ],
                                     champions.ekko:
                                         [
@@ -537,18 +537,17 @@ class TeamCompsSet3 {
                                     ]
             ],
                                    
-                                   threeStarUnits: [champions.vayne],
+                                   threeStarUnits: [champions.irelia],
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
                                         2 : champions.vi,
-                                        3 : champions.wukong,
-                                        4 : champions.fiora,
+                                        3 : champions.leona,
+                                        4 : champions.shen,
                                         5 : champions.irelia,
-                                        6 : champions.leona,
-                                        22 : champions.ashe,
+                                        6 : champions.fiora,
+                                        22 : champions.thresh,
                                         23 : champions.vayne,
-                                        25 : champions.thresh,
                                         28 : champions.ekko
                                    ]) ,
                                    webLink: nil)
@@ -558,7 +557,7 @@ class TeamCompsSet3 {
         protectorMystics = TeamComp(name: "Protector Mystics",
                                    teamCompSet: .set3,
                                    tier: .B,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -618,46 +617,46 @@ class TeamCompsSet3 {
         mechSorcerers = TeamComp(name: "Mech Sorcerers",
                                    teamCompSet: .set3,
                                    tier: .A,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
                                    midUnits: [
-                                    champions.twistedFate,
+                                    champions.nocturne,
                                     champions.annie,
                                     champions.rumble,
                                     champions.fizz,
-                                    champions.riven
+                                    champions.viktor
             ],
                                    
                                    units: [
-                                    champions.twistedFate,
                                     champions.annie,
+                                    champions.cassiopeia,
                                     champions.rumble,
                                     champions.fizz,
                                     champions.viktor,
-                                    champions.xerath,
+                                    champions.soraka,
                                     champions.ekko,
                                     champions.gangplank
             ],
                                    
-                                   carries: [champions.annie, champions.ekko, champions.gangplank],
+                                   carries: [champions.rumble, champions.viktor, champions.gangplank],
                                    
                                    carryItems: [
-                                    champions.annie :
+                                    champions.rumble :
                                         [
-                                            items.quicksilver,
-                                            items.titansResolve
+                                            items.brambleVest,
+                                            items.ionicSpark,
+                                            items.quicksilver
                                     ],
-                                    champions.ekko:
+                                    champions.viktor:
                                         [
+                                            items.blueBuff,
                                             items.morellonomicon
                                     ],
                                     champions.gangplank:
                                         [
-                                            items.guardianAngel,
-                                            items.ionicSpark,
-                                            items.rabadonsDeathcap
+                                            items.guardianAngel
                                     ]
             ],
                                    
@@ -665,14 +664,14 @@ class TeamCompsSet3 {
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
-                                        3 : champions.fizz,
+                                        3 : champions.gangplank,
                                         4 : champions.annie,
                                         5 : champions.rumble,
-                                        10 : champions.gangplank,
-                                        22 : champions.viktor,
-                                        25 : champions.ekko,
-                                        27 : champions.xerath,
-                                        28 : champions.twistedFate
+                                        6 : champions.fizz,
+                                        22 : champions.cassiopeia,
+                                        23 : champions.ekko,
+                                        27 : champions.viktor,
+                                        28 : champions.soraka
                                    ]) ,
                                    webLink: nil)
         
@@ -681,7 +680,7 @@ class TeamCompsSet3 {
         vanguardMystics = TeamComp(name: "Vanguard Mystics",
                                    teamCompSet: .set3,
                                    tier: .A,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -741,7 +740,7 @@ class TeamCompsSet3 {
         rebelDemolitionists = TeamComp(name: "Rebel Demolitionists",
                                    teamCompSet: .set3,
                                    tier: .A,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -802,8 +801,8 @@ class TeamCompsSet3 {
         // MARK: DARK STAR SNIPERS
         darkStarSnipers = TeamComp(name: "Dark Star Snipers",
                                    teamCompSet: .set3,
-                                   tier: .B,
-                                   patch: "10.13",
+                                   tier: .A,
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -862,8 +861,8 @@ class TeamCompsSet3 {
         // MARK: BATTLECAST
         battlecast = TeamComp(name: "Battlecast",
                                    teamCompSet: .set3,
-                                   tier: .A,
-                                   patch: "10.13",
+                                   tier: .B,
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    
@@ -925,7 +924,7 @@ class TeamCompsSet3 {
         mechRebel = TeamComp(name: "Mech Rebel",
                                    teamCompSet: .set3,
                                    tier: .B,
-                                   patch: "10.13",
+                                   patch: "10.14",
                                    
                                    earlyUnits: [],
                                    

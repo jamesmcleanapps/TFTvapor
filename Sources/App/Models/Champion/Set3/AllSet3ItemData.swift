@@ -150,7 +150,7 @@ class ItemsSet3 {
         spearOfShojin = CombinedItem (name: "spear of shojin", bonus: "After casting, wearer gains 18% of its max mana per attack", rating: .B, recipe: [bfSword, tearOfTheGoddess])
         
         // MARK: GIANT SLAYER
-        giantSlayer = CombinedItem(name: "giant slayer", bonus: "Deal 20% bonus true damage. If enemy max Health is over 1750, deal 80% bonus true damage instead.", rating: .S, recipe: [bfSword, recurveBow])
+        giantSlayer = CombinedItem(name: "giant slayer", bonus: "Attacks and spells deal 20% bonus damage as true damage. If enemy max Health is over 1750, deal 80% bonus true damage instead.", rating: .S, recipe: [bfSword, recurveBow])
         
         // MARK: INFILTRATOR'S TALONS
         infiltratorsTalons = CombinedItem(name: "infiltrator's talons", bonus: "Wearer is also an infiltrator", rating: .B, recipe: [recurveBow, spatula])
@@ -216,7 +216,7 @@ class ItemsSet3 {
         guinsoosRageblade = CombinedItem(name: "guinsoo's rageblade", bonus: "Basic Attacks grant +5% bonus Attack Speed for the rest of combat. No stacking limit.", rating: .S, recipe: [needlesslyLargeRod, recurveBow])
         
         // MARK: IONIC SPARK
-        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Enemies within 2 hexes have their Magic Resist reduced by 50% (does not stack). When they cast a spell, they are zapped taking magic damage equal to 225% of their max Mana..", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
+        ionicSpark = CombinedItem(name: "ionic spark", bonus: "Enemies within 2 hexes have their Magic Resist reduced by 40% (does not stack). When they cast a spell, they are zapped taking magic damage equal to 225% of their max Mana..", rating: .A, recipe: [needlesslyLargeRod, negatronCloak])
         
         // MARK: RABADONS DEATHCAP
         rabadonsDeathcap = CombinedItem(name: "rabadon's deathcap", bonus: "+50% Ability Power", rating: .A, recipe: [needlesslyLargeRod, needlesslyLargeRod])

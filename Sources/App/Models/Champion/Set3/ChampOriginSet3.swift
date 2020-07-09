@@ -31,9 +31,9 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             
         case "celestial":
             return Details(main: "All allies heal for a percent of the damage they deal with spells and attacks.",
-            benefit1: "2  -  15% Healing",
-            benefit2: "4  -  40% Healing",
-            benefit3: "6  -  99% Healing"
+            benefit1: "2  -  20% Healing",
+            benefit2: "4  -  45% Healing",
+            benefit3: "6  -  150% Healing"
             )
                            
         case "chrono":
@@ -45,8 +45,8 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             )
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
-            benefit1: "3  -  350 Health & 40 Attack Damage",
-            benefit2: "6  -  600 Health & 75 Attack Damage",
+            benefit1: "3  -  300 Health & 35 Attack Damage",
+            benefit2: "6  -  550 Health & 70 Attack Damage",
             benefit3: nil
             )
         case "dark star":
@@ -76,9 +76,9 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             )
         case "star guardian":
             return Details(main: "Star Guardian's spellcasts grant Mana to other Star Guardians. (Spreads among them)",
-            benefit1: "3  -  25 Total Mana",
-            benefit2: "6  -  49 Total Mana",
-            benefit3: "9  -  55 Total Mana"
+            benefit1: "3  -  15 Total Mana",
+            benefit2: "6  -  25 Total Mana",
+            benefit3: "9  -  45 Total Mana"
             )
             
         default:
