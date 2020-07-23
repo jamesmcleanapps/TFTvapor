@@ -115,9 +115,9 @@ extension ChampionsSet3 {
     func setChampionRatings() {
         let sRating = [
             
-            ekko,
-            gnar,
             
+            
+            janna,
             lulu,
             
             thresh,
@@ -127,12 +127,15 @@ extension ChampionsSet3 {
         let aRating = [
             aurelionSol,
             cassiopeia,
+            ekko,
             gangplank,
+            gnar,
             irelia,
-            janna,
-            jarvan,
+            
+            
             jhin,
             jinx,
+            lucian,
             neeko,
             riven,
             soraka,
@@ -143,7 +146,7 @@ extension ChampionsSet3 {
         ]
         let bRating = [
             ahri,
-            annie,
+            
             ashe,
             bard,
             blitzcrank,
@@ -152,11 +155,11 @@ extension ChampionsSet3 {
             ezreal,
             fizz,
             graves,
-            illaoi,
+            jarvan,
             jayce,
             karma,
-            kogmaw,
-            lucian,
+            
+            
             masterYi,
             mordekaiser,
             nautilus,
@@ -172,18 +175,22 @@ extension ChampionsSet3 {
             ziggs
         ]
         let cRating: [Champion] = [
+            annie,
             fiora,
+            illaoi,
+            kogmaw,
             leona,
             malphite,
             poppy,
             shaco,
             twistedFate,
             xayah,
-            yasuo
+            yasuo,
+            zoe
         ]
         let dRating: [Champion] = [
-            nocturne,
-            zoe
+            nocturne
+            
         ]
         let eRating: [Champion] = [
             

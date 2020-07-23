@@ -37,9 +37,8 @@ class Messages {
             Message(id: 26, title: "10 June 2020", body: "REALLY IMPORTANT\n\nPlease make sure this app is updated from the App Store to at least version 3.20.3\n\nYou can find the version number in the Options Menu, at the bottom of the screen.\n\nIf not there will be crashes as the server is now updated for the Mid Season 10.12 TFT Patch."),
             
             
-            Message(id: 38, title: "9 July 2020", body: "Apologies for the delay this patch. App has now been updated to reflect patch 10.14 changes.\n\nAll Team Comps have also been updated. Top Comps just now are:\n\n - Brawler Blasters\n\n - Cybernetics\n\n - Sorcerers"),
             
-            Message(id: 39, title: "15 July 2020", body: "Apologies again for the delay in this update, I have been unwell for a couple of weeks now. Should hopefully be back to normal. Team Comps, Champion and Item Tiers have now been updated.\n\nTop Comps just now are:\n\n - Star Guardian Sorcerers\n\n - Protector Dark Stars\n\n - Hyperroll Blademasters\n\n - Dark Star Snipers")
+            Message(id: 40, title: "23 July 2020", body: "Team Comps, Champion and Item Tiers have now been updated to reflect patch 10.15 changes.\n\nTop Comps just now are:\n\n - Star Guardian Sorcerers\n\n - Dark Star Snipers\n\n - Protector Guardians\n\n - Star Guardian Sorcerers")
         ]
     }
 }

@@ -262,7 +262,7 @@ class ChampionsSet3 {
         // MARK: RAKAN
         rakan = Champion(name: "rakan", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "grand entrance", description: "Rakan dashes to his attack target and leaps into the air, knocking up and dealing magic damage to all nearby enemies."), championOriginSet3: [.celestial], championClassSet3: [.protector],
                          bestItems: [items.guardianAngel, items.spearOfShojin, items.warmogsArmor],
-                         stats: Stats(health: 700, armor: 45, magicResist: 35, attackDamage: 45, attackSpeed: 0.7, attackRange: 2))
+                         stats: Stats(health: 600, armor: 45, magicResist: 35, attackDamage: 45, attackSpeed: 0.7, attackRange: 2))
         
         
         // MARK: XAYAH
@@ -398,7 +398,7 @@ class ChampionsSet3 {
         // MARK: XERATH
         xerath = Champion(name: "xerath", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "abyssal bombardment", description: "Xerath transforms, summoning meteors to strike random foes in place of his normal attacks for 6/8/45 seconds. Meteors deal 300/400/2500 magic damage upon impact and if they kill their target, all adjacent enemies take 150/200/1250 magic damage and are stunned for 1.5 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],
                          bestItems: [items.jeweledGauntlet, items.morellonomicon],
-                         stats: Stats(health: 750, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.9, attackRange: 5))
+                         stats: Stats(health: 700, armor: 20, magicResist: 20, attackDamage: 60, attackSpeed: 0.9, attackRange: 5))
         
         
         
@@ -445,7 +445,7 @@ class ChampionsSet3 {
         // MARK: MASTER YI
         masterYi = Champion(name: "master yi", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "chosen one", description: "For 5 seconds, Master Yi gains massively increased movement speed, heals for a percentage of his maximum health each second, and deals bonus true damage with his Basic Attacks."), championOriginSet3: [.rebel], championClassSet3: [.blademaster],
                             bestItems: [items.guinsoosRageblade, items.handOfJustice, items.rapidFirecannon],
-                            stats: Stats(health: 750, armor: 30, magicResist: 20, attackDamage: 55, attackSpeed: 0.85, attackRange: 1))
+                            stats: Stats(health: 750, armor: 50, magicResist: 35, attackDamage: 55, attackSpeed: 0.85, attackRange: 1))
         
         
 //        // MARK: SONA
@@ -471,7 +471,7 @@ class ChampionsSet3 {
         // MARK: DARIUS
         darius = Champion(name: "darius", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "dreadnova guillotine", description: "Darius dunks an enemy, dealing magic damage. If this kills the target, Darius immediately casts again. Targets below 50% health take double damage."), championOriginSet3: [.spacePirate], championClassSet3: [.manaReaver],
                           bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                          stats: Stats(health: 750, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
+                          stats: Stats(health: 800, armor: 40, magicResist: 30, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
         
         // MARK: GANGPLANK
         gangplank = Champion(name: "gangplank", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "orbital strike", description: "Gangplank calls down a large orbital strike around his target, dealing magic damage to all enemies in that area for 2 seconds."), championOriginSet3: [.spacePirate], championClassSet3: [.mercenary, .demolitionist],
@@ -605,7 +605,7 @@ class ChampionsSet3 {
         // MARK: VAYNE
         vayne = Champion(name: "vayne", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "final hour", description: "Vayne focuses for 10 seconds, tumbling away from her target immediately and every third attack thereafter. Vayne is invisible while tumbling, and attacks after tumbling deal 175/200/225% of her Attack Damage."), championOriginSet3: [.cybernetic], championClassSet3: [.sniper],
                          bestItems: [items.infinityEdge, items.lastWhisper, items.trapClaw],
-                       stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.8, attackRange: 5))
+                       stats: Stats(health: 500, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.8, attackRange: 5))
         
         // MARK: ZED
                zed = Champion(name: "zed", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "contempt for the weak", description: "Every third attack Zed steals 20/25/40% of the target’s Attack Damage and deals 50/90/150 bonus magic damage."), championOriginSet3: [.rebel], championClassSet3: [.infiltrator],

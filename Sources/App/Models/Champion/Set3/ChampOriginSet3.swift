@@ -31,7 +31,7 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             
         case "celestial":
             return Details(main: "All allies heal for a percent of the damage they deal with spells and attacks.",
-            benefit1: "2  -  20% Healing",
+            benefit1: "2  -  15% Healing",
             benefit2: "4  -  45% Healing",
             benefit3: "6  -  150% Healing"
             )
