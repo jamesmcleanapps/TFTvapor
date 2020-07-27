@@ -63,7 +63,7 @@ class TeamCompsSet3 {
         // MARK: ASTRO SNIPERS
         astroSnipers = TeamComp(name: "Astro Snipers",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .S,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -77,17 +77,17 @@ class TeamCompsSet3 {
             ],
                                    
                                    units: [
+                                    champions.caitlyn,
                                     champions.nautilus,
-                                    champions.karma,
+                                    champions.ashe,
                                     champions.gnar,
                                     champions.jhin,
                                     champions.teemo,
                                     champions.wukong,
-                                    champions.lulu,
-                                    champions.thresh
+                                    champions.lulu
             ],
                                    
-                                   carries: [champions.jhin, champions.teemo, champions.gnar],
+                                   carries: [champions.gnar, champions.jhin, champions.teemo],
                                    
                                    carryItems: [
                                     champions.jhin :
@@ -111,12 +111,12 @@ class TeamCompsSet3 {
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
-                                        3 : champions.nautilus,
-                                        4 : champions.gnar,
-                                        5 : champions.wukong,
-                                        22 : champions.karma,
+                                        2 : champions.nautilus,
+                                        4 : champions.wukong,
+                                        6 : champions.gnar,
+                                        22 : champions.caitlyn,
                                         23 : champions.teemo,
-                                        25 : champions.thresh,
+                                        25 : champions.ashe,
                                         27 : champions.jhin,
                                         28 : champions.lulu
                                    ]) ,
@@ -189,7 +189,7 @@ class TeamCompsSet3 {
         // MARK: REBEL BLADEMASTERS
         rebelBlademasters = TeamComp(name: "Rebel Blademasters",
                                    teamCompSet: .set3,
-                                   tier: .B,
+                                   tier: .S,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -250,7 +250,7 @@ class TeamCompsSet3 {
         // MARK: BRAWLER BLASTERS
         brawlerBlasters = TeamComp(name: "Brawler Blasters",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .B,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -621,7 +621,7 @@ class TeamCompsSet3 {
         // MARK: MECH SORCERERS
         mechSorcerers = TeamComp(name: "Mech Sorcerers",
                                    teamCompSet: .set3,
-                                   tier: .C,
+                                   tier: .S,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -806,7 +806,7 @@ class TeamCompsSet3 {
         // MARK: DARK STAR SNIPERS
         darkStarSnipers = TeamComp(name: "Dark Star Snipers",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .B,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -866,7 +866,7 @@ class TeamCompsSet3 {
         // MARK: BATTLECAST
         battlecast = TeamComp(name: "Battlecast",
                                    teamCompSet: .set3,
-                                   tier: .B,
+                                   tier: .A,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -1002,14 +1002,13 @@ class TeamCompsSet3 {
             ],
                                    
                                    units: [
+                                    champions.jarvan,
                                     champions.zoe,
                                     champions.ahri,
-                                    champions.rakan,
                                     champions.neeko,
                                     champions.syndra,
                                     champions.soraka,
                                     champions.janna,
-                                    champions.lulu,
                                     champions.xerath
             ],
                                    
@@ -1035,8 +1034,7 @@ class TeamCompsSet3 {
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
                                         4 : champions.neeko,
-                                        11 : champions.rakan,
-                                        22 : champions.lulu,
+                                        22 : champions.jarvan,
                                         23 : champions.xerath,
                                         24 : champions.janna,
                                         25 : champions.syndra,
@@ -1050,7 +1048,7 @@ class TeamCompsSet3 {
         // MARK: PROTECTOR DARK STARS
         protectorDarkStars = TeamComp(name: "Protector Dark Stars",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .B,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -1110,7 +1108,7 @@ class TeamCompsSet3 {
         // MARK: HYPERROLL BLADEMASTERS
         hyperrollBlademasters = TeamComp(name: "Hyperroll Blademasters",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .S,
                                    patch: "10.15",
                                    
                                    earlyUnits: [],
@@ -1124,14 +1122,14 @@ class TeamCompsSet3 {
             ],
                                    
                                    units: [
-                                    champions.caitlyn,
                                     champions.fiora,
                                     champions.jarvan,
                                     champions.xayah,
                                     champions.rakan,
                                     champions.shen,
-                                    champions.ashe,
-                                    champions.lulu
+                                    champions.masterYi,
+                                    champions.irelia,
+                                    champions.riven
             ],
                                    
                                    carries: [champions.jarvan, champions.xayah],
@@ -1140,7 +1138,7 @@ class TeamCompsSet3 {
                                     champions.jarvan :
                                         [
                                             items.brambleVest,
-                                            items.dragonsClaw,
+                                            items.ionicSpark,
                                             items.warmogsArmor
                                     ],
                                     champions.xayah:
@@ -1155,14 +1153,14 @@ class TeamCompsSet3 {
                                    
                                    teamCompPositions:  TeamCompPositions(champsPositions:
                                     [
-                                        4 : champions.fiora,
-                                        5 : champions.shen,
-                                        6 : champions.jarvan,
-                                        7 : champions.rakan,
-                                        22 : champions.ashe,
-                                        23 : champions.caitlyn,
-                                        27 : champions.xayah,
-                                        28 : champions.lulu
+                                        1 : champions.rakan,
+                                        2 : champions.masterYi,
+                                        3 : champions.fiora,
+                                        4 : champions.shen,
+                                        5 : champions.jarvan,
+                                        6 : champions.irelia,
+                                        7 : champions.riven,
+                                        25 : champions.xayah
                                    ]) ,
                                    webLink: nil)
         

@@ -135,11 +135,13 @@ extension ChampionsSet3 {
             
             jhin,
             jinx,
+            karma,
             lucian,
-            neeko,
+            
             riven,
             soraka,
             syndra,
+            teemo,
             urgot,
             viktor,
             xerath
@@ -157,16 +159,17 @@ extension ChampionsSet3 {
             graves,
             jarvan,
             jayce,
-            karma,
+            
             
             
             masterYi,
             mordekaiser,
             nautilus,
+            neeko,
             rakan,
             rumble,
             shen,
-            teemo,
+            
             vayne,
             vi,
             wukong,
