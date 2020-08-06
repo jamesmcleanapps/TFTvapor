@@ -26,7 +26,7 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
                            benefit1: "2  -  80 Healing or Damage",
                            benefit2: "4  -  180 Healing or Damage",
                            benefit3: "6  -  480 Healing or Damage",
-                           benefit4: "8  -  880 Healing or Damage"
+                           benefit4: "8  -  1000 Healing or Damage"
             )
             
         case "celestial":
@@ -39,9 +39,9 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "chrono":
             return Details(main: "All allies gain 15% Attack Speed.",
             benefit1: "2  -  every 8 seconds",
-            benefit2: "4  -  every 3.5 seconds",
-            benefit3: "6  -  every 1.5 seconds",
-            benefit4: "8  -  every 0.75 seconds"
+            benefit2: "4  -  every 3 seconds",
+            benefit3: "6  -  every 1 seconds",
+            benefit4: "8  -  every 0.5 seconds"
             )
         case "cybernetic":
             return Details(main: "Cybernetic champions with at least one item gain Health and Attack Damage.",
@@ -54,7 +54,7 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
             benefit1: "2  -  +8 AD and Spell Power",
             benefit2: "4  -  +18 AD and Spell Power",
             benefit3: "6  -  +28 AD and Spell Power",
-            benefit4: "8  -  +38 AD and Spell Power"
+            benefit4: "8  -  +48 AD and Spell Power"
             )
         case "mech pilot":
             return Details(main: "At the start of combat, three random Mech-Pilots are teleported into a Super-Mech. The Super-Mech has the combined Health, Attack Damage, and Traits of its Pilots, as well as 3 random items from among them. When the Super-Mech dies, the pilots are ejected and continue to fight.",
@@ -65,20 +65,20 @@ enum ChampOriginSet3: String, CaseIterable, Codable {
         case "rebel":
             return Details(main: "At the start of combat, Rebels gain a shield and increased damage for each adjacent Rebel.",
             benefit1: "3  -  150 Shield & 10% Damage",
-            benefit2: "6  -  210 Shield & 12% Damage",
-            benefit3: "9  -  330 Shield & 15% Damage"
+            benefit2: "6  -  225 Shield & 12% Damage",
+            benefit3: "9  -  400 Shield & 20% Damage"
             )
         case "space pirate":
             return Details(main: "Whenever a Space Pirate lands a killing blow on a Champion there is a chance to drop extra loot.",
             benefit1: "2  -  50% for 1 Gold",
-            benefit2: "4  -  50% for 1 Gold and 25% for a component item",
+            benefit2: "4  -  50% for 1 Gold and 33% for a component item",
             benefit3: nil
             )
         case "star guardian":
             return Details(main: "Star Guardian's spellcasts grant Mana to other Star Guardians. (Spreads among them)",
             benefit1: "3  -  15 Total Mana",
             benefit2: "6  -  25 Total Mana",
-            benefit3: "9  -  45 Total Mana"
+            benefit3: "9  -  60 Total Mana"
             )
             
         default:

@@ -45,7 +45,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             return Details(main: "At the start of combat, Infiltrators move to the enemy's backline. Infiltrators gain Attack Speed for 6 seconds at the start of combat. Refreshes on takedown",
             benefit1: "2  -  40% Bonus Attack Speed",
             benefit2: "4  -  80% Bonus Attack Speed.",
-            benefit3: "6  -  120% Bonus Attack Speed."
+            benefit3: "6  -  150% Bonus Attack Speed."
             )
         case "mana-reaver":
             return Details(main: "Mana-Reaver's Basic Attacks increase the mana cost of their target’s next spell by 40%.",
@@ -98,7 +98,7 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             return Details(main: "Vanguard champions gain bonus Armor.",
             benefit1: "2  -  125 Armor",
             benefit2: "4  -  300 Armor",
-            benefit3: "6  -  1000 Armor"
+            benefit3: "6  -  900 Armor"
             )
             
         default:

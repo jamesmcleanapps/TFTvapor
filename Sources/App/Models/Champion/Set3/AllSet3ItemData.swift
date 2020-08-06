@@ -141,7 +141,7 @@ class ItemsSet3 {
         guardianAngel = CombinedItem(name: "guardian angel", bonus: "Wearer revives with 400 health after 2 seconds", rating: .S, recipe: [bfSword, chainVest])
         
         // MARK: HEXTECH GUNBLADE
-        hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 45% of all spell damage dealt", rating: .A, recipe: [bfSword, needlesslyLargeRod])
+        hextechGunblade = CombinedItem(name: "hextech gunblade", bonus: "Heal for 45% of all spell damage dealt. Overhealing with this item now generates a shield (max 400 Health).", rating: .A, recipe: [bfSword, needlesslyLargeRod])
         
         // MARK: DEATH BLADE
         deathBlade = CombinedItem(name: "deathblade", bonus: "On a kill or assist, gain an additional 25 Attack Damage until end of combat (Stacks infinitely, starts with 1 stack).", rating: .A, recipe: [bfSword, bfSword])
@@ -167,7 +167,7 @@ class ItemsSet3 {
         frozenHeart = CombinedItem(name: "frozen heart", bonus: "Adjacent enemies lose 50% Attack Speed. (Stacking increases the radius of this effect, not the amount of the slow)", rating: .B, recipe: [chainVest, tearOfTheGoddess])
         
         // MARK: LOCKET OF THE IRON SOLARI
-        locket = CombinedItem(name: "locket of the iron solari", bonus: "Shields allies within two hexes in the same row for 250 / 275 / 350 damage for 8 seconds (scales with wearer’s Star Level)", rating: .B, recipe: [chainVest, needlesslyLargeRod])
+        locket = CombinedItem(name: "locket of the iron solari", bonus: "Shields allies within two hexes in the same row for 250 / 300 / 375 damage for 8 seconds (scales with wearer’s Star Level)", rating: .B, recipe: [chainVest, needlesslyLargeRod])
         
         // MARK: TITANS RESOLVE
         titansResolve = CombinedItem(name: "titan's resolve", bonus: "When wearer takes damage or critically hits, gain a 2% stacking damage bonus. Stacks up to 50 times at which point wearer gains 25 amor and magic resist.", rating: .A, recipe: [chainVest, recurveBow])
@@ -182,7 +182,7 @@ class ItemsSet3 {
         rebelMedal = CombinedItem(name: "rebel medal", bonus: "Wearer is also a Rebel", rating: .B, recipe: [chainVest, spatula])
         
         // MARK: SWORD BREAKER
-        swordBreaker = CombinedItem(name: "sword breaker", bonus: "Attacks have a 25% chance to disarm for 3 seconds", rating: .B, recipe: [chainVest, negatronCloak])
+        swordBreaker = CombinedItem(name: "sword breaker", bonus: "Attacks have a 33% chance to disarm for 3 seconds", rating: .B, recipe: [chainVest, negatronCloak])
         
         
         
@@ -233,7 +233,7 @@ class ItemsSet3 {
         // NEGATRON
         
         // MARK: RUNAANS HURRICANE
-        runaansHurricane = CombinedItem(name: "runaan's hurricane", bonus: "Basic Attacks fire a bolt at another nearby enemy, dealing 70% of the wearer's Attack Damage and applying on-hit effects.", rating: .A, recipe: [negatronCloak, recurveBow])
+        runaansHurricane = CombinedItem(name: "runaan's hurricane", bonus: "Basic Attacks fire a bolt at another nearby enemy, dealing 75% of the wearer's Attack Damage and applying on-hit effects.", rating: .A, recipe: [negatronCloak, recurveBow])
         
         // MARK: DRAGONS CLAW
         dragonsClaw = CombinedItem(name: "dragon's claw", bonus: "Gain 50% resistance to magic damage.", rating: .S, recipe: [negatronCloak, negatronCloak])
@@ -254,7 +254,7 @@ class ItemsSet3 {
         
         
         // MARK: STATIC SHIV
-        statikkShiv = CombinedItem(name: "statikk shiv", bonus: "Every third Basic Attack from the wearer deals 90 magic damage to 3/4/5 enemies.", rating: .S, recipe: [recurveBow, tearOfTheGoddess])
+        statikkShiv = CombinedItem(name: "statikk shiv", bonus: "Every third Basic Attack from the wearer deals 85 magic damage to 3/4/5 enemies. Does an additional 85 True Damage if the target has a shield or is CC’d.", rating: .S, recipe: [recurveBow, tearOfTheGoddess])
         
         
         
@@ -295,7 +295,7 @@ class ItemsSet3 {
         jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Holder’s spells can crit and holder gains +30% Critical Strike Damage.", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])
         
         // MARK: HAND OF JUSTICE
-        handOfJustice = CombinedItem(name: "hand of justice", bonus: "Each planning phase, gain one: Deal +50% more damage / Basic Attack heal 50 health on Hit", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
+        handOfJustice = CombinedItem(name: "hand of justice", bonus: "Each planning phase, gain one: Deal +50% more damage / Grants 50% healing from damage done by both abilities and basic attacks.", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
         
         // MARK: SHROUD
         shroud = CombinedItem(name: "shroud of stillness", bonus: "When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 40% until they cast.", rating: .A, recipe: [sparringGloves, chainVest])

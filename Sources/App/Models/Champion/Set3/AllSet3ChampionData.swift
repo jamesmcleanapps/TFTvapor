@@ -332,7 +332,7 @@ class ChampionsSet3 {
         // MARK: FIORA
         fiora = Champion(name: "fiora", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "riposte", description: "Fiora enters a defensive stance for 1.5 seconds, becoming immune to damage and enemy spell effects. As she exits this stance, she ripostes, dealing magic damage to a nearby enemy and stunning them for 1.5 seconds."), championOriginSet3: [.cybernetic], championClassSet3: [.blademaster],
                          bestItems: [items.guardianAngel, items.guinsoosRageblade, items.handOfJustice],
-                         stats: Stats(health: 450, armor: 30, magicResist: 20, attackDamage: 45, attackSpeed: 1, attackRange: 1))
+                         stats: Stats(health: 500, armor: 30, magicResist: 20, attackDamage: 45, attackSpeed: 1, attackRange: 1))
         
         // MARK: IRELIA
         irelia = Champion(name: "irelia", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "bladesurge", description: "Irelia dashes past her target, attacking them for a percentage of her Attack Damage as she passes through. If this kills the target, she casts again immediately at the enemy with the highest mana."), championOriginSet3: [.cybernetic], championClassSet3: [.manaReaver, .blademaster],
@@ -433,7 +433,7 @@ class ChampionsSet3 {
         // MARK: JINX
         jinx = Champion(name: "jinx", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "get excited", description: "Jinx gets excited as she helps take down enemies. After her first takedown, Jinx gains bonus attack speed. After her second takedown, Jinx swaps to her rocket launcher, causing her Basic Attacks to deal bonus magic damage to all enemies in a small area around her target."), championOriginSet3: [.rebel], championClassSet3: [.blaster],
                         bestItems: [items.giantSlayer, items.guardianAngel, items.redBuff],
-                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 70, attackSpeed: 0.75, attackRange: 3))
+                        stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 75, attackSpeed: 0.75, attackRange: 3))
         
         
         // MARK: MALPHITE
@@ -547,7 +547,7 @@ class ChampionsSet3 {
         // MARK: TEEMO
         teemo = Champion(name: "teemo", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "satellite traps", description: "Teemo scatters 3 traps around the nearest enemy. When an enemy nears a trap (or after 3 seconds), it explodes on nearby enemies dealing 125/175/550 magic damage, knocking them down, and slowing them for 3 seconds."), championOriginSet3: [.astro], championClassSet3: [.sniper],
                        bestItems: [items.guardianAngel, items.morellonomicon],
-                       stats: Stats(health: 750, armor: 40, magicResist: 20, attackDamage: 60, attackSpeed: 0.65, attackRange: 1))
+                       stats: Stats(health: 750, armor: 40, magicResist: 20, attackDamage: 60, attackSpeed: 0.95, attackRange: 1))
         
         
         

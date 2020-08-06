@@ -168,6 +168,7 @@ extension ChampionsSet3 {
             neeko,
             rakan,
             rumble,
+            shaco,
             shen,
             
             vayne,
@@ -185,7 +186,7 @@ extension ChampionsSet3 {
             leona,
             malphite,
             poppy,
-            shaco,
+            
             twistedFate,
             xayah,
             yasuo,
