@@ -36,7 +36,7 @@ class Messages {
             
             Message(id: 26, title: "10 June 2020", body: "REALLY IMPORTANT\n\nPlease make sure this app is updated from the App Store to at least version 3.20.3\n\nYou can find the version number in the Options Menu, at the bottom of the screen.\n\nIf not there will be crashes as the server is now updated for the Mid Season 10.12 TFT Patch."),
             
-            Message(id: 42, title: "6 August 2020", body: "App updated to reflect Patch 10.16 changes\n\nTeam Comps and Tier Lists have been updated.")
+            Message(id: 43, title: "17 August 2020", body: "Team Comps and Tier Lists have been updated\n\nTop Team Comps now:\n\nDark Stars\n\nMech Sorcerers\n\nAstro Snipers\n\nHyperroll Blademasters\n\nStar Guardian Sorcerers.")
         ]
     }
 }

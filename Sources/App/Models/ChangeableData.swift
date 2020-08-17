@@ -116,32 +116,36 @@ extension ChampionsSet3 {
         let sRating = [
             
             
-            
+            ekko,
             janna,
+            jhin,
             lulu,
             
-            thresh,
+            
             
         ]
         
         let aRating = [
+            ashe,
             aurelionSol,
             cassiopeia,
-            ekko,
+            
             gangplank,
             gnar,
             irelia,
             
             
-            jhin,
-            jinx,
+            
+            
             karma,
             lucian,
             
             riven,
+            shaco,
             soraka,
             syndra,
             teemo,
+            thresh,
             urgot,
             viktor,
             xerath
@@ -149,9 +153,9 @@ extension ChampionsSet3 {
         let bRating = [
             ahri,
             
-            ashe,
+            
             bard,
-            blitzcrank,
+            
             caitlyn,
             darius,
             ezreal,
@@ -159,37 +163,41 @@ extension ChampionsSet3 {
             graves,
             jarvan,
             jayce,
-            
-            
+            jinx,
+            kogmaw,
             
             masterYi,
-            mordekaiser,
+            
             nautilus,
             neeko,
             rakan,
             rumble,
-            shaco,
+            
             shen,
             
             vayne,
             vi,
             wukong,
-            xinZhao,
+            
             zed,
-            ziggs
+            
         ]
         let cRating: [Champion] = [
             annie,
+            blitzcrank,
             fiora,
             illaoi,
-            kogmaw,
+            
             leona,
             malphite,
+            mordekaiser,
             poppy,
             
             twistedFate,
             xayah,
+            xinZhao,
             yasuo,
+            ziggs,
             zoe
         ]
         let dRating: [Champion] = [
@@ -349,7 +357,7 @@ extension ItemsSet3 {
         let sRated = [
             blueBuff,
             forceOfNature,
-            giantSlayer,
+            
             guardianAngel,
             infinityEdge,
             ionicSpark,
@@ -364,7 +372,6 @@ extension ItemsSet3 {
            
             dragonsClaw,
             
-            infinityEdge,
             
             
             lastWhisper,
@@ -372,17 +379,19 @@ extension ItemsSet3 {
             rabadonsDeathcap,
             redBuff,
             redemption,
-            titansResolve,
+            
             trapClaw,
+            warmogsArmor,
             
         ]
         
         let bRated = [
             
             
-            
+            bloodthirster,
             deathBlade,
             frozenHeart,
+            giantSlayer,
             guinsoosRageblade,
             handOfJustice,
             jeweledGauntlet,
@@ -392,14 +401,15 @@ extension ItemsSet3 {
             shroud,
             spearOfShojin,
             statikkShiv,
+            titansResolve,
             zzRot
         ]
         
         let cRated: [CombinedItem] = [
-            bloodthirster,
+            
             chaliceOfPower,
             locket,
-            warmogsArmor,
+            
             zekesHerald,
             
             hextechGunblade,

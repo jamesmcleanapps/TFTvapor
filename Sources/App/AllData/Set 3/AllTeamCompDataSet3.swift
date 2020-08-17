@@ -21,7 +21,8 @@ class TeamCompsSet3 {
             protectorMystics, mechSorcerers,
             vanguardMystics, rebelDemolitionists, darkStarSnipers,
             battlecast, mechRebel,
-            starGuardianSorcerers, protectorDarkStars, hyperrollBlademasters
+            starGuardianSorcerers, protectorDarkStars, hyperrollBlademasters,
+            darkStars
         ]
     }()
     
@@ -54,6 +55,8 @@ class TeamCompsSet3 {
     let starGuardianSorcerers: TeamComp
     let protectorDarkStars: TeamComp
     let hyperrollBlademasters: TeamComp
+    
+    let darkStars: TeamComp
 
     
     init() {
@@ -189,7 +192,7 @@ class TeamCompsSet3 {
         // MARK: REBEL BLADEMASTERS
         rebelBlademasters = TeamComp(name: "Rebel Blademasters",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .A,
                                    patch: "10.16",
                                    
                                    earlyUnits: [],
@@ -561,7 +564,7 @@ class TeamCompsSet3 {
         // MARK: PROTECTOR MYSTICS
         protectorMystics = TeamComp(name: "Protector Mystics",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .B,
                                    patch: "10.16",
                                    
                                    earlyUnits: [],
@@ -621,7 +624,7 @@ class TeamCompsSet3 {
         // MARK: MECH SORCERERS
         mechSorcerers = TeamComp(name: "Mech Sorcerers",
                                    teamCompSet: .set3,
-                                   tier: .A,
+                                   tier: .S,
                                    patch: "10.16",
                                    
                                    earlyUnits: [],
@@ -645,7 +648,7 @@ class TeamCompsSet3 {
                                     champions.gangplank
             ],
                                    
-                                   carries: [champions.rumble, champions.viktor, champions.gangplank],
+                                   carries: [champions.rumble, champions.viktor, champions.ekko],
                                    
                                    carryItems: [
                                     champions.rumble :
@@ -659,9 +662,9 @@ class TeamCompsSet3 {
                                             items.blueBuff,
                                             items.morellonomicon
                                     ],
-                                    champions.gangplank:
+                                    champions.ekko:
                                         [
-                                            items.guardianAngel
+                                            items.thiefsGloves
                                     ]
             ],
                                    
@@ -744,7 +747,7 @@ class TeamCompsSet3 {
         // MARK: REBEL DEMOLITIONISTS
         rebelDemolitionists = TeamComp(name: "Rebel Demolitionists",
                                    teamCompSet: .set3,
-                                   tier: .S,
+                                   tier: .A,
                                    patch: "10.16",
                                    
                                    earlyUnits: [],
@@ -1161,6 +1164,67 @@ class TeamCompsSet3 {
                                         6 : champions.irelia,
                                         7 : champions.riven,
                                         25 : champions.xayah
+                                   ]) ,
+                                   webLink: nil)
+        
+        
+        // MARK: DARK STARS
+        darkStars = TeamComp(name: "Dark Stars",
+                                   teamCompSet: .set3,
+                                   tier: .S,
+                                   patch: "10.16",
+                                   
+                                   earlyUnits: [],
+                                   
+                                   midUnits: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.ashe,
+                                    champions.shaco,
+                                    champions.jhin
+            ],
+                                   
+                                   units: [
+                                    champions.jarvan,
+                                    champions.rakan,
+                                    champions.ashe,
+                                    champions.karma,
+                                    champions.shaco,
+                                    champions.jhin,
+                                    champions.fizz,
+                                    champions.soraka
+                                    
+            ],
+                                   
+                                   carries: [champions.shaco, champions.jhin],
+                                   
+                                   carryItems: [
+                                    champions.shaco :
+                                        [
+                                            items.guardianAngel,
+                                            items.bloodthirster,
+                                            items.rapidFirecannon
+                                    ],
+                                    champions.jhin:
+                                        [
+                                            items.guardianAngel,
+                                            items.bloodthirster,
+                                            items.lastWhisper
+                                    ]
+            ],
+                                   
+                                   threeStarUnits: [champions.shaco, champions.jhin],
+                                   
+                                   teamCompPositions:  TeamCompPositions(champsPositions:
+                                    [
+                                        3 : champions.rakan,
+                                        5 : champions.jarvan,
+                                        22 : champions.soraka,
+                                        23 : champions.ashe,
+                                        24 : champions.fizz,
+                                        25 : champions.shaco,
+                                        27 : champions.jhin,
+                                        28 : champions.karma
                                    ]) ,
                                    webLink: nil)
         
