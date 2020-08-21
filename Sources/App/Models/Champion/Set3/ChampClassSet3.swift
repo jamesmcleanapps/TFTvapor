@@ -78,8 +78,8 @@ enum ChampClassSet3: String, CaseIterable, Codable {
             )
         case "sniper":
             return Details(main: "Snipers deal increased damage for each hex between themselves and their target.",
-            benefit1: "2  -  10% Damage Increase",
-            benefit2: "4  -  18% Damage Increase",
+            benefit1: "2  -  9% Damage Increase",
+            benefit2: "4  -  16% Damage Increase",
             benefit3: nil
             )
         case "sorcerer":

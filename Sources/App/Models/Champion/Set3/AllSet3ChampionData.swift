@@ -284,7 +284,7 @@ class ChampionsSet3 {
         // MARK: BLITZCRANK
         blitzcrank = Champion(name: "blitzcrank", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "rocket grab", description: "Blitzcrank pulls the furthest enemy to him, dealing magic damage and stunning them for 2.5 seconds. The next attack after pulling knocks up for 1 second. Allies within range will prioritize attacking Blitzcrank's target."), championOriginSet3: [.chrono], championClassSet3: [.brawler],
                               bestItems: [items.dragonsClaw, items.warmogsArmor, items.warmogsArmor],
-                              stats: Stats(health: 650, armor: 45, magicResist: 35, attackDamage: 55, attackSpeed: 0.5, attackRange: 1))
+                              stats: Stats(health: 650, armor: 60, magicResist: 35, attackDamage: 55, attackSpeed: 0.5, attackRange: 1))
         
         // MARK: CAITLYN
         caitlyn = Champion(name: "caitlyn", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "ace in the hole", description: "Caitlyn takes aim at the furthest enemy, firing a deadly bullet towards them that deals magic damage to the first enemy it hits."), championOriginSet3: [.chrono], championClassSet3: [.sniper],
@@ -363,7 +363,7 @@ class ChampionsSet3 {
         // MARK: JARVAN IV
         jarvan = Champion(name: "jarvan IV", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "ageless standard", description: "Jarvan calls down his standard to a nearby location, granting nearby allies Attack Speed for 6 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.protector],
                           bestItems: [items.brambleVest, items.guardianAngel, items.warmogsArmor],
-                          stats: Stats(health: 700, armor: 45, magicResist: 30, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
+                          stats: Stats(health: 700, armor: 40, magicResist: 30, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
         
         
         // MARK: JHIN
@@ -393,7 +393,7 @@ class ChampionsSet3 {
         // MARK: SHACO
         shaco = Champion(name: "shaco", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "deceive", description: "Shaco teleports and backstabs his target, critically striking for a percentage of his Basic Attack damage."), championOriginSet3: [.darkStar], championClassSet3: [.infiltrator],
                          bestItems: [items.bloodthirster, items.guardianAngel, items.infinityEdge],
-                         stats: Stats(health: 650, armor: 25, magicResist: 20, attackDamage: 75, attackSpeed: 0.8, attackRange: 1))
+                         stats: Stats(health: 650, armor: 20, magicResist: 20, attackDamage: 75, attackSpeed: 0.8, attackRange: 1))
         
         // MARK: XERATH
         xerath = Champion(name: "xerath", nickname: "", tier: .five, cost: 5, rating: .A, ultimate: Ultimate(name: "abyssal bombardment", description: "Xerath transforms, summoning meteors to strike random foes in place of his normal attacks for 6/8/45 seconds. Meteors deal 300/400/2500 magic damage upon impact and if they kill their target, all adjacent enemies take 150/200/1250 magic damage and are stunned for 1.5 seconds."), championOriginSet3: [.darkStar], championClassSet3: [.sorcerer],
@@ -506,7 +506,7 @@ class ChampionsSet3 {
         // MARK: POPPY
         poppy = Champion(name: "poppy", nickname: "", tier: .one, cost: 1, rating: .A, ultimate: Ultimate(name: "buckler toss", description: "Poppy throws her buckler at the furthest enemy dealing damage. The buckler bounces back to Poppy, shielding her."), championOriginSet3: [.starGuardian], championClassSet3: [.vanguard],
                          bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                         stats: Stats(health: 650, armor: 45, magicResist: 30, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
+                         stats: Stats(health: 650, armor: 45, magicResist: 35, attackDamage: 50, attackSpeed: 0.55, attackRange: 1))
         
         
         // MARK: SORAKA
@@ -600,7 +600,7 @@ class ChampionsSet3 {
          // MARK: RIVEN
                riven = Champion(name: "riven", nickname: "", tier: .four, cost: 4, rating: .A, ultimate: Ultimate(name: "energy slash", description: "Riven dashes and shields herself for 225/375/1000, then slashes forward dealing 100/150/450 magic damage. Every third cast, Riven leaps into the air and launches a wave of energy that deals 300/500/1500 magic damage."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
                                 bestItems: [items.guardianAngel, items.titansResolve],
-                              stats: Stats(health: 800, armor: 35, magicResist: 20, attackDamage: 70, attackSpeed: 0.85, attackRange: 1))
+                              stats: Stats(health: 850, armor: 35, magicResist: 30, attackDamage: 70, attackSpeed: 0.85, attackRange: 1))
         
         // MARK: VAYNE
         vayne = Champion(name: "vayne", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "final hour", description: "Vayne focuses for 10 seconds, tumbling away from her target immediately and every third attack thereafter. Vayne is invisible while tumbling, and attacks after tumbling deal 175/200/225% of her Attack Damage."), championOriginSet3: [.cybernetic], championClassSet3: [.sniper],

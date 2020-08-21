@@ -170,7 +170,7 @@ class ItemsSet3 {
         locket = CombinedItem(name: "locket of the iron solari", bonus: "Shields allies within two hexes in the same row for 250 / 300 / 375 damage for 8 seconds (scales with wearer’s Star Level)", rating: .B, recipe: [chainVest, needlesslyLargeRod])
         
         // MARK: TITANS RESOLVE
-        titansResolve = CombinedItem(name: "titan's resolve", bonus: "When wearer takes damage or critically hits, gain a 2% stacking damage bonus. Stacks up to 50 times at which point wearer gains 25 amor and magic resist.", rating: .A, recipe: [chainVest, recurveBow])
+        titansResolve = CombinedItem(name: "titan's resolve", bonus: "When wearer takes damage or critically hits, gain a 2% stacking damage bonus. Stacks up to 25 times at which point wearer gains 25 amor and magic resist.", rating: .A, recipe: [chainVest, recurveBow])
         
         // MARK: RED BUFF
         redBuff = CombinedItem(name: "red buff", bonus: "Gains 10% max hp true damage over 4 seconds on hit in addition to its burn. And reducing healing by 50% for the duration of the burn.", rating: .A, recipe: [chainVest, giantsBelt])
@@ -295,7 +295,7 @@ class ItemsSet3 {
         jeweledGauntlet = CombinedItem(name: "jeweled gauntlet", bonus: "Holder’s spells can crit and holder gains +30% Critical Strike Damage.", rating: .A, recipe: [sparringGloves, needlesslyLargeRod])
         
         // MARK: HAND OF JUSTICE
-        handOfJustice = CombinedItem(name: "hand of justice", bonus: "Each planning phase, gain one: Deal +50% more damage / Grants 50% healing from damage done by both abilities and basic attacks.", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
+        handOfJustice = CombinedItem(name: "hand of justice", bonus: "Each planning phase, gain one: Deal +50% more damage / Grants 45% healing from damage done by both abilities and basic attacks.", rating: .A, recipe: [sparringGloves, tearOfTheGoddess])
         
         // MARK: SHROUD
         shroud = CombinedItem(name: "shroud of stillness", bonus: "When combat begins, shoots a beam straight ahead that delays affected enemies' first spellcast, increasing their max Mana by 40% until they cast.", rating: .A, recipe: [sparringGloves, chainVest])
