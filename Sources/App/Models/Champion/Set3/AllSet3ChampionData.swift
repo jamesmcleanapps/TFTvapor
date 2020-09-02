@@ -295,7 +295,7 @@ class ChampionsSet3 {
         // MARK: EZREAL
         ezreal = Champion(name: "ezreal", nickname: "", tier: .three, cost: 3, rating: .A, ultimate: Ultimate(name: "emp", description: "Ezreal fires an electromagnetic pulse at a random enemy that explodes on impact, dealing magic damage to all nearby enemies and increases the cost of their next spell cast by 40%."), championOriginSet3: [.chrono], championClassSet3: [.blaster],
                           bestItems: [items.giantSlayer, items.redBuff, items.spearOfShojin],
-                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 50, attackSpeed: 0.75, attackRange: 3))
+                          stats: Stats(health: 600, armor: 20, magicResist: 20, attackDamage: 55, attackSpeed: 0.75, attackRange: 3))
         
         // MARK: SHEN
         shen = Champion(name: "shen", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "future's refuge", description: "Shen creates a zone around himself for a few seconds, granting all narby allies 100% chance to dodge incoming basic attacks. While active, Shen gains Magic Resist."), championOriginSet3: [.chrono], championClassSet3: [.blademaster],
@@ -387,7 +387,7 @@ class ChampionsSet3 {
         // MARK: MORDEKAISER
         mordekaiser = Champion(name: "mordekaiser", nickname: "", tier: .two, cost: 2, rating: .A, ultimate: Ultimate(name: "indestructible", description: "Mordekaiser gains a shield that absorbs damage. While the shield persists, Mordekaiser deals magic damage per second to all nearby enemies."), championOriginSet3: [.darkStar], championClassSet3: [.vanguard],
                                bestItems: [items.brambleVest, items.guardianAngel, items.ionicSpark],
-                               stats: Stats(health: 700, armor: 40, magicResist: 35, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
+                               stats: Stats(health: 700, armor: 40, magicResist: 40, attackDamage: 55, attackSpeed: 0.6, attackRange: 1))
         
         
         // MARK: SHACO
