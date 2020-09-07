@@ -32,7 +32,7 @@ class Messages {
         return [
          
             
-            Message(id: 46, title: "7 September 2020", body: "New Space Pirate Rebels Team Comp added/n/nTeam Comps section updated. Only S Tier Comp is now:/n/nStar Guardian Sorcerers")
+            Message(id: 47, title: "7 September 2020", body: "New Space Pirate Rebels Team Comp added\n\nTeam Comps section updated. Only S Tier Comp is now:\n\nStar Guardian Sorcerers")
         ]
     }
 }
